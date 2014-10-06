@@ -3,9 +3,7 @@
 # Setting Up Your Nitrous Box
 
 In order for you to complete this course, you will need to write and run Ruby
-programs. Instead of having you install Ruby on your computer to do this, we
-will look to the cloud for a different solution. That solution is called Nitrous.
-Nitrous is a service that allows you to set up virtual machines with
+programs. Nitrous is a service that allows you to set up virtual machines with
 customized environments, and gives you access to create and edit files, and run
 programs on this virtual machine. Each virtual machine on Nitrous is called a
 "box". It is possible to create a box with Ruby already installed on it, getting
