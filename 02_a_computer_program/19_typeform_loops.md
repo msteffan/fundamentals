@@ -9,7 +9,7 @@ end
 * How many times will the above loop run?
   * 0
   * 1
-  * 10
+  * 10 (ANSWER)
   * infinte
 
 ```ruby
@@ -23,10 +23,10 @@ end
   * 0
   * 1
   * 10
-  * infinte
+  * infinte (ANSWER)
 
 * How do you force quit your program if you accidentally enter an infinite loop?
-  * Use the `Ctrl-c` key command
+  * Use the `Ctrl-c` key command (ANSWER)
   * Use the `Ctrl-q` key command
   * Wait for your computer to explode
   * Bang your head against the wall in frustration

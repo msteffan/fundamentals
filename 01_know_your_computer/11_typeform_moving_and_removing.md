@@ -1,20 +1,20 @@
 * Which of the following commands would you use to copy a file?
   * rm
   * rm -r
-  * cp
+  * cp (ANSWER)
   * cp -r
 * Which of the following commands would you use to copy a folder?
   * rm
   * rm -r
   * cp
-  * cp -r
+  * cp -r (ANSWER)
 * Which of the following commands would you use to delete a file?
-  * rm
+  * rm (ANSWER)
   * rm -r
   * cp
   * cp -r
 * Which of the following commands would you use to delete a folder?
   * rm
-  * rm -r
+  * rm -r (ANSWER)
   * cp
   * cp -r

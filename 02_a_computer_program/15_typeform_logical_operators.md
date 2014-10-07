@@ -1,10 +1,10 @@
 * If A is false and B is true, what is A && B?
   * true
-  * false
+  * false (ANSWER)
   * 0
   * undefined
 * If A is false and B is true, what is A || B?
-  * true
+  * true (ANSWER)
   * false
   * 0
   * undefined
@@ -24,4 +24,4 @@ end
   * hungry && food_in_fridge
   * hungry || food_in_fridge
   * !hungry || food_in_fridge
-  * hungry && !food_in_fridge
+  * hungry && !food_in_fridge (ANSWER)
