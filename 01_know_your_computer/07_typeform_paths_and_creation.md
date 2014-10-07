@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Quiz - Paths and Creation
+
 * What does `~` stand for?
   * Change directory
   * Show you what directory you are in

@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Quiz - Moving and Removing
+
 * Which of the following commands would you use to copy a file?
   * rm
   * rm -r

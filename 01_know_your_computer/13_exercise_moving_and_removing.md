@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Exercise - Moving and Removing
+
 Make sure to quit Terminal before starting.
 
 * Start Terminal

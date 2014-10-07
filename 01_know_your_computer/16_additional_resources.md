@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Additional Resources
+
 Different applications have specific keyboard shortcuts to perform special
 functions in that application. For example, `Cmd+T` in Sublime Text (a popular
 text editor) opens a search box to find files inside your current project.

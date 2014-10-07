@@ -1,3 +1,7 @@
+**Know Your Computer**
+
+---
+
 #### Absolute and Relative paths
 
 * Two ways to specify paths

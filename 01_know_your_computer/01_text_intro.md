@@ -1,5 +1,3 @@
-**WDI Fundamentals Module 1**
-
 # Know Your Computer
 
 ## Learning Objectives
@@ -19,8 +17,6 @@
 * Utilize standard keyboard shortcuts to manage applications
 
 ## Outline
-
-**I do**
 
 The world of programming is beautiful. We can make our computers achieve
 phenomenal things by typing a sequence of letters into a file. Programming is a

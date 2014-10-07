@@ -1,3 +1,7 @@
+**Know Your Computer**
+
+---
+
 #### Moving and removing things
 
 Before we start the next section, let's navigate to our home folder.

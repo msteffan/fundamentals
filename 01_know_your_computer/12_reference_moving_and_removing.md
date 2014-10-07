@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Reference - Moving and Removing
+
 * The `mv` command moves the specified file or folder to the specified
   destination.
 * The `rm` command deletes the specified file or folder

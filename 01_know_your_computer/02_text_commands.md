@@ -1,3 +1,7 @@
+**Know Your Computer**
+
+---
+
 #### Terminal Commands
 
 **I do - you do**

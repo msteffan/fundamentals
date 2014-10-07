@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Exercise - Commands
+
 Make sure you start by quitting your terminal application
 
 * Start your Terminal application

@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Reference - Commands
+
 * Why developers prefer to use the command line
 * The `pwd` command to print working directory
 * The `ls` command to list directory contents

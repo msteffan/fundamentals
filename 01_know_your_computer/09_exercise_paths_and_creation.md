@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Exercise - Paths and Creation
+
 * Open up Terminal
 * Navigate to your Documents folder
 * Create a file in your Documents folder called readme.txt

@@ -1,3 +1,7 @@
+**Know Your Computer**
+
+---
+
 ## Stuck?
 
 **Spoiler alert!**

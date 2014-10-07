@@ -1,3 +1,9 @@
+**Know Your Computer**
+
+---
+
+#### Quiz - Commands
+
 * Why do developers prefer to use the command line?
   * It is more intuitive than the GUI
   * It is more powerful than the GUI (ANSWER)

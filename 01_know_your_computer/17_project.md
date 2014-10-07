@@ -1,4 +1,8 @@
-# Know Your Computer - Exercise
+**Know Your Computer**
+
+---
+
+# Know Your Computer - Project
 
 ## Objectives
 

@@ -1,3 +1,7 @@
+**Know Your Computer**
+
+---
+
 #### Keyboard Shortcuts
 
 As a developer, you want to keep your hands on your keyboard as much as
