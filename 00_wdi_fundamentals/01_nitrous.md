@@ -2,14 +2,21 @@
 
 # Setting Up Your Nitrous Box
 
-In order for you to complete this course, you will need to write and run Ruby
-programs. Nitrous is a service that allows you to set up virtual machines with
-customized environments, and gives you access to create and edit files, and run
-programs on this virtual machine. Each virtual machine on Nitrous is called a
-"box". It is possible to create a box with Ruby already installed on it, getting
-a lot of tedious installation out of the way, and allowing us to focus on code.
+We're going to be writing quite a few programs throughout this course. Instead
+of writing programs into files on our computer, and running these programs on
+our computer, we're going to make use of a service called [Nitrous](http://nitrous.io).
 
-Follow these steps to set up a Nitrous box for your work during this course.
+Nitrous is a service that will create a computer for us in "the cloud" (yes, THE
+cloud) that is all set up to run Ruby programs for us! "Well," you may ask, "if
+this computer is in 'the cloud', how do we use it? How do we interact with it?"
+It turns out that Nitrous also allows you to use this computer through their
+website! Using a command line (more on this later) and a text editor, we will
+be able to use this computer almost as if it were our own. You may not be able
+to play Command and Conquer on this computer, but you sure can write and run
+some Ruby programs.
+
+Nitrous likes to call the computers they create for you "boxes". Follow these
+steps to set up a Nitrous box for your work during this course.
 
 * Create an account on the [Nitrous website](http://nitrous.io)
 * Visit your dashboard (Click "Open Dashboard")
@@ -22,11 +29,10 @@ Follow these steps to set up a Nitrous box for your work during this course.
   * Click "Create Box"
 
 You should now be taken to your "box"'s IDE, or Integrated Development
-Environment. This screen features a text editor, a command line interface (more
-on this soon). These are the tools you will use to interface with your box.
-Believe it or not, you can do most things with your box that you can do with
-your own computer. We're going to use this box to create files, write programs
-in these files, and run these programs and view their results.
+Environment. In essence, this is the environment that we'll be using to interact
+with this computer. This screen features a text editor (think Notepad, TextEdit,
+Sublime Text), a command line interface (more on this soon). These are the tools
+that we will use to create files, write programs, and run programs.
 
-Your box should come with a folder by default called `workspace`. We will be
-primarily working inside this folder during this course.
+Once you've got your Nitrous box set up, you're ready to start tackling this
+course!
