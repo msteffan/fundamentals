@@ -1,3 +1,7 @@
+**A Computer Program**
+
+---
+
 #### Logical operators
 
 Logical operations allow us to combine multiple conditions into a single Boolean

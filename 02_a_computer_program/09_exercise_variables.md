@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Exercise - Variables
+
 Write a Ruby program called `about_me.rb`. In this program
 
 * Create the following variables

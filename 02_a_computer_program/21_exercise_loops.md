@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Exercise - Loops
+
 Read the wikipedia entry for the [fizzbuzz](http://www.wikipedia.org/wiki/Fizz_buzz) game. Focus on the play section. Remove the player aspect from the game and write a simple algorithm for implementing the game using Ruby. Think about what conditions you must check for in order to play fizzbuzz. Think about some of the different datatypes you've learned about so far that will be of use for this exercise.
 
 Write a Ruby program called `fizzbuzz.rb`. In this program:

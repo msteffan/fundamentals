@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Quiz - Loops
+
 ```ruby
 counter = 0
 while counter < 10

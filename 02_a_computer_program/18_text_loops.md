@@ -1,3 +1,7 @@
+**A Computer Program**
+
+---
+
 #### Loops
 
 Using `if` statements, we can execute a section of code once if a certain

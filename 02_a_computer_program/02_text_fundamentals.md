@@ -1,4 +1,8 @@
-**NOTE: ONLY RUBY BEYOND THIS POINT**
+**A Computer Program**
+
+---
+
+#### Fundamentals
 
 There are many different languages we can use to write computer programs.Let's
 write our first program in Ruby!

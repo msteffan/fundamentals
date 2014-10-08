@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Reference - Logical Operators
+
 Logical operators work on Boolean values to produce Boolean results. Their
 behavior is summarized below.
 

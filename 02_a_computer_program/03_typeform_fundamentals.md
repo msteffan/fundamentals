@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Quiz - Fundamentals
+
 * What is the difference between an algorithm and a computer program?
 * What is the symbol for addition?
   * -

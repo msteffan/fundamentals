@@ -1,3 +1,7 @@
+**A Computer Program**
+
+---
+
 #### Comparison operators and conditional statements
 
 We've seen that we can perform arithmetic operations on numbers. We can also

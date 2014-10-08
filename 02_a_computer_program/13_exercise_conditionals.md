@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Exercise - Conditionals
+
 Write a Ruby program called `the_journey.rb`. In this program:
 
 * Print out a statement asking the user to choose a direction: `up or down`

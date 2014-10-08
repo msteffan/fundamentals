@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Exercise - Fundamentals
+
 Write a Ruby program called `strings_and_numbers.rb`. In this program:
 
 Use `puts()` to output the result of the following statements:

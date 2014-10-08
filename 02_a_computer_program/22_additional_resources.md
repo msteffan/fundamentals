@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Additional Resources
+
 [Learn To Program](https://pine.fm/LearnToProgram/) - A friendly read to get a
 fresh perspective on learning to program. Reading through this book will give
 you a second pass at basic programming.

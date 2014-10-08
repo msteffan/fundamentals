@@ -1,3 +1,9 @@
+**A Computer Program**
+
+---
+
+#### Exercise - Logical Operators
+
 Write a Ruby program called `hot_or_cold.rb`. In this program:
 
 * Print out a statement that asks the user for the current temperature
