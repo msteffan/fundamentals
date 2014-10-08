@@ -6,25 +6,25 @@
 
 * What is the difference between an algorithm and a computer program?
 * What is the symbol for addition?
-  * -
-  * /
-  * + (ANSWER)
-  * *
+  * `-`
+  * `/`
+  * `+` (ANSWER)
+  * `*`
 * What is the symbol for subtraction?
-  * - (ANSWER)
-  * /
-  * +
-  * *
+  * `-` (ANSWER)
+  * `/`
+  * `+`
+  * `*`
 * What is the symbol for multiplication?
-  * -
-  * /
-  * +
-  * * (ANSWER)
+  * `-`
+  * `/`
+  * `+`
+  * `*` (ANSWER)
 * What is the symbol for division?
-  * -
-  * / (ANSWER)
-  * +
-  * *
+  * `-`
+  * `/` (ANSWER)
+  * `+`
+  * `*`
 * What does `puts()` do?
   * Save something to a file
   * Gather user input

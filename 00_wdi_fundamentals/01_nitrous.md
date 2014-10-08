@@ -31,8 +31,9 @@ steps to set up a Nitrous box for your work during this course.
 You should now be taken to your "box"'s IDE, or Integrated Development
 Environment. In essence, this is the environment that we'll be using to interact
 with this computer. This screen features a text editor (think Notepad, TextEdit,
-Sublime Text), a command line interface (more on this soon). These are the tools
-that we will use to create files, write programs, and run programs.
+Sublime Text), a command line interface (more on this soon) and a chat window if
+you have collaborators on this machine. These are the tools that we will use to
+create files, write programs, and run programs.
 
 Once you've got your Nitrous box set up, you're ready to start tackling this
 course!
