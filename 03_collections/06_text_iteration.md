@@ -1,3 +1,7 @@
+**Collections**
+
+---
+
 #### Iteration
 
 When working with a set of data like an array, we often need to step through

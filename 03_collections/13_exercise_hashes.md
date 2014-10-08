@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Exercise - Hashes
+
 Given:
 ```
 ["Thriller", 1982, "Michael Jackson", "Epic Records", ["Wanna Be Startin' Somethin", "Baby Be Mine", "The Girl in My Life"]]

@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Exercise - Arrays
+
 Given the following list:
 ```
 *nsync

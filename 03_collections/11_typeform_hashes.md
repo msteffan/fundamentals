@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Quiz - Hashes
+
 * What is the unique characteristic that each element in a hash possesses?
   * Its position in the hash
   * Its key (ANSWER)

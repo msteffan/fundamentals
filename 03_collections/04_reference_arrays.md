@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Reference - Arrays
+
 * Arrays are an ordered list of objects
 * You can insert and remove objects to and from the end of the array by using
   `.push()` and `.pop()`

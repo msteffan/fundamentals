@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Exercise - Iteration
+
 Write a program called `unit_converter.rb`.
 
 In this program

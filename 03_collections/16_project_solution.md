@@ -1,3 +1,7 @@
+**Collections**
+
+---
+
 ## Stuck?
 
 **Spoiler alert!**

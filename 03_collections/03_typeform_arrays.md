@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Quiz - Arrays
+
 * How would we access the second element in an array?
   * arr(1)
   * arr(2)

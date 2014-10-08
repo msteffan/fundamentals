@@ -1,3 +1,7 @@
+**Collections**
+
+---
+
 #### Hashes
 
 Good news! Timmy has a track and field event coming up, and he needs to register for it.

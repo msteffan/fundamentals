@@ -1,3 +1,9 @@
+**Collections**
+
+---
+
+#### Quiz - Iteration
+
 * What is iteration?
   * The process of accessing an element of an array
   * The process of printing out each element of an array

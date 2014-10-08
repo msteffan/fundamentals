@@ -1,3 +1,7 @@
+**Collections**
+
+---
+
 # Collections - Exercise
 
 ## Objectives
