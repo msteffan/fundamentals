@@ -61,3 +61,8 @@ This is the summary of my book.
   * [Additional Resources](03_collections/14_additional_resources.md)
   * [Project](03_collections/15_project.md)
   * [Project Solution](03_collections/16_project_solution.md)
+* [Assessment](04_assessment/01_text_intro.md)
+  * [Hello World](04_assessment/02_exercise_hello_world.md)
+  * [Comparisons](04_assessment/03_exercise_comparisons.md)
+  * [Arrays](04_assessment/04_exercise_arrays.md)
+  * [Hashes](04_assessment/05_exercise_hashes.md)
