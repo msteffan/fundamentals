@@ -40,7 +40,7 @@ seconds. You just created a new Rails application! It lives inside a folder
 called `movies_app`, since that's the name of our application. Enter this newly
 created folder.
 
-```ruby
+```
 $ cd movies_app
 ```
 
