@@ -1,10 +1,12 @@
 **Know Your Computer**
 
+#### Quiz - Commands
+
 ---
 
-Let's recap our knowledge of basic Terminal commands.
+There is only one right answer.
 
-Why do developers prefer to use the command line?:
+Why do developers prefer to use the command line?
   - [ ] It is more intuitive than the GUI
   - [x] It is more powerful than the GUI
   - [ ] It makes you look like Neo
@@ -12,7 +14,7 @@ Why do developers prefer to use the command line?:
 
 > Try again!
 
-What does the `pwd` command do?:
+What does the `pwd` command do?
   - [ ] Show you the contents of the directory you are in
   - [ ] Navigate to a directory
   - [ ] Create a directory
@@ -20,7 +22,7 @@ What does the `pwd` command do?:
 
 > Try again!
 
-What does the `ls` command do?:
+What does the `ls` command do?
   - [x] Show you the contents of the directory you are in
   - [ ] Navigate to a directory
   - [ ] Create a directory
@@ -28,7 +30,7 @@ What does the `ls` command do?:
 
 > Try again!
 
-What does the `cd` command do?:
+What does the `cd` command do?
   - [ ] Show you the contents of the directory you are in
   - [x] Navigate to a directory
   - [ ] Create a directory
@@ -36,7 +38,7 @@ What does the `cd` command do?:
 
 > Try again!
 
-What directory does `..` refer to?:
+What directory does `..` refer to?
   - [ ] Your home directory
   - [ ] The directory you are in
   - [x] The parent of the directory you are in

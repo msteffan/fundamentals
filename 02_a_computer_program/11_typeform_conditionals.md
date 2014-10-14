@@ -1,23 +1,46 @@
 **A Computer Program**
 
----
-
 #### Quiz - Conditionals
 
-What do the following expressions produce?
+---
 
-* 12 > 3
-  * true (ANSWER)
-  * false
-* 9 < 5
-  * true
-  * false (ANSWER)
-* 3 == 4
-  * true
-  * false (ANSWER)
-* 8 != 12
-  * true (ANSWER)
-  * false
+There is only one right answer.
+
+`12 > 3`
+  - [x] true
+  - [ ] false
+
+> Try again!
+
+`9 < 5`
+  - [ ] true
+  - [x] false
+
+> Try again!
+
+`3 == 4`
+  - [ ] true
+  - [x] false
+
+> Try again!
+
+`8 != 12`
+  - [x] true
+  - [ ] false
+
+> Try again!
+
+In the context of Code Snippet 1, what message will be displayed if the user enters `27`?
+  - [ ] "Piece of cake, no problem."
+  - [ ] "I think I broke a sweat."
+  - [x] "This is not as easy as I thought, but I can do that."
+  - [ ] "Nice try. I'm going to go play video games."
+
+> Try again!
+
+---
+
+**Code Snippet 1**
 
 ```ruby
 puts("How many pushups do you want me to do?")
@@ -33,9 +56,3 @@ else
   puts("Nice try. I'm going to go play video games.")
 end
 ```
-
-* What message will be displayed if the user enters `27`?
-  * "Piece of cake, no problem."
-  * "I think I broke a sweat."
-  * "This is not as easy as I thought, but I can do that." (ANSWER)
-  * "Nice try. I'm going to go play video games."
