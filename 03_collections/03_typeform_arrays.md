@@ -1,7 +1,5 @@
 **Collections**
 
----
-
 #### Quiz - Arrays
 
 ---
