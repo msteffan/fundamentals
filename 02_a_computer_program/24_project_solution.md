@@ -1,6 +1,6 @@
 **A Computer Program**
 
----
+
 
 ## Stuck?
 
@@ -17,7 +17,7 @@ below. Happy coding!
 puts("Welcome to Project Todo")
 
 puts("Menu")
-puts("----")
+puts("-")
 puts("1. View my todos")
 puts("2. Add a todo")
 puts("3. Complete a todo")
@@ -35,7 +35,7 @@ puts(user_input)
 puts("Welcome to Project Todo")
 
 puts("Menu")
-puts("----")
+puts("-")
 puts("1. View my todos")
 puts("2. Add a todo")
 puts("3. Complete a todo")
@@ -64,7 +64,7 @@ puts("Welcome to Project Todo")
 
 while true
   puts("Menu")
-  puts("----")
+  puts("-")
   puts("1. View my todos")
   puts("2. Add a todo")
   puts("3. Complete a todo")

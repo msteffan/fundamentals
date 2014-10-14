@@ -1,6 +1,6 @@
 **Know Your Computer**
 
----
+
 
 #### Exercise - Paths and Creation
 

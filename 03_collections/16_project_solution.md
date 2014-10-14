@@ -1,6 +1,6 @@
 **Collections**
 
----
+
 
 ## Stuck?
 
@@ -20,7 +20,7 @@ todos = ["Wash the car", "Feed the dog", "Take over the world"]
 
 while true
   puts("Menu")
-  puts("----")
+  puts("-")
   puts("1. View my todos")
   puts("2. Add a todo")
   puts("3. Complete a todo")
@@ -74,7 +74,7 @@ todos = [
 
 while true
   puts("Menu")
-  puts("----")
+  puts("-")
   puts("1. View my todos")
   puts("2. Add a todo")
   puts("3. Complete a todo")

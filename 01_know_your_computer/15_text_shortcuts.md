@@ -1,6 +1,6 @@
 **Know Your Computer**
 
----
+
 
 #### Keyboard Shortcuts
 
@@ -14,7 +14,7 @@ developer. Remember, we're here to master our tools so we can master our craft.
 Here are a list of common keyboard shortcuts that apply to most applications.
 
 | Shortcut     | Function |
-| ---          | ---      |
+|           |       |
 | `Cmd+Space`  | Open Spotlight (tool on MacOS to search for files and applications) |
 | `Cmd+Tab`    | Switch between currently running applications (ex. switching from your text editor to your browser) |
 | `Cmd+S`      | Save file |

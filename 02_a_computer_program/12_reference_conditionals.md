@@ -1,11 +1,11 @@
 **A Computer Program**
 
----
+
 
 #### Reference - Conditionals
 
 | Operator | Returns true when                      | Returns false when |
-| ---      | ---                                    | ---                |
+|       |                                     |                 |
 | `>`      | Left is bigger than right              | Left is smaller than or equal to right |
 | `<`      | Left is smaller than right             | Left is bigger than or equal right     |
 | `==`     | Left is equal right                    | Left is not equal right                |

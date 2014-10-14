@@ -1,6 +1,6 @@
 **A Computer Program**
 
----
+
 
 #### Reference - Logical Operators
 
@@ -10,7 +10,7 @@ behavior is summarized below.
 **AND operator**
 
 | Condition 1 | Condition 2 | Result |
-| ---         | ---         | ---    |
+|          |          |     |
 | true        | true        | true   |
 | true        | false       | false  |
 | false       | true        | false  |
@@ -19,7 +19,7 @@ behavior is summarized below.
 **OR operator**
 
 | Condition 1 | Condition 2 | Result |
-| ---         | ---         | ---    |
+|          |          |     |
 | true        | true        | true   |
 | true        | false       | true   |
 | false       | true        | true   |
@@ -28,6 +28,6 @@ behavior is summarized below.
 **NOT operator**
 
 | Condition | Result      |
-| ---       | ---         |
+|        |          |
 | true      | false       |
 | false     | true        |

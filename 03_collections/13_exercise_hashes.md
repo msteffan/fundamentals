@@ -1,6 +1,6 @@
 **Collections**
 
----
+
 
 #### Exercise - Hashes
 

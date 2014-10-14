@@ -55,7 +55,7 @@ create files, write programs, and run programs.
 Once you've got your Nitrous box set up, you're ready to start tackling this
 course!
 
----
+
 
 When you quit your Nitrous IDE and want to revisit it, log into Nitrous with
 your account and open your Dashboard. You should see a list of your boxes.

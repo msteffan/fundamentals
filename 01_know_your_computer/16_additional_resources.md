@@ -1,6 +1,6 @@
 **Know Your Computer**
 
----
+
 
 #### Additional Resources
 

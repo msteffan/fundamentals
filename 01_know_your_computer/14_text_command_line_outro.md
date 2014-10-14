@@ -1,6 +1,6 @@
 **Know Your Computer**
 
----
+
 
 We've barely seen the tip of the iceberg of power that the command line gives
 us. On your journey to become a developer, practice with the command

@@ -1,6 +1,6 @@
 **Know Your Computer**
 
----
+
 
 #### Quiz - Paths and Creation
 

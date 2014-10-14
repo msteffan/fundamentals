@@ -1,6 +1,6 @@
 **A Computer Program**
 
----
+
 
 # A Computer Program - Exercise
 
@@ -24,7 +24,7 @@ Project Todo")
 
 ```
 Menu
-----
+-
 1. View my todos
 2. Add a todo
 3. Complete a todo
