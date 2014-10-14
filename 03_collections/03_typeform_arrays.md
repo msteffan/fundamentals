@@ -30,13 +30,6 @@ How would you add an element at the end of the array?:
   - [ ] .first()
   - [ ] .last()
 
-```ruby
-fruits = ["apple", "orange", "banana"]
-fruits.pop()
-fruits.push("grape")
-fruits.push("banana")
-```
-
 After the code above has executed, what is `fruits`?:
   - [x] `["apple", "orange", "grape", "banana"]`
   - [ ] `["banana", "grape", "apple", "orange"]`
