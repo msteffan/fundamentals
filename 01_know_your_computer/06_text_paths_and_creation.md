@@ -1,6 +1,6 @@
 **Know Your Computer**
 
-
+---
 
 #### Absolute and Relative paths
 
@@ -17,6 +17,8 @@ to the corner of 34th Street and 8th Ave."
 Absolute paths **always** start with a `/`. For example, `/Users/corneliusfinch`.
 
 Relative paths **never** start with a `/`. For example, `Pictures`.
+
+---
 
 #### Creating files and folders
 

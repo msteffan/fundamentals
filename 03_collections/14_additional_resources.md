@@ -1,6 +1,6 @@
 **Collections**
 
-
+---
 
 #### Additional Resources
 
