@@ -4,8 +4,6 @@
 
 #### Terminal Commands
 
-**I do - you do**
-
 Welcome to the command line. It's not much to look at. No pictures, no fancy art
 or animation. Just some text. Let's explore this brand new space. Type `hello?`
 and press enter.
