@@ -61,7 +61,7 @@ on your Nitrous box.**
 
 Go ahead an open up "Terminal" in any of the following ways.
 
-**Note: MacOS only beyond this point**
+**Note: This version of WDI Fundamentals only supports MacOS beyond this point**
 
 * Navigate to your Applications folder and double-click on Terminal
 * Press Command+Space on your keyboard to bring up a friend of ours, Spotlight.
