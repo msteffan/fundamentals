@@ -12,6 +12,12 @@ and press enter.
 $ hello?
 ```
 
+<iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/M2PW791SFMM?autoplay=0"
+  frameborder="0"/>
+
+<br>
+
 The dollar sign is just to indicate that this is a command line command. It
 should not be typed by you. You should only type what follows the dollar sign
 (in this case, `hello?`).
