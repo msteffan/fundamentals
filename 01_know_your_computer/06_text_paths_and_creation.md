@@ -2,6 +2,14 @@
 
 ---
 
+Let's dive a little deeper into the command line. So far we've looked around a directory and taken a look at existing files. Let's look at how to create files and directories.
+
+<iframe id="ytplayer" type="text/html" width="640" height="390"
+  src="http://www.youtube.com/embed/yt6gqLAWGas?autoplay=0"
+  frameborder="0"/>
+
+<br>
+
 #### Absolute and Relative paths
 
 * Two ways to specify paths

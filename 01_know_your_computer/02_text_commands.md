@@ -8,15 +8,15 @@ Welcome to the command line. It's not much to look at. No pictures, no fancy art
 or animation. Just some text. Let's explore this brand new space. Type `hello?`
 and press enter.
 
-```
-$ hello?
-```
-
 <iframe id="ytplayer" type="text/html" width="640" height="390"
   src="http://www.youtube.com/embed/M2PW791SFMM?autoplay=0"
   frameborder="0"/>
 
 <br>
+
+```
+$ hello?
+```
 
 The dollar sign is just to indicate that this is a command line command. It
 should not be typed by you. You should only type what follows the dollar sign
