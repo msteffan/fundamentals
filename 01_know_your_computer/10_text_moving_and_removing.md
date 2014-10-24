@@ -2,12 +2,6 @@
 
 ---
 
-<iframe id="ytplayer" type="text/html" width="640" height="390"
-  src="http://www.youtube.com/embed/yt6gqLAWGas?autoplay=0"
-  frameborder="0"/>
-
-<br>
-
 #### Moving and removing things
 
 Before we start the next section, let's navigate to our home folder.
