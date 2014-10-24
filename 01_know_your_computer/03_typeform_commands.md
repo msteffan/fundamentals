@@ -18,7 +18,7 @@ What does the `pwd` command do?
   - [ ] Show you the contents of the directory you are in
   - [ ] Navigate to a directory
   - [ ] Create a directory
-  - [x] Show you what directory you are in
+  - [x] Tell you what directory you are in
 
 > Try again!
 
@@ -26,7 +26,7 @@ What does the `ls` command do?
   - [x] Show you the contents of the directory you are in
   - [ ] Navigate to a directory
   - [ ] Create a directory
-  - [ ] Show you what directory you are in
+  - [ ] Tell you what directory you are in
 
 > Try again!
 
@@ -34,7 +34,7 @@ What does the `cd` command do?
   - [ ] Show you the contents of the directory you are in
   - [x] Navigate to a directory
   - [ ] Create a directory
-  - [ ] Show you what directory you are in
+  - [ ] Tell you what directory you are in
 
 > Try again!
 

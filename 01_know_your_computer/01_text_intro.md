@@ -48,10 +48,9 @@ one place to another, and a lot more.
 
 _Aside: What if you imagine an action that there isn't a command for? In this
 case, you can create your own "commands" or scripts that will achieve what you
-want. Look up 'shell scripting'._
+want. This is called 'shell scripting'._
 
-> Developers sacrifice the ease and intuitive nature of a GUI for greater power
-> and flexibility of actions of a command line interface.
+> Developers sacrifice the ease and intuitive nature of a GUI for greater power, efficiency, and flexibility of the actions they can perform in a command line interface.
 
 The most common **Command Line Interface** (CLI) found on MacOS and Linux
 machines is "Terminal".
@@ -59,12 +58,14 @@ machines is "Terminal".
 **For the following section, you are going to work on your local machine, and not
 on your Nitrous box.**
 
+----
+
+***Note: This version of WDI Fundamentals only supports MacOS beyond this point***
+
 Go ahead an open up "Terminal" in any of the following ways.
 
-**Note: This version of WDI Fundamentals only supports MacOS beyond this point**
-
 * Navigate to your Applications folder and double-click on Terminal
-* Press Command+Space on your keyboard to bring up a friend of ours, Spotlight.
+* *Faster:* Press Command+Space on your keyboard to bring up a friend of ours, Spotlight.
   Spotlight is a tool that allows us to quickly find files and applications on
   our computer, but more on that later. Inside this search bar, type "Terminal",
   and select the Terminal application.

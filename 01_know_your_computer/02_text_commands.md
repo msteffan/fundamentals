@@ -26,8 +26,7 @@ This is the way your computer likes to tell you that it did not understand the
 command that you typed in. Remember, we have left the GUI world behind us, so we
 will no longer have pretty warning messages and alert boxes. Do not worry. In
 due time, as we grow comfortable in this new environment, even these cryptic
-messages will be just as beautiful, if not more beautiful, as any warning box
-you'll ever see.
+messages will be just as beautiful as any warning box you'll ever see.
 
 Go ahead, type this into your terminal.
 
@@ -41,7 +40,7 @@ Again, probably a rude response.
 -bash: Where: command not found
 ```
 
-Great. We've established that our command line does not understand plain English.
+Great. We've established that our command line doesn't really understand plain English.
 We will have to use commands that our command line can understand. Let's try
 this one.
 
@@ -60,15 +59,15 @@ What did we just do?
 > This command is used when we want the command line to tell us what folder (or
 > directory) of our computer we are currently in.
 
-Just like Finder, your command line interface places you in a particular folder
+Just like the Finder on a mac, your command line interface places you in a particular folder
 of your computer. `pwd` tells you where you currently are. Usually, when you
-open the Terminal application, you start off in your "home folder", which is one
-with the same name as your username on your computer.
+open the Terminal application, you start off in your "home folder", which is the one
+that shares the name of your username on your computer.
 
 If we were using Finder, we'd be able to see what things (files and folders) are
 present in this folder. In a CLI however, if we want to see what files and
-folders exist at current location, we need to ask for it with another command.
-Let's find out what's in this folder that we're in.
+folders exist at the current location, we need to ask for it with another command.
+Let's find out what files are in the folder that we're in.
 
 ```
 $ ls

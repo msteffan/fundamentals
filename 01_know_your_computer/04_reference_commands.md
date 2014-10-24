@@ -4,8 +4,8 @@
 
 #### Reference - Commands
 
-* Why developers prefer to use the command line
-* The `pwd` command to print working directory
-* The `ls` command to list directory contents
-* The `cd` command to change directory
+* Developers prefer the command line for its power, efficiency, and flexibility
+* The `pwd` command **p**rints the **w**orking **d**irectory (folder)
+* The `ls` command **l**i**s**ts the contents of the current directory
+* The `cd` command **c**hanges the **d**irectory
 * `..` refers to the parent directory of your current directory
