@@ -4,19 +4,18 @@
 
 #### Absolute and Relative paths
 
-* Two ways to specify paths
-  * Relative
-  * Absolute
+There are two ways to specify paths:
+* Relative paths
+* Absolute paths
 
-We have been using relative paths so far. You specify where you want to go
-relative to where you are now. "I want to go 4 blocks South".
+We have been using relative paths so far, specifying where we want to go
+relative to where we are now. This is like saying, "I want to go 4 blocks south."
 
-Absolute paths specify where you want to go by exact location. "I want to go
-to the corner of 34th Street and 8th Ave."
+Absolute paths specify where you want to go by exact location. This is analogous to saying, "I want to go to the corner of 34th Street and 8th Ave."
 
 Absolute paths **always** start with a `/`. For example, `/Users/corneliusfinch`.
 
-Relative paths **never** start with a `/`. For example, `Pictures`.
+Relative paths **never** start with a `/`. For example, `Pictures` or `../Pictures`.
 
 ---
 
