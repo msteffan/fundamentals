@@ -17,7 +17,7 @@ to get started.
 Here is the file structure that we want to have at the end of this exercise to
 set up for our first project.
 
-**WORK IN YOUR NITROUS BOX FOR THIS EXERCISE**
+<font color="red">**WORK IN YOUR NITROUS BOX FOR THIS EXERCISE**</font>
 
 ```
 workspace
@@ -32,7 +32,7 @@ The `workspace` folder should already exist on your Nitrous box.
 
 Inside `workspace`, we are going to create a `wdi` folder. This folder is
 going to contain a `fundamentals` folder. You can put other work related to
-the fundamentals material in here as well.
+these exercises in here as well.
 
 Of importance to us right now, the `fundamentals` folder is going to contain a
 `project_todo` folder, inside which we are going to create our project files. The first
@@ -58,6 +58,8 @@ For this exercise, there is one golden rule that you must follow. Stated simply,
 That's the only one. Here we go.
 
 #### Phase 1
+
+*Note that as you complete these steps, you may need to refresh [your file browser](../images/file_browser.png) on the top left in order to actually see the files you're creating.*
 
 1. Create the `wdi` and `fundamentals` folders in the appropriate places
 1. In the `wdi` folder, create a folder called `project_todo`

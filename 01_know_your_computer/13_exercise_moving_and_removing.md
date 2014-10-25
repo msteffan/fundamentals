@@ -4,9 +4,9 @@
 
 #### Exercise - Moving and Removing
 
-Make sure to quit Terminal before starting.
+Make sure you begin by quitting and restarting your Terminal application
 
-* Start Terminal
+* Start your Terminal application
 * Navigate to your Pictures folder
 * Create a folder here called `selfies`
 * Create a file here (in `Pictures`) called `readme.txt`

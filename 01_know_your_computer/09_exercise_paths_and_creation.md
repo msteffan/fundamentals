@@ -4,7 +4,9 @@
 
 #### Exercise - Paths and Creation
 
-* Open up Terminal
+Make sure you begin by quitting and restarting your Terminal application
+
+* Start your Terminal application
 * Navigate to your Documents folder
 * Create a file in your Documents folder called readme.txt
 * Open this file and type in some content. (eg. "Thanks for reading me.")

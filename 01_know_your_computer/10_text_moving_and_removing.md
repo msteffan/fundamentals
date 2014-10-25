@@ -44,19 +44,18 @@ Copying files is similar to moving them. Let's make a copy of our joke.
 $ cp joke.txt joke2.txt
 ```
 
-> The 'cp' command is used to copy the specified files or folders to the
+> The `cp` command is used to copy the specified files or folders to the
 > specified location.
 
-We have now created a copy of `joke.txt` called `joke2.txt` in the same folder.
-Notice how in this case, the second argument was a filename, and not a folder
-name. It turns out that `mv` and `cp` are quite smart. When moving or copying
-a file, if the second argument is a folder, the specified file is moved or
-copied to that folder. If the second argument is a filename, the specified file
-is moved or copied to file with the specified filename. Hence, when we copied
+After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. Notice how in this case, the second argument was a filename, and not a folder
+name. It turns out that the `mv` and `cp` commands are quite smart. When moving or copying
+a file, if the second argument is a **folder**, the specified file is moved or
+copied to that folder. If the second argument is a **filename**, the file in the first argument
+is moved or copied to a file with the filename specified in the second argument. Hence, when we copied
 our joke, our file `joke.txt` was copied to another file called `joke2.txt`.
 
 Perhaps we should make another folder inside `funny_things` called `jokes`, and
-put our joke in there. After all, we could have funny jokes, pictures, and much
+put our joke in there. After all, we could have funny jokes, funny pictures, and much
 more. In order to achieve this, we're going to follow a series of long-winded
 steps so we may familiarize ourselves with some more useful commands.
 
@@ -96,7 +95,7 @@ This is because not only do we want to copy the folder, we want also want to
 recursively copy the contents of that folder, and the contents of any folders
 inside as well.
 
-The same applies to the `rm` command.
+The same principle applies to the `rm` command.
 
 ```
 $ rm -r copy_of_jokes

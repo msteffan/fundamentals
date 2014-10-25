@@ -11,11 +11,11 @@ and switching between active applications. This reduces the movement of your
 hands between your keyboard and mouse, increasing your efficiency as a
 developer. Remember, we're here to master our tools so we can master our craft.
 
-Here are a list of common keyboard shortcuts that apply to most applications.
+Here are a list of common keyboard shortcuts that apply to most applications. By practicing these commands, you can avoid using your mouse for most common actions you perform on your computer.
 
 | Shortcut     | Function |
 | ---          | ---      |
-| `Cmd+Space`  | Open Spotlight (tool on MacOS to search for files and applications) |
+| `Cmd+Space`  | Open Spotlight (MacOS application and file search) |
 | `Cmd+Tab`    | Switch between currently running applications (ex. switching from your text editor to your browser) |
 | `Cmd+S`      | Save file |
 | `Cmd+O`      | Open file |

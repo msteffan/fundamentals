@@ -4,7 +4,7 @@
 
 #### Exercise - Commands
 
-Make sure you start by quitting and restarting your terminal application
+Make sure you begin by quitting and restarting your Terminal application
 
 * Start your Terminal application
 * Find out where you are

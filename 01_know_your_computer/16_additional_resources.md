@@ -10,11 +10,11 @@ text editor) opens a search box to find files inside your current project.
 Make sure to learn application-specific shortcuts to streamline your workflow
 as much as possible.
 
-"Spectacle" is a great software application to manage your window positions
+[Spectacle](http://spectacleapp.com/) is a great software application to manage your window positions
 on your screen using keyboard shortcuts, instead of dragging and resizing
 windows using your mouse.
 
 [The Command Line Crash Course](http://cli.learncodethehardway.org/book/) is a
 great resource to take another pass at learning the command line.
 
-[A cheat sheet] for common MacOSX keyboard shortcuts.
+[A Cheat Sheet](http://edge-cache.lifehacker.com/lifehacker/lh_mac_shortcuts_update.pdf) for essential MacOSX keyboard shortcuts.
