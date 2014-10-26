@@ -20,7 +20,7 @@ Whether this is all brand new to you, or if you've already been coding and using
 
 In addition to taking a few hours to work through these exercises, we're asking you to check-in with a GA Mentor at least once a week.
 
-You can login with the credentials that have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer.
+You can [login on the GA Mentors site](ga.hackhands.com) with the credentials that have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer.
 
 ### Feedback
 
