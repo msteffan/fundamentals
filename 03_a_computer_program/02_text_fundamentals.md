@@ -4,7 +4,7 @@
 
 #### Fundamentals
 
-There are many different languages we can use to write computer programs.Let's
+There are many different languages we can use to write computer programs. Let's
 write our first program in Ruby!
 
 First, create a file called `departure.rb` to begin our programming journey.
@@ -71,8 +71,8 @@ There we go!
 3
 ```
 
-Our computer executed the instructions that we gave it one after the other from
-top to bottom. Let's modify our program to utilize another data type, strings.
+Our computer executed the instructions that we gave it, one after the other, from
+top to bottom. Let's modify our program to utilize another data type – strings.
 
 ```ruby
 # Time for departure

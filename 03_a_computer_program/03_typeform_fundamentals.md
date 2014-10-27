@@ -6,22 +6,6 @@
 
 There is only one right answer.
 
-What is the symbol for addition?
-  - [ ] `-`
-  - [ ] `/`
-  - [ ] `+`
-  - [ ] `*`
-
-> Try again!
-
-What is the symbol for subtraction?
-  - [x] `-`
-  - [ ] `/`
-  - [ ] `+`
-  - [ ] `*`
-
-> Try again!
-
 What is the symbol for multiplication?
   - [ ] `-`
   - [ ] `/`
