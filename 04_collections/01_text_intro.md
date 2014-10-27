@@ -1,4 +1,4 @@
-**WDI Fundamentals Module 3**
+**WDI Fundamentals Chapter 4**
 
 # Collections
 

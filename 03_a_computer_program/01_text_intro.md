@@ -1,4 +1,4 @@
-**WDI Fundamentals Module 2**
+**WDI Fundamentals Chapter 3**
 
 # A Computer Program
 
@@ -12,12 +12,12 @@
 * Use loops to programmatically repeat a section of code
 * Locate and correct errors in a program based on standard error messages
 
-<font color="red">**WORK IN YOUR NITROUS BOX FOR THIS UNIT**</font>
+<font color="red">**WORK IN YOUR NITROUS BOX FOR THIS CHAPTER**</font>
 <br>
 
-**Feel free to create a dedicated folder (such as `unit_2`) inside the
+**Feel free to create a dedicated folder (such as `ch_3`) inside the
 `fundamentals` folder on your Nitrous box in which to put any files that you are
-asked to create in this unit**
+asked to create in this chapter**
 
 ## Outline
 

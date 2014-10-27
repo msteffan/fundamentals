@@ -1,4 +1,4 @@
-**WDI Fundamentals**
+**WDI Fundamentals Chapter 1**
 
 # Setting Up Your Nitrous Box
 

@@ -1,3 +1,5 @@
+**WDI Fundamentals Module 2**
+
 # Know Your Computer
 
 ## Learning Objectives
