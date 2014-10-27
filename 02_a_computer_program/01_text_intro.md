@@ -12,10 +12,11 @@
 * Use loops to programmatically repeat a section of code
 * Locate and correct errors in a program based on standard error messages
 
-**WORK IN YOUR NITROUS BOX FOR THIS UNIT**
+<font color="red">**WORK IN YOUR NITROUS BOX FOR THIS UNIT**</font>
+<br>
 
 **Feel free to create a dedicated folder (such as `unit_2`) inside the
-`fundamentals` folder on your Nitrous box to put any files that you are
+`fundamentals` folder on your Nitrous box in which to put any files that you are
 asked to create in this unit**
 
 ## Outline
@@ -35,7 +36,7 @@ being can probably do one or two every second.
 Another reason that we get computers to do our dirty work is that they are very
 accurate in their operations. If you ask a computer to do a million math
 problems, chances that it will make a mistake are virtually zero. A human, on
-other hand, would be prone to (rightfully named) human error.
+other hand, would be prone to (rightfully-named) human error.
 
 Hold on. If that's the case, if computers are super fast and super accurate, why
 don't we use them to accomplish every single thing in the world? Why do there
@@ -60,13 +61,13 @@ Place those two slices of bread on the plate side by side
 Twist off lid of peanut butter
 Place lid on counter
 Pick up knife
-Scoop one wad of peanut butter
+Scoop one tablespoon of peanut butter
 Deposit peanut butter on the first slice of bread on plate
 And so on...
 ```
 
 This is a taste of the level of explicitness required to write a program.
-Computer can only understand very basic instructions (like 'locate the bread',
+A computer can only understand very basic instructions (like 'locate the bread',
 or 'add two numbers together'). It is up to us as developers to be able to
 assemble a set of these simple instructions into a complicated action.
 
