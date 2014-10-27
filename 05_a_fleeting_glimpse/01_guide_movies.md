@@ -2,7 +2,7 @@
 
 # A Fleeting Glimpse
 
-## Learning Objectives
+## Objectives
 
 * Gain exposure to the power at your fingertips
 * Get excited about web development
