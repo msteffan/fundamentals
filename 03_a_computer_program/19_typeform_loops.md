@@ -4,6 +4,27 @@
 
 ---
 
+**Reference: Code Snippet 1**
+
+```ruby
+counter = 0
+while counter < 10
+  puts(counter)
+  counter = counter + 1
+end
+```
+
+**Code Snippet 2**
+
+```ruby
+zen = 0
+while zen != 42
+  puts("You have not attained zen yet.")
+end
+```
+
+---
+
 There is only one right answer.
 
 How many times will the loop in Code Snippet 1 run?
@@ -29,24 +50,3 @@ How do you force quit your program if you accidentally enter an infinite loop?
   - [ ] Bang your head against the wall in frustration
 
 > Try again!
-
----
-
-**Code Snippet 1**
-
-```ruby
-counter = 0
-while counter < 10
-  puts(counter)
-  counter = counter + 1
-end
-```
-
-**Code Snippet 2**
-
-```ruby
-zen = 0
-while zen != 42
-  puts("You have not attained zen yet.")
-end
-```

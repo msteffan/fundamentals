@@ -4,6 +4,19 @@
 
 ---
 
+**Reference: Code Snippet 1**
+
+```ruby
+hungry = false
+food_in_fridge = true
+
+if CONDITION
+  puts("I need to buy food now!")
+end
+```
+
+---
+
 There is only one right answer.
 
 If A is false and B is true, what is A && B?
@@ -30,16 +43,3 @@ is no food in the fridge, which condition should you use in the `if` statement?
   - [x] hungry && !food_in_fridge
 
 > Try again!
-
----
-
-**Code Snippet 1**
-
-```ruby
-hungry = false
-food_in_fridge = true
-
-if CONDITION
-  puts("I need to buy food now!")
-end
-```
