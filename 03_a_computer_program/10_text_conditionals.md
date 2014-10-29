@@ -6,7 +6,7 @@
 
 We've seen that we can perform arithmetic operations on numbers. We can also
 perform comparison operations on them. Using these operations, we can determine
-whether a number is bigger, smaller or equal to another number. We'll see why
+whether a number is bigger, smaller, or equal to another number. We'll see why
 this is useful in little bit. Before that, let's explore comparison operators.
 
 Create a Ruby file called `scales.rb` and enter the following code into it.
@@ -42,9 +42,9 @@ value `true` could indicate on, and the value `false` could indicate off.
 > The comparison operators we just used produce boolean values to indicate whether the
 > comparison is correct or not.
 >
-> * Greater than (`<`) produces `true` if the number on the left is bigger than the number
+> * Greater than (`>`) produces `true` if the number on the left is bigger than the number
 >   on the right, and false in all other cases
-> * Greater than (`<`) produces `true` if the number on the left is smaller than the number
+> * Less than (`<`) produces `true` if the number on the left is smaller than the number
 >   on the right, and false in all other cases
 > * Equal to (`==`) produces `true` if both number are the same, and false in all other
 >   cases
@@ -54,7 +54,7 @@ value `true` could indicate on, and the value `false` could indicate off.
 >
 > * Greater than or equal to (`>=`) produces `true` if the number on the left is either
 >   bigger than the number on the right, or the same as the number on the right.
-> * Less than or equal to (`>=`) produces `true` if the number on the left is either smaller
+> * Less than or equal to (`<=`) produces `true` if the number on the left is either smaller
 >   than the number on the right, or the same as the number on the right.
 > * Not equal to (`!=`) produces `true` when the two numbers are not equal, and `false` if
 >   they are equal.

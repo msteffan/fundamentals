@@ -8,7 +8,7 @@
 | ---      | ---                                    | ---                |
 | `>`      | Left is bigger than right              | Left is smaller than or equal to right |
 | `<`      | Left is smaller than right             | Left is bigger than or equal right     |
-| `==`     | Left is equal right                    | Left is not equal right                |
+| `==`     | Left is equal to right                    | Left is not equal to right                |
 | `>=`     | Left is bigger than or equal to right  | Left is smaller than right             |
 | `<=`     | Left is smaller than or equal to right | Left is bigger than right              |
 | `!=`     | Left is not equal to right             | Left is equal to right                 |
