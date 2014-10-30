@@ -77,6 +77,8 @@ Because we evaluate logical operators from left to right, the conditional would 
 - both `house_is_dirty` and `friend_visiting_today` are equal to true, *or*
 - `roaches_are_present` is equal to true
 
+*That's not what we wanted.*
+
 Since we work from left to right, you might think we could fix this by just flipping the operations so that we first evaluate the `||` and then the `&&`, like this:
 ```ruby
 if friend_visiting_today || roaches_are_present && house_is_dirty
