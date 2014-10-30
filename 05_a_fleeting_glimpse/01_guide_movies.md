@@ -11,10 +11,9 @@
 
 We've taken a thorough look at some of the core fundamentals of programming in
 the context of Ruby. You must be asking yourself, "All this is well and good,
-but what is something that I can actually _do_ with these skills?" That's what
-we're going to take a look at now.
+but what is something that I can actually _do_ with these skills? I want to do more than just build text-based apps on the command line!"
 
-For a brief moment, we are going to abandon our pursuit for mastery of our craft
+For a brief moment, we are going to abandon our pursuit of mastery of our craft
 (only for a moment) to get a glimpse of the power that you will soon be weilding
 with great precision. For the sake of this unit, do not worry about
 understanding everything that you are asked to do. However, pay attention to
@@ -56,7 +55,9 @@ Add the following line to the bottom of your Gemfile.
 gem 'httparty'
 ```
 
-This tells our web application that it needs to use a tool called `httparty`.
+Save your Gemfile.
+
+The line you added tells our web application that it needs to use a tool called `httparty`.
 For this to work, we must also install `httparty`. Do this by running the
 following command in your terminal.
 
@@ -67,7 +68,7 @@ $ bundle install
 This may take a moment to finish, but when it does, we will be good to go!
 
 Now, we're going to make use of some nifty Rails tools to quickly set up this
-project to be able to handle movies. Run the following commands in your
+project to be able to handle records of movies. Run the following commands in your
 terminal one after the other to achieve this.
 
 ```
@@ -236,6 +237,8 @@ Make another `<td>` tag right under that one, except this one should contain
 <%= link_to 'New Movie', new_movie_path %>
 ```
 
+Make sure to save all the files you just edited.
+
 Excellent! Believe it or not, our app is ready to go!
 
 Start up your application by running the following command in your terminal.
@@ -246,7 +249,7 @@ $ rails server
 
 Your terminal will now show you some messages regarding the server, and will
 not display a prompt for you to type more commands. This is ok. This is because
-our server is running! If you wish to shutdown the server, you can use `Ctrl-C`.
+our server is running! If you wish to shutdown the server, you can use `Ctrl-c`.
 
 To view your web application, select `Preview` from the top menu of your Nitrous
 IDE, and inside, select `Port 3000`. This should take you to what looks like a

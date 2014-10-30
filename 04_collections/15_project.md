@@ -10,7 +10,7 @@
 * Practice with iteration
 * Practice with hashes
 
-Let's apply our newly learned skills to Project Todo. Let's start of by using
+Let's apply our newly learned skills to Project Todo. Let's start off by using
 an array to manage our todos. Each todo will simply be a string for now (like
 "Wash the car").
 
@@ -29,7 +29,7 @@ an array to manage our todos. Each todo will simply be a string for now (like
 
 #### Phase 2
 
-Modify your program so that each todo is not a string, but a hash with two
+Modify your program so that each todo in the array is not a string, but a hash with two
 key-value pairs. The first key is `"content"`, and contains the content of the
 todo. The second key is `"status"`, and contains a string that is either `"pending"`
 or `"done"`. For example,

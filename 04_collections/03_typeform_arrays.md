@@ -4,6 +4,17 @@
 
 ---
 
+**Reference: Code Snippet 1**
+
+```ruby
+fruits = ["apple", "orange", "banana"]
+fruits.pop()
+fruits.push("grape")
+fruits.push("banana")
+```
+
+---
+
 There is only one right answer.
 
 How would we access the second element in an array?
@@ -37,14 +48,3 @@ After Code Snippet 1 has executed, what are the contents of `fruits`?
   - [ ] ["apple", "orange", "banana", "grape"]
 
 > Try again!
-
----
-
-**Code Snippet 1**
-
-```ruby
-fruits = ["apple", "orange", "banana"]
-fruits.pop()
-fruits.push("grape")
-fruits.push("banana")
-```

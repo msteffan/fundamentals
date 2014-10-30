@@ -4,6 +4,17 @@
 
 ---
 
+**Reference: Code Snippet 1**
+
+```ruby
+login_info = {
+  "username" => "johnny23",
+  "password" => "hunter2"
+}
+```
+
+---
+
 There is only one right answer.
 
 What is the unique characteristic that each element in a hash possesses?
@@ -30,14 +41,3 @@ username to "billy96"?
   - [x] login_info["username"] = "billy96"
 
 > Try again!
-
----
-
-**Code Snippet 1**
-
-```ruby
-login_info = {
-  "username" => "johnny23",
-  "password" => "hunter2"
-}
-```

@@ -32,8 +32,8 @@ each with a label.
 
 Hashes in Ruby are created using the following structure.
 
-```
-{ key => value, key => value}
+```ruby
+{key_1 => value_1, key_2 => value_2}
 ```
 
 Hashes in Ruby are represented by putting key-value pairs inside curly braces. Each
@@ -75,7 +75,7 @@ its position. With hashes, we use a key, or label, inside square brackets to fin
 object by its key.
 
 When the organizers receive this hash of information from Timmy, they can extract the
-information inside like so.
+information inside, as shown below.
 
 ```ruby
 name = registration_info["name"]
@@ -88,13 +88,13 @@ event = registration_info["event"]
 **Insert**
 
 If Timmy forgot to add his team name to this hash when he created it, he can
-add it later like so.
+add it later like this.
 
 ```ruby
 registration_info["team_name"] = "Gryffindor"
 ```
 
-His hash now has the value "Gryffindor" in it, with the label "team_name".
+His hash now has the value "Gryffindor" in it, with the label (key) "team_name".
 
 **Modify**
 
@@ -107,7 +107,7 @@ registration_info["name"] = "Timothy"
 **Remove**
 
 We can remove values from a hash (along with their associated keys) by using
-an ability of hashes called `.delete()`, along with the key whose value we want
+a built-in method that hashes have called `.delete()`, along with the key whose value we want
 to remove.
 
 ```ruby
@@ -115,10 +115,9 @@ to remove.
 registration_info.delete("weight")
 ```
 
-Now, the hash does not contain the value 140, nor does it contain the key "weight".
+Now, the hash does not contain the key-value pair `"weight" => 140`.
 The entire key-value pair has been removed from the hash.
 
 The analogy of Timmy and these organizers is very similar to how forms on the internet
 send their information to a server. Timmy is very much like a form on the internet,
-and the organizers are like a Rails server. Rails receives and handles information
-from a form as a hash to avoid the "what is what" confusion.
+and the organizers are like a Rails server. When we dive into Rails, we'll see how the server receives and handles information from a form as a Ruby hash, in order to avoid the "what is what" confusion.
