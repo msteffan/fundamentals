@@ -24,7 +24,7 @@ That said, we wanted to make sure that even now you have someone to reach out to
 
 Your login for this service should have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer. Once signed up, you can [login on the GA Mentors site](https://ga.hackhands.com) and then click the button below to request help at any time.
 
-<a href="https://ga.hackhands.com"><img src="/images/request_help.png"></a>
+<a href="https://ga.hackhands.com"><img src="images/request_help.png"></a>
 
 
 ### Feedback
