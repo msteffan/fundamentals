@@ -2,9 +2,7 @@
 
 # Setting Up Your Nitrous Box
 
-We're going to be writing quite a few programs throughout this course. Instead
-of writing programs into files on our computer, and running these programs on
-our computer, we're going to make use of a service called [Nitrous](http://nitrous.io).
+We're going to be writing quite a few programs throughout this course. For some of your exercises, you'll be writing into files on your local computer, and executing them on the command line (we'll explain). For the mini-projects and assessment, you'll be making use of a service called [Nitrous](http://nitrous.io).
 
 Nitrous effectively creates a computer for us in "the cloud" (yes, THE
 cloud) that is all set up to run Ruby programs for us! "Well," you may ask, "if
