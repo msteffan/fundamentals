@@ -7,7 +7,7 @@
 Logical operators work on Boolean values to produce Boolean results. Their
 behavior is summarized below.
 
-**AND operator**
+**AND operator** (`&&`)
 
 | Condition 1 | Condition 2 | Result |
 | ---         | ---         | ---    |
@@ -16,7 +16,7 @@ behavior is summarized below.
 | false       | true        | false  |
 | false       | false       | false  |
 
-**OR operator**
+**OR operator** (`||`)
 
 | Condition 1 | Condition 2 | Result |
 | ---         | ---         | ---    |
@@ -25,9 +25,11 @@ behavior is summarized below.
 | false       | true        | true   |
 | false       | false       | false  |
 
-**NOT operator**
+**NOT operator** (`!`)
 
 | Condition | Result      |
 | ---       | ---         |
 | true      | false       |
 | false     | true        |
+
+We can use parentheses to change the order of operations for logical operators, just like we do with mathematical ones. 

@@ -35,8 +35,8 @@ If A is false and B is true, what is A || B?
 
 > Try again!
 
-According to Code Snippet 1, if you need to buy food if you're hungry and there
-is no food in the fridge, which condition should you use in the `if` statement?
+Take a look at Code Snippet 1. Let's assume that you need to buy food if (a) you're hungry and
+(b) there is no food in the fridge. Which of the below conditions should you use in the `if` statement (replacing the word "CONDITION" in the code snippet)?
   - [ ] hungry && food_in_fridge
   - [ ] hungry || food_in_fridge
   - [ ] !hungry || food_in_fridge
