@@ -16,11 +16,13 @@ The virtual book you hold in your hands covers a few pre-course learning objecti
 
 Whether this is all brand new to you, or if you've already been coding and using the command line for a while, we ask that you take the time to work through this material, since your instructors will reference it during the course.
 
-### GA Mentors
+### Getting help
 
-In addition to taking a few hours to work through these exercises, we're asking you to check-in with a GA Mentor at least once a week.
+We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer. Since you're probably completing this mini-course at home or in a coffee shop, you don't have the same level of guidance you'll get once you join us on Day 1 of your course.
 
-You can [login on the GA Mentors site](https://ga.hackhands.com) with the credentials that have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer. Once signed up, you can click the button below to request help at any time.
+That said, we wanted to make sure that even now you have someone to reach out to you when you get stuck. We've enlisted a number of former WDI graduates to make themselves available to help you as you work through this book via a virtual platform. In fact, we'd like to ask you to take advantage of these mentors' guidance at least twice as you work through the material (we'll remind you to do a check-in at various points).
+
+Your login for this service should have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer. Once signed up, you can [login on the GA Mentors site](https://ga.hackhands.com) and then click the button below to request help at any time.
 
 <a href="https://ga.hackhands.com"><img src="/images/request_help.png"></a>
 
