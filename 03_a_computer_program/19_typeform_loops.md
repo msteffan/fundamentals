@@ -31,7 +31,7 @@ How many times will the loop in Code Snippet 1 run?
   - [ ] 0
   - [ ] 1
   - [x] 10
-  - [ ] infinte
+  - [ ] Infinite
 
 > Try again!
 
@@ -39,7 +39,7 @@ How many times will the loop in Code Snippet 2 run?
   - [ ] 0
   - [ ] 1
   - [ ] 10
-  - [x] infinte
+  - [x] Infinite
 
 > Try again!
 

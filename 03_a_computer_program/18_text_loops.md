@@ -71,4 +71,4 @@ infinite loop, and your computer might explode! Well, maybe your computer won't
 explode, but you _will_ be stuck in an infinite loop.
 
 > If your program is stuck due to an infinite loop (or any other reason), you
-> can force your program to stop execution using the keyboard command `Ctrl-c`
+> can force your program to stop execution using the keyboard command `Ctrl-c` from the command line
