@@ -8,10 +8,10 @@ There are four parts to this assessment, each of them involving you writing a sm
 
 1. Click Collaborate > Manage Collaborators
 
-<img src="../images/manage_collaborators.png">
+  <img src="../images/manage_collaborators.png" style="border:1px solid black">
 
 2. Enter **wdi-fundamentals@generalassemb.ly** and click "Add". Make sure you type the email address carefully!
 
-<img src="../images/add_collaborator.png">
+  <img src="../images/add_collaborator.png" style="border:1px solid black">
 
 That's it!
