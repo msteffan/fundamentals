@@ -32,6 +32,7 @@ You should be taken to a screen where you can create a new box.
 * Name your box
   * Use the format "[month]-[year]-wdi-[city]-[first]-[last]"
   * e.g. "11-2014-wdi-dc-john-smith"
+  * The name is important, because later on, you're going to submit your work through this box (more later)
 * Select a region closest to you
 * Leave the "Download a GitHub repo" field blank
 * Click "Create Box"

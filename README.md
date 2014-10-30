@@ -29,4 +29,4 @@ Your login for this service should have been sent to you in a separate email. If
 
 ### Feedback
 
-We are really interested to hear your suggestions and feedback, so don't hesitate to [reach out](jdm@generalassemb.ly).
+We are really interested to hear your suggestions and feedback, so don't hesitate to reach out by emailing us - ImmersiveAdmins@generalassemb.ly
