@@ -1,4 +1,4 @@
-**WDI Fundamentals Module 5**
+**WDI Fundamentals Chapter 5**
 
 # A Fleeting Glimpse
 

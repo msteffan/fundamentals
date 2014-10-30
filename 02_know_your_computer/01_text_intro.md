@@ -1,4 +1,4 @@
-**WDI Fundamentals Module 2**
+**WDI Fundamentals Chapter 2**
 
 # Know Your Computer
 
