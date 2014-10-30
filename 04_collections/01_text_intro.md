@@ -6,18 +6,14 @@
 
 * Explain the need for data structures to manage data
 * List two common data structures commonly used in programming
-* Add and remove elements
-* Access and modify elements
-* Iterate over the elements of an array
-* Add and remove elements
-* Access and modify elements
 * Differentiate between hashes and arrays
+* Add and remove elements from hashes and arrays
+* Access and modify elements in hashes and arrays
+* Iterate over the elements of an array
 
 ## Outline
 
 #### What's the problem?
-
-**I do**
 
 As programs grow in complexity, so does the data that they work with. It quickly
 becomes necessary to make use of some more programming tools to manage this data
@@ -28,9 +24,7 @@ understanding of the problem that they solve. Let's do this through an example.
 We decide that we want to write a program that will allow us to keep track of
 our top three favorite movies.
 
-**I do-You do**
-
-Create a file called `movies.rb`. In it, use `gets()` prompt the user for input
+Create a file called `movies.rb`. In it, use `gets()` to prompt the user for input
 three times, and store the three movies that the user entered into variables
 `movie_1`, `movie_2`, and `movie_3`. After the user has entered three movies,
 display a message stating what the user's favorite movies are.

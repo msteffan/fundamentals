@@ -4,8 +4,6 @@
 
 #### Arrays
 
-**I do**
-
 > An array is an ordered list of objects.
 
 In other words, an array is a container for a list of things. Usually those
@@ -24,8 +22,6 @@ objects of different types in the same array (like `["red", 42, "gorilla",
 false]`), but we generally use arrays to deal with similar objects, or objects
 of the same type.
 
-**I do-You do**
-
 The array above is an array of lap times run by our friend Timmy. Create a file
 called `laps.rb` and inside, save the above array into a variable called
 `lap_times`, and print the value of that variable.
@@ -40,16 +36,16 @@ Run this program. Did it print out your array?
 
 When manipulating an array, we care about a few things. We care about
 
-* Inserting new objects inside the array
-* Finding (or reading) objects from the array
-* Modifying objects in the array
-* Removing objects from the array
+* Inserting new elements into the array
+* Finding (or reading) elements from the array
+* Modifying elements in the array
+* Removing elements from the array
 
 **Insert and Remove**
 
-There are a number of ways we can insert and removeobjects into an array. The
+There are a number of ways we can insert elements into and remove elements from an array. The
 important characteristic to keep in mind is _what position_ in the array we want
-to insert or remove the object, since position is what lends structure to this
+to insert or remove the value, since position is what lends structure to this
 data structure.
 
 It is very common to add/remove elements to/from the end of an array. Let's
@@ -71,7 +67,7 @@ puts(lap_times)
 Run your program and see what happens. Two more lap times have been added to
 our array!
 
-> `an_array.push(an_object)` will insert `an_object` at the end of the array
+> `an_array.push(a_value)` will insert `a_value` as a new element at the end of the array
 
 Turns out Timmy cut corners on his last lap, so that lap time doesn't count.
 Let's remove it from the end of our array.
@@ -93,18 +89,20 @@ puts(lap_times)
 
 Run this program, and observe that the last object in the array has been removed
 
-> `an_array.pop()` will remove the last object in an array
+> `an_array.pop()` will remove and return the last object in an array
+
+Note that we said "remove and return". Instead of just `lap_times.pop()`, you could have said `last_time = lap_times.pop()`. The last element in `lap_times` would be removed, but you would now be able to access it by referring to the `last_time` variable.
 
 **Find/Read**
 
-We can read, or find, or access objects inside an array by making use of its
+We can read, find, and access elements inside an array by referring to their
 position in the array. In other words, arrays are capable of answering
 questions like "What's the 4th object in you right now?".
 
 One important thing to note about arrays in Ruby is that we start counting
 positions **from 0**. In other words, the first element in an array has a
 position (or index) of 0. The second element has an index of 1. The third has
-an index of 2, and so on.
+an index of 2, and so on. Zero-based counting is standard across most programming languages.
 
 Given an index, we can access the element at that index by using the following
 notation.

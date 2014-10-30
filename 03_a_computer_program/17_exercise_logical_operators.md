@@ -4,7 +4,7 @@
 
 #### Exercise - Logical Operators
 
-Write a Ruby program called `hot_or_cold.rb`. In this program:
+Write a Ruby program called `thermostat.rb`. In this program:
 
 * Assign any value to a variable called `current_temp`
 * Print out a statement that asks the user if this is their house, and instruct them to type '1' if yes and '0' if not.

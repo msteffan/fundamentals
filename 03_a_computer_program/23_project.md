@@ -18,7 +18,7 @@ started.
 
 Write code to ensure your program does the following things.
 
-* Print a message welcoming the user to your application (eg. "Welcome to
+* Print a message welcoming the user to your application (e.g. "Welcome to
 Project Todo")
 * Print a series of messages to form a menu, that looks like this
 
