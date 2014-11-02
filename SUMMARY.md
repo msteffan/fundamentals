@@ -75,3 +75,4 @@
   * [Comparisons](06_assessment/03_exercise_comparisons.md)
   * [Arrays](06_assessment/04_exercise_arrays.md)
   * [Hashes](06_assessment/05_exercise_hashes.md)
+  * [SUBMIT](https://generalassembly.wufoo.com/forms/wdi-fundamentals-assessment/)

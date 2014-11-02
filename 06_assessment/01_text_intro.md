@@ -4,14 +4,8 @@
 
 There are four parts to this assessment, each of them involving you writing a small Ruby program based on the concepts you've learned in this pre-course.
 
-**In order to submit your work** you'll need to take the following steps.
+In order to submit your answers to this assessment, you'll upload a `.rb` file for each of the following four sections. Clicking on the SUBMIT link in the left menu will take you to a form where you can submit your work.
 
-1. Click Collaborate > Manage Collaborators
+Please note that this is not a test, but we will pass these results on to your instructors so they can best prepare for the course. After submitting, feel free to check-in with a virtual mentor to review your work and identify which areas you can keep practicing as you get ready for Day 1 of WDI.
 
-  <img src="../images/manage_collaborators.png" style="border:1px solid black">
-
-2. Enter **wdi-fundamentals@generalassemb.ly** and click "Add". Make sure you type the email address carefully!
-
-  <img src="../images/add_collaborator.png" style="border:1px solid black">
-
-That's it!
+Happy coding!
