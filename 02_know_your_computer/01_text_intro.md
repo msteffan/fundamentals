@@ -57,9 +57,6 @@ want. This is called 'shell scripting'._
 The most common **Command Line Interface** (CLI) found on MacOS and Linux
 machines is "Terminal".
 
-**For the following section, you are going to work on your local machine, and not
-on your Nitrous box.**
-
 ----
 
 ***Note: This version of WDI Fundamentals only supports MacOS beyond this point***

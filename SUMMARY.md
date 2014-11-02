@@ -1,8 +1,5 @@
 # Summary
 
-This is the summary of my book.
-
-* [Setting Up](01_wdi_fundamentals/01_nitrous.md)
 * [Know Your Computer](02_know_your_computer/01_text_intro.md)  
   * [Commands](02_know_your_computer/02_text_commands.md)
     * [Video](02_know_your_computer/02b_video1.md)
@@ -69,7 +66,9 @@ This is the summary of my book.
   * [Additional Resources](04_collections/14_additional_resources.md)
   * [Project](04_collections/15_project.md)
   * [Project Solution](04_collections/16_project_solution.md)
-* [A Fleeting Glimpse](05_a_fleeting_glimpse/01_guide_movies.md)
+* [A Fleeting Glimpse](05_a_fleeting_glimpse/00_intro.md)
+  * [Set up](05_a_fleeting_glimpse/01_nitrous.md)
+  * [Exercise](05_a_fleeting_glimpse/02_guide_movies.md)
   * [CHECK-IN](05_a_fleeting_glimpse/02_checkin.md)
 * [Assessment](06_assessment/01_text_intro.md)
   * [Hello World](06_assessment/02_exercise_hello_world.md)
