@@ -69,7 +69,7 @@
 * [A Fleeting Glimpse](05_a_fleeting_glimpse/00_intro.md)
   * [Set up](05_a_fleeting_glimpse/01_nitrous.md)
   * [Exercise](05_a_fleeting_glimpse/02_guide_movies.md)
-  * [CHECK-IN](05_a_fleeting_glimpse/02_checkin.md)
+  * [CHECK-IN](05_a_fleeting_glimpse/03_checkin.md)
 * [Assessment](06_assessment/01_text_intro.md)
   * [Hello World](06_assessment/02_exercise_hello_world.md)
   * [Comparisons](06_assessment/03_exercise_comparisons.md)
