@@ -13,8 +13,8 @@
 * Locate and correct errors in a program based on standard error messages
 
 **Feel free to create a dedicated folder (such as `ch_3`) inside the
-`fundamentals` folder on your Nitrous box in which to put any files that you are
-asked to create in this chapter**
+`fundamentals` folder, in which you can store any files that you are
+asked to create in this chapter.**
 
 ## Outline
 

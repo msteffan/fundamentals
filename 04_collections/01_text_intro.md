@@ -11,6 +11,10 @@
 * Access and modify elements in hashes and arrays
 * Iterate over the elements of an array
 
+**Feel free to create a dedicated folder (such as `ch_4`) inside the
+`fundamentals` folder, in which you can store any files that you are
+asked to create in this chapter.**
+
 ## Outline
 
 #### What's the problem?

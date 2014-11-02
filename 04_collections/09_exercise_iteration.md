@@ -6,7 +6,7 @@
 
 Write a program called `unit_converter.rb`.
 
-In this program
+In this program:
 
 * Create an array of numbers called `meters`
 * Create an array of numbers called `fahrenheits`
