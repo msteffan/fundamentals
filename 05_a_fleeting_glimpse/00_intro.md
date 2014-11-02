@@ -1,6 +1,8 @@
 **WDI Fundamentals Chapter 4**
 
 # A Fleeting Glimpse
+![A Fleeting Glimpse](../images/icon_time_machine.png "A Fleeting Glimpse")
+
 
 ## Objectives
 

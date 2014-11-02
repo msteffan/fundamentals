@@ -1,6 +1,7 @@
 **WDI Fundamentals Chapter 1**
 
 # Know Your Computer
+![Know Your Computer](../images/icon_know_your_computer.png "Know Your Computer")
 
 ## Learning Objectives
 

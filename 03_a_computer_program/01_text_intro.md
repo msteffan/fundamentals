@@ -1,6 +1,7 @@
 **WDI Fundamentals Chapter 2**
 
 # A Computer Program
+![A Computer Program](../images/icon_a_computer_program.png "A Computer Program")
 
 ## Learning Objectives
 

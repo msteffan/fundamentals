@@ -1,6 +1,8 @@
 **WDI Fundamentals Chapter 3**
 
 # Collections
+![Collections](../images/icon_collections.png "Collections")
+
 
 ## Learning Objectives
 
