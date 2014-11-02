@@ -45,16 +45,16 @@ $ rm -r project_done
 
 ```
 $ cd ~/wdi/fundamentals/project_todo
+$ open main.txt
 ```
 
-Click the file to open it. Add the specified text. Save with `Cmd+S`. <!---Doesn't work on Nitrous:   Quit text editor application with `Cmd+Q`. If Terminal is not the active application, then
-switch to it using `Cmd+Tab`.-->
+Add the specified text. Save with `Cmd+S`. Quit text editor application with `Cmd+Q`. If Terminal is not the active application, then switch to it using `Cmd+Tab`.
 
 ```
 $ open readme.txt
 ```
 
-Add the specified text. Save with `Cmd+S`. <!---Doesn't work on Nitrous:  Quit text editor application with `Cmd+Q`. If Terminal is not the active application, then switch to it using `Cmd+Tab`.-->
+Add the specified text. Save with `Cmd+S`. Quit text editor application with `Cmd+Q`. If Terminal is not the active application, then switch to it using `Cmd+Tab`.
 
 ```
 $ mv main.txt main.rb

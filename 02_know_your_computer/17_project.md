@@ -17,22 +17,15 @@ to get started.
 Here is the file structure that we want to have at the end of this exercise to
 set up for our first project.
 
-<font color="red">**WORK IN YOUR NITROUS BOX FOR THIS EXERCISE**</font>
-
 ```
-workspace
-└── wdi
-    └── fundamentals
+wdi
+  └── fundamentals
         └── project_todo
             ├── main.rb
             └── readme.md
 ```
 
-The `workspace` folder should already exist on your Nitrous box.
-
-Inside `workspace`, we are going to create a `wdi` folder. This folder is
-going to contain a `fundamentals` folder. You can put other work related to
-these exercises in here as well.
+We recommend you put your `wdi` folder inside your Home directory (`/Users/[your username]`). Your `wdi` folder is going to contain a `fundamentals` folder. You can put other work related to these exercises in here as well.
 
 Of importance to us right now, the `fundamentals` folder is going to contain a
 `project_todo` folder, inside which we are going to create our project files. The first
@@ -59,8 +52,6 @@ That's the only one. Here we go.
 
 #### Phase 1
 
-*Note that as you complete these steps, you may need to refresh [your file browser](../images/file_browser.png) on the top left in order to actually see the files you're creating.*
-
 1. Create the `wdi` and `fundamentals` folders in the appropriate places
 1. In the `wdi` folder, create a folder called `project_todo`
 1. In the `project_todo` folder, create two files: `main.txt` and `readme.txt`
@@ -82,9 +73,7 @@ That's the only one. Here we go.
 1. Navigate to the `project_todo` folder that exists inside `fundamentals`
 1. Open `main.txt` and add the text `puts "Hi there!"`. Make sure to be exact.
 1. Save and close `main.txt`
-1. Open `readme.txt` and add the text `Welcome to our first project.`. (On Nitrous,
-   we cannot open files with the `open` command, so you may use your mouse to navigate
-   the file structure and open up files in the Nitrous text editor)
+1. Open `readme.txt` and add the text `Welcome to our first project.`.
 1. Save and close `readme.txt`
 1. Rename `main.txt` to `main.rb` by using the `mv` command (you need to "move"
    `main.txt` to a file with the name `main.rb`)
