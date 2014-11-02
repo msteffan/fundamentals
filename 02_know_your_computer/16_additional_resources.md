@@ -14,7 +14,9 @@ as much as possible.
 on your screen using keyboard shortcuts, instead of dragging and resizing
 windows using your mouse.
 
-[The Command Line Crash Course](http://cli.learncodethehardway.org/book/) is a
+[A Cheat Sheet](http://edge-cache.lifehacker.com/lifehacker/lh_mac_shortcuts_update.pdf) for essential MacOSX keyboard shortcuts.
+
+The [Treehouse Command Line Tutorial](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) is a
 great resource to take another pass at learning the command line.
 
-[A Cheat Sheet](http://edge-cache.lifehacker.com/lifehacker/lh_mac_shortcuts_update.pdf) for essential MacOSX keyboard shortcuts.
+We recommend you work on improving your [typing speed](https://typing.io/lessons) over the next two weeks, as well.
