@@ -19,4 +19,4 @@ windows using your mouse.
 The [Treehouse Command Line Tutorial](http://blog.teamtreehouse.com/introduction-to-the-mac-os-x-command-line) is a
 great resource to take another pass at learning the command line.
 
-We recommend you work on improving your [typing speed](https://typing.io/lessons) over the next two weeks, as well.
+We recommend you work on improving your [typing speed](https://typing.io/lessons) over the next two weeks, as well. You should target a speed of 40 WPM on the [Ruby on Rails](https://typing.io/lesson/ruby/rails/relation.rb/1) exercise.
