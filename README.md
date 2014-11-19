@@ -16,12 +16,6 @@ The virtual book you hold in your hands covers a few pre-course learning objecti
 
 Whether this is all brand new to you, or if you've already been coding and using the command line for a while, we ask that you take the time to work through this material, since your instructors will reference it during the course.
 
-We'll be releasing the chapters over the next two weeks. The schedule is as follows:
-  * **Monday November 3** – Know Your Computer
-  * **Wednesday November 5** – A Computer Program
-  * **Monday November 10** – Collections
-  * **Wednesday November 12** – A Fleeting Glimpse + Final Assessment
-
 ### Getting help
 
 We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer. Since you're probably completing this mini-course at home or in a coffee shop, you don't have the same level of guidance you'll get once you join us on Day 1 of your course.
