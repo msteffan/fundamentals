@@ -1,0 +1,8 @@
+{
+  "plugins": ["quizzes", "ga"],
+  "pluginsConfig": {
+    "ga": {
+        "token": "UA-18018358-16"
+    }
+  }
+}
