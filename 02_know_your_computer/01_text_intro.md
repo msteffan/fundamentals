@@ -41,7 +41,7 @@ fingertips. They like to use the command line.
 The command line is another interface to interact with your computer that looks
 something like this.
 
-![Nitrous new box](../images/command_line.png)
+![Command line](../images/command_line.png)
 
 That's right. No more buttons, no more pictures, no more menus. Only text. We
 can perform actions using the command line by **entering commands**. There
