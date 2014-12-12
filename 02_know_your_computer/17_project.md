@@ -81,3 +81,5 @@ That's the only one. Here we go.
    `readme.txt` to a file with the name `readme.md`)
 
 We are now ready to go!
+
+Once you're done, feel free to check your work against the [project solution](18_project_solution.md).

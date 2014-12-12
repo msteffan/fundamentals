@@ -6,9 +6,9 @@
 
 Dear WDI Student,
 
-We're really excited that you've decided to learn with us. We're providing this list of resources so you can get an early start on several core concepts in web-based programming. We'll be returning to these concepts and covering them in more depth during the course, but if you spend time on them now, you'll be able to give yourself a good head start (you'll be glad you did!).
+We're really excited that you've decided to learn with us. We're providing this learning module so that you can get an early start on several core concepts in web-based programming. We'll be returning to these concepts and covering them in more depth during the course, but if you spend time on them now, you'll be able to give yourself a good head start (you'll be glad you did!).
 
-Please note this is a supplemental resource that we're providing for early enrollees (that's you!). We will also provide access to a new Fundamentals learning module several weeks before the course begins which will include a few mini-projects which you'll be able to collaborate and get feedback on. You'll get access to this approximately one month in advance of your course.
+The material will be released to you by module over the next few weeks. We'll announce in the #wdi-fundamentals Slack channel as new units are released (see below for more details on Slack).
 
 ### What this module covers
 
@@ -28,13 +28,9 @@ Whether this is all brand new to you, or if you've already been coding and using
 
 We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer.
 
-You're probably completing this mini-course at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on Day 1 of your course. For now, we encourage you to log in to Slack and start chatting with students from around the world who are working through this prework with you. Once you've received a Slack invite from your producer, check out the `#wdi-fundamentals` channel!
+You're probably completing this mini-course at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on Day 1 of your course. For now, we encourage you to log in to start chatting with students from around the world who are working through this prework with you. You can do this by downloading and logging into Slack, which will be the communication channel you'll be using to communicate with your classmates and instructors.
 
-/*That said, we wanted to make sure that even now you have someone to reach out to you when you get stuck. We've enlisted a number of former WDI graduates to make themselves available to help you as you work through this book via a virtual platform. In fact, we'd like to ask you to take advantage of these mentors' guidance at least twice as you work through the material (we'll remind you to do a check-in at various points).
-
-Your login for this service should have been sent to you in a separate email. If you haven't received these credentials, please email your GA producer. Once signed up, you can [login on the GA Mentors site](https://ga.hackhands.com) and then click the button below to request help at any time.
-
-<a href="https://ga.hackhands.com"><img src="https://www.gitbook.io/content/book/generalassembly/wdi-fundamentals/images/request_help.png" alt="Request Help"></a>*/
+Once you've received a Slack invite from your producer, join the `#wdi-fundamentals` channel to meet your global classmates!
 
 ### Feedback
 
