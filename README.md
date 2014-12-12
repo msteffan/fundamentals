@@ -2,13 +2,11 @@
 
 # WDI Fundamentals
 
-### Welcome
-
 Dear WDI Student,
 
 We're really excited that you've decided to learn with us. We're providing this learning module so that you can get an early start on several core concepts in web-based programming. We'll be returning to these concepts and covering them in more depth during the course, but if you spend time on them now, you'll be able to give yourself a good head start (you'll be glad you did!).
 
-The material will be released to you by module over the next few weeks. We'll announce in the #wdi-fundamentals Slack channel as new units are released (see below for more details on Slack).
+The material will be released to you by module over the next few weeks. We'll announce in the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) Slack channel as new units are released (see below for more details on Slack).
 
 ### What this module covers
 
@@ -30,7 +28,7 @@ We design our immersive courses to help you embrace and excel in the challenge o
 
 You're probably completing this mini-course at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on Day 1 of your course. For now, we encourage you to log in to start chatting with students from around the world who are working through this prework with you. You can do this by downloading and logging into Slack, which will be the communication channel you'll be using to communicate with your classmates and instructors.
 
-Once you've received a Slack invite from your producer, join the `#wdi-fundamentals` channel to meet your global classmates!
+Once you've received a Slack invite from your producer, join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
 
 ### Feedback
 
