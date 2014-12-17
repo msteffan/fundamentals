@@ -65,10 +65,11 @@ First, we're going to get rid of our duplicate joke file.
 $ rm joke2.txt
 ```
 
-> The `rm` command, which stands for remove, deletes the specified files or
-> folders from your computers. **Be careful with this command!** This action
-> does not move files or folders to your Trash, where you can recover them. This
-> action **permanently removes** the specified files and folders. They are
+> The `rm` command, which stands for remove, deletes the specified files
+> from your computer. `rmdir` (remove directory), deletes specified folders
+> if they are empty. **Be careful with these commands!** These actions
+> do not move files to your Trash, where you can recover them. These
+> actions **permanently remove** the specified files and folders. They are
 > **irrecoverable**.
 
 Now that all the copycats are out of the way for good, let's make a `jokes`
@@ -91,11 +92,11 @@ $ cp -r jokes copy_of_jokes
 > The `-r` option stands for "recursive", and must be applied to the `cp`
 > command when copying folders.
 
-This is because not only do we want to copy the folder, we want also want to
+This is because not only do we want to copy the folder, we also want to
 recursively copy the contents of that folder, and the contents of any folders
 inside as well.
 
-The same principle applies to the `rm` command.
+The same principle applies when removing a folder with files. The `rm -r` command will remove all of a folder's content as well as the folder itself.
 
 ```
 $ rm -r copy_of_jokes
