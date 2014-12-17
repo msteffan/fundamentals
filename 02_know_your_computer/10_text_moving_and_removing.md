@@ -65,7 +65,9 @@ First, we're going to get rid of our duplicate joke file.
 $ rm joke2.txt
 ```
 
-> The `rm` command, which stands for remove, deletes the specified files from your computer. `rmdir` (remove directory), deletes specified folders if they are empty. **Be careful with these commands!** These actions
+> The `rm` command, which stands for remove, deletes the specified files
+> from your computer. `rmdir` (remove directory), deletes specified folders
+> if they are empty. **Be careful with these commands!** These actions
 > do not move files to your Trash, where you can recover them. These
 > actions **permanently remove** the specified files and folders. They are
 > **irrecoverable**.
