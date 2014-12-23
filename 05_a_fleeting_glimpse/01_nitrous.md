@@ -4,16 +4,13 @@
 
 For this exercise, instead of working on our local command line, we're going to make use of a service called [Nitrous](http://nitrous.io).
 
-Nitrous effectively creates a computer for us in "the cloud" that is all set up to run Ruby programs for us! "Well," you may ask, "if this computer is in 'the cloud', how do we use it? How do we interact with it?"
+Nitrous effectively creates a computer for us in "the cloud" that comes ready to run Ruby programs for us! You may be wondering how we interact with this computer if it's "in the cloud"... read on.
 
-It turns out that Nitrous also allows you to use this computer through their
-website! Using a web-based command line (more on this later) and text editor, we will
-be able to use this computer almost as if it were our own. You may not be able
-to play Command and Conquer on this computer, but you sure can write and run
-some Ruby programs.
+One of the benefits of services like Nitrous (there are many others) is that you can use this virtualized computer through a browser (among other ways). The value to us is that we can write and run Ruby programs, without worrying about setting up a complex development environment. While we'll be using this web-based command line and text editor to avoid unnecessary complexities, when you come to campus for Installfest, we will take several hours to set up *your* computer with all of the dependencies and tools you need to be productive as a web developer.
 
-Nitrous likes to call the computers they create for you "boxes". Follow these
-steps to set up a Nitrous box for your work during this course.
+For now – we're keeping it simple by using a pre-configured Nitrous setup.
+
+Nitrous refers to the computers they setup for you as "boxes". Follow these steps to set up a Nitrous box for your work during this unit.
 
 Create an account on the [Nitrous website](http://nitrous.io)
 
