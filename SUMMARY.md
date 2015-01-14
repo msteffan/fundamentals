@@ -1,6 +1,6 @@
 # Summary
 
-* [Know Your Computer](02_know_your_computer/01_text_intro.md)  
+* [Chapter1](01_chapter/01_text_intro.md)  
   * [Commands](02_know_your_computer/02_text_commands.md)
     * [Video](02_know_your_computer/02b_video1.md)
     * [Quiz](02_know_your_computer/03_typeform_commands.md)
