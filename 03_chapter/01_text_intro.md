@@ -1,25 +1,8 @@
-**WDI Fundamentals Chapter 2**
+**WDI Fundamentals Chapter 3**
 
 # A Computer Program
 ![A Computer Program](../images/icon_a_computer_program.png "A Computer Program")
 
-## Learning Objectives
-
-* List different data types in a programming language
-* Perform arithmetic operations on data to produce new values
-* Store values in variables to subsequently use in expressions
-* Perform comparison operations on data to produce boolean values
-* Use conditional statements to control the flow of program execution
-* Use loops to programmatically repeat a section of code
-* Locate and correct errors in a program based on standard error messages
-
-**Feel free to create a dedicated folder (such as `ch_3`) inside the
-`fundamentals` folder, in which you can store any files that you are
-asked to create in this chapter.**
-
-## Outline
-
-#### Fundamentals
 
 > The great thing about computers is that they do exactly what you tell them to
 > do. The terrible thing about computers is that they do _exactly_ what you tell

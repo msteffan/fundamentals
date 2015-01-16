@@ -7,11 +7,11 @@
 There are many different languages we can use to write computer programs. Let's
 write our first program in Javascript!
 
-First, create a file called `departure.rb` to begin our programming journey.
-The `.rb` extension indicates that this file will contain some instructions
-written in Ruby. Open up this file and type in the following.
+First, create a file called `departure.js` to begin our programming journey.
+The `.js` extension indicates that this file will contain some instructions
+written in javascript. Open up this file in Sublime Text and type in the following.
 
-```ruby
+```js
 # Time for departure
 24 / 8
 4 * 5
@@ -21,24 +21,25 @@ written in Ruby. Open up this file and type in the following.
 
 Save and close this file.
 
-Believe it or not, you've written a program. The first line of this program is a
-comment. Comments are ignored by your computer when you run programs. They are
+Believe it or not, you've written a program. 
+
+The first line of this program is a
+comment. 
+
+Comments are ignored by your computer when you run programs. They are
 used to explain to other programmers (including your future self) what your code
-is doing. In Ruby, any line beginning with a `#` will be interpreted by your
-computer as a comment.
+is doing. In Javascript, any line beginning with a \\ will be interpreted by your
+computer as a comment. 
 
 The next four lines of your program work with a particular type of data, namely
-numbers. Ruby programs have other types of data that we can use as well. We'll
+numbers. Javascript programs have other types of data that we can use as well. We'll
 explore the others soon.
 
 At this point, we've written some instructions for our computer to run, but we
 haven't yet told our computer to run these instructions. Let's do that by
-opening up our command line, navigating to the folder where we have saved our
-program, and running the following command.
+opening up our browser, and running our program in the console.
 
-```
-$ ruby departure.rb
-```
+[VISUAL STEP-BY-STEP INSTRUCTIONS]
 
 Did anything happen? Probably not. Why? Well, we told our computer to perform
 those four arithmetic operations, one after the other. Trust that your computer

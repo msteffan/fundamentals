@@ -1,35 +1,30 @@
 ![GA Logo](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
 
-# WDI Fundamentals
-
 Dear WDI Student,
 
-We're really excited that you've decided to learn with us. We're providing this learning module so that you can get an early start on several core concepts in web-based programming. We'll be returning to these concepts and covering them in more depth during the course, but if you spend time on them now, you'll be able to give yourself a good head start (you'll be glad you did!).
+Congratulations on joining the Web Development Immersive program at General Assembly!
 
-The material will be released to you by module over the next few weeks. We'll announce in the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) Slack channel as new units are released (see below for more details on Slack).
+To set you up for success in the course, we've prepared a book covering the fundamentals of web-based programming. We'll return to these concepts throughout the course, but you'll be happy if Day 1 is not the first you're hearing of variables and loops (no, that is not a breakfast cereal).  
 
-### What this module covers
+The entire book is [INSERT NUMBER HERE] chapters –which will be released one by one leading up to your first day. We'll announce new chapters in the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) Slack channel (see below for more details on Slack).
 
-The virtual book you hold in your hands covers a few pre-course learning objectives that you'll need to focus on as you prepare for this course.
+##What We'll Cover 
 
-Our goal is to help you learn to:
+We'll also be using git.
 
-1. **use the terminal to interact with your computer via the command line**
-2. **write a basic computer program using a few of the basic building blocks of software development**
-3. **organize data in various structures, including variables and collections**
-4. **understand the basics of version control and Git**
-5. **get a fly-by view of how web apps are constructed**
+While git isn’t a programming language, it’s certainly often used with them – it’s a version control system. Version control is a way of keeping track of the history of your code, along with providing a structure that encourages collaboration. Github is the most popular cloud-based service for keeping track of your code using git.
 
-Whether this is all brand new to you, or if you've already been coding and using the command line for a while, we ask that you take the time to work through this material, since your instructors will reference it during the course.
 
-### Getting help
+##Getting Help When You Need It
 
 We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer.
 
-You're probably completing this mini-course at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on Day 1 of your course. For now, we encourage you to log in to start chatting with students from around the world who are working through this prework with you. You can do this by downloading and logging into Slack, which will be the communication channel you'll be using to communicate with your classmates and instructors.
+You're probably completing the pre-course work at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on campus. For now, we encourage you to connect with your instructor and classmates via Slack, a real time messaging application. To sign on to Slack, first check your email for an invitation from your producer.
 
-Once you've received a Slack invite from your producer, join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
+Next, go to [slack.com](https://slack.com/signin), enter 'ga-students' where the page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
+
+[INSERT VISUAL STEP-BY-STEP TUTORIAL HERE]
 
 ### Feedback
 
-Please reach out to your course producer if you have any questions about anything related to your course. If you have any feedback about this learning module, please don't hesitate to reach out by emailing us at AskImmersives@generalassemb.ly.
+We need your help to improve this material!  Please don't hesitate to reach out by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly)
