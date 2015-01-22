@@ -1,4 +1,3 @@
-**WDI Fundamentals Unit 1**
 ---
 
 Answer the following questions based on this image:
