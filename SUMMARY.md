@@ -33,7 +33,7 @@
    * [Variables](03_chapter/05_lesson.md)
        * [Quiz](03_chapter/06_quiz.md)
        * [Exercise](03_chapter/07_exercise.md)
-   * [True or False?](03_chapter/08_lesson.md)
+   * [Boolean Logic](03_chapter/08_lesson.md)
        * [Quiz](03_chapter/09_quiz.md)
        * [Exercise](03_chapter/10_exercise.md)
    * [Unit 3 Homework](03_chapter/11_assessment.md)
