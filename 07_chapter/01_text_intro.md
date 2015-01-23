@@ -1,26 +1,35 @@
-**WDI Fundamentals Chapter 4**
+**WDI Fundamentals Chapter 6**
 
-# A Fleeting Glimpse
-![A Fleeting Glimpse](../images/icon_time_machine.png "A Fleeting Glimpse")
+---
+
+##Associative Arrays
+
+In the last lesson, we looked at Arrays.  
+
+```js
+var basicArray = new Array();
+basicArray[0] = "Portland";
+basicArray[1] = "Beaverton";
+basicArray[2] = "Lake Oswego";
+console.log(basicArray.length);
+// --> Outputs 3, as expected
+
+var associativeArray = new Array();
+associativeArray['city'] = "Portland";
+associativeArray['state'] = "Oregon";
+associativeArray['country'] = "United States";
+console.log(associativeArray.length);
+// --> Outputs 0 in Chrome, what the heck?
+
+// we can also access values through .property notation ?!
+console.log("City is: " + associativeArray['city']);
+console.log("City is: " + associativeArray.city); 
+
+// outputs
+// --> City is: Portland
+// --> City is: Portland
+```
 
 
-## Objectives
 
-* Gain exposure to the power at your fingertips
-* Get excited about web development
 
-## Outline
-
-We've taken a thorough look at some of the core fundamentals of programming in
-the context of Ruby. You must be asking yourself, "All this is well and good,
-but what is something that I can actually _do_ with these skills? I want to do more than just build text-based apps on the command line!"
-
-For a brief moment, we are going to abandon our pursuit of mastery of our craft
-(only for a moment) to get a glimpse of the power that you will soon be wielding. For the sake of this unit, do not worry about
-understanding everything that you are asked to do. However, pay attention to
-following these instructions _precisely_. With a little patience, and some
-attention to detail, simply marvel at the ease with which you (yes, **you**) can
-spin up an application that exists on the internet!
-
-> Our goal for this unit is to create a web application that allows the users to
-> enter a search term and see a list of movies that match the search term.

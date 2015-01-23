@@ -2,17 +2,28 @@
 
 ---
 
+>**NOTE**: By the end of this Unit, you'll be able to:
+>* - Define a version control system and it's benefits
+>* Describe how Git works
+>* Identify the Git commands used to set up a local respository and to record snapshots
+>* Update a remote repository with local changes to a text file, from the command line
+
+---
+
 
 #Version Control
 
 When you’re working on something, say a painting, software or an autobiography, there comes a time when you wish you had a reset button.
-You might already have a system in place for dealing with this problem –maybe you save your document multiple times with different names. Developers call this process a “version control system”.
+
+You might already have a system in place to deal with this problem –maybe you save your document multiple times with different names, so that you can return to a different stage of the project.
+
+![Version Control](../assets/chapter2/version-control.gif)
+
+Developers call this process a “version control system”.
 
 The tool we'll be using for version control is called Git.  
 
-
 Git saves a history of the changes you make for you –no need to keep multiple versions of a file on hand. 
-
 
 Aptly named, Git is not too bright.  It needs you to tell it which files to track and how often to save a version.
 

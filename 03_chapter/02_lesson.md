@@ -7,15 +7,17 @@
 
 You've probably played around with a scientific calculator in some point in the past (unless you're not a nerd, in which case just smile and nod). 
 
-To amuse yourself, you may have punched in a big number like 111111, then <kbd>*</kbd>, and then 111111, hit the <kbd>=</kbd> button, and the calculator spits back a result (in this case, 123454321) as you giggle with childish glee.
+To amuse yourself or your friends, you may have punched in a big number like 111111, then hit the<kbd>*</kbd> button, and then punched in 111111, hit <kbd>=</kbd> button, and the calculator spits back a result (in this case, 123454321). 
 
-![Calculator]
+![Calculator](../assets/chapter3/calculator.png)
 
-What we type into the calculator is called an 'expression' : a collection of values and operations. This process of reducing this expression down to a single value is called 'evaluation'.
+What we type into the calculator is called an 'expression' : a collection of values and operations. 
+
+The calculator's process of reducing this expression down to a single value is called 'evaluation'.
 
 The repl.it console is similar in many ways to this calculator: it accepts an expression from the user and attempts to evaluate that expression, yielding a single value.
 
-Before we tackle fully-fledged JavaScript expressions, let's first look at their two components: data and operators.
+Before we tackle fully-fledged JavaScript expressions, let's look at their two components: data and operators.
 
 ## Data (a.k.a. Values)
 Calculators can only operate on numbers, but computers can perform calculations on many different kinds of data, including:
@@ -100,7 +102,7 @@ What happens is we're dealing with a more complicated expression? Say...
 
 Since the `-` requires ((9+2)*25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
 
-![Expression Tree for ((9+2)*25)-5](../assets/tree2.png)
+![Expression Tree for ((9+2)*25)-5](../assets/chapter3/tree2.png)
 
 One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
 
@@ -108,7 +110,7 @@ In this case, we actually need to look to the rules of math (and anyone interest
 
 Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
 
-![Expression Tree for 1 + 1 + 1 + 1](../assets/tree3.png)
+![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
 
 
 ####Test Yourself
