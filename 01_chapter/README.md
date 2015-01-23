@@ -1,5 +1,7 @@
 **WDI Fundamentals Unit 1**
+
 ---
+
 By the end of this Unit, you'll be able to:
 
 * Differentiate between a command line interface and a graphical user interface
@@ -7,7 +9,7 @@ By the end of this Unit, you'll be able to:
 * Open a file in a text editor and make changes from the command line
 * Identify when you might want to use absolute versus relative paths
 
-##Thinking like a Programmer
+##Think like a Programmer
 
 Most computer users move their mouse, click on icons, drag and drop files from one folder to another.
 

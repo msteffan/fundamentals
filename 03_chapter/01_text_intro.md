@@ -1,3 +1,7 @@
+**WDI Fundamentals Unit 3**
+
+---
+
 #Why Javascript?
 
 In WDI, we'll be using the programming language, JavaScript.

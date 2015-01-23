@@ -1,7 +1,6 @@
-**A Computer Program**
-
-#### Quiz - Fundamentals
+**WDI Fundamentals Unit 3**
 
 ---
 
-[Click here](https://wdi.typeform.com/to/CdHuwu) to take the quiz.
+
+

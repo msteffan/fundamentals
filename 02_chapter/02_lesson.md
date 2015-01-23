@@ -2,7 +2,7 @@
 
 ---
 
-#### Tracking Changes with Git
+## Tracking Changes with Git
 
 ##### Explanation & Installation
 

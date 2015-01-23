@@ -1,9 +1,3 @@
-**A Computer Program**
+**WDI Fundamentals Unit 3**
 
 ---
-
-#### Reference - Variables
-
-* A variable is a reference to a value
-* The assignment operator `=` is used to set the value that a variable should
-  refer to

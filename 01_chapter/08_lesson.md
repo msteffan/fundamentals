@@ -2,7 +2,7 @@
 
 ---
 
-### Moving and removing things
+##Moving and Removing Things
 
 Before we start the next section, let's navigate to our home folder.
 

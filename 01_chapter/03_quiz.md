@@ -1,7 +1,14 @@
+**WDI Fundamentals Unit 1**
+
+---
+
+#Test Yourself
+
 ---
 
 Answer the following questions based on this image:
-![Command Line](../assets/chapter1/quiz1.png)
+<br>
+![Command Line](../assets/chapter1/quiz1.gif)
 
 (B) ~ is the:
 - [ ] Name of the computer

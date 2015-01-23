@@ -1,5 +1,7 @@
 **WDI Fundamentals Unit 1**
+
 ---
+
 ##![Your Turn](../assets/exercise.png) Your Turn
 
 Make sure you begin by quitting and restarting your Terminal application

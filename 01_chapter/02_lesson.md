@@ -1,5 +1,10 @@
 **WDI Fundamentals Unit 1**
+
 ---
+
+##How Your Computer is Organized
+
+
 Before we tell the computer what to do, it's important we understand what it is we will be manipulating.
 
 You're probably used to seeing files and folders as icons in a list or in columns.
