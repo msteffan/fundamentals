@@ -3,13 +3,12 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Make sure you begin by quitting and restarting your Terminal application
+Go ahead an open up "Terminal" in any of the following ways.
 
-1. Start your Terminal application
-2. Find out where you are
-3. Navigate to your Downloads folder
-4. View the contents of your Downloads folder
-5. Navigate back to your home folder
-6. Navigate to your Pictures folder
-7. View the contents of your Pictures folder
-8. Navigate back to your home folder
+1. Navigate to your Applications folder and double-click on Terminal.
+![img](../assets/Graphics/where_to_find_terminal.gif)
+
+2. Press <kbd>Command</kbd> + <kbd>Space</kbd> on your keyboard to bring up Spotlight – a tool that allows us to quickly find files and applications on our computer. Inside the search bar, type "Terminal", and select the Terminal application.
+![img](../assets/Graphics/where_to_find_terminal_spotlight.gif)
+
+Great! Now everyone who can see over your shoulder will think you&rsquo;re a badass hacker.

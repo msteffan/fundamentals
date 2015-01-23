@@ -1,7 +1,7 @@
 # Summary
 
 * [Welcome](README.md)
-   * [Get Started](get_started.md)
+   * [Get Started](00_chapter/get_started.md)
 * [Think like a Programmer](01_chapter/README.md)
    * [How Your Computer is Organized](01_chapter/02_lesson.md)
        * [Quiz](01_chapter/03_quiz.md)
