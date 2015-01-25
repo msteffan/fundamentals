@@ -6,7 +6,10 @@ You're probably completing the pre-course work at home or in a coffee shop, and 
 
 Next, go to [slack.com](https://slack.com/signin), enter 'ga-students' where the page asks for your team domain, and join the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) channel to meet your global classmates!
 
-[INSERT VISUAL STEP-BY-STEP TUTORIAL HERE]
+![Step-by-step Slack Tutorial](../assets/chapter0/slack_tutorial.gif)
+
+
+---
 
 ## Feedback
 
