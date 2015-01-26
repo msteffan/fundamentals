@@ -1,5 +1,17 @@
 **WDI Fundamentals Unit 3**
 
+---
+
+#####By the end of this Unit, you'll be able to:
+* Perform arithmetic and logical operations on data to produce new values 
+* Concatenate two strings together in JavaScript
+* Write expressions that both assign and evaluate variables.
+* Explain what Null is and (generally) how it works.
+* Recognize the difference between 'truth-y' and 'false-y' values
+
+---
+
+
 # JavaScript
 
 Now that you've learned (1) how to create and edit files via the command line, (2) how to track changes in your projects using git, and (3) how to share those projects with the world by publishing them on GitHub, it's time for us to move on to the main event: programming.

@@ -2,11 +2,11 @@
 
 ---
 
->**NOTE**: By the end of this Unit, you'll be able to:
->* Differentiate between a command line interface and a graphical user interface
->* Summarize a basic filesystem structure
->* Open a file in a text editor and make changes from the command line
->* Identify when you might want to use absolute versus relative paths
+#####By the end of this Unit, you'll be able to:
+* Differentiate between a command line interface and a graphical user interface
+* Summarize a basic filesystem structure
+* Open a file in a text editor and make changes from the command line
+* Identify when you might want to use absolute versus relative paths
 
 ##Think like a Programmer
 

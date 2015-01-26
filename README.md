@@ -6,7 +6,7 @@ Congratulations on joining the Web Development Immersive program at General Asse
 
 To set you up for success in the course, we've prepared a book covering the fundamentals of web-based programming. We'll return to these concepts throughout the course, but you'll be happy if Day 1 is not the first you're hearing of variables and loops (no, that is not a breakfast cereal).
 
-The entire book is six chapters. We'll announce new chapters in the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) Slack channel (see ['Get Started'](00_chapter/get_started.md) for more details on Slack).
+The entire book is six chapters. We'll announce the release ofnew chapters in the [#wdi-fundamentals](https://ga-students.slack.com/messages/wdi-fundamentals/) Slack channel (see ['Get Started'](00_chapter/get_started.md) for more details on Slack).
 
 ##What We'll Cover
 

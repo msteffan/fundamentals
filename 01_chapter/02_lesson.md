@@ -40,7 +40,7 @@ An absolute path starts from the root. It's analogous to saying the full address
 
 In this case, you'd be using a relative path.
 
->**NOTE**It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
+>**Caution** It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
 
 ---
 

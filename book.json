@@ -2,5 +2,13 @@
 "generator": "site",
 "title": "WDI Fundamentals",
 "description": null,
-"plugins": ["quizzes","exercises"]
+"plugins": ["quizzes","exercises","richquotes","toconsole"],
+"pluginsConfig": {
+	"toconsole": {
+        "buttontext": "Evaluate in console"
+    },
+    "richquotes" : {
+        "todos": true
+    }
+ }
 }
