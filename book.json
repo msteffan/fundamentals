@@ -2,5 +2,5 @@
 "generator": "site",
 "title": "WDI Fundamentals",
 "description": null,
-"plugins": ["quizzes"]
+"plugins": ["quizzes","exercises"]
 }

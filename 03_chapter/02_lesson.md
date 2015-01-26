@@ -2,22 +2,20 @@
 
 ---
 
-##Data, Operators, and Expressions
 
+# Data, Operators, and Expressions
 
-You've probably played around with a scientific calculator in some point in the past (unless you're not a nerd, in which case just smile and nod). 
-
-To amuse yourself or your friends, you may have punched in a big number like 111111, then hit the<kbd>*</kbd> button, and then punched in 111111, hit <kbd>=</kbd> button, and the calculator spits back a result (in this case, 123454321). 
+You've probably picked up a scientific calculator at some point in the past and started playing around with it. You punch in a big number (for example, 9876435), then `*`, and then another big number (say, 373848221), hit the `=` button, and the calculator spits back a result (in this case, 3692287654572135) as you giggle with childish glee.
 
 ![Calculator](../assets/chapter3/calculator.png)
 
-What we type into the calculator is called an 'expression' : a collection of values and operations. 
-
-The calculator's process of reducing this expression down to a single value is called 'evaluation'.
+That thing that we type into the calculator is called an **expression** : a collection of values and operations. This process of reducing this expression down to a single value is called **evaluation**.
 
 The repl.it console is similar in many ways to this calculator: it accepts an expression from the user and attempts to evaluate that expression, yielding a single value.
 
-Before we tackle fully-fledged JavaScript expressions, let's look at their two components: data and operators.
+Before we tackle fully-fledged JavaScript expressions, let's first look at their two components: data and operators.
+
+<br>
 
 ## Data (a.k.a. Values)
 Calculators can only operate on numbers, but computers can perform calculations on many different kinds of data, including:
@@ -30,17 +28,17 @@ Calculators can only operate on numbers, but computers can perform calculations 
 * **Booleans** : This one's probably a bit new for you. Boolean-type data only has two possible values, `true` and `false`.
 
 In case you ever forget what type of data you're dealing with, you can run the `typeof` command. Try typing the following lines into repl.it - what responses do you get?
-`typeof "hello"`
-`typeof 24`
-`typeof 3.45`
-`typeof true`
+* `typeof "hello";`
+* `typeof 24;`
+* `typeof 3.45;`
+* `typeof true;`
 
-####Test Yourself
+### Test Yourself
 Try to predict the types of each of the following bits of data. Check your answers with `typeof` - were you correct?
-* 24
-* "99"
-* 'true'
-* false
+* `24`
+* `"99"`
+* `'true'`
+* `false`
 
 
 ## Operators
@@ -55,16 +53,16 @@ Of course, simply having data sitting around isn't very useful. Operators take v
 * **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical - while the second, the 'loose equality', has a little more wiggle rooom. Here are some examples to show you how it works.
 
     ```javascript
-    5 === 5
+    5 === 5;
       => true
 
-    5 === "5"
+    5 === "5";
       => false
 
-    5 == 5
+    5 == 5;
       => true
 
-    5 == "5"
+    5 == "5";
       => true
     ```
 
@@ -74,12 +72,14 @@ Of course, simply having data sitting around isn't very useful. Operators take v
     * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false.
     * AND (`&&`) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
 
-####Test Yourself
+### Test Yourself
 Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.
-* true && false
-* 45%6
-* 8 === 8.0
-* "Hello" + " " + "World"
+* `true && false;`
+* `45%6;`
+* `8 === 8.0;`
+* `"Hello" + " " + "World";`
+
+> You may have noticed that each of those lines ended in a `;` - in JavaScript, a semicolon is used to denote the end of a line. These are required in order for the code to actually execute!
 
 ## Expressions
 So, what happens when we bring several of these operators and values together?
@@ -92,7 +92,7 @@ In order to perform the multiplication, we need to first know what we're multipl
 
 We can represent this chain of dependencies using a logical structure called a `tree`.
 
-![Expression Tree for (2+3)*(9-8)](../assets/tree1.png)
+![Expression Tree for (2+3)*(9-8)](../assets/chapter3/tree1.png)
 
 To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
 
@@ -113,9 +113,3 @@ Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((
 ![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
 
 
-####Test Yourself
-Try drawing expression trees for the following expressions, and evaluating them by hand using the approach described earlier (left-child first, then right-child). Did you get the expected result?
-* `9 - 1 + 2 - 4` (should equal `6`)
-* `(30 - 5)*2/5`  (should equal `10`)
-* ("The " + "rain ") + ("in Spain " + "stays ") + "mainly " + ("in " + "the ") + "plain." (should equal `The rain in Spain stays mainly in the plain.`)
-* `(true || false) && (true && false)` (should equal `false`)
