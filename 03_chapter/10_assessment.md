@@ -2,4 +2,63 @@
 
 ---
 
-[Let's apply what we've learned to our Rock-Paper-Scissors project](10_application.md)
+## Project
+
+Now that we've learned a little bit about expressions, let's apply some of this material to our 'Rock Paper Scissors' project.
+
+- - - 
+
+Go back into the project repo, wherever you've decided to put it, and open up the file `RockPaperScissors.js` (inside the `src` directory).
+
+When you look inside the file you should first see a block of code that looks like this :
+```javascript
+function getInput() {
+    console.log("Please choose either 'rock', 'paper', or 'scissors'.")
+    return prompt();
+}
+function randomPlay() {
+    var randomNumber = Math.random();
+    if (randomNumber < 0.33) {
+        return "rock";
+    } else if (randomNumber < 0.66) {
+        return "paper";
+    } else {
+        return "scissors";
+    }
+}
+```
+Please don't edit these functions, but feel free to look at them closely and try to figure out how they work - learning to read code is an important step in learning how to write code.
+
+When you're ready, skip ahead to the next section, shown below.
+```javascript
+function getPlayerMove(move) {
+    // If a move is given, your expression should evaluate to that move.
+    // If move is not specified / is null, your expression should run getInput()
+    return /* Your Expression */;
+}
+
+function getComputerMove(move) {
+    // If a move is given, your expression should evaluate to that move.
+    // If move is not specified / is null, your expression should run randomPlay()
+    return /* Your Expression */;
+}
+```
+Similar to how you've done this in your exercises, you will need to replace the `/* Your Expression */` comment with an expression that meets the specifications laid out in the single-line comments above.
+
+Remember, when you're programming, you need to figure out the solution before you ever start writing code. Here's a good rule of thumb for how to get started.
+
+1. **Understand the problem.** In particular, try to determine (a) what you will be given, and (b) what you hope to get out. If you can't explain the problem in those kinds of terms, you won't be able to move further.
+
+2. **Come up with test cases (and eventually, tests).** Once you've figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not your code is working. Once you've learned a little more about writing code, you'll actually use these test cases to write tester code, which can be used to automatically confirm whether or not your project's code is working.
+> Actually, this project has some tests built into it already, using a testing tool called Jasmine; to see the tests up close, just take a peek inside (but don't change!) the file `RockPaperScissorsSpec.js`, which sits inside the `spec` directory. These tests specify exactly how the code we write should behave - that's why they're called 'specs'!
+
+3. **Solve the problem in English.** Or any human language, really. The point is, you shouldn't be *touching* your keyboard until you can explain, clearly and precisely, both what it is you're trying to do and how you're trying to do it.
+
+4. **Write bad code, but bad code that works.** Don't worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.
+
+5. **'Refactor' your code.** Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don't break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.
+
+Go ahead and get started - when you've finished changing out those two lines (and have confirmed that your code works by testing it in repl.it), save your code and make a commit to the project's repository.
+
+[Next up: Chapter 4]()
+
