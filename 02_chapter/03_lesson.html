@@ -44,7 +44,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422325172073">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422377233323">
     
 
 <div class="book-summary">
@@ -1174,19 +1174,19 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_39">
+                    <section class="normal" id="section-gitbook_37">
                     
                         <p><strong>WDI Fundamentals Chapter 2</strong></p>
 <hr>
 <h2 id="tracking-changes-with-git">Tracking Changes with Git</h2>
+<p>Git gets to work once you add a folder called &quot;.git&quot; into the folder you would like track. To add this special folder, you need to use the command line (see, told you that thing would be useful). </p>
 <h3 id="initializing-your-first-repository">Initializing your first repository</h3>
-<p>To start tracking changes, change directories to an existing
-folder on your system:</p>
-<pre><code>$ cd fundamentals/
-</code></pre><p>Initialize the repository:</p>
+<p>Open up the terminal application and change directories to the wdi-fundamentals folder:</p>
+<pre><code>$ cd wdi-fundamentals/
+</code></pre><p>Initialize the repository by typing:</p>
 <pre><code>$ git init
-</code></pre><p>This command will create a hidden folder named <code>.git/</code>, which contains the
-data for the history of your entire project.</p>
+</code></pre><p>This command creates a hidden folder named <code>.git/</code>, which contains the data for the history of your entire project. When you take a look at your wdi-fundamentals folder in the GUI, you might not see any changes. BUT when you use the <code>ls -a</code> command, you&#39;ll see the new hidden folder:</p>
+<p>[IMG]  </p>
 <h3 id="staging-and-committing-changes">Staging and Committing Changes</h3>
 <p>To see what git knows about your project, run:</p>
 <pre><code>$ git status
