@@ -4,20 +4,21 @@
 
 ## Tracking Changes with Git
 
+Git gets to work once you add a folder called ".git" into the folder you would like track. To add this special folder, you need to use the command line (see, told you that thing would be useful). 
 
 ###Initializing your first repository
 
-To start tracking changes, change directories to an existing
-folder on your system:
+Open up the terminal application and change directories to the wdi-fundamentals folder:
 
-    $ cd fundamentals/
+    $ cd wdi-fundamentals/
 
-Initialize the repository:
+Initialize the repository by typing:
 
     $ git init
 
-This command will create a hidden folder named `.git/`, which contains the
-data for the history of your entire project.
+This command creates a hidden folder named `.git/`, which contains the data for the history of your entire project. When you take a look at your wdi-fundamentals folder in the GUI, you might not see any changes. BUT when you use the ```ls -a``` command, you'll see the new hidden folder:
+
+[IMG]  
 
 ### Staging and Committing Changes
 
