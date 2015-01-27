@@ -2,7 +2,7 @@
 "generator": "site",
 "title": "WDI Fundamentals",
 "description": null,
-"plugins": ["quizzes","exercises","richquotes","toconsole"],
+"plugins": ["quizzes","exercises","richquotes","toconsole","nestedmd"],
 "pluginsConfig": {
 	"toconsole": {
         "buttontext": "Evaluate in console"
