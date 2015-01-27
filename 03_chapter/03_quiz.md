@@ -1,33 +1,7 @@
 **WDI Fundamentals Unit 3**
 
 
-#Test Yourself
-
----
-Try drawing expression trees for the following expressions, and evaluating them by hand using the approach described earlier (left-child first, then right-child). To submit your answer, replace the expressions below with your evaluation and hit submit.
-
-Did you get the expected result?
-
-```js
-9 - 1 + 2 - 4;
-(30 - 5)*2/5;
-("The " + "rain ") + ("in Spain " + "stays ") + "mainly " + ("in " + "the ") + "plain.";
-(true || false) && (true && false);
-```
-
-```js
-6;
-10;
-"The rain in Spain stays mainly in the plain.";
-false;
-```
-
-```js
-assert(6);
-assert(10);
-assert("The rain in Spain stays mainly in the plain.");
-assert(false);
-```
-
 ---
 
+<div class="typeform-widget" data-url="https://gahub.typeform.com/to/vOOVqz" data-text="NEW Fundamentals 3.1 (copy)" style="width:100%;height:600px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
