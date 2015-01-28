@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 4**
+**WDI Fundamentals Unit 4 - Flow Control**
 
 ---
 
@@ -118,7 +118,7 @@ if(dayNumber == 0){
 
 ```
 
-The code above does what we expect, which means after this conditionnal statement is executed, the value of the variable day will be either the corresponding string for a given number between 0 and 6 (so 7 possible values) or null if the number is un-recognized. 
+The code above does what we expect, which means after this conditionnal statement is executed, the value of the variable day will be either the corresponding string for a given number between 0 and 6 (so 7 possible values) or null if the number is un-recognized.
 
 But this code is not easy to read, and a lot of code is repeated (`} else if(dayNumber == X){` is repeated 7 times), for example , if the name of the variable `dayNumber` changes, we will need to update it 8 times in the code, this is not really efficient. For this purpose, when you need to handle a lot (more than 3) cases, you should use a `switch` statement:
 
@@ -159,4 +159,4 @@ Javascript will evaluate the value of the variable `dayNumber` and execute the c
 
 If there is no `break` at the end of a `case`, then javascript will execute the following cases even if the value of the next `case` is not the same than the variable value.
 
-If there is no `case` corresponding to the value of the variable, then the code after `default` will be executed, `default` doesn't include a `break` because it's the last one in the `switch` statement.   
+If there is no `case` corresponding to the value of the variable, then the code after `default` will be executed, `default` doesn't include a `break` because it's the last one in the `switch` statement.

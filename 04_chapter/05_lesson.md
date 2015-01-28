@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 4**
+**WDI Fundamentals Unit 4 - Flow Control**
 
 ---
 
@@ -6,19 +6,19 @@
 
 When you're dealing with arrays, sometimes you need to perform the same action for all the items in an array, that's why we use loops. Loops are sets of instructions used to repeat the action (a block of code) until a condition break the execution of the loop.
 
-JavaScript supports two loop statements: `for` and `while`. The For statements are best used when you want to perform a loop a specific number of times. 
+JavaScript supports two loop statements: `for` and `while`. The For statements are best used when you want to perform a loop a specific number of times.
 
-The While statements are best used to perform a loop an undetermined number of times. 
+The While statements are best used to perform a loop an undetermined number of times.
 
 
-In addition, you can use the `break` and `continue` statements within loop statements. 
+In addition, you can use the `break` and `continue` statements within loop statements.
 
 
 #### For Loop
 
 The "for" loop is a JavaScript "method" that allows a certain action (ie: block of code) to be performed continuously in a variably controlled fashion. It is very similar to a "while" loop in which lines of JavaScript codes can be grouped together and repeated until a certain condition.
 
-Pseudo Code 
+Pseudo Code
 ```
 for ([var i = startValue];[i < endValue]; [i+=stepValue]) {
     // Your code here
@@ -28,7 +28,7 @@ for ([var i = startValue];[i < endValue]; [i+=stepValue]) {
 Javascript:
 
 ```
-var i; 
+var i;
 for (i = 0; i <= 10; i++) {
     console.log(i); // Prints the numbers from 0 to 10
 }
@@ -38,7 +38,7 @@ In the code above, the code between the `{}` will be executed 11 times, because 
 
 
 
-#### While Loops 
+#### While Loops
 
 You use while loops, if you don't know how often you'll loop.
 
@@ -59,7 +59,7 @@ If the condition statement is always True, then you will never exit the while lo
 ```
 var x = 0;
 while (x < 5) {
-  console.log(x); 
+  console.log(x);
   x++;
 }
 ```
@@ -68,7 +68,7 @@ In the situation above, the code between the curly braces will be executed 5 tim
 ```
 var x = 10;
 while (x <= 5) {
-    console.log(x); 
+    console.log(x);
     x++;
 }
 ```
@@ -77,7 +77,7 @@ In this example, the code will never be executed, x will never be less or equal 
 ```
 var x = 0;
 while (x <= 5) {
-  console.log(x); 
+  console.log(x);
 }
 ```
 Last example, this code will be infinitely executed, because the condition will always be true, and we don't change the value of x in the code between curly braces.
