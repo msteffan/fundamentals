@@ -5,9 +5,11 @@
 ##How Your Computer is Organized
 
 
-Before we tell the computer what to do, it's important we understand what it is we will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns. Let's take a minute to clarify our vocabulary.
+Before we tell the computer what to do, it's important we understand what it is we will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns.
 
-* Your computer organizes and stores files using a **file system**.
+![Folders in the GUI](../assets/chapter1/FileSystem.gif)
+
+The way your computer organizes and stores files is called a **file system**. Let's take a minute to learn the vocabulary developers use to talk about the file system.
 
 * In programming-speak, all folders are called **directories**.
 
@@ -19,13 +21,15 @@ Before we tell the computer what to do, it's important we understand what it is 
 
 For the purposes of this lesson, the root directory of everything on your computer is your home directory. It's aptly represented in the GUI by a house icon (if you're using a Mac).
 
+![Home Directory](../assets/chapter1/home.png)
+
 ---
 
 We know how file and directories appear in the GUI –now let's find our way around this system on the command line.
 
 Before we get started, it's important to point out that, as smart as they seem, computers are really dumb. To ask for a specific directory or file in command line, we need to write out a precise address (called a **path**) so that the computer knows exactly where to find it.
 
-For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. It might venture a guess, but your command line isn't so smart. It'll probably just tell you to try again.
+For example, if you Google directions to "Main Street," without any additional information, Google wouldn't know which of the 10,466-plus Main Streets you want. It might venture a guess, but your command line isn't as smart.
 
 We have to be more specific when interacting with our computer on the command line.
 
@@ -36,5 +40,3 @@ Your computer understands two kinds of addresses or paths, absolute and relative
 * On the other hand, if you were standing on a street corner in Anchorage, Alaska you wouldn't need the full address. You could just jump in a taxi and say "Please head back two blocks, cut over to 3rd, and then turn right on Main Street." **In this case, you're defining where you're going based on your current location, so you're using a relative path.**
 
 >**Caution** It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
-
----

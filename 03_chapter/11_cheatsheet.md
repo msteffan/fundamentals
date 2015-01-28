@@ -23,6 +23,3 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 ### Special Cases
   * When a variable is created, but is not assigned a value, it will be evaluated as `null`.
   * Any type of value, including `null`, can be passed into a logical operator as an input; based on whether these inputs are either 'truthy' or 'falsey', and what type of operator you're dealing with, the operator will behave in different ways.
-
-
-Feeling confident? [Give this assessment a shot and see how you do!](09_assessment.md)
