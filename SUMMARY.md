@@ -1,7 +1,8 @@
 # Summary
 
 * [Welcome](README.md)
-   * [Get Started](00_chapter/get_started.md)
+   * [Connect to Your Classmates](00_chapter/get_started.md)
+   * [Get Help from GA Mentors](00_chapter/get_help.md)
 * [Think like a Programmer](01_chapter/README.md)
    * [How Your Computer is Organized](01_chapter/02_lesson.md)
        * [Quiz](01_chapter/03_quiz.md)
@@ -58,4 +59,3 @@
    * [Cheat Sheet](06_chapter/05_cheatsheet.md)
 * [Next Steps](07_chapter/README.md)
 * [Glossary](GLOSSARY.html)
-
