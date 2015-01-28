@@ -2,82 +2,111 @@
 
 ---
 
-## Loops
+We've covered how we can tell our programs to make decisions; now let's look at how we can tell our programs to take repeated/ongoing actions.
 
-When you're dealing with arrays, sometimes you need to perform the same action for all the items in an array, that's why we use loops. Loops are sets of instructions used to repeat the action (a block of code) until a condition break the execution of the loop.
+## The `while` Loop
 
-JavaScript supports two loop statements: `for` and `while`. The For statements are best used when you want to perform a loop a specific number of times.
+To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running block of code, it 'loops' back to the beginning and starts again.
 
-The While statements are best used to perform a loop an undetermined number of times.
+Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten it.
+[Flow Chart for `If` Statement]()
 
+We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
 
-In addition, you can use the `break` and `continue` statements within loop statements.
+![Flow Chart `If` -> `While`]()
 
-
-#### For Loop
-
-The "for" loop is a JavaScript "method" that allows a certain action (ie: block of code) to be performed continuously in a variably controlled fashion. It is very similar to a "while" loop in which lines of JavaScript codes can be grouped together and repeated until a certain condition.
-
-Pseudo Code
+Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
+```javascript
+  while (some_condition) {
+    // A block of code.
+  }
 ```
-for ([var i = startValue];[i < endValue]; [i+=stepValue]) {
-    // Your code here
-}
+As you can see, it is written in almost exactly the same way as an `if` statement.
+
+### Test Yourself
+* Consider the following code.
+```javascript
+  var x = 10;
+  while (x > 5) {
+    x -= 2;
+  }
+```
+  How many times will this loop run? What will the final value of `x` be when it finishes?
+* Here's another loop.
+```javascript
+  var x = 10;
+  var y = 1;
+  while (x < 20) {
+    y += 1;
+  }
+```
+  How many times will this loop run? What happens when you try to run this code?
+
+
+A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by invalidating your condition.
+
+Consider the following example.
+```javascript
+  var z = 0;
+  var myString = ""
+  while (z < 5) {
+    myString += "X";
+    z += 1;
+  }
+```
+Q: How many times does this loop run? What's the final value of myString?
+A: Each time this loop runs, the value of `z` increases by 1; since its initial value is 0, and the condition becomes `false` the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
+
+Confused? Here's the play-by-play.
+* `z` is set to 0 and `myString` is set to "".
+* `z` is 0, so `z < 5` is true => the block gets executed.
+  * (in the block) `"X"` gets added to the end of `myString`; it is now "X"
+  * (in the block) `z` is increased by 1; it is now 1. Now that the block is done, we go back to the condition.
+* `z` is 1, so `z < 5` is true => the block gets executed.
+  * (in the block) `"X"` gets added to the end of `myString`; it is now "XX"
+  * (in the block) `z` is increased by 1; it is now 2. Now that the block is done, we go back to the condition.
+* `z` is 2, so `z < 5` is true => the block gets executed.
+  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXX"
+  * (in the block) `z` is increased by 1; it is now 3. Now that the block is done, we go back to the condition.
+* `z` is 3, so `z < 5` is true => the block gets executed.
+  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXXX"
+  * (in the block) `z` is increased by 1; it is now 4. Now that the block is done, we go back to the condition.
+* `z` is 4, so `z < 5` is true => the block gets executed.
+  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXXXX"
+  * (in the block) `z` is increased by 1; it is now 5. Now that the block is done, we go back to the condition.
+* `z` is now 5, so `z < 5` is now **false** (since 5 is **not** less than 5) => the block does not get executed again.
+* We're done!
+
+What's most interesting about this kind of setup is that if we changed that condition from `z < 5` to `z < 10`, or `z < 100`, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
+
+This kind of setup is so useful, and gets used so frequently, that there is a short-hand notation for this kind of behavior - it's called a `for` loop.
+
+## The `for` Loop
+
+Let's make a few modifications to our while loop from earlier.
+
+![Flow Chart for `For` Loop]()
+
+As you can see, there are a couple of key ingredients to making our `for` loop work. We need
+1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
+2. a condition, which gets evaluated each time we're about to execute the block (e.g. x < 10)
+3. a 'final expression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
+
+The general syntax for a `for` loop is
+```javascript
+  for (initialization; condition; final expression) {
+    // A block of code.
+  }
 ```
 
-Javascript:
-
+### Test Yourself
+```javascript
+  var x = 10;
+  for (var i = 0; i < x; i += 1) {
+    console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
+  }
 ```
-var i;
-for (i = 0; i <= 10; i++) {
-    console.log(i); // Prints the numbers from 0 to 10
-}
-```
-
-In the code above, the code between the `{}` will be executed 11 times, because end value (`i <= 10`) has to be less or equal than 10, which means the execution of the loop will start with a value 0, then it will be incremented to 1,2,3,4,5,6,7,8,9 and 10, then the condition to loop will be false.
-
-
-
-#### While Loops
-
-You use while loops, if you don't know how often you'll loop.
-
-Pseudo-code
-
-```
-while (condition) {
-  // Your code here
-}
-```
-
-A while loop is similar to an if statement, except that the code will be executed until the condition evaluates to a falsy value.
-
-When a while loop begins, the JavaScript interpreter checks if the condition statement is true. If it is, the code between the curly braces is executed. At the end of the code block (ending by `}`) , the while loop loops back to the condition statement and begins again.
-
-If the condition statement is always True, then you will never exit the while loop, so be very careful when using while loops!
-
-```
-var x = 0;
-while (x < 5) {
-  console.log(x);
-  x++;
-}
-```
-In the situation above, the code between the curly braces will be executed 5 times, and the value of the variable `x` will be 0,1,2,3,4 then the condition between parenthesis will be false.
-
-```
-var x = 10;
-while (x <= 5) {
-    console.log(x);
-    x++;
-}
-```
-In this example, the code will never be executed, x will never be less or equal than 5, the condition will always be false.
-
-```
-var x = 0;
-while (x <= 5) {
-  console.log(x);
-}
-```
-Last example, this code will be infinitely executed, because the condition will always be true, and we don't change the value of x in the code between curly braces.
+* How many times will 'HELLO' be printed out in the console?
+* What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
+* What if (all else the same) we changed the condition from `i < x` to `i <= x`?
+* What if (all else the same) we changed the final condition from `i += 1` to `i += 2`?
