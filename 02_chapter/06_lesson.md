@@ -4,9 +4,11 @@
 
 ##Publish Work on GitHub
 
+When you make changes to your project and commit, the changes are stored in the ".git" folder.
+
 ### What is GitHub?
 
-GitHub is a place where developers can share their code, comment on, and review code changes.
+GitHub is a company, famous for the platform   they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on, and review code changes.
 
 ### Create a GitHub account
 

@@ -6,67 +6,112 @@
 
 Git gets to work once you add a folder called ".git" into the folder you would like track. To add this special folder, you need to use the command line (see, told you that thing would be useful). 
 
-###Initializing your first repository
+###Initialize your First Repository
 
-Open up the terminal application and change directories to the wdi-fundamentals folder:
-
-    $ cd wdi-fundamentals/
-
-Initialize the repository by typing:
+The folder that contains `.git/` is called a **repository** (or **repo** for short) and the process of adding `.git/` to an empty folder is called initializing a repository:
 
     $ git init
 
-This command creates a hidden folder named `.git/`, which contains the data for the history of your entire project. When you take a look at your wdi-fundamentals folder in the GUI, you might not see any changes. BUT when you use the ```ls -a``` command, you'll see the new hidden folder:
+Running this command will create a new `.git/` directory, which will contain all the data for the history of your entire project. 
 
-[IMG]  
-
-### Staging and Committing Changes
+When you take a look at a repo in the GUI you might not see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line to list all the files in your repo.
 
 
-Aptly named, Git is not too bright.  It needs you to tell it which files to track and how often to save a version.
+### Saving Versions
 
+Aptly named, Git is not too bright.  It needs you to tell it which files to track and how often to save a version of them.  
 
-How it works is this: you put Git in a folder and tell it which files to track (or to track all of the files in the folder)...
+Now that you have initialized your repo, you can instruct Git to track all the contents of the repo. 
 
+Then, every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to **commit** that version to memory.
 
-...and then every time you want to save a version –when you’ve completed the first chapter in your book –you tell Git to ‘commit’ that version to memory.
+If you want to revert to an old version you can do that. If you want to view the difference between two versions of a file, you can do that too.
 
+Let's take a look at an example.  
 
-If you want to revert to an old version you can do that.  If you want to view the difference between two versions of a file, you can do that too.
+We would like to work on a blog post for General Assembly, so we created an empty repo on our desktop called "GA-Blog". The file structure looks like this:
 
+```
+GA-Blog
+|____.git
+| |____config
+| |____description
+| |____HEAD
+| |____hooks
+| | |____applypatch-msg.sample
+| | |____commit-msg.sample
+| | |____post-update.sample
+| | |____pre-applypatch.sample
+| | |____pre-commit.sample
+| | |____pre-push.sample
+| | |____pre-rebase.sample
+| | |____prepare-commit-msg.sample
+| | |____update.sample
+| |____info
+| | |____exclude
+| |____objects
+| | |____info
+| | |____pack
+| |____refs
+| | |____heads
+| | |____tags
+```
 
+This looks like a lot of content, but really there is only one folder in this GA-Blog repo: `.git/`.
 
+To see what Git knows about this project, we would run:
 
+```
+$ git status
+```
 
-To see what git knows about your project, run:
+Now take a look at the computer's response:
 
-    $ git status
+![Git Status of GA-Blog](../assets/chapter2/git_status.gif)
 
-Reading the output of this command will tell you that you have several untracked files.
-To start tracking these files:
+There are no changes to the GA-Blog folder for Git to remember or "commit".
 
-    $ git add .
+Let's go ahead and make a new text file called post.txt inside of GA-Blog, using the `touch` command.
 
-If you now run
+Now let's check our Git status:
 
-    $ git status
+![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
 
-You’ll see `Changes to be committed:`
+Git has identified that there is new a file in our repo, but it does not know whether or not we want it tracked.
 
-The files you have started tracking with `git add .` are now in the staging area,
-which is a temporary place that allows you to commit only the changes you want in your history.
+We want to add the file we made to the GA-Blog repo to our next commit.  To do this we run:
+
+```
+$ git add post.txt
+```
+
+If we now run
+
+$ git status
+
+Now we see `Changes to be committed:`
+
+> **NOTE** Typically, you'll want to track all of the contents of your repo, so instead of specifying a unique file you should write `git add .` (remember `.` is shorthand for the working directory).
+
+`Post.txt` is now in the staging area. which is a temporary place that allows you to commit only the changes you want in your history.
 
 Wouldn’t you want to save all the changes you make every time you commit? No!
 
 Sometimes you make several changes all over the place, but only want to share your work on a few files
 with others.
 
-^^ Relate this to previous examples.
+Finally, we're going to commit these 
 
 To commit these changes to your repository:
 
     $ git commit -m "message explaining what changes you made"
 
-The `-m` option allows you to supply a message containing a description of the changes you made.
+The `-m` option allows you to include a message, describing the changes you made for a team member or future-you. 
 
-You should commit as often as possible, as you can go back to the state of your project at any given commit.
+You should commit as often as possible to prevent making changes that you can't revert back to.
+
+### Benefits of Git
+
+When you're working with Git, you are working with your own copy –what we refer to as your "local" copy. With your local copy, you can do whatever you want. Add new fonts, change todo en español.
+
+This is your local copy and you're not affecting others. You can commit changes to your local copy (even without Internet access) and decide to abandon it all and get a fresh copy from the remote.
