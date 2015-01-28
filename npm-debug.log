@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'gitbook-plugin-bootstrapjs' ]
+2 info using npm@2.1.4
+3 info using node@v0.10.32
+4 verbose node symlink /usr/local/bin/node
+5 silly cache add args [ 'gitbook-plugin-bootstrapjs', null ]
+6 verbose cache add spec gitbook-plugin-bootstrapjs
+7 silly cache add parsed spec { raw: 'gitbook-plugin-bootstrapjs',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'gitbook-plugin-bootstrapjs',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed gitbook-plugin-bootstrapjs@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'gitbook-plugin-bootstrapjs',
+11 silly addNameRange   range: '*',
+11 silly addNameRange   hasData: false }
+12 verbose mapToRegistry name gitbook-plugin-bootstrapjs
+13 verbose mapToRegistry uri https://registry.npmjs.org/gitbook-plugin-bootstrapjs
+14 verbose addNameRange registry:https://registry.npmjs.org/gitbook-plugin-bootstrapjs not in flight; fetching
+15 verbose request on initialization, where is /gitbook-plugin-bootstrapjs
+16 verbose request after pass 1, where is /gitbook-plugin-bootstrapjs
+17 verbose request url raw /gitbook-plugin-bootstrapjs
+18 verbose request resolving registry [ 'https://registry.npmjs.org/',
+18 verbose request   './gitbook-plugin-bootstrapjs' ]
+19 verbose request after pass 2, where is https://registry.npmjs.org/gitbook-plugin-bootstrapjs
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 14:02:56
+22 verbose request id 63503971a6c79681
+23 http request GET https://registry.npmjs.org/gitbook-plugin-bootstrapjs
+24 http 404 https://registry.npmjs.org/gitbook-plugin-bootstrapjs
+25 verbose headers { date: 'Wed, 28 Jan 2015 19:02:57 GMT',
+25 verbose headers   server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+25 verbose headers   'content-type': 'application/json',
+25 verbose headers   'cache-control': 'max-age=0',
+25 verbose headers   'content-length': '52',
+25 verbose headers   'accept-ranges': 'bytes',
+25 verbose headers   via: '1.1 varnish',
+25 verbose headers   age: '0',
+25 verbose headers   'x-served-by': 'cache-jfk1032-JFK',
+25 verbose headers   'x-cache': 'MISS',
+25 verbose headers   'x-cache-hits': '0',
+25 verbose headers   'x-timer': 'S1422471777.534123,VS0,VE18',
+25 verbose headers   'keep-alive': 'timeout=10, max=50',
+25 verbose headers   connection: 'Keep-Alive' }
+26 silly registry.get cb [ 404,
+26 silly registry.get   { date: 'Wed, 28 Jan 2015 19:02:57 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=0',
+26 silly registry.get     'content-length': '52',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-jfk1032-JFK',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1422471777.534123,VS0,VE18',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 verbose stack Error: 404 Not Found: gitbook-plugin-bootstrapjs
+27 verbose stack     at RegClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:258:14)
+27 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:197:65)
+27 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:237:22)
+27 verbose stack     at Request.emit (events.js:98:17)
+27 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1146:14)
+27 verbose stack     at Request.emit (events.js:117:20)
+27 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1097:12)
+27 verbose stack     at IncomingMessage.emit (events.js:117:20)
+27 verbose stack     at _stream_readable.js:943:16
+27 verbose stack     at process._tickCallback (node.js:419:13)
+28 verbose statusCode 404
+29 verbose pkgid gitbook-plugin-bootstrapjs
+30 verbose cwd /Users/danareilly/Desktop/fundamentals.ga.co/wdi-fundamentals
+31 error Darwin 14.0.0
+32 error argv "node" "/usr/local/bin/npm" "install" "gitbook-plugin-bootstrapjs"
+33 error node v0.10.32
+34 error npm  v2.1.4
+35 error code E404
+36 error 404 Not Found: gitbook-plugin-bootstrapjs
+36 error 404
+36 error 404 'gitbook-plugin-bootstrapjs' is not in the npm registry.
+36 error 404 You should bug the author to publish it (or use the name yourself!)
+36 error 404 It was specified as a dependency of 'WDI-Fundamentals'
+36 error 404
+36 error 404 Note that you can also install from a
+36 error 404 tarball, folder, http url, or git url.
+37 verbose exit [ 1, true ]
