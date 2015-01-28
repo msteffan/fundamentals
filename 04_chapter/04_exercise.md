@@ -4,11 +4,11 @@
 
 ##Your Turn
 
-Follow [this link] to some sample code in a repl.it session - it should contain the following code:
+Follow [this link]() to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
   function fizzOrBuzz(x) {
-
+    // YOUR CODE HERE
   }
 ```
 
@@ -23,3 +23,5 @@ This exercise may be familiar to some of you. What we want this code to do is to
 To test your code, try running `fizzOrBuzz()` in the console, using multiple different values for `x`. Once you're confident that your code works, save your repl.it session and enter that URL (along with your name) into the form below.
 
 <!-- FORM -->
+
+[Next : Loops](05_lesson.md)

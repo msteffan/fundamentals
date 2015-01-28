@@ -4,7 +4,7 @@
 
 ## Your Turn
 
-Follow [this link] to another repl.it session - it should contain the following code:
+Follow [this link]() to another repl.it session - it should contain the following code:
 
 ```javascript
   function fizzOrBuzz(x) {
@@ -24,7 +24,7 @@ Follow [this link] to another repl.it session - it should contain the following 
   }
 ```
 
-Replace the comment `// YOUR CODE HERE` with code that will print out the result of `fizzOrBuzz(i)` to the console (using the command `console.log();`) for every number from 1 to `x`.
+Replace that comment with code that will print out the result of `fizzOrBuzz()` to the console (using the command `console.log();`) for every number from 1 to `x`.
 
 To test your code, run `fizzbuzz(20)` in the console; you should get back the result
 
@@ -50,3 +50,6 @@ To test your code, run `fizzbuzz(20)` in the console; you should get back the re
  19
  buzz
 ```
+
+---
+[Let's review.](08_cheatsheet.md)

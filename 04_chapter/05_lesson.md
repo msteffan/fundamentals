@@ -6,14 +6,15 @@ We've covered how we can tell our programs to make decisions; now let's look at 
 
 ## The `while` Loop
 
-To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running block of code, it 'loops' back to the beginning and starts again.
+To tell your program to repeat something, you use a tool called a **loop** - once your program has finished running a block of code, it 'loops' back to the beginning and starts again.
 
 Suppose that we were to take our `if` statement from the previous lesson and loop it back on itself. Here's the flow diagram for the `if`, in case you've forgotten it.
-[Flow Chart for `If` Statement]()
+
+![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 
 We're going to make one small (but very important) change to this - instead of advancing to the next bit of code after executing the block, we will loop back to our condition.
 
-![Flow Chart `If` -> `While`]()
+![Flow Chart `If` -> `While`](../assets/chapter4/flow_chart_if-to-while.png)
 
 Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
 ```javascript
@@ -25,6 +26,7 @@ As you can see, it is written in almost exactly the same way as an `if` statemen
 
 ### Test Yourself
 * Consider the following code.
+
 ```javascript
   var x = 10;
   while (x > 5) {
@@ -32,7 +34,9 @@ As you can see, it is written in almost exactly the same way as an `if` statemen
   }
 ```
   How many times will this loop run? What will the final value of `x` be when it finishes?
+
 * Here's another loop.
+
 ```javascript
   var x = 10;
   var y = 1;
@@ -43,7 +47,7 @@ As you can see, it is written in almost exactly the same way as an `if` statemen
   How many times will this loop run? What happens when you try to run this code?
 
 
-A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by invalidating your condition.
+A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by making your condition evaluate to `false`.
 
 Consider the following example.
 ```javascript
@@ -55,6 +59,7 @@ Consider the following example.
   }
 ```
 Q: How many times does this loop run? What's the final value of myString?
+
 A: Each time this loop runs, the value of `z` increases by 1; since its initial value is 0, and the condition becomes `false` the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
 
 Confused? Here's the play-by-play.
@@ -79,13 +84,13 @@ Confused? Here's the play-by-play.
 
 What's most interesting about this kind of setup is that if we changed that condition from `z < 5` to `z < 10`, or `z < 100`, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
 
-This kind of setup is so useful, and gets used so frequently, that there is a short-hand notation for this kind of behavior - it's called a `for` loop.
+This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
 ## The `for` Loop
 
 Let's make a few modifications to our while loop from earlier.
 
-![Flow Chart for `For` Loop]()
+![Flow Chart for `For` Loop](../assets/chapter4/flow_chart_while-to-for.png)
 
 As you can see, there are a couple of key ingredients to making our `for` loop work. We need
 1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
@@ -110,3 +115,7 @@ The general syntax for a `for` loop is
 * What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
 * What if (all else the same) we changed the condition from `i < x` to `i <= x`?
 * What if (all else the same) we changed the final condition from `i += 1` to `i += 2`?
+Check your answers in repl.it.
+
+---
+Ready for another quiz? [Here we go!](06_quiz.md)

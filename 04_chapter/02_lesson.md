@@ -4,9 +4,9 @@
 
 # Conditionals
 
-## The Ternary Operator - ` __ ? __ : __ `
+## The Ternary Operator (` __ ? __ : __ `)
 
-The simplest type of 'conditional' behavior found in JavaScript is an operator called a 'ternary' operator. Its syntax is as follows:
+The simplest type of 'conditional' behavior found in JavaScript is an operator called a **ternary** operator. Its syntax is as follows:
 
   `some_expression ? truthy_value : falsey_value`
 
@@ -20,10 +20,10 @@ Naturally, an expression with a ternary operator can also be incorporated into l
 
 ### Test Yourself
 Suppose that we have two variables, `x` and `y`. `x` is (at the moment) equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* (x%2 == 0)? "even" : "odd"
-* (x > y)? 1 : 0
-* (3)? 100 : -100
-* ('')? "hello" : "goodbye"
+* `(x%2 == 0)? "even" : "odd"`
+* `(x > y)? 1 : 0`
+* `(3)? 100 : -100`
+* `('')? "hello" : "goodbye"`
 
 
 ## `if..else if...else` Statements
@@ -41,12 +41,12 @@ The condition is what's inside the parentheses; if that condition is truthy (and
 
 Let's take a step back for a minute, and consider something that's closer to our own experience : a flow chart.
 
-![XKCD Flow Chart]()
+![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
 *<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
 
 A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
 
-![Flow Chart for `If` Statement]()
+![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
 
 As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.
 
@@ -60,9 +60,9 @@ As you can see, a person making their way through this diagram would need to mak
     x += 5;
   }
 ```
-<aside style="float: left;">![Flow Chart for `If...Else If` Statement]()</aside>
+<aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
 
-We can add as many `else if`s as we want - just keep tacking them on.
+We can add as many `else if` statements as we want - just keep tacking them on.
 
 ```javascript
   if (x > 10) {
@@ -74,7 +74,7 @@ We can add as many `else if`s as we want - just keep tacking them on.
     x += 3;
   }
 ```
-<aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement]()</aside>
+<aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
 
 However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
 
@@ -90,7 +90,7 @@ However, if all of the conditions fail, nothing will happen. To specify behavior
     x += 1;
   }
 ```
-<aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement]()</aside>
+<aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
 
 Using `if...else if...else` statements allows us to write code that can behave very differently in different circumstances.
 
@@ -106,8 +106,8 @@ if (x > 5) {
 }
 ```
 * What value will be assigned to `y` if ...
-  * x is 10?
-  * x is 4?
+  * `x` is 10?
+  * `x` is 4?
 * Under what circumstances will `y` be assigned a value of 100?
 
 Try copying that whole statement into repl.it, and testing out different values for `x`. Were your answers correct?
@@ -141,7 +141,9 @@ if(dayNumber == 0){
 
 ```
 
-What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example, `} else if(dayNumber == X){` is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
+What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
+  `} else if(dayNumber == __ ){`
+is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
 
 Enter the `switch` statement:
 ```
@@ -178,7 +180,7 @@ This code works exactly the same as our `if..else..if`, but although it's slight
 
 In a `switch` statement, the variable in parentheses (in this case, `dayNumber`) gets evaluated; if there is a `case` listed for the value that it evaluates to, the code between `case __:` and `break` will be executed. If there is no `case` that matches the value of the variable, the `default` will be executed (if it is specified - if not, the program will do nothing).
 
-> Note: If there is no `break;` at the end of a `case`, the computer will not skip to the end, but will instead start  executing the *next* case's code (even if `case`'s value is different from the variable'), and will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
+> **Note**: If there is no `break;` at the end of a `case`, the computer will not skip to the end, but will instead start  executing the *next* case's code (even if `case`'s value is different from the variable'), and will continue doing so until it eventually hits a `break;` statement. For this reason, `default` never needs a `break;` statement, because it's the last `case` in the `switch`.
 
 Although the `switch` statement sometimes has some advantages over `if...else if... else`, it also has some major disadvantages. For instance, a `switch` statement will only work if you are testing the same variable (or expression) in every condition; if not, the `if...else if...else` is your only option. Also, depending on the circumstances, using `if...else if...else` might scan more naturally.
 
@@ -208,7 +210,7 @@ What value will `y` be assigned when `x` is ...
 * 0?
 * "Hello"?
 
-[Here's a short quiz on everything we've covered so far - do your best!](03_quiz.md)
+[Here's a short quiz on everything we've covered so far](03_quiz.md) - do your best!
 
 
 
