@@ -123,6 +123,6 @@ The key is remembering how the `=` operator works - before it assigns anything t
 > | `x = x && true` | `x &&= true` |
 > | `x = x `&#124;&#124;` false` | `x `&#124;&#124;`= false` |
 
-[Here are some more exercises to help you practice.](05_exercise.md)
+Ready for another quiz? [Here we go!](06_quiz.md)
 
 

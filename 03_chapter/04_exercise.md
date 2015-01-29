@@ -28,4 +28,4 @@ If all three of those commands give you the correct answers, nice job - you're d
 
 <!-- FORM -->
 
-[On to the next lesson.](04_lesson.md)
+[On to the next lesson.](05_lesson.md)

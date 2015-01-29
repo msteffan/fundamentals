@@ -6,7 +6,7 @@
 
 Now that we've learned a little bit about expressions, let's apply some of this material to our 'Rock Paper Scissors' project.
 
-- - - 
+- - -
 
 Go back into the project repo, wherever you've decided to put it, and open up the file `RockPaperScissors.js` (inside the `src` directory).
 
@@ -60,5 +60,5 @@ Remember, when you're programming, you need to figure out the solution before yo
 
 Go ahead and get started - when you've finished changing out those two lines (and have confirmed that your code works by testing it in repl.it), save your code and make a commit to the project's repository.
 
-[Next up: Chapter 4]()
+[Next up: Chapter 4](../04_chapter/README.md)
 

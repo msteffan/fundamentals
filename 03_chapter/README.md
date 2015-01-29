@@ -42,7 +42,7 @@ To save your repl.it session, just click the 'save' button in the upper right - 
 
 ![repl.it Screenshot](../assets/chapter3/save_replit.png)
 
-Ready to begin? [Let's go](03_chapter/02_lesson.md).
+Ready to begin? [Let's go](02_lesson.md).
 
 
 

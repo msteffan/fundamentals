@@ -2,10 +2,6 @@
 
 ---
 
-**WDI Fundamentals Unit 3**
-
----
-
 # Expression Oddballs
 
 At this point, we've covered most of what you should know about expressions. However, there are a few quirks and exceptions that we've (until now) glossed over. Let's take a closer look at some of them.
