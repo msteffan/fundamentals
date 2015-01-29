@@ -119,4 +119,5 @@ Try drawing expression trees for the following expressions, and evaluating them 
 * `("The " + "rain ") + ("in Spain " + "stays ") + "mainly " + ("in " + "the ") + "plain."` (should equal `"The rain in Spain stays mainly in the plain."`)
 * `(true || false) && (true && false)` (should equal `false`)
 
+---
 Think you're solid on the basics of expressions? [Take this quiz, and see how you do.](03_quiz.md)

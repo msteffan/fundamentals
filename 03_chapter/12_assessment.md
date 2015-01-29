@@ -60,5 +60,6 @@ Remember, when you're programming, you need to figure out the solution before yo
 
 Go ahead and get started - when you've finished changing out those two lines (and have confirmed that your code works by testing it in repl.it), save your code and make a commit to the project's repository.
 
+---
 [Next up: Chapter 4](../04_chapter/README.md)
 

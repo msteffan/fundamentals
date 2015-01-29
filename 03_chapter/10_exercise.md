@@ -29,4 +29,5 @@ As before, if everything works, save your session and submit the new URL (along 
 
 <!-- FORM -->
 
+---
 [Now let's take a look at our cheatsheet and look back over everything we've learned so far.](11_cheatsheet.md)

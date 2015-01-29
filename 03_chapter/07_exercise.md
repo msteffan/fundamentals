@@ -50,4 +50,5 @@ Try testing out all of the different 'test cases' specified in the file. If they
 > 3. Type `git add lib/some_more_expressions.js`, which tells git to add this file to the next commit we make.
 > 4. Finally type `git commit -m "Completes some_more_expressions.js"` to commit our changes to the repository, labelling these changes as "Completes some_more_expressions.js". Generally speaking, your commit messages should describe how the changes that you've made affect the repository as a whole.
 
+---
 [Next : Expression Oddballs](08_lesson.md)
