@@ -25,4 +25,4 @@ If you're feeling stuck, take a look back at Chapter 3 (Expressions). What expre
 
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository.
 
-[Next up: Chapter 5]()
+[Next up: Chapter 5](../05_chapter/README.md)

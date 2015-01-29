@@ -20,5 +20,8 @@ You are going to create your very own Github account!
 	c. And now you're done! You're officially a Github user and this is your very own dashboard:
  ![You're done!](../assets/chapter2/step3.png)
  
+---
+
+ Now let's take a look at [our cheatsheet](10_cheatsheet.md) and look back over everything we've learned so far.
  
 

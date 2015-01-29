@@ -38,4 +38,7 @@ should now have started to get a feel for the staging area.
 
 13. Use the log command in order to see all of the commits you made so far.
 
+---
+
+[Next : Publish Work on Github](06_lesson.md)
 

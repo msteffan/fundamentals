@@ -3,7 +3,7 @@
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Perform arithmetic and logical operations on data to produce new values 
+* Perform arithmetic and logical operations on data to produce new values
 * Concatenate two strings together in JavaScript
 * Write expressions that both assign and evaluate variables.
 * Explain what Null is and (generally) how it works.
@@ -42,19 +42,7 @@ To save your repl.it session, just click the 'save' button in the upper right - 
 
 ![repl.it Screenshot](../assets/chapter3/save_replit.png)
 
-<br>
-
-## Git and GitHub
-
-We'll also be using Git and GitHub for the exercises in this chapter. We've prepared a mostly-blank repository for you on GitHub called [`fundamentals-exercises`](); fork it on GitHub, and clone it down to somewhere on your computer using the command
-
-```
-git clone git@github.com:<yourusername>/wdi-fundamentals-exercises.git
-```
-
-Add all of the code you write to this directory; as you finish each assignment, push changes back up to GitHub and (once you've completely finished with the entire book) initiate a ***pull request*** to submit your code for our review.
-
-Ready to begin? [Let's go](03_chapter/02_lesson.md).
+Ready to begin? [Let's go](02_lesson.md).
 
 
 

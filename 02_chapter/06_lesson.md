@@ -63,6 +63,6 @@ At the end of this book you'll be asked to submit a pull request with your final
 
 Please reach out to your [GA Mentor]() or your classmates on Slack, and together we will get to a point where pushing and pulling are as intuitive to you as breathing. 
 
-
+Ready for another [quiz](07_quiz.md)?
 
 

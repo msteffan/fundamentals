@@ -23,3 +23,7 @@ $ git --version
 to check to see what version of git is running, your computer returns something greater than or equal to `2.0.0`:
 
 ![Check to See What Version of Git is Running](../assets/chapter2/git_installed.gif)
+
+---
+
+[On to the next lesson.](02_lesson.md)

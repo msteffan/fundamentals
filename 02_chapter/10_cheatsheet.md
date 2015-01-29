@@ -17,3 +17,7 @@ Command | Description
 ###The Git Staging Area
 
 ![Git Staging Area](../assets/chapter2/add_commit.png)
+
+---
+
+Feeling confident? [Let's take what we've learned and apply it to a project.](09_assessment.md)

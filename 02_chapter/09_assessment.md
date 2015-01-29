@@ -1,4 +1,4 @@
-**WDU Fundamentals Unit 2**
+**WDI Fundamentals Unit 2**
 
 ---
 
@@ -34,4 +34,6 @@ To access the existing code for this project, you will need to fork and clone th
 
 5. If you have followed these directions correctly, you should have three folders and three files.  The ONLY file you should touch is inside the `src` folder, called `RockPaperScissors.js.`
 
-That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move onto the next lesson]().
+That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/README.md).
+
+

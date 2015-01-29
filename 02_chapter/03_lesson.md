@@ -1,4 +1,4 @@
-**WDI Fundamentals Chapter 2**
+**WDI Fundamentals Unit 2**
 
 ---
 
@@ -130,3 +130,7 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
     added a new post
     
 ```
+
+---
+
+Think you're solid on the basics of Git? [Take this quiz, and see how you do.](04_quiz.md)

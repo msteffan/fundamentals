@@ -1,4 +1,4 @@
-**WDI Fundamentals Chapter 2**
+**WDI Fundamentals Unit 2**
 
 ---
 
@@ -23,7 +23,11 @@ Developers call this process a “version control system”.
 
 If you're making copies of a file every time you make a change, your file system might look like this:
 
-![](http://updog.co/img/files.png)
+<br>
+
+![Bad VCS](../assets/chapter2/bad_vcs.png)
+
+<br>
 
 While this method works, it is impossible to see
 what has changed in each version without opening each file and comparing changes line by line.
