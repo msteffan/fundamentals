@@ -89,28 +89,44 @@ If we now run `git status` we'll see that the file is ready to be committed:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
 
-> **NOTE** Typically, you'll want to track all of the contents of your repo, so instead of specifying a unique file you should write `git add .` (remember `.` is shorthand for the working directory).
+> **NOTE** Typically, you'll want to track all of the contents of your directory, so instead of specifying a unique file you should write `git add .` (remember `.` is shorthand for the working directory).
 
 So this new version of our GA-Blog project is now in what's called the staging area.  Git is giving you a chance to change your mind before commiting. 
 
-> **CAUTION** You must add files to the staging area before committing them.
+We're ready to tell Git to record this version of our project. Finally, we can type:
 
-We're ready to tell Git to record a snapshot of our project. Finally, we can type:
+    $ git commit -m "created a new post.txt file"
 
-    $ git commit -m "message explaining what changes you made"
+The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you.
 
-The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you. 
+You always must`git add` and `git commit` in order to save versions of your project to your local repo.
 
 You should commit as often as possible to prevent making changes that you can't revert back to.
 
 
-### The Git Staging Area
+### Your Commit History
 
+When you're farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. 
 
+Hopefully you wrote useful commit messages.
 
+Git allows you to view a list of commits along with the date the commit was submitted, the author of the commit, the commit message AND a unique number to identify the commit by, called a SHA.
 
-### Benefits of Git
+This unique number allows Git to remember each commit, and apparently a 40-digit code is easier for Git than "Version1.txt" or "Draft-01-2014.txt". 
 
-When you're working with Git, you are working with your own copy –what we refer to as your "local" copy. With your local copy, you can do whatever you want. Add new fonts, change todo en español.
+To view the timeline of changes, you need to run:
 
-This is your local copy and you're not affecting others. You can commit changes to your local copy (even without Internet access) and decide to abandon it all and get a fresh copy from the remote.
+```
+ $ git log
+```
+
+This will yield a list of entires that look like this:
+
+```
+commit 6d33f525a09b9918f75188db164ea2722039830b
+Author: Sarah <sarah@gmail.com>
+Date:   Wed Jan 28 17:44:03 2015 -0500
+
+    added a new post
+    
+```

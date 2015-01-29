@@ -6,14 +6,14 @@
 
 So far, we've been making changes to files on our computers, what are known as "local" changes.  
 
-To collaborate with others (and also to backup our files just in case our computer is out of commission) we need to set up "remote" repositories.
+To share our work with others (and also to backup our files just in case our computer is out of commission) we need to set up "remote" repositories.
 
 
 ### What is GitHub?
 
-GitHub is a company, famous for the platform   they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on, and review code changes.
+GitHub is a company, famous for the platform they built to manage Git repositories remotely in the cloud.
 
-Github is a lot like Dropbox.
+Github is a lot like Dropbox –thought it's much a more powerful collaboration tool. On Github, developers can not only host and share their code, they can also comment on other people's code, review changes and edit directly in the browser.
 
 
 ## Our GitHub Flow
@@ -59,7 +59,9 @@ We'd love to see your work, and so to share the contents of your remote repo wit
 
 During WDI, your instructors will use this GitHub workflow to post new assignments and you will submit your homework using a pull request. 
 
-At the end of this book you'll be asked to submit a pull request with your final project, and our instructional team will review them all. If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first.  Please reach out to your [GA Mentor]() or your classmates on Slack, and we will help you get to a point where pushing and pulling are like breathing and sleeping. 
+At the end of this book you'll be asked to submit a pull request with your final project, and our instructional team will review them all. If you ever get stuck working with Git or GitHub, don't worry, you are NOT the first.  
+
+Please reach out to your [GA Mentor]() or your classmates on Slack, and together we will get to a point where pushing and pulling are as intuitive to you as breathing. 
 
 
 

@@ -5,12 +5,16 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-We've gone ahead and created a new directory for you, called <em>World</em>. Download it <a href="http://generalassembly.github.io/prework/assets/activity/World.zip">here</a>.
+Close and restart your Terminal application.
 
-When you double-click on the zip file, it will create a new folder next to the zip file in your Downloads folder.
+1. In your command line, navigate to your home directory
 
-Now that you can picture where the file is located, open the Terminal application
+2. Print your Working directory to confirm your location
 
-Using the command line alone,
-1. Move the World directory from Downloads to your home directory
-2. Check to see if you successfully moved the World directory by listing the contents of your home directory.
+3. List the contents of the `Americas` folder without changing your working directory (HINT: use an absolute path)
+
+4. In your home directory, create a new folder called "fundamentals"
+
+5. Just so that there is no confusion, go ahead and change the name of the "fundamentals" folder to "wdi-fundamentals".  Do not change its location.
+
+6. We'll be using this folder to house your pre-course project, so keep it clean and don't delete it.

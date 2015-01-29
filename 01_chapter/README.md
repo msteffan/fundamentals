@@ -26,7 +26,7 @@ There are commands to open an application, create new files, copy files from one
 
 We&rsquo;ll access the command line using the Terminal (capital-T) application, the most common application on MacOSX and Linux machines.
 
-> **NOTE** Fundamentals will not explore the command line that comes with Windows, because most developers don&rsquo;t use it. If you&rsquo;re a Windows user, we recommended installing a command line program like <a href="http://cygwin.com/" target="_blank" >Cygwin</a> or <a href="http://msysgit.github.io/" target="_blank">MSysGit</a> in order to follow along with the syntax we use here.
+> **DANGER** Fundamentals will not explore the command line that comes with Windows, because most developers don&rsquo;t use it. If you&rsquo;re a Windows user, we recommended installing a command line program like <a href="http://cygwin.com/" target="_blank" >Cygwin</a> or <a href="http://msysgit.github.io/" target="_blank">MSysGit</a> in order to follow along with the syntax we use here.
 
 ##Get Started Using Terminal
 
