@@ -13,7 +13,7 @@
 
 #Version Control
 
-When you’re working on something, say a painting, software or an autobiography, there comes a time when you wish you had a reset button.
+When you’re working on something –say a painting, software or an autobiography– there comes a time when you wish you had a reset button.
 
 You might already have a system in place to deal with this problem –maybe you save your document multiple times with different names, so that you can return to a different stage of the project.
 
@@ -38,7 +38,7 @@ To solve these problems, we are going to use the popular version control system 
 
 Git saves a history of the changes you make for you –no need to keep multiple versions of a file on hand. Git is also an excellent tool for working collaboratively on a project, though we won't be using those features right away.
 
-Next, you'll need to (if you haven't already).
+Next, you'll need to install Git (if you haven't already).
 
 ##Git Installation
 

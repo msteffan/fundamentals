@@ -4,7 +4,7 @@
 
 ##Unit 5 is coming soon...
 
-![404 Cake](../assets/hourglass.gif)
+![404 Cake](../assets/wip/hourglass.gif)
 
 We'll notify you via the #wdi-fundamentals Slack channel as soon as it becomes available.
 

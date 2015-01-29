@@ -3,40 +3,49 @@
 ---
 
 ## Project
+<br>
 
-As you move through the next few chapters, you will be charged with working on a project as your final assignment from WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate those ideas and use them to complete the assignment.
+As you move through the next few chapters, you will be charged with working on a project as your final assignment from WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use them to complete the assignment.
 
 - - -
 
 **Title:** Rock, Paper, Scissors App
 
 **Description:** You will be building an application in JavaScript capable of playing the game 'Rock, Paper, Scissors' with a user via a console or terminal. In particular, your app will need to:
-  * Accept a move from a player.
-  * Get a random move from the computer.
-  * Compare the player's move to the computer's move in order to determine a winner.
-  * Keep track of how many times the player and the computer have won.
-  * Run until either the player or the computer has won five times.
+* Accept a move from a player.
+* Get a random move from the computer.
+* Compare the player's move to the computer's move in order to determine a winner.
+* Keep track of how many times the player and the computer have won.
+* Run until either the player or the computer has won five times.
 
 The first two bullets have largely been taken care of for you via the code we'll provide you. Feel free to read through it, but (for now) please don't change it - doing so may cause problems with your project.
 
 To access the existing code for this project, you will need to fork and clone the repository that contains it. To do this, take the following steps.
 
-1. If you don't have one already, [create an account](./08_exercise.md) on GitHub.com.
+1. If you don't have one already, [create an account](07_exercise.md) on GitHub.com.
 
-1. Go to [this address](https://github.com/ga-students/wdi-fundamentals-rps) to find the repository containing the existing code. Once there, click the button that says 'Fork' - this will create a copy of the original repository under **your** GitHub account.
+2. Go to [this address](https://github.com/ga-students/wdi-fundamentals-rps) to find the repository containing the existing code. Once there, click the button that says 'Fork' - this will create a copy of the original repository under **your** GitHub account.
 
-1. Go take a look and confirm that you now have a copy in your list of repositories.
+3. Go take a look and confirm that you now have a copy of `wdi-fundamentals` in your list of repositories.
 
-1. Click into your repo, and observe that Github lists your repo as a fork of another repo.
+4. Click into your repo, and observe that Github lists your repo as a fork of another repo. 
 
-![Image showing "forked from ga-students/wdi-fundamentals-rps"]()
+	![Image showing "forked from ga-students/wdi-fundamentals-rps"](../assets/chapter2/clone_ga-students.png)
 
-1. Find the Clone URL listed on this page and copy it to your clipboard.
+5. Find the Clone URL listed on this page and copy it to your clipboard.
 
-1. Once there, run the following command from the terminal:
-`git clone <Clone URL>`, adding the Clone URL you copied above. This will copy your forked repo from GitHub to your own computer, so that you can work on it.
+	![Image showing "clone HTTP address"](../assets/chapter2/clone_http.png)
 
-5. If you have followed these directions correctly, you should have three folders and three files.  The ONLY file you should touch is inside the `src` folder, called `RockPaperScissors.js.`
+6. Open up the terminal application on your computer, and change to the `fundamentals` directory within your home directory.
+
+6. Once there, run the following Git command from command line:
+`git clone <HTTPS clone URL>`, substituting the clone URL you copied above. This will copy your forked repo from GitHub to your own computer, so that you can work on it.
+
+7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-rps`.  
+
+	This repository contains three folders and three files.  The ONLY file you should touch is inside the `src` folder, called `RockPaperScissors.js.`
+
+---
 
 That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/README.md).
 

@@ -4,29 +4,31 @@
 
 ## Get Started with Git
 
-Git does a lot for you behind the scenes. When we want to start tracking changes in a specific folder, we "initialize a repository" in that folder. Behind the scenes, this just adds an (invisible) folder called ".git" into the current folder you're in. The git software (which you'll accessing on the command line) uses that folder to store all the data it needs to operate.
+When you're ready to start tracking changes in a folder, you need to "initialize a repository" in that folder. 
 
-To add this special folder, you need to use the command line.
+That just means adding a hidden folder called ".git/" to your folder, which contains all the data git needs to operate.
+
 
 ###Initialize your First Repository
 
-The folder that contains `.git/` is called a **repository** (or **repo** for short) and the process of adding `.git/` to an empty folder is called initializing a repository:
+To add this special folder, you need to use command line. 
+First, you change your working directory to the folder you'd like to track, and then you run the Git command:
 
-    $ git init
+```
+$ git init
+```
 
-Running this command will create a new `.git/` directory, which will contain all the data for the history of your entire project.
+> **HINT** When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
 
-> **HINT** When you take a look at a repo in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line, which lists all the files in your repo.
+If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
 
-If you delete the hidden .git directory, you will effectively "uninitialize" your repository and lose all the history of your repository.
-
-> **CAUTION** You should never manually change the internal contents of your .git directory. Unless your name is Linus Torvalds. In which case we'd love for you to come teach at General Assembly.
+> **CAUTION** You should never manually change the internal contents of your `.git` directory, unless your name is Linus Torvalds.
 
 ### Saving Versions of Your Project
 
-Like the command line, Git doesn't do a lot of guesswork for you. You need to tell it which files to track and when you want to save a version of them. After initializing your repo, you need to inform Git of which files and folders you want it to track.
+Like the command line, Git doesn't do a lot of guesswork for you. You need to tell it which files to track and when you want to save a version of them.
 
-Then, every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to **commit** that version to memory. Other things Git can help with:
+Every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to **commit** that version to memory. Other things Git can help with:
 
 * If you want to revert to an old version, you can do that.
 * If you want to view the difference between two versions of a file, you can do that too.
@@ -77,7 +79,9 @@ There are no changes to the GA-Blog folder for Git to remember or "commit".
 
 Let's go ahead and make a new text file called "post.txt" inside of GA-Blog, using the `touch` command.
 
-    touch post.txt
+```
+$ touch post.txt
+```
 
 Now let's check our Git status:
 
@@ -99,13 +103,13 @@ If we now run `git status` we'll see that the file is ready to be committed:
 > **NOTE** Typically, you'll want to track all of the contents of your repo, so instead of specifying a unique file you should write `git add .` (remember: `.` is shorthand for the working directory).
 
 
-This new version of our GA-Blog project is now in what Git calls the "staging area".  You still have the chance to change your mind before committing.
+This new version of our GA-Blog project is now in what Git calls the "staging area". You still have the chance to change your mind before committing.
 
 We're ready to tell Git to record this version of our project. Finally, we can type:
 
     $ git commit -m "created a new post.txt file"
 
-You always must`git add` and `git commit` in order to save versions of your project to your local repo.
+You always must `git add` and `git commit` in order to save versions of your project to your local repo.
 
 The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you.
 
