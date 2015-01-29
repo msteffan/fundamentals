@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422570393585">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422571674238">
     
 
 <div class="book-summary">
@@ -1034,6 +1034,12 @@ First, you change your working directory to the folder you&#39;d like to track, 
 </code></pre><p>You always must <code>git add</code> and <code>git commit</code> in order to save versions of your project to your local repo.</p>
 <p>The <code>-m</code> option allows you to include a message, describing the changes you made for your collaborators or future-you.</p>
 <p>You should commit as often as possible to prevent making changes that you can&#39;t revert back to.</p>
+<h3 id="the-git-staging-area">The Git Staging Area</h3>
+<p>One of the unique feautres of Git is its &quot;Staging Area&quot;.  Git allows you to add changes to your project to the local repo in two steps:</p>
+<pre><code>$ git add .
+$ git commit -m &quot;message&quot;
+</code></pre><p>Why stage? So that if you make multiple changes you can commit them seperately or all at once (basically, it exists to help you better organize your project history).</p>
+<p><img src="../assets/chapter2/add_commit.png" alt="Git Staging Area"></p>
 <h3 id="your-commit-history">Your Commit History</h3>
 <p>When you&#39;re farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. </p>
 <p>Hopefully you wrote useful commit messages.</p>
@@ -1048,7 +1054,7 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
     added a new post
 </code></pre><hr>
-<p>Think you&#39;re solid on the basics of Git? <a href="04_quiz.html">Take this quiz, and see how you do.</a></p>
+<p>Think you&#39;re solid on the basics of Git? <a href="03_quiz.html">Take this quiz, and see how you do.</a></p>
 
                     
                     </section>
@@ -1100,10 +1106,6 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
     
     <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
