@@ -2,15 +2,6 @@
 
 ---
 
-### Test Yourself
-Can you predict how the following expressions will be evaluated? Check your answers in repl.it.
-* `1 || true`
-* `3 || null`
-* `!("")`
-* `false && undefined`
-* `true && !0`
-* `null || 3`
+<div class="typeform-widget" data-url="https://gahub.typeform.com/to/vOOVqz" data-text="NEW Fundamentals 3.1 (copy)" style="width:100%;height:600px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
-One of the most common use-cases of this is when you're not sure if a variable has been assigned a value. Suppose that `x` represents some input that you've gotten from a user. If the user hasn't given any input, `x` might be `null`.
-
-To compensate for this, we might write the expression `x = x || 10;`. If x has some 'truthy' value, the OR operator will evaluate to `x`, so it would be as if we wrote `x = x`. However, if x were `null`, the OR operator would evaluate to 10 (because `null` is 'falsey'). It's as if we've said "If x doesn't already have a value assigned, set it equal to 10". For that reason, this kind of operation is often called 'conditional assignment'.

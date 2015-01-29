@@ -4,11 +4,6 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-
-If you haven't already, fork and clone the [wdi-fundamentals-exercises]() repo to your desktop; then, go into the `lib` directory and open up the file called `some_expressions.js`.
-
-Inside this file, you should see the following text:
-
 ```javascript
 
 function someNumber() {

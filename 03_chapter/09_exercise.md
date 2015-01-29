@@ -4,9 +4,6 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-
-Go back to the `wdi-fundamentals-exercises` repo and open up the file `even_more_expressions.js`. It should contain the following code.
-
 ```javascript
 
 function oneHundredIfNull(x) {
