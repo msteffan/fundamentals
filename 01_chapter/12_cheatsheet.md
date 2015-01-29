@@ -17,5 +17,6 @@ Command | Description
 `cd -options path/to/directory` | Changes the current working directory to the specificed directory.
 `mkdir path/to/directory` | Makes a new directory
 `rm -r path/to/file ` | Removes directories or files permanently
+`mv path/to/file ` or  | Removes directories or files permanently
 
 

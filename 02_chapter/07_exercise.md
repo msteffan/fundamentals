@@ -22,6 +22,6 @@ You are going to create your very own Github account!
  
 ---
 
- Now let's take a look at [our cheatsheet](10_cheatsheet.md) and look back over everything we've learned so far.
+ Now let's take a look at [our cheatsheet](09_cheatsheet.md) and look back over everything we've learned so far.
  
 

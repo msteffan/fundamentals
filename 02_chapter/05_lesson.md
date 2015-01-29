@@ -113,3 +113,10 @@ If you ever get stuck working with Git or GitHub, don't worry, you are NOT the f
 3. Go to an instructor for help (instructors are also on Slack)
 
 And trust us... you *will* get to the point where cloning and pulling are like breathing and sleeping.
+
+---
+
+Ready for another quiz? [Here we go!](05_quiz.md)
+
+
+

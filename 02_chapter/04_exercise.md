@@ -43,4 +43,4 @@ Look at the `status` output, and the `diff` output. Notice how you can have both
 
 ---
 
-[Next : Publish Work on Github](06_lesson.md)
+[Next : Publish Work on Github](05_lesson.md)

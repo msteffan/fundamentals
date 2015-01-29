@@ -7,4 +7,4 @@
 
 ---
 
-[Here's another exercise for you](08_exercise.md) - give it a shot.
+[Here's another exercise for you](07_exercise.md) - give it a shot.

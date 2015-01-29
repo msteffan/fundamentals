@@ -115,6 +115,21 @@ The `-m` option allows you to include a message, describing the changes you made
 
 You should commit as often as possible to prevent making changes that you can't revert back to.
 
+###The Git Staging Area
+
+One of the unique feautres of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
+
+```
+$ git add .
+$ git commit -m "message"
+```
+
+Why stage? So that if you make multiple changes you can commit them seperately or all at once (basically, it exists to help you better organize your project history).
+
+![Git Staging Area](../assets/chapter2/add_commit.png)
+
+
+
 ### Your Commit History
 
 When you're farther into your project, after a bunch of commits to your repository, you might want to look back and see a timeline of the changes you made. 
@@ -144,5 +159,5 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
 ---
 
-Think you're solid on the basics of Git? [Take this quiz, and see how you do.](04_quiz.md)
+Think you're solid on the basics of Git? [Take this quiz, and see how you do.](03_quiz.md)
 
