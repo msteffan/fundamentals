@@ -4,8 +4,9 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-```javascript
+[Here is some more sample code](http://repl.it/9SR), again in a repl.it session. The contents are repeated below.
 
+```javascript
 function oneHundredIfNull(x) {
   // If x is null, your expression should evaluate to 100.
   // Otherwise, your expression should evaluate to whatever x's value is.
@@ -23,8 +24,9 @@ function isEmptyString(some_string) {
   // Otherwise, your expression should evaluate to false.
   return /*Your Expression*/;
 }
-
 ```
-As before, save your code and test it in repl.it - if everything works the way you expect, go back to the `wdi-fundamentals-exercises` repo and make a commit, with the commit message "Completes even_more_expressions.js".
+As before, if everything works, save your session and submit the new URL (along with your name and cohort) into the form below.
+
+<!-- FORM -->
 
 [Now let's take a look at our cheatsheet and look back over everything we've learned so far.](08_cheatsheet.md)
