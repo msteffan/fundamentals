@@ -4,7 +4,9 @@
 
 ## Get Started with Git
 
-Git gets to work once you add a folder called ".git" into the folder you would like track. To add this special folder, you need to use the command line (see, told you that thing would be useful). 
+Git does a lot for you behind the scenes. When we want to start tracking changes in a specific folder, we "initialize a repository" in that folder. Behind the scenes, this just adds an (invisible) folder called ".git" into the current folder you're in. The git software (which you'll accessing on the command line) uses that folder to store all the data it needs to operate.
+
+To add this special folder, you need to use the command line.
 
 ###Initialize your First Repository
 
@@ -12,20 +14,22 @@ The folder that contains `.git/` is called a **repository** (or **repo** for sho
 
     $ git init
 
-Running this command will create a new `.git/` directory, which will contain all the data for the history of your entire project. 
+Running this command will create a new `.git/` directory, which will contain all the data for the history of your entire project.
 
-When you take a look at a repo in the GUI you might not see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line, which lists all the files in your repo.
+> **HINT** When you take a look at a repo in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line, which lists all the files in your repo.
 
+If you delete the hidden .git directory, you will effectively "uninitialize" your repository and lose all the history of your repository.
+
+> **CAUTION** You should never manually change the internal contents of your .git directory. Unless your name is Linus Torvalds. In which case we'd love for you to come teach at General Assembly.
 
 ### Saving Versions of Your Project
 
-Aptly named, Git is not too bright.  It needs you to tell it which files to track and how often to save a version of them.  
+Like the command line, Git doesn't do a lot of guesswork for you. You need to tell it which files to track and when you want to save a version of them. After initializing your repo, you need to inform Git of which files and folders you want it to track.
 
-Now that you have initialized your repo, you can instruct Git to track all the contents of the repo. 
+Then, every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to **commit** that version to memory. Other things Git can help with:
 
-Then, every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to **commit** that version to memory.
-
-If you want to revert to an old version you can do that. If you want to view the difference between two versions of a file, you can do that too.
+* If you want to revert to an old version, you can do that.
+* If you want to view the difference between two versions of a file, you can do that too.
 
 Let's take a look at an example.  
 
@@ -73,6 +77,8 @@ There are no changes to the GA-Blog folder for Git to remember or "commit".
 
 Let's go ahead and make a new text file called "post.txt" inside of GA-Blog, using the `touch` command.
 
+    touch post.txt
+
 Now let's check our Git status:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_untracked.gif)
@@ -89,9 +95,9 @@ If we now run `git status` we'll see that the file is ready to be committed:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
 
-> **NOTE** Typically, you'll want to track all of the contents of your repo, so instead of specifying a unique file you should write `git add .` (remember `.` is shorthand for the working directory).
+> **NOTE** Typically, you'll want to track all of the contents of your repo, so instead of specifying a unique file you should write `git add .` (remember: `.` is shorthand for the working directory).
 
-So this new version of our GA-Blog project is now in what's called the staging area.  Git is giving you a chance to change your mind before commiting. 
+This new version of our GA-Blog project is now in what Git calls the "staging area".  You still have the chance to change your mind before committing.
 
 > **CAUTION** You must add files to the staging area before committing them.
 
@@ -99,18 +105,9 @@ We're ready to tell Git to record a snapshot of our project. Finally, we can typ
 
     $ git commit -m "message explaining what changes you made"
 
-The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you. 
+The `-m` option allows you to include a message, describing the changes you made for your collaborators or future-you.
 
 You should commit as often as possible to prevent making changes that you can't revert back to.
 
 
 ### The Git Staging Area
-
-
-
-
-### Benefits of Git
-
-When you're working with Git, you are working with your own copy –what we refer to as your "local" copy. With your local copy, you can do whatever you want. Add new fonts, change todo en español.
-
-This is your local copy and you're not affecting others. You can commit changes to your local copy (even without Internet access) and decide to abandon it all and get a fresh copy from the remote.
