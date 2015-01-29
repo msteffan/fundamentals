@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422556558052">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422566172247">
     
 
 <div class="book-summary">
@@ -960,27 +960,27 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_32">
+                    <section class="normal" id="section-gitbook_35">
                     
                         <p><strong>WDI Fundamentals Unit 2</strong></p>
 <hr>
 <h2 id="get-started-with-git">Get Started with Git</h2>
-<p>Git does a lot for you behind the scenes. When we want to start tracking changes in a specific folder, we &quot;initialize a repository&quot; in that folder. Behind the scenes, this just adds an (invisible) folder called &quot;.git&quot; into the current folder you&#39;re in. The git software (which you&#39;ll accessing on the command line) uses that folder to store all the data it needs to operate.</p>
-<p>To add this special folder, you need to use the command line.</p>
+<p>When you&#39;re ready to start tracking changes in a folder, you need to &quot;initialize a repository&quot; in that folder. </p>
+<p>That just means adding a hidden folder called &quot;.git/&quot; to your folder, which contains all the data git needs to operate.</p>
 <h3 id="initialize-your-first-repository">Initialize your First Repository</h3>
-<p>The folder that contains <code>.git/</code> is called a <strong>repository</strong> (or <strong>repo</strong> for short) and the process of adding <code>.git/</code> to an empty folder is called initializing a repository:</p>
+<p>To add this special folder, you need to use command line. 
+First, you change your working directory to the folder you&#39;d like to track, and then you run the Git command:</p>
 <pre><code>$ git init
-</code></pre><p>Running this command will create a new <code>.git/</code> directory, which will contain all the data for the history of your entire project.</p>
-<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> When you take a look at a repo in the GUI you probably won&#39;t see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the <code>.git/</code> directory you need to run <code>ls -a</code> from command line, which lists all the files in your repo.</p>
+</code></pre><blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<p> When you take a look at your working directory in the GUI you probably won&#39;t see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the <code>.git/</code> directory you need to run <code>ls -a</code> from command line.</p>
 </blockquote>
-<p>If you delete the hidden .git directory, you will effectively &quot;uninitialize&quot; your repository and lose all the history of your repository.</p>
+<p>If you delete the hidden .git directory, you will effectively &quot;uninitialize&quot; your repository and you will lose the data Git collected for you.</p>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
-<p> You should never manually change the internal contents of your .git directory. Unless your name is Linus Torvalds. In which case we&#39;d love for you to come teach at General Assembly.</p>
+<p> You should never manually change the internal contents of your <code>.git</code> directory, unless your name is Linus Torvalds.</p>
 </blockquote>
 <h3 id="saving-versions-of-your-project">Saving Versions of Your Project</h3>
-<p>Like the command line, Git doesn&#39;t do a lot of guesswork for you. You need to tell it which files to track and when you want to save a version of them. After initializing your repo, you need to inform Git of which files and folders you want it to track.</p>
-<p>Then, every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to <strong>commit</strong> that version to memory. Other things Git can help with:</p>
+<p>Like the command line, Git doesn&#39;t do a lot of guesswork for you. You need to tell it which files to track and when you want to save a version of them.</p>
+<p>Every time you want to save a version, a snapshot of all the contents of that repo, you tell Git to <strong>commit</strong> that version to memory. Other things Git can help with:</p>
 <ul>
 <li>If you want to revert to an old version, you can do that.</li>
 <li>If you want to view the difference between two versions of a file, you can do that too.</li>
@@ -1017,7 +1017,7 @@
 <p><img src="../assets/chapter2/git_status.gif" alt="Git Status of GA-Blog"></p>
 <p>There are no changes to the GA-Blog folder for Git to remember or &quot;commit&quot;.</p>
 <p>Let&#39;s go ahead and make a new text file called &quot;post.txt&quot; inside of GA-Blog, using the <code>touch</code> command.</p>
-<pre><code>touch post.txt
+<pre><code>$ touch post.txt
 </code></pre><p>Now let&#39;s check our Git status:</p>
 <p><img src="../assets/chapter2/git_status_untracked.gif" alt="Git Status of GA-Blog"></p>
 <p>Git has identified that there is new a file in our repo, but it does not know whether or not we want it tracked.</p>
@@ -1028,10 +1028,10 @@
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> Typically, you&#39;ll want to track all of the contents of your repo, so instead of specifying a unique file you should write <code>git add .</code> (remember: <code>.</code> is shorthand for the working directory).</p>
 </blockquote>
-<p>This new version of our GA-Blog project is now in what Git calls the &quot;staging area&quot;.  You still have the chance to change your mind before committing.</p>
+<p>This new version of our GA-Blog project is now in what Git calls the &quot;staging area&quot;. You still have the chance to change your mind before committing.</p>
 <p>We&#39;re ready to tell Git to record this version of our project. Finally, we can type:</p>
 <pre><code>$ git commit -m &quot;created a new post.txt file&quot;
-</code></pre><p>You always must<code>git add</code> and <code>git commit</code> in order to save versions of your project to your local repo.</p>
+</code></pre><p>You always must <code>git add</code> and <code>git commit</code> in order to save versions of your project to your local repo.</p>
 <p>The <code>-m</code> option allows you to include a message, describing the changes you made for your collaborators or future-you.</p>
 <p>You should commit as often as possible to prevent making changes that you can&#39;t revert back to.</p>
 <h3 id="your-commit-history">Your Commit History</h3>
@@ -1100,10 +1100,6 @@ Date:   Wed Jan 28 17:44:03 2015 -0500
 
     
     <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>

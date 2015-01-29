@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.1.2" data-basepath=".." data-revision="1422556558052">
+    <div class="book" data-level="2.1.2" data-basepath=".." data-revision="1422566172247">
     
 
 <div class="book-summary">
@@ -965,17 +965,21 @@
                         <h2 id="wdi-fundamentals-unit-2"><strong>WDI Fundamentals Unit 2</strong></h2>
 <h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <p>This exercise aims to give you some practice with using the Git version control system.</p>
-<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> When you create new repositories and directories, you can keep them wherever you want, but it&#39;s often a good idea to create a <code>development</code> folder inside your home directory and store all your code repos in there. It doesn&#39;t have to be called <code>development</code>, you could just as well name it something else. It&#39;s just a good idea to keep them somewhere consistent.</p>
-</blockquote>
 <ol>
-<li><p>Open up the terminal application and create a directory called <code>wdi-fundamentals-practice</code>.</p>
+<li><p>Open up the terminal application and change to the <code>fundamentals</code> directory you created in your home directory.</p>
+</li>
+<li><p>Create a new directory inside <code>fundamentals</code> called &quot;git-practice&quot;.</p>
 </li>
 <li><p>Use <code>cd</code> to navigate into that directory, then check to make sure the working directory has changed using the <code>pwd</code> command.</p>
 </li>
-<li><p>Use the <code>git init</code> command to create a Git repository in that directory.</p>
+<li><p>Use the <code>git init</code> command to create a Git repository in <code>git-practice</code>.</p>
 </li>
-<li><p>Notice, that there is now a <code>.git</code> directory by using the <code>ls -a</code> command.</p>
+</ol>
+<blockquote>
+<p><strong>CAUTION</strong> DO NOT create a git repository inside another git respository.  Always make sure you are initializing git within a folder whose parent directory does <strong>not</strong> contain a <code>.git</code> folder.</p>
+</blockquote>
+<ol>
+<li><p>Notice, that there is now a <code>.git</code> directory in <code>git-practice</code> by using the <code>ls -a</code> command.</p>
 </li>
 <li><p>Create a new file called README.txt.</p>
 </li>
@@ -996,11 +1000,8 @@ command. See how both files have been staged. Commit them.</p>
 output. Also observe that the <code>diff</code> command you did before using add now gives no output.
 Why not? What do you have to do to see a diff of the things in the staging area?</p>
 </li>
-<li><p>Now – without committing – make another change to the same file you changed in step 10.
-Look at the <code>status</code> output, and the <code>diff</code> output. Notice how you can have both staged and
-unstaged changes, even when you’re talking about a single file. Observe the difference when
-you use the <code>add</code> command to stage the latest round of changes. Finally, <code>commit</code> them. You
-should now have started to get a feel for the staging area.</p>
+<li><p>Now – without committing – make another change to the same file you changed in step 12.
+Look at the <code>status</code> output, and the <code>diff</code> output. Notice how you can have both staged and unstaged changes, even when you’re talking about a single file. Observe the difference when you use the <code>add</code> command to stage the latest round of changes. Finally, <code>commit</code> them. You should now have started to get a feel for the staging area.</p>
 </li>
 <li><p>Use the log command in order to see all of the commits you made so far.</p>
 </li>
@@ -1058,10 +1059,6 @@ should now have started to get a feel for the staging area.</p>
 
     
     <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-livereload/plugin.js"></script>
     
 
 <script>
