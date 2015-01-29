@@ -3,11 +3,11 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-This exercise aims to give you some practice with using the Git version control system. 
+This exercise aims to give you some practice with using the Git version control system.
 
-1. Open up the terminal application and change directories to the wdi-fundamentals folder by typing: `cd wdi-fundamentals/`. Check to make sure working directory has changed using the `pwd` command.
+1. Open up the terminal application and change directories to the wdi-fundamentals folder by typing: `cd wdi-fundamentals`. Check to make sure the working directory has changed using the `pwd` command.
 
-2. Use the `init` command to create a Git repository in that directory.
+2. Use the `git init` command to create a Git repository in that directory.
 
 3. Notice, that there is now a `.git` directory by using the `ls -a` command.
 
@@ -28,7 +28,7 @@ command. See how both files have been staged. Commit them.
 
 11. Next, add the changed file, and notice how it moves to the staging area in the `status`
 output. Also observe that the `diff` command you did before using add now gives no output.
-Why not? What do you have to do to see a diff of the things in the staging area? 
+Why not? What do you have to do to see a diff of the things in the staging area?
 
 12. Now – without committing – make another change to the same file you changed in step 10.
 Look at the `status` output, and the `diff` output. Notice how you can have both staged and
@@ -37,5 +37,3 @@ you use the `add` command to stage the latest round of changes. Finally, `commit
 should now have started to get a feel for the staging area.
 
 13. Use the log command in order to see all of the commits you made so far.
-
-
