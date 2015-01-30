@@ -9,9 +9,11 @@ You've probably picked up a scientific calculator at some point in the past and 
 
 ![Calculator](../assets/chapter3/calculator.png)
 
-That thing that we type into the calculator is called an **expression** : a collection of values and operations. This process of reducing this expression down to a single value is called **evaluation**.
+That thing that we type into the calculator is called an **expression** : a collection of values (*12345*) and operations(*"*","/","+"*). 
 
-The repl.it console is similar in many ways to this calculator: it accepts an expression from the user and attempts to evaluate that expression, yielding a single value.
+The process of reducing this expression down to a single value is called **evaluation**.
+
+The repl.it console is similar in many ways to this calculator. It accepts an expression from the user and attempts to evaluate that expression, yielding a single value.
 
 Before we tackle fully-fledged JavaScript expressions, let's first look at their two components: data and operators.
 
@@ -20,10 +22,10 @@ Before we tackle fully-fledged JavaScript expressions, let's first look at their
 ## Data (a.k.a. Values)
 Calculators can only operate on numbers, but computers can perform calculations on many different kinds of data, including:
 
-* **Numbers** : Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're all lumped together. <br>
+* **Numbers** : Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're considered the same. <br>
 <u>Examples</u>: `20`, `-4.5`, `300`,`99.99`
 
-* **Strings** : Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, `'single-quote'` (also sometimes called 'string literals') and `"double-quote"`; though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: `"hello"`, `"goodbye"`, `"moc.liamg@gmail.com"`
+* **Strings** : Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, `'single-quote'` (also sometimes called 'string literals') and `"double-quote"`. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: `"hello"`, `"goodbye"`, `"moc.liamg@gmail.com"`
 
 * **Booleans** : This one's probably a bit new for you. Boolean-type data only has two possible values, `true` and `false`.
 
@@ -32,6 +34,8 @@ In case you ever forget what type of data you're dealing with, you can run the `
 * `typeof 24;`
 * `typeof 3.45;`
 * `typeof true;`
+
+> **HINT** You may have noticed that we end every line of code with a `;` in JavaScript.There are rules as to when to use `;` in JS syntax but for now get in the habit of including it at the end of every line.
 
 ### Test Yourself
 Try to predict the types of each of the following bits of data. Check your answers with `typeof` - were you correct?
