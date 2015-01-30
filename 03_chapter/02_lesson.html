@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="1422637578490">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="1422650125608">
     
 
 <div class="book-summary">
@@ -663,10 +663,10 @@
         </li>
     
         
-        <li class="chapter " data-level="3.4" data-path="01_chapter/11_cheatsheet.html">
+        <li class="chapter " data-level="3.4" data-path="03_chapter/11_cheatsheet.html">
             
                 
-                    <a href="../01_chapter/11_cheatsheet.html">
+                    <a href="../03_chapter/11_cheatsheet.html">
                         <i class="fa fa-check"></i>
                         
                             <b>3.4.</b>
@@ -982,7 +982,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_62">
+                    <section class="normal" id="section-gitbook_63">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
@@ -1013,7 +1013,7 @@
 <li><code>typeof true;</code></li>
 </ul>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p>:  You may have noticed that each of those lines ended in a <code>;</code> - in JavaScript, a semicolon is used to denote the end of a line. These are required in order for the code to actually execute!</p>
+<p> You may have noticed that each of those lines ended in a <code>;</code> - in JavaScript, a semicolon is used to denote the end of a line. These are required in order for the code to actually execute!</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Try to predict the types of each of the following bits of data. Check your answers with <code>typeof</code> - were you correct?</p>
@@ -1026,13 +1026,22 @@
 <h2 id="operators">Operators</h2>
 <p>Of course, simply having data sitting around isn&#39;t very useful. Operators take values as their inputs (also known as &#39;arguments&#39;) and produce new data as output. There are <em>many</em> different operators out there, but here are some of the common ones:</p>
 <ul>
-<li><p><strong>Arithmetic</strong> (<code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>) : These all work like you&#39;d expect. In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs, and causes that whole expression to evaluate to <code>4</code>. (Note: When given String arguments, the <code>+</code> operator actually behaves differently - it &#39;concatenates&#39; two strings together to make one big string).</p>
+<li><strong>Arithmetic</strong> (<code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>) : These all work like you&#39;d expect.
+<br><u>For example</u>: In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs, and causes that whole expression to evaluate to <code>4</code>.</li>
+</ul>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> When given String arguments, the <code>+</code> operator actually behaves differently - it &#39;concatenates&#39; two strings together to make one big string.
+<br><u>For example</u>: <code>&quot;Hello&quot; + &quot;Bob&quot;</code> will evaluate to <code>&quot;Hello Bob&quot;</code>.</p>
+</blockquote>
+<ul>
+<li><p><strong>Modulus</strong> (<code>%</code>) : Remember remainders? i.e. 5/3 = 1, with a remainder of 2? The modulus operator takes in two numbers and gives you the remainder of their division. 
+<br> <u>For example</u>: <code>5 % 3</code> will evaluate to <code>2</code>.</p>
 </li>
-<li><p><strong>Modulus</strong> (<code>%</code>) : Remember remainders? i.e. 5/3 = 1, with a remainder of 2? The modulus operator takes in two numbers and gives you the remainder of their division. In other words, <code>5 % 3</code> will evaluate to <code>2</code>.</p>
+<li><p><strong>Inequality</strong> (<code>&gt;</code>,<code>&lt;</code>) : These operators take in two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values. 
+<br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</p>
 </li>
-<li><p><strong>Inequality</strong> (<code>&gt;</code>,<code>&lt;</code>) : These operators take in two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values. For example, <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</p>
-</li>
-<li><p><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &#39;strict equality&#39; - it will only evaluate <code>true</code> if both sides are completely identical - while the second, the &#39;loose equality&#39;, has a little more wiggle rooom. Here are some examples to show you how it works.</p>
+<li><p><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &#39;strict equality&#39; - it will only evaluate <code>true</code> if both sides are completely identical - while the second, the &#39;loose equality&#39;, has a little more wiggle rooom. 
+<br><u>For example</u>:</p>
 <pre><code class="lang-javascript">  <span class="hljs-number">5</span> === <span class="hljs-number">5</span>;
     =&gt; <span class="hljs-literal">true</span>
 
