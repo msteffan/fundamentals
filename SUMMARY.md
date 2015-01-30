@@ -33,7 +33,7 @@
 	* [Boolean Logic](03_chapter/08_lesson.md)
        * [Quiz](03_chapter/09_quiz.md)
        * [Exercise](03_chapter/10_exercise.md)
-	* [Cheat Sheet](01_chapter/11_cheatsheet.md)
+	* [Cheat Sheet](03_chapter/11_cheatsheet.md)
 	* [Unit 3 Homework](03_chapter/12_assessment.md)
 * [Control Flow in JavaScript](04_chapter/README.md)
 	* [Control Flows](04_chapter/02_lesson.md)

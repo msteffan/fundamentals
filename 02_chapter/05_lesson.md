@@ -30,7 +30,9 @@ The GA Instructional Team has put together resources for you in a remote reposit
 This is what our workflow looks like:
 ![GitHub Workflow](../assets/chapter2/github_workflow.gif)
 <br><br>
-> **Note** Don't worry, we are going to cover this step by step, in enough detail for you to complete the prework.
+
+>**Note** Don't worry, we are going to cover this step by step, in enough detail for you to complete the prework.
+
 ---
 
 ### 1. Forking

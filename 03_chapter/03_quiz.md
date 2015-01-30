@@ -1,32 +1,9 @@
+**WDI Fundamentals Unit 3**
 
-<!--Upload this file to your server-->
+---
 
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-	<!--Add the title of your typeform below-->
-	<title>NEW Fundamentals 3.3</title>
+<div class="typeform-widget" data-url="https://gahub.typeform.com/to/vOOVqz" data-text="NEW Fundamentals 3.1" style="width:100%;height:500px;"></div>
+<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
 
-	<!--CSS styles that ensure your typeform takes up all the available screen space (DO NOT EDIT!)-->
-<style type="text/css">
-		html{
-			margin: 0;
-			height: 100%;
-			overflow: hidden;
-		}
-		iframe{
-			position: absolute;
-			left:0;
-			right:0;
-			bottom:0;
-			top:0;
-			border:0;
-		}
-	</style>
-</head>
-<body>
-	<h3>WDI Fundamentals Unit 3</h3>
-	<iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://gahub.typeform.com/to/rosxaA"></iframe>
-	<script type="text/javascript" src="https://s3-eu-west-1.amazonaws.com/share.typeform.com/embed.js"></script>
-<p>Feeling good? <a href="04_exercise.md">Let's do some more practice.</a></p>
-</body>
+---
+Feeling good? [Let's do some more practice.](04_exercise.md)
