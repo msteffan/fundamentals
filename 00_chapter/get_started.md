@@ -2,7 +2,7 @@
 
 ---
 
-##Plug into the WDI Community
+##Join the WDI Community on Slack!
 
 We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer.
 
@@ -17,9 +17,7 @@ Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
 
 ##Get Help from a GA Mentor
 
-In addition to help you'll find online and from your classmates on Slack, we're giving you around-the-clock access to WDI graduates. We'll email you about this service again one week before class starts, but if you would like to connect with your mentor before then, go ahead and sign up [here](URL).
-
-<button>Request Help</button>
+In addition to help you'll find online and from your classmates on Slack, we're giving you around-the-clock access to WDI graduates. We'll email you about this program one week before class starts, so keep an eye on your inbox for an invitation.
 
 ---
 
