@@ -35,7 +35,7 @@ In case you ever forget what type of data you're dealing with, you can run the `
 * `typeof 3.45;`
 * `typeof true;`
 
-> **HINT** You may have noticed that we end every line of code with a `;` in JavaScript.There are rules as to when to use `;` in JS syntax but for now get in the habit of including it at the end of every line.
+> **HINT**:  You may have noticed that each of those lines ended in a `;` - in JavaScript, a semicolon is used to denote the end of a line. These are required in order for the code to actually execute!
 
 ### Test Yourself
 Try to predict the types of each of the following bits of data. Check your answers with `typeof` - were you correct?
@@ -82,8 +82,6 @@ Can you predict what will the results of these operations will be? Check your an
 * `45%6;`
 * `8 === 8.0;`
 * `"Hello" + " " + "World";`
-
-> You may have noticed that each of those lines ended in a `;` - in JavaScript, a semicolon is used to denote the end of a line. These are required in order for the code to actually execute!
 
 ## Expressions
 So, what happens when we bring several of these operators and values together?
