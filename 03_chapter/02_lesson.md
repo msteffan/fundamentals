@@ -116,12 +116,5 @@ Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((
 
 ![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
 
-### Test Yourself
-Try drawing expression trees for the following expressions, and evaluating them by hand using the approach described earlier (left-child first, then right-child). Did you get the expected result?
-* `9 - 1 + 2 - 4` (should equal `6`)
-* `(30 - 5)*2/5`  (should equal `10`)
-* `("The " + "rain ") + ("in Spain " + "stays ") + "mainly " + ("in " + "the ") + "plain."` (should equal `"The rain in Spain stays mainly in the plain."`)
-* `(true || false) && (true && false)` (should equal `false`)
-
 ---
 Think you're solid on the basics of expressions? [Take this quiz, and see how you do.](03_quiz.md)
