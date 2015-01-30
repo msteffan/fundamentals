@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Quiz | WDI Fundamentals</title>
+        <title>Cheat Sheet | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../01_chapter/07_exercise.html" />
+    <link rel="next" href="../04_chapter/09_assessment.html" />
     
     
-    <link rel="prev" href="../01_chapter/05_lesson.html" />
+    <link rel="prev" href="../04_chapter/07_exercise.html" />
     
 
         
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="1422637178197">
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="1422637178197">
     
 
 <div class="book-summary">
@@ -188,7 +188,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.2.1" data-path="01_chapter/06_quiz.html">
+        <li class="chapter " data-level="1.2.1" data-path="01_chapter/06_quiz.html">
             
                 
                     <a href="../01_chapter/06_quiz.html">
@@ -825,7 +825,7 @@
         </li>
     
         
-        <li class="chapter " data-level="4.3" data-path="04_chapter/08_cheatsheet.html">
+        <li class="chapter active" data-level="4.3" data-path="04_chapter/08_cheatsheet.html">
             
                 
                     <a href="../04_chapter/08_cheatsheet.html">
@@ -982,15 +982,49 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_102">
                     
-                        <p><strong>WDI Fundamentals Unit 1</strong></p>
+                        <p><strong>WDI Fundamentals Unit 4</strong></p>
 <hr>
-<p><div class="typeform-widget" data-url="https://gahub.typeform.com/to/MxzusH" data-text="NEW Fundamentals 1.2" style="width:100%;height:500px;"></div></p>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
-<hr>
-<p><a href="07_exercise.html">Here&#39;s another exercise for you</a> - give it a shot.</p>
+<h1 id="flow-control-cheat-sheet">Flow Control Cheat Sheet</h1>
+<p>Here are some notes on what&#39;s been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.</p>
+<h2 id="conditionals">Conditionals</h2>
+<h3 id="ternary-operator">Ternary Operator</h3>
+<ul>
+<li><p>The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.</p>
+<p>e.g. <code>(x &gt; 10)? &quot;Greater than 10.&quot; : &quot;Less than 10.&quot;;</code></p>
+</li>
+<li><p>It can also be used inside larger expressions.</p>
+<p>e.g. &quot;Today is &quot; + ((temp &gt; 70)? &quot;&quot; : &quot;not&quot;) + &quot; hot.&quot;</p>
+</li>
+</ul>
+<h3 id="ifelse-ifelse-statements"><code>if...else if...else</code> Statements</h3>
+<ul>
+<li>Used to run one of several blocks of code based on some condition (or a set of conditions).</li>
+<li>With <code>else if</code>, each additional condition will only be checked if all of the prior conditions have failed.</li>
+<li><code>else</code> specifies what happens if all prior conditions fail.</li>
+<li>When a program runs through `if...else if...else if... else&#39; statement, <strong>only one of the blocks will be executed</strong> at that time.</li>
+</ul>
+<h3 id="switch-statements"><code>switch</code> Statements</h3>
+<ul>
+<li><code>switch</code> can take away some of the duplication from long <code>if...else if...else</code> statements.</li>
+<li>One limitation of <code>switch</code> is that it can only use cases that are different values of the same expression - it is less flexible than <code>if...else if...else</code>.</li>
+</ul>
+<h2 id="loops">Loops</h2>
+<ul>
+<li>Loops are used to tell our programs to take repeated action.</li>
+</ul>
+<h3 id="while-loops"><code>while</code> Loops</h3>
+<ul>
+<li><code>while</code> loops can run indefinitely, so long as the condition remains true.</li>
+<li>The loop&#39;s condition is re-evaluated each time the block finishes running.</li>
+</ul>
+<h3 id="for-loops"><code>for</code> Loops</h3>
+<ul>
+<li>A &#39;for&#39; loop will generally run a fixed number of times, not indefinitely.</li>
+<li>The three paramters for a <code>for</code> loop, in order, are (1) an initialization, (2) a condition, and (3) a final expression.</li>
+</ul>
+<p><a href="09_assessment.html">Let&#39;s put this into practice - here comes some more &#39;Rock Paper Scissors&#39;!</a></p>
 
                     
                     </section>
@@ -1001,10 +1035,10 @@
         </div>
 
         
-        <a href="../01_chapter/05_lesson.html" class="navigation navigation-prev " aria-label="Previous page: Navigating the Command Line"><i class="fa fa-angle-left"></i></a>
+        <a href="../04_chapter/07_exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_chapter/07_exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
+        <a href="../04_chapter/09_assessment.html" class="navigation navigation-next " aria-label="Next page: Unit 4 Homework"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

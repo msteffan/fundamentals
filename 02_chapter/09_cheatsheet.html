@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Quiz | WDI Fundamentals</title>
+        <title>Cheat Sheet | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../01_chapter/07_exercise.html" />
+    <link rel="next" href="../02_chapter/08_assessment.html" />
     
     
-    <link rel="prev" href="../01_chapter/05_lesson.html" />
+    <link rel="prev" href="../02_chapter/07_exercise.html" />
     
 
         
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="1422637178197">
+    <div class="book" data-level="2.3" data-basepath=".." data-revision="1422637178197">
     
 
 <div class="book-summary">
@@ -188,7 +188,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.2.1" data-path="01_chapter/06_quiz.html">
+        <li class="chapter " data-level="1.2.1" data-path="01_chapter/06_quiz.html">
             
                 
                     <a href="../01_chapter/06_quiz.html">
@@ -441,7 +441,7 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
+        <li class="chapter active" data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
             
                 
                     <a href="../02_chapter/09_cheatsheet.html">
@@ -982,15 +982,55 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_52">
                     
-                        <p><strong>WDI Fundamentals Unit 1</strong></p>
+                        <p><strong>WDI Fundamentals Unit 2</strong></p>
 <hr>
-<p><div class="typeform-widget" data-url="https://gahub.typeform.com/to/MxzusH" data-text="NEW Fundamentals 1.2" style="width:100%;height:500px;"></div></p>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
+<h1 id="git-cheat-sheet">Git Cheat Sheet</h1>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>git init</code></td>
+<td>Tells Git to start monitoring the current folder you&#39;re in. In other words, for my working directory, create a new &quot;timeline&quot; where we can manage our source code.</td>
+</tr>
+<tr>
+<td><code>git status</code></td>
+<td>Get the current status of Git. Files that are &quot;staged&quot; (about to be committed), and files that are unstaged (files that have changed since the last commit, but are not about to be committed) will both show up here</td>
+</tr>
+<tr>
+<td><code>git add path/to/file</code> <em>[can take a directory or file]</em></td>
+<td>Add a file to the &quot;stage&quot;. The stage can be thought of as an inbetween state between the last commit and what is ready to be committed. Once the command <code>git commit</code> is run, all staged files will be committed to the timeline.</td>
+</tr>
+<tr>
+<td><code>git commit -m &quot;Commit message&quot;</code></td>
+<td>Commit all staged files to the timeline. If <code>-m &quot;Commit messsage&quot;</code> is ommitted, Git will open your default text editor (typically Vim) to enter a longer message. If for any reason Vim is opened, you can close it by typing <code>:q</code>.</td>
+</tr>
+<tr>
+<td><code>git log</code></td>
+<td>Visualize the timeline. You can scroll with the arrow keys or <code>j</code>, <code>k</code>, and it can be exited by typing <code>q</code>.</td>
+</tr>
+<tr>
+<td><code>git diff path/to/file</code> <em>[can take a directory or file]</em></td>
+<td>Show the changes of the given file or directory.</td>
+</tr>
+<tr>
+<td><code>git clone http://path/to/repo</code></td>
+<td>Create a new local git repo copied from a remote one</td>
+</tr>
+<tr>
+<td><code>git push origin master</code></td>
+<td>Send local changes to tracked remote repository</td>
+</tr>
+</tbody>
+</table>
 <hr>
-<p><a href="07_exercise.html">Here&#39;s another exercise for you</a> - give it a shot.</p>
+<p>Feeling confident? <a href="08_assessment.html">Let&#39;s take what we&#39;ve learned and apply it to a project.</a></p>
 
                     
                     </section>
@@ -1001,10 +1041,10 @@
         </div>
 
         
-        <a href="../01_chapter/05_lesson.html" class="navigation navigation-prev " aria-label="Previous page: Navigating the Command Line"><i class="fa fa-angle-left"></i></a>
+        <a href="../02_chapter/07_exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_chapter/07_exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
+        <a href="../02_chapter/08_assessment.html" class="navigation navigation-next " aria-label="Next page: Unit 2 Homework"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>

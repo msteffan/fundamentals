@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Quiz | WDI Fundamentals</title>
+        <title>Boolean Logic | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../01_chapter/07_exercise.html" />
+    <link rel="next" href="../03_chapter/09_quiz.html" />
     
     
-    <link rel="prev" href="../01_chapter/05_lesson.html" />
+    <link rel="prev" href="../03_chapter/07_exercise.html" />
     
 
         
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="1.2.1" data-basepath=".." data-revision="1422637178197">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="1422637178197">
     
 
 <div class="book-summary">
@@ -188,7 +188,7 @@
                 
     
         
-        <li class="chapter active" data-level="1.2.1" data-path="01_chapter/06_quiz.html">
+        <li class="chapter " data-level="1.2.1" data-path="01_chapter/06_quiz.html">
             
                 
                     <a href="../01_chapter/06_quiz.html">
@@ -609,7 +609,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.3" data-path="03_chapter/08_lesson.html">
+        <li class="chapter active" data-level="3.3" data-path="03_chapter/08_lesson.html">
             
                 
                     <a href="../03_chapter/08_lesson.html">
@@ -982,15 +982,67 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_12">
+                    <section class="normal" id="section-gitbook_59">
                     
-                        <p><strong>WDI Fundamentals Unit 1</strong></p>
+                        <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
-<p><div class="typeform-widget" data-url="https://gahub.typeform.com/to/MxzusH" data-text="NEW Fundamentals 1.2" style="width:100%;height:500px;"></div></p>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
-
+<h1 id="expression-oddballs">Expression Oddballs</h1>
+<p>At this point, we&#39;ve covered most of what you should know about expressions. However, there are a few quirks and exceptions that we&#39;ve (until now) glossed over. Let&#39;s take a closer look at some of them.</p>
+<h2 id="undefined-and-null">Undefined and Null</h2>
+<p>What happens if we try to evaluate a variable that we haven&#39;t created or assigned value to? The answer is that JavaScript will usually let us do this, but it will evaluate that variable to one of the following special values to indicate that something&#39;s gone wrong.</p>
+<ul>
+<li><strong><code>undefined</code></strong> : When you trying to evaluate a variable that doesn&#39;t exist in your program, and JavaScript has no idea what you&#39;re referring to.</li>
+<li><strong><code>null</code></strong> : When the variable that you&#39;re referencing exists, but doesn&#39;t have any value assigned to it.</li>
+</ul>
+<h2 id="falsey--truthy">&#39;falsey&#39; / &#39;truthy&#39;</h2>
+<p>We&#39;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&quot;Happy birthday, &quot; + &quot;Tom&quot;</code>, the <code>+</code> operator is working with strings, so it performs a concatentation instead.</p>
+<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&#39;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &#39;falsey&#39; and &#39;truthy&#39;, and (at least in JavaScript) follow the following rules to determine how to behave.</p>
+<ul>
+<li>NOT : If the input is &#39;truthy&#39;, give back <code>false</code>; if the input is &#39;falsey&#39;, give back <code>true</code>.</li>
+<li>OR : Give back the first &#39;truthy&#39; value; if both values are &#39;falsey&#39;, give back the last &#39;falsey&#39; value.</li>
+<li>AND : Give back the first &#39;falsey&#39; value; if both values are &#39;truthy&#39;, give back the last &#39;truthy&#39; value.</li>
+</ul>
+<p>Here&#39;s a table to show you which kinds of values are which in JavaScript.</p>
+<table>
+<thead>
+<tr>
+<th>&#39;Falsey&#39;</th>
+<th>&#39;Truthy&#39;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>false</code></td>
+<td><code>true</code></td>
+</tr>
+<tr>
+<td>0</td>
+<td>All numbers except 0, including &#39;Infinity&#39; (what you get after dividing by 0)</td>
+</tr>
+<tr>
+<td>Empty strings (&quot;&quot;)</td>
+<td>All non-empty strings</td>
+</tr>
+<tr>
+<td>Undefined, Null, and NaN (&#39;Not A Number&#39;, a special type of numeric value)</td>
+<td>Pretty much everything else</td>
+</tr>
+</tbody>
+</table>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Can you predict how the following expressions will be evaluated? Check your answers in repl.it.</p>
+<ul>
+<li><code>1 || true</code></li>
+<li><code>3 || null</code></li>
+<li><code>!(&quot;&quot;)</code></li>
+<li><code>false &amp;&amp; undefined</code></li>
+<li><code>true &amp;&amp; !0</code></li>
+<li><code>null || 3</code></li>
+</ul>
+<p>One of the most common use-cases of this is when you&#39;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&#39;ve gotten from a user. If the user hasn&#39;t given any input, <code>x</code> might be <code>null</code>.</p>
+<p>To compensate for this, we might write the expression <code>x = x || 10;</code>. If x has some &#39;truthy&#39; value, the OR operator will evaluate to <code>x</code>, so it would be as if we wrote <code>x = x</code>. However, if x were <code>null</code>, the OR operator would evaluate to 10 (because <code>null</code> is &#39;falsey&#39;). It&#39;s as if we&#39;ve said &quot;If x doesn&#39;t already have a value assigned, set it equal to 10&quot;. For that reason, this kind of operation is often called &#39;conditional assignment&#39;.</p>
 <hr>
-<p><a href="07_exercise.html">Here&#39;s another exercise for you</a> - give it a shot.</p>
+<p>Ready for another <a href="09_quiz.html">quiz</a>?</p>
 
                     
                     </section>
@@ -1001,10 +1053,10 @@
         </div>
 
         
-        <a href="../01_chapter/05_lesson.html" class="navigation navigation-prev " aria-label="Previous page: Navigating the Command Line"><i class="fa fa-angle-left"></i></a>
+        <a href="../03_chapter/07_exercise.html" class="navigation navigation-prev " aria-label="Previous page: Exercise"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_chapter/07_exercise.html" class="navigation navigation-next " aria-label="Next page: Exercise"><i class="fa fa-angle-right"></i></a>
+        <a href="../03_chapter/09_quiz.html" class="navigation navigation-next " aria-label="Next page: Quiz"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
