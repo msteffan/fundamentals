@@ -14,22 +14,24 @@
 
 # JavaScript
 
-Now that you've learned (1) how to create and edit files via the command line, (2) how to track changes in your projects using git, and (3) how to share those projects with the world by publishing them on GitHub, it's time for us to move on to the main event: programming.
+So far, you've learned the basics of:
+- how to create and edit files via the command line
+- how to track changes in your projects using git
+- how to share those projects with the world by publishing them on GitHub.
 
-It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems like, say,
+Now it's time for us to move on to the main event: programming.
 
-  > "How many students are here today?"
+It's worth mentioning that although most people think of programming as being about writing code, it's really much more about solving problems. Problems such as:
 
-  > "How far away am I from the restaurant?"
+- "How many students are here today?"
+- "How far away am I from the restaurant?"
+- "What's the fastest way to find the file I'm looking for?"
 
-  > "What's the fastest way to find the file I'm looking for?"
+Trying to "just start coding", without first figuring out the problem at hand is a surefire way to waste time, frustrate yourself, and create sub-optimal products. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
 
-Trying to 'just start coding', without first figuring out the problem is a surefire way to run into trouble. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
-
-In the rest of this chapter, we'll be exploring some of the more common tools in a programmer's arsenal. Although we will be specifically looking at the tools available in a language called **JavaScript**, these tools (or similar) are present in nearly every modern programming language, so whether you end up working in JavaScript, Ruby, Python, or Lisp, having a strong understanding of these basics is invaluable.
+In the rest of this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of these basics in is incredibly important, and will translate to your work in other languages, whether you end up working in JavaScript, Ruby, Python, or another language.
 
 <br>
-
 
 ## Repl.it
 To start playing around with JavaScript, we'll be using a web platform called **[Repl.it](http://repl.it/languages/JavaScript)**.
@@ -43,11 +45,3 @@ To save your repl.it session, just click the 'save' button in the upper right - 
 ![repl.it Screenshot](../assets/chapter3/save_replit.png)
 
 Ready to begin? [Let's go](02_lesson.md).
-
-
-
-
-
-
-
-
