@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Exercise | WDI Fundamentals</title>
+        <title>Unit 3 Homework | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../01_chapter/11_cheatsheet.html" />
+    <link rel="next" href="../04_chapter/README.html" />
     
     
-    <link rel="prev" href="../03_chapter/09_quiz.html" />
+    <link rel="prev" href="../01_chapter/11_cheatsheet.html" />
     
 
         
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.3.2" data-basepath=".." data-revision="1422637578490">
+    <div class="book" data-level="3.5" data-basepath=".." data-revision="1422637578490">
     
 
 <div class="book-summary">
@@ -642,7 +642,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="3.3.2" data-path="03_chapter/10_exercise.html">
+        <li class="chapter " data-level="3.3.2" data-path="03_chapter/10_exercise.html">
             
                 
                     <a href="../03_chapter/10_exercise.html">
@@ -679,7 +679,7 @@
         </li>
     
         
-        <li class="chapter " data-level="3.5" data-path="03_chapter/12_assessment.html">
+        <li class="chapter active" data-level="3.5" data-path="03_chapter/12_assessment.html">
             
                 
                     <a href="../03_chapter/12_assessment.html">
@@ -982,34 +982,64 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_83">
+                    <section class="normal" id="section-gitbook_86">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
-<h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
-<p><a href="http://repl.it/9SR" target="_blank">Here is some more sample code</a>, again in a repl.it session. The contents are repeated below.</p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">oneHundredIfNull</span><span class="hljs-params">(x)</span> </span>{
-  <span class="hljs-comment">// If x is null, your expression should evaluate to 100.</span>
-  <span class="hljs-comment">// Otherwise, your expression should evaluate to whatever x's value is.</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
+<h2 id="project">Project</h2>
+<p>Now that we&#39;ve learned a little bit about expressions, let&#39;s apply some of this material to our &#39;Rock Paper Scissors&#39; project.</p>
+<hr>
+<p>Go back into the project repo, wherever you&#39;ve decided to put it, and open up the file <code>RockPaperScissors.js</code> (inside the <code>src</code> directory).</p>
+<p>When you look inside the file you should first see a block of code that looks like this :</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getInput</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please choose either 'rock', 'paper', or 'scissors'."</span>)
+    <span class="hljs-keyword">return</span> prompt();
 }
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fiftyUnlessNull</span><span class="hljs-params">(x)</span> </span>{
-  <span class="hljs-comment">// If x is null, your expression should evaluate to null.</span>
-  <span class="hljs-comment">// Otherwise, your expression should evaluate to 50, irrespective of x's value.</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isEmptyString</span><span class="hljs-params">(some_string)</span> </span>{
-  <span class="hljs-comment">// If some_string is an empty string, your expression should evaluate to true.</span>
-  <span class="hljs-comment">// Otherwise, your expression should evaluate to false.</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">randomPlay</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">var</span> randomNumber = <span class="hljs-built_in">Math</span>.random();
+    <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.33</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"rock"</span>;
+    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.66</span>) {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"paper"</span>;
+    } <span class="hljs-keyword">else</span> {
+        <span class="hljs-keyword">return</span> <span class="hljs-string">"scissors"</span>;
+    }
 }
 </code></pre>
-<p>As before, if everything works, save your session and submit the new URL (along with your name and cohort) into the form below.</p>
-<!-- FORM -->
+<p>Please don&#39;t edit these functions, but feel free to look at them closely and try to figure out how they work - learning to read code is an important step in learning how to write code.</p>
+<p>When you&#39;re ready, skip ahead to the next section, shown below.</p>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getPlayerMove</span><span class="hljs-params">(move)</span> </span>{
+    <span class="hljs-comment">// If a move is given, your expression should evaluate to that move.</span>
+    <span class="hljs-comment">// If move is not specified / is null, your expression should run getInput()</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-comment">/* Your Expression */</span>;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getComputerMove</span><span class="hljs-params">(move)</span> </span>{
+    <span class="hljs-comment">// If a move is given, your expression should evaluate to that move.</span>
+    <span class="hljs-comment">// If move is not specified / is null, your expression should run randomPlay()</span>
+    <span class="hljs-keyword">return</span> <span class="hljs-comment">/* Your Expression */</span>;
+}
+</code></pre>
+<p>Similar to how you&#39;ve done this in your exercises, you will need to replace the <code>/* Your Expression */</code> comment with an expression that meets the specifications laid out in the single-line comments above.</p>
+<p>Remember, when you&#39;re programming, you need to figure out the solution before you ever start writing code. Here&#39;s a good rule of thumb for how to get started.</p>
+<ol>
+<li><p><strong>Understand the problem.</strong> In particular, try to determine (a) what you will be given, and (b) what you hope to get out. If you can&#39;t explain the problem in those kinds of terms, you won&#39;t be able to move further.</p>
+</li>
+<li><p><strong>Come up with test cases (and eventually, tests).</strong> Once you&#39;ve figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not your code is working. Once you&#39;ve learned a little more about writing code, you&#39;ll actually use these test cases to write tester code, which can be used to automatically confirm whether or not your project&#39;s code is working.</p>
+<blockquote>
+<p>Actually, this project has some tests built into it already, using a testing tool called Jasmine; to see the tests up close, just take a peek inside (but don&#39;t change!) the file <code>RockPaperScissorsSpec.js</code>, which sits inside the <code>spec</code> directory. These tests specify exactly how the code we write should behave - that&#39;s why they&#39;re called &#39;specs&#39;!</p>
+</blockquote>
+</li>
+<li><p><strong>Solve the problem in English.</strong> Or any human language, really. The point is, you shouldn&#39;t be <em>touching</em> your keyboard until you can explain, clearly and precisely, both what it is you&#39;re trying to do and how you&#39;re trying to do it.</p>
+</li>
+<li><p><strong>Write bad code, but bad code that works.</strong> Don&#39;t worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.</p>
+</li>
+<li><p><strong>&#39;Refactor&#39; your code.</strong> Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don&#39;t break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.</p>
+</li>
+</ol>
+<p>Go ahead and get started - when you&#39;ve finished changing out those two lines (and have confirmed that your code works by testing it in repl.it), save your code and make a commit to the project&#39;s repository.</p>
 <hr>
-<p><a href="11_cheatsheet.html">Now let&#39;s take a look at our cheatsheet and look back over everything we&#39;ve learned so far.</a></p>
+<p><a href="../04_chapter/README.html">Next up: Chapter 4</a></p>
 
                     
                     </section>
@@ -1020,10 +1050,10 @@
         </div>
 
         
-        <a href="../03_chapter/09_quiz.html" class="navigation navigation-prev " aria-label="Previous page: Quiz"><i class="fa fa-angle-left"></i></a>
+        <a href="../01_chapter/11_cheatsheet.html" class="navigation navigation-prev " aria-label="Previous page: Cheat Sheet"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../01_chapter/11_cheatsheet.html" class="navigation navigation-next " aria-label="Next page: Cheat Sheet"><i class="fa fa-angle-right"></i></a>
+        <a href="../04_chapter/README.html" class="navigation navigation-next " aria-label="Next page: Control Flow in JavaScript"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
