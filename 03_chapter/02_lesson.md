@@ -11,7 +11,7 @@ You've probably picked up a scientific calculator at some point in the past and 
 
 That thing that we type into the calculator is called an **expression**: a collection of values (*12345*) and operations (like **+** or **x**).
 
-The process of reducing this expression down to a single value, or *result*, is called **evaluation**.
+The process of reducing this expression down to a single value is called **evaluation**.
 
 The repl.it console is similar in many ways to this calculator. It accepts an expression (in JavaScript) from the user and attempts to evaluate that expression, yielding a single value.
 
@@ -27,18 +27,20 @@ Calculators can only operate on numbers, but computers can perform calculations 
 
 * **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, `'single-quote'` (also sometimes called 'string literals') and `"double-quote"`. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: `"hello"`, `"goodbye"`, `"moc.liamg@gmail.com"`
 
-* **Booleans**: This one's probably a bit new for you. Boolean-type data only has two possible values, `true` and `false`.
+* **Booleans**: This one's probably new for you. Boolean-type data only has two possible values, `true` and `false`.
 
-In case you ever forget what type of data you're dealing with, you can run the `typeof` command. Try typing the following lines into repl.it - what responses do you get?
+If you forget what type of data you're dealing with, you can run the `typeof` command. Try typing the following lines into repl.it - what responses do you get?
+
 * `typeof "hello";`
 * `typeof 24;`
 * `typeof 3.45;`
 * `typeof true;`
 
-> **HINT**  You may have noticed that each of those lines ended in a `;` - in JavaScript, a semicolon is used to denote the end of a line. Although your code may execute without them, there are cases where not having an semicolon at the end of a line can cause unexpected results. Just use 'em.
+> **HINT**  You may have noticed that each of those lines ended in a `;` - in JavaScript, a semicolon is used to denote the end of a line. Although your code may execute without them, there are cases where a missing semicolon can cause unexpected results. Just get in the habit of using them.
 
 ### Test Yourself
-Try to predict the types of each of the following bits of data. Check your answers with `typeof` - were you correct?
+Try to predict the types of each of the following bits of data. Check your answers with `typeof` in repl.it - were you correct?
+
 * `24`
 * `"99"`
 * `'true'`
@@ -53,13 +55,13 @@ Of course, simply having data sitting around isn't very useful. Operators take v
 >**Note** When given String arguments, the `+` operator actually behaves differently - it 'concatenates' two strings together to make one big string.
 <br><u>For example</u>: `"Hello" + " " + "Bob"` will evaluate to `"Hello Bob"`.
 
-* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1`, with a remainder of `2`. The modulus operator takes in two numbers and gives you the remainder of their division.
-<br><u>For example</u>: `5 % 3` will evaluate to `2`.
+* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
+<br><u>For example</u>: `15 % 4` will evaluate to `3`.
 
-* **Inequality** (`>`,`<`): These operators take in two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
+* **Inequality** (`>`,`<`): These operators take two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
 <br><u>For example</u>: `5 > 1` will evaluate to `true`, while `10 < 5` will evaluate to `false`.
 
-* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical - while the second, the 'loose equality', has a little more wiggle room.
+* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical in data type and value - while the second, the 'loose equality', has a little more wiggle room.
 <br><u>For example</u>:
 
     ```javascript
@@ -76,7 +78,7 @@ Of course, simply having data sitting around isn't very useful. Operators take v
       => true
     ```
 
-* **Logical Operators** (`!`,`||`,`&&`): These operators both take and give out boolean values.
+* **Logical Operators** (`!`,`||`,`&&`): These operators both take and give back boolean values.
     * NOT (`!`) will reverse the value of any boolean.
         `!true` => `false`
     * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false`.
@@ -92,7 +94,7 @@ Can you predict what will the results of these operations will be? Check your an
 ## Expressions
 So, what happens when we bring several of these operators and values together?
 
-Consider the following expression :
+Consider the following expression:
 
 `(2+3)*(9-8)`
 

@@ -29,12 +29,12 @@ It's worth mentioning that although most people think of programming as being ab
 
 Trying to "just start coding", without first figuring out the problem at hand is a surefire way to waste time, frustrate yourself, and create sub-optimal products. However, in order to understand how to solve a problem, you first need to understand the tools at your disposal.
 
-In the rest of this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of these basics in is incredibly important, and will translate to your work in other languages, whether you end up working in JavaScript, Ruby, Python, or another language.
+In the rest of this chapter, we'll be exploring some of the more common tools and concepts a programmer needs to understand. Although we will be specifically looking at these concepts in the context of **JavaScript**, these tools (or similar ones) are present in nearly every modern programming language. Having a strong understanding of these basics is incredibly important, and will translate to your work in other languages, whether you end up working in JavaScript, Ruby, Python, or any other language.
 
 <br>
 
 ## Repl.it
-To start playing around with JavaScript, we'll be using a web platform called **[Repl.it](http://repl.it/languages/JavaScript)**.
+To start playing around with JavaScript, we'll be using a website called **[Repl.it](http://repl.it/languages/JavaScript)**.
 
 ![repl.it Screenshot](../assets/chapter3/replit.png)
 
