@@ -15,7 +15,7 @@ When we want to then use this result, we simply subsitute `x` for wherever our o
 
 To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
 
-#### Test Yourself
+### Test Yourself
 Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.
 * `x + 20`
 * `x * x`
@@ -70,7 +70,7 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 
 One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
 
-#### Test Yourself
+### Test Yourself
 Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
 
 ##### Challenge \#1
@@ -99,7 +99,7 @@ Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What
 
 The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
 
-#### A few shortcuts
+### A few shortcuts
 
 Needing to operate 'in place' (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below.
 
