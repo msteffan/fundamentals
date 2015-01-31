@@ -70,7 +70,7 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 
 One important thing to mention here is that **at no point is any lasting relationship established between x and y** (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.
 
-### Test Yourself
+#### Test Yourself
 Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
 
 ##### Challenge \#1
@@ -99,7 +99,9 @@ Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What
 
 The key is remembering how the `=` operator works - before it assigns anything to the variable on the left, *it first evaluates the expression on the right*. This means that if we have any expression like, say, `x = x + 1`, what we are doing is taking the old value of `x`, adding one to it, and storing this new result back into `x`. In short, we are "incrementing" x: increasing its value by one, no matter what `x`'s original value was.
 
-*Needing to operate 'in place' (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below*
+#### A few shortcuts
+
+Needing to operate 'in place' (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below.
 
 | Long-Hand Syntax | Short-Hand Syntax |
 |------------------|-------------------|
@@ -110,8 +112,7 @@ The key is remembering how the `=` operator works - before it assigns anything t
 | `x = x % 10` | `x %= 10` |
 | `x = x + 1`  | `x = x++` |
 
-> **HINT**
-*Although JavaScript does *not* offer them, some languages (Ruby, for instance) allow you to even do this with logical operators, like OR (`||`) and AND (`&&`)!*
+Although JavaScript does *not* offer them, some languages (Ruby, for instance) allow you to even do this with logical operators, like OR (`||`) and AND (`&&`).
 
 | Long-Hand Syntax (Ruby) | Short-Hand Syntax (Ruby) |
 |------------------|-------------------|
