@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 2**
+**WDI Fundamentals - Chapter 2**
 
 ---
 
@@ -7,4 +7,4 @@
 
 ---
 
-[Here are some more exercises to help you practice.](05_exercise.md)
+[Here are some more exercises to help you practice.](04_exercise.md)
