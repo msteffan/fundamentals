@@ -48,13 +48,19 @@ Try to predict the types of each of the following bits of data. Check your answe
 ## Operators
 Of course, simply having data sitting around isn't very useful. Operators take values as their inputs (also known as **arguments**) and produce new data as output. There are *many* different operators out there, but here are some of the common ones:
 
-* **Arithmetic** (`+`,`-`,`*`,`/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`. Note that when given String arguments, the `+` operator actually behaves differently – it "concatenates" two strings together to make one big string).
+* **Arithmetic** (`+`,`-`,`*`,`/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`.
 
-* **Modulus** (`%`): Remember remainders? For exmample, `5` divided by `3` equals `1`, with a remainder of `2`. The modulus operator takes in two numbers and gives you the remainder of their division. In other words, `5 % 3` will evaluate to `2`.
+>**Note** When given String arguments, the `+` operator actually behaves differently - it 'concatenates' two strings together to make one big string.
+<br><u>For example</u>: `"Hello" + " " + "Bob"` will evaluate to `"Hello Bob"`.
 
-* **Inequality** (`>`,`<`): These operators take in two numbers as inputs, but unlike the previous operators, they give back *boolean* values. For example, `5 > 1` will evaluate to `true`, while `10 < 5` will evaluate to `false`.
+* **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1`, with a remainder of `2`. The modulus operator takes in two numbers and gives you the remainder of their division.
+<br><u>For example</u>: `5 % 3` will evaluate to `2`.
 
-* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical - while the second, the 'loose equality', has a little more wiggle rooom. Here are some examples to show you how it works.
+* **Inequality** (`>`,`<`): These operators take in two numbers as inputs, but unlike the previous operators, they give back *boolean* values.
+<br><u>For example</u>: `5 > 1` will evaluate to `true`, while `10 < 5` will evaluate to `false`.
+
+* **Equality** (`===`,`==`) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a 'strict equality' - it will only evaluate `true` if both sides are completely identical - while the second, the 'loose equality', has a little more wiggle room.
+<br><u>For example</u>:
 
     ```javascript
     5 === 5;
