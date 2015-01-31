@@ -20,9 +20,9 @@ function someBoolean() {
 }
 ```
 
-`/*Your Expression*/`, above, is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: 'span'/'multi-line' comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which can't.
+`/*Your Expression*/`, above, is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
 
-Your job, in this exercise, is to replace each of those comments with an expression - any expression you like - that evaluates to either `360`, `"Hello world"`, or `true`, respectively. You can check your answers in the console by entering the commands `someNumber()`, `someString()`, or `someBoolean()`.
+Your job, in this exercise, is to replace each of those comments with an expression that evaluates to either `360`, `"Hello world"`, or `true`, respectively. You can use any expression you like, but make sure your expression has at least two arguments. You can check your answers in the console by entering the commands `someNumber()`, `someString()`, or `someBoolean()`.
 
 If all three of those commands give you the correct answers, nice job - you're done! Save your repl.it session and copy the new URL for your session (along with your name and cohort) into the form below.
 
