@@ -5,18 +5,19 @@
 
 One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.
 
-Suppose that we wanted to save the result of our expression, `(99*746)-(837*23)`, and then multiply the whole thing by two later. We could store that result in a variable `x` using `=` (the 'assignment' operator) as follows:
+Suppose that we wanted to save the result of our expression, `(99*746)-(837*23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
 
 `var x = (99*746)-(837*23);`
 
-> **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* it the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
+> **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
-When we want to then use this result, we simply subsitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;`, and this expression would evaluate to double whatever value was stored in `x`.
+When we want to then use this result, we simply subsitute `x` for wherever our original expression might have gone; for instance, we could write `x * 2;` and this expression would evaluate to double whatever value was stored in `x`.
 
 To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that `x` (or whatever other variable we might be using) evaluates to whatever value it's storing at the time.
 
 ### Test Yourself
 Assume that `x` is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.
+
 * `x + 20`
 * `x * x`
 * `3 * (x * x) - 2 * x + 5`
@@ -24,6 +25,7 @@ Assume that `x` is equal to 10. What values do the following expressions evaluat
 We can redefine our variable `x` as many times as we want. However, ***only the most recent value of `x` is retained*** - once `x` gets redefined, its original value is lost forever.
 
 Suppose we ran the following lines of code in order, one by one.
+
 ```javascript
   var x = 10;
   x = 1;
