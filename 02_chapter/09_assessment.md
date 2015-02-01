@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 2**
+**WDI Fundamentals - Unit 2**
 
 ---
 
@@ -26,9 +26,9 @@ To access the existing code for this project, you will need to fork and clone th
 
 2. Go to [this address](https://github.com/ga-students/wdi-fundamentals-rps) to find the repository containing the existing code. Once there, click the button that says 'Fork' - this will create a copy of the original repository under **your** GitHub account.
 
-3. Go take a look and confirm that you now have a copy of `wdi-fundamentals` in your list of repositories.
+3. Go take a look and confirm that you now have a copy of `wdi-fundamentals-rps` in your list of repositories.
 
-4. Click into your repo, and observe that Github lists your repo as a fork of another repo. 
+4. Open your fork of the repo (and note that Github lists your repo as a fork of the original).
 
 	![Image showing "forked from ga-students/wdi-fundamentals-rps"](../assets/chapter2/clone_ga-students.png)
 
@@ -36,14 +36,11 @@ To access the existing code for this project, you will need to fork and clone th
 
 	![Image showing "clone HTTP address"](../assets/chapter2/clone_http.png)
 
-6. Open up the terminal application on your computer, and change to the `fundamentals` directory within your home directory.
+6. Open up the terminal application on your computer, and enter the `fundamentals` directory within your home directory. Once there, run the following Git command from command line:
+`git clone <HTTPS clone URL>` (substituting the clone URL you copied above)
+This will copy your forked repo from GitHub to your own computer, so that you can work on it.
 
-6. Once there, run the following Git command from command line:
-`git clone <HTTPS clone URL>`, substituting the clone URL you copied above. This will copy your forked repo from GitHub to your own computer, so that you can work on it.
-
-7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-rps`.  
-
-	This repository contains three folders and three files.  The ONLY file you should touch is inside the `src` folder, called `RockPaperScissors.js.`
+7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-rps`. This repository contains three folders and a couple of other files.  The ONLY file you should edit is `RockPaperScissors.js` - it can be found at `app/js`.
 
 ---
 

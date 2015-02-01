@@ -1,4 +1,4 @@
-**WDI Fundamentals Unit 2**
+**WDI Fundamentals - Unit 2**
 
 ---
 *These quizzes can be fickle –if you do not see anything below, please try refreshing the page!
@@ -8,4 +8,6 @@
 
 ---
 
+
 [Here are some more exercises to help you practice.](04_exercise.md)
+
