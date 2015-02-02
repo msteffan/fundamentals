@@ -12,28 +12,44 @@ To collaborate with others (and also to backup our files just in case our comput
 
 GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories, and you can easily get a graphical representation of the versions of your files.
+In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories and you can easily get a graphical representation of the versions of your files.
 
-![Image of the user's Github home page, showing repositories, contribution timeline, and annotations of the key features]()
+![Github Interface](../assets/chapter2/github.gif)
+
+1. **Repo Name and Owner** - describes who owns the repository, what the name of the repo is and whether the repo is public or private.
+
+2. **Overview** - displays the number of commits, branches, releases and contributors to a particular repo.  Selecting any one of these options will bring a detailed view of that selection.
+
+3. **Repo File Structure** - displays the contents of the repo.  Selecting any file or folder will open a detailed view of that file and allow you to edit the content directly.
+
+4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own Github account.
+
+5. **Side Bar** - use the side bar to respond to issues, create pull requests, and change the settings for this repo.
+
+
 
 ## Our GitHub Flow
 
 There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.
 
-The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git. Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
+The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git. 
+
+Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
 
 This is what our workflow looks like:
 ![GitHub Workflow](../assets/chapter2/github_workflow.gif)
 <br><br>
 
 
->**NOTE** Don't worry, we are going to cover this step by step, in enough plenty of detail.
+**Don't worry**, we are going to cover this step by step, in plenty of detail.
 
 ---
 
 ### 1. Forking
 
-First, you're going to "fork" our repository on Github. "Forking" simply means creating a copy of someone else's GitHub repo, and associating it with *your* Github account. It's not perfectly identical - your forked copy maintains a reference to the GA copy. However, your copy includes all the same files, all of the commit history from anyone who previously made changes to the repo, all of the currently added issues, and more.
+First, you're going to "fork" our repository on Github. "Forking" simply means creating a copy of someone else's GitHub repo, and associating it with *your* Github account. 
+
+The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
 Forking makes sense in the context of a collaborative platform like Github. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node is completely open-source, which means that anyone can read (and even copy) the code that makes Node work - including you! Node's source code is available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made commits to Node.
 
@@ -41,9 +57,6 @@ Although it is open-source and anyone can read through or offer to contribute to
 
 This is where forks come in. By forking Joyent's repo, you could have a full working copy of the Node source code to play with. But even if you break something, Node's codebase won't be affected.
 
-![Image showing repository and a highlight of the fork button]()
-
-![Image showing a list of repositories with the fork added]()
 
 
 Once a repo is forked, it gets added to the list of repositories associated with your GitHub account. To actually make changes to the code, you would need to:

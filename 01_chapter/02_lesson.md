@@ -9,15 +9,21 @@ Before we tell the computer what to do, it's important we understand what it is 
 
 ![Folders in the GUI](../assets/chapter1/FileSystem.gif)
 
-The way your computer organizes and stores files is called a **file system**. Let's take a minute to learn the vocabulary developers use to talk about the file system.
+The way your computer organizes and stores files is called a **file system**. Let's take a minute to learn the vocabulary developers use to talk about it.
 
 * In programming-speak, all folders are called **directories**.
+
+![Directories](../assets/chapter1/directory.png)
 
 * A directory within another directory is called a **subdirectory**.
 
 * A directory that contains a subdirectory or file is called a **parent directory**.
 
+![Subdirectory and Parent Directory](../assets/chapter1/subdirectories.png)
+
 * The topmost directory of any file is called the **root directory** – nothing contains it.
+
+![Root Directory](../assets/chapter1/root_directory.png)
 
 For the purposes of this lesson, the root directory of everything on your computer is your home directory. It's aptly represented in the GUI by a house icon (if you're using a Mac).
 
