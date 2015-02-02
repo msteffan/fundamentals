@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2" data-basepath=".." data-revision="1422650125608">
+    <div class="book" data-level="2" data-basepath=".." data-revision="1422898565145">
     
 
 <div class="book-summary">
@@ -579,27 +579,21 @@
                 
             
             
-            <ul class="articles">
-                
+        </li>
     
         
-        <li class="chapter " data-level="3.2.1.1" data-path="03_chapter/07_exercise.html">
+        <li class="chapter " data-level="3.2.2" data-path="03_chapter/07_exercise.html">
             
                 
                     <a href="../03_chapter/07_exercise.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.1.</b>
+                            <b>3.2.2.</b>
                         
                          Exercise
                     </a>
                 
             
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -708,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow in JavaScript
+                         Control Flow
                     </a>
                 
             
@@ -725,7 +719,7 @@
                         
                             <b>4.1.</b>
                         
-                         Control Flows
+                         Conditionals
                     </a>
                 
             
@@ -779,7 +773,7 @@
                         
                             <b>4.2.</b>
                         
-                         Conditionals and Loops
+                         Loops
                     </a>
                 
             
@@ -870,7 +864,7 @@
                         
                             <b>5.</b>
                         
-                         Functional JavaScript
+                         Functions
                     </a>
                 
             
@@ -886,7 +880,7 @@
                         
                             <b>6.</b>
                         
-                         Complex JS Data Types
+                         Complex Data Types in JS
                     </a>
                 
             
@@ -982,44 +976,51 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_56">
+                    <section class="normal" id="section-gitbook_47">
                     
-                        <p><strong>WDI Fundamentals Unit 2</strong></p>
+                        <p><strong>WDI Fundamentals - Unit 2</strong></p>
 <hr>
 <h5 id="by-the-end-of-this-unit-youll-be-able-to">By the end of this Unit, you&#39;ll be able to:</h5>
 <ul>
-<li>Define a version control system and it&#39;s benefits</li>
+<li>Define a version control system and its benefits</li>
 <li>Describe how Git works</li>
-<li>Identify the Git commands used to set up a local respository and to record snapshots</li>
-<li>Update a remote repository with local changes to a text file, from the command line</li>
+<li>Identify the Git commands used to set up a local respository and to record &#39;snapshots&#39; of your project</li>
+<li>Push local changes to a remote repository using the command line</li>
 </ul>
 <hr>
 <h1 id="version-control">Version Control</h1>
-<p>When you’re working on something –say a painting, software or an autobiography– there comes a time when you wish you had a reset button.</p>
-<p>You might already have a system in place to deal with this problem –maybe you save your document multiple times with different names, so that you can return to a different stage of the project.</p>
+<p>When you’re working on a project – say a painting, a piece of software or an autobiography – there comes a time when you wish you had a reset button.</p>
+<p>You might already have a system in place to deal with this problem – maybe you save your document multiple times with different names, so that you can return to a different stage of the project.</p>
 <p><img src="../assets/chapter2/version-control.gif" alt="Version Control"></p>
-<p>Developers call this process a “version control system”.</p>
+<p>Developers call this process “version control”.</p>
 <p>If you&#39;re making copies of a file every time you make a change, your file system might look like this:</p>
 <p><br></p>
 <p><img src="../assets/chapter2/bad_vcs.png" alt="Bad VCS"></p>
 <p><br></p>
-<p>While this method works, it is impossible to see
-what has changed in each version without opening each file and comparing changes line by line.</p>
-<p>Organizing different versions of your files gets even more complicated once you start working with a team.</p>
-<p>To solve these problems, we are going to use the popular version control system called <strong>Git</strong>.</p>
-<p>Git saves a history of the changes you make for you –no need to keep multiple versions of a file on hand. Git is also an excellent tool for working collaboratively on a project, though we won&#39;t be using those features right away.</p>
-<p>Next, you&#39;ll need to install Git (if you haven&#39;t already).</p>
-<h2 id="git-installation">Git Installation</h2>
-<p>Git is a distributed version control tool that allows developers to manage versions of their code over time and facilitates collaboration between several people who might be working on the same project.</p>
-<p>Distributed means that each copy of any repostitory contains the entire history of the project.</p>
-<p>To install git, download the latest release from <a href="http://git-scm.com/download" target="_blank">git-scm.com</a>.</p>
-<p>Double click on the downloaded file, and run through the installer.</p>
-<p>You will know it worked if, when you open up the terminal and type:</p>
+<p>While this method works (kinda), it has a number of major limitations.</p>
+<ul>
+<li>It only allows you to track changes in one file; if your project consists of multiple files, you&#39;re out of luck.</li>
+<li>It&#39;s extremely duplicative - before long, you might end up with 10, 20, or even 50 slightly-different copies of the same file.</li>
+<li>It&#39;s extremely difficult (if not basically impossible) to see what has changed from one version to the next without opening each file and comparing changes line by line.</li>
+<li>Keeping track of parallel versions (revision A vs revision B) is possible, but it&#39;s hard to compare one to the other, and integrating the two verions is a lot of work.</li>
+</ul>
+<p>Now imagine how much more complicated this process becomes once you start working with a team...</p>
+<p>Software developers have developed a number of tools to solve the &#39;version control&#39; problem for their own projects; in this course, we will focus on one particularly popular version control program called <strong>Git</strong>. Git addresses all of the problems mentioned above:</p>
+<ul>
+<li>Git tracks changes for multiple files by keeping them all in <strong>repositories</strong> - special directories with some hidden Git machinery.</li>
+<li>Rather than saving entire separate versions of each file, Git keeps a record of the <em>changes</em> that have been made to each file - much more space-efficient.</li>
+<li>Because Git stores changes, rather than whole files, looking at what&#39;s changed from one iteration to the next is very easy.</li>
+<li>Git allows you to easily keep track of parallel versions of a project using a feature called <strong>branching</strong>. We won&#39;t cover this feature now, but you&#39;ll be using it a lot once you start the course.</li>
+</ul>
+<p>Git is also an excellent tool for working collaboratively on a project, though we won&#39;t be using those features right away.</p>
+<h2 id="installing-git">Installing Git</h2>
+<p>If you don&#39;t already have Git, you can install it by downloading the latest release from <a href="http://git-scm.com/download" target="_blank">git-scm.com</a>, double-clicking the downloaded file, and going through the installer.</p>
+<p>You can check to see if it worked by opening up the terminal and typing:</p>
 <pre><code>$ git --version
-</code></pre><p>to check to see what version of git is running, your computer returns something greater than or equal to <code>2.0.0</code>:</p>
+</code></pre><p>This will show you what version of Git is running; your computer should return something greater than or equal to <code>2.0.0</code>:</p>
 <p><img src="../assets/chapter2/git_installed.gif" alt="Check to See What Version of Git is Running"></p>
 <hr>
-<p><a href="02_lesson.html">On to the next lesson.</a></p>
+<p><a href="02_lesson.html">On to the lesson.</a></p>
 
                     
                     </section>

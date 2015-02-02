@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1422650125608">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="1422898565145">
     
 
 <div class="book-summary">
@@ -579,27 +579,21 @@
                 
             
             
-            <ul class="articles">
-                
+        </li>
     
         
-        <li class="chapter " data-level="3.2.1.1" data-path="03_chapter/07_exercise.html">
+        <li class="chapter " data-level="3.2.2" data-path="03_chapter/07_exercise.html">
             
                 
                     <a href="../03_chapter/07_exercise.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.1.</b>
+                            <b>3.2.2.</b>
                         
                          Exercise
                     </a>
                 
             
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -708,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow in JavaScript
+                         Control Flow
                     </a>
                 
             
@@ -725,7 +719,7 @@
                         
                             <b>4.1.</b>
                         
-                         Control Flows
+                         Conditionals
                     </a>
                 
             
@@ -779,7 +773,7 @@
                         
                             <b>4.2.</b>
                         
-                         Conditionals and Loops
+                         Loops
                     </a>
                 
             
@@ -870,7 +864,7 @@
                         
                             <b>5.</b>
                         
-                         Functional JavaScript
+                         Functions
                     </a>
                 
             
@@ -886,7 +880,7 @@
                         
                             <b>6.</b>
                         
-                         Complex JS Data Types
+                         Complex Data Types in JS
                     </a>
                 
             
@@ -982,77 +976,80 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_39">
+                    <section class="normal" id="section-gitbook_37">
                     
-                        <p><strong>WDI Fundamentals Unit 2</strong></p>
+                        <p><strong>WDI Fundamentals - Unit 2</strong></p>
 <hr>
 <h2 id="publish-work-on-github">Publish Work on GitHub</h2>
-<p>So far, we&#39;ve been making &quot;local&quot; changes to files on our computers and committing them to our local repository.</p>
+<p>So far, we&#39;ve been making changes &quot;locally&quot; - editing files and repositories on our computers.</p>
 <p>To collaborate with others (and also to backup our files just in case our computer is out of commission) we need to connect our local repository to a &quot;remote&quot; repository.</p>
-<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> Many developers call their repositories &quot;repo&quot; for short.</p>
-</blockquote>
 <h3 id="what-is-github">What is GitHub?</h3>
 <p>GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It&#39;s an implementation of the same Git software you installed on your computer, but it also comes with some additional features.</p>
-<p>In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories, and you can easily get a graphical representation of the versions of your files.</p>
-<p><img src="" alt="Image of the user&apos;s Github home page, showing repositories, contribution timeline, and annotations of the key features"></p>
+<p>In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories and you can easily get a graphical representation of the versions of your files.</p>
+<p><img src="../assets/chapter2/github.gif" alt="Github Interface"></p>
+<ol>
+<li><p><strong>Repo Name and Owner</strong> - describes who owns the repository, what the name of the repo is and whether the repo is public or private.</p>
+</li>
+<li><p><strong>Overview</strong> - displays the number of commits, branches, releases and contributors to a particular repo.  Selecting any one of these options will bring a detailed view of that selection.</p>
+</li>
+<li><p><strong>Repo File Structure</strong> - displays the contents of the repo.  Selecting any file or folder will open a detailed view of that file and allow you to edit the content directly.</p>
+</li>
+<li><p><strong>Fork button</strong> - allows you copy a version of this repo (<code>user/awesome-project</code>) to your own Github account.</p>
+</li>
+<li><p><strong>Side Bar</strong> - use the side bar to respond to issues, create pull requests, and change the settings for this repo.</p>
+</li>
+</ol>
 <h2 id="our-github-flow">Our GitHub Flow</h2>
 <p>There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.</p>
-<p>The GA Instructional Team has put together resources for you in a remote repository on GitHub. You&#39;ll need to retrieve these files and save a copy on your computer using Git and GitHub. Eventually, when you&#39;ve made changes that you&#39;d like to share with our team, you&#39;ll have to submit those changes to our GitHub repo.</p>
+<p>The GA Instructional Team has put together some resources for you in a repository on GitHub; you&#39;ll need to retrieve these files and save a copy on your computer using Git. </p>
+<p>Eventually, when you&#39;ve made changes that you&#39;d like to share with our team, you can to submit those changes back to us via our GitHub repo.</p>
 <p>This is what our workflow looks like:
 <img src="../assets/chapter2/github_workflow.gif" alt="GitHub Workflow">
 <br><br></p>
-<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> Don&#39;t worry, we are going to cover this step by step, in enough detail for you to complete the prework.</p>
-</blockquote>
+<p><strong>Don&#39;t worry</strong>, we are going to cover this step by step, in plenty of detail.</p>
 <hr>
 <h3 id="1-forking">1. Forking</h3>
-<p>First, you&#39;re going to &quot;fork&quot; our repository on Github. Before we get there, let&#39;s talk about forking. &quot;Forking&quot; simply results in the creation of an identical copy of GA&#39;s GitHub repo, but which lives in <em>your</em> Github account. Your forked copy maintains a reference to the GA copy. Your copy includes all the same files, all of the commit history from anyone who previously made changes to the repo, all of the currently added issues, and more).</p>
-<p>Forking makes sense in the context of a collaborative platform like Github. Think of it this way. Take an open-source project like Node.js (a JavaScript framework you&#39;ll learn about in class). Node is completely open-source, and you can <a href="https://github.com/joyent/node" target="_blank">view the node source </a> on Github (it&#39;s written in JavaScript, if the .js didn&#39;t give it away).  If you visit the main repo, you&#39;ll see that there are over 400 contributors who have made commits to Node.</p>
-<p>Although it is open-source and anyone can read through or offer to contribute to the code, it is <strong>maintained</strong> by a company called Joyent. Not all of the 400+ contributors have the ability to push their changes straight to Joyent&#39;s repository. That wouldn&#39;t be very efficient. Maintaining an open source project is a lot of work, and is really important to make sure that the direction of the project best serves the community that uses it.</p>
-<p>So... if you wanted to make a change to Node, you&#39;d fork Joyent&#39;s repo (no need to do this now, we&#39;re just explaining the concept).</p>
-<p><img src="" alt="Image showing repository and a highlight of the fork button"></p>
-<p>After forking the repo, you&#39;d see an exact copy show up in your list of Github repos, and you&#39;d have full access to do whatever you want with it.</p>
-<p><img src="" alt="Image showing a list of repositories with the fork added"></p>
-<p>Similar to the process indicated in the diagram above, you would:</p>
+<p>First, you&#39;re going to &quot;fork&quot; our repository on Github. &quot;Forking&quot; simply means creating a copy of someone else&#39;s GitHub repo, and associating it with <em>your</em> Github account. </p>
+<p>The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.</p>
+<p>Forking makes sense in the context of a collaborative platform like Github. Consider a project like Node.js, a JavaScript framework that you&#39;ll learn about in class. Node is completely open-source, which means that anyone can read (and even copy) the code that makes Node work - including you! Node&#39;s source code is available <a href="https://github.com/joyent/node" target="_blank">here</a> on Github; if you visit the main repo, you&#39;ll see that there are over 400 contributors who have made commits to Node.</p>
+<p>Although it is open-source and anyone can read through or offer to contribute to the code, it is <strong>maintained</strong> by a company called Joyent. Not all of the 400+ contributors have the ability to push their changes straight to Joyent&#39;s repository. That wouldn&#39;t be very efficient or safe - someone could accidentally make a change that conflicts with someone else&#39;s contributions, causing things to break. Changes need to be inspected and curated before they can officially be added to the project.</p>
+<p>This is where forks come in. By forking Joyent&#39;s repo, you could have a full working copy of the Node source code to play with. But even if you break something, Node&#39;s codebase won&#39;t be affected.</p>
+<p>Once a repo is forked, it gets added to the list of repositories associated with your GitHub account. To actually make changes to the code, you would need to:</p>
 <ul>
-<li>pull it down to your local computer (using <code>git clone</code> – as you&#39;ll learn in a minute)</li>
-<li>make changes on your local computer, then commit them (as you learned in the last section)</li>
-<li>push your changes from your local computer (using <code>git push</code> – as you&#39;ll learn in a minute)</li>
-<li>submit a pull request to Joyent (using Github&#39;s interface – as you&#39;ll learn in a minute)  </li>
+<li>&#39;clone&#39; (copy) your GitHub repo down to your local computer</li>
+<li>make changes to your local copy and commit them</li>
+<li>&#39;push&#39; your changes back from your local computer to your repo on GitHub</li>
+<li>ask Joyent to accept and &#39;pull&#39; the changes from your fork into their project via a &#39;pull request&#39;, part of GitHub&#39;s interface</li>
 </ul>
-<p>If the maintainers like your change, they&#39;ll accept the commits that you included in your pull request, and you&#39;d now be listed as a contributor to Node. You could also tell all of your future employers that you were an open-source contributor.</p>
+<p>If Joyent likes your change, they&#39;ll accept the commits that you included in your pull request, and you&#39;d now be listed as a contributor to Node. You could also tell all of your future employers that you were an open-source contributor!</p>
 <p>We&#39;re going to follow a similar process for the project you&#39;ll complete as part of Fundamentals.</p>
 <h3 id="2-cloning">2. Cloning</h3>
 <p>Don&#39;t try to follow these steps yet. In the <a href="09_assessment.html">Unit 1 Homework</a>, we&#39;ll get to actually doing all this. For now, just try to understand the concepts.</p>
-<p>After we fork the repo, we still don&#39;t have a local copy on our computer. If we want to copy the <em>entire repo</em> (files and all historical commits) from our forked repo down to our computer, we can do that with a simple git command. Before we start, first open up Terminal and navigate to the folder into which you want to copy the repo.</p>
-<p>Once you&#39;ve navigated to your preferred location, you&#39;ll type <code>git clone https://www.github.com/&lt;your username&gt;/&lt;repository name&gt;.git</code>. You can find this &quot;clone URL&quot; by looking on the right side of your Github repository.</p>
-<p><img src="" alt="Image showing where to copy the HTTPS clone URL"></p>
+<p>After we fork the repo, we still don&#39;t have a local copy on our computer. If we want to copy the <em>entire repo</em> (files and all historical commits) from our forked repo down to our computer, we can do that with a simple Git command. Before we start, first open up Terminal and navigate to the folder into which you want to copy the repo.</p>
+<p>Once you&#39;ve navigated to your preferred location, type <code>git clone https://www.github.com/&lt;your username&gt;/&lt;repository name&gt;.git</code>. You can find the entire &quot;clone URL&quot; by looking on the right side of your Github repository.</p>
+<p><img src="" alt="Image showing where to copy the HTTPS clone URL - IMAGE NEEEDED"></p>
 <p>By issuing the clone command, you ask GitHub via command line for a copy of your remote repo. This copy is transferred to your local computer.</p>
 <h3 id="3--4-editing-and-committing">3 &amp; 4. Editing and Committing</h3>
 <p>We covered this in the previous section. As you complete the exercises in the rest of Fundamentals, you&#39;ll do this step frequently.</p>
 <h3 id="5-pushing">5. Pushing</h3>
-<p>Once committed some added or edited files to your local repo, you&#39;ll want to synchronize those changes back up to your remote GitHub repo. From Terminal, and within your directory, you&#39;ll type <code>git push origin master</code>. Pushing does not happen automatically – until you type those words, GitHub does not know about your commits. After you type those words, Github has a copy of all of the commits you&#39;ve made.</p>
-<p>Don&#39;t worry too much about the origin and master part, for now. In brief:</p>
+<p>Once you&#39;ve committed your changes, your local repo will be different from your remote repo; to add the new changes to your remote repo on GitHub, you have to &#39;push&#39; those changes, using the Git command <code>git push origin master</code>.</p>
+<p>You don&#39;t have to worry too much about the origin and master part just yet, but here&#39;s a brief overview:</p>
 <ul>
-<li><p><code>origin</code> is the name of your default <strong>remote</strong> (in this case Github). You can have many remotes, if you want. We&#39;re not going to cover that use case right now.</p>
-</li>
-<li><p><code>master</code> is the name of the <strong>branch</strong> you&#39;re on. You&#39;ll make use of branches consistently in your class. Again, we&#39;re not going to cover them as part of Fundamentals, but you can read up on them later if you wish. For now, we&#39;re just going to be doing our work on the <code>master</code> branch.</p>
-</li>
+<li><code>origin</code> is a shortcut for the URL of your default remote repo (in this case, the repo on Github). You can have many remotes, if you want. We&#39;re not going to cover that use case right now.</li>
 </ul>
+<p><em><code>master</code> refers to the <em>*branch</em></em> on your remote repo where you&#39;re currently adding your changes. You&#39;ll make use of branches consistently in your class. We&#39;re not going to cover them as part of Fundamentals, but you can read up on them later if you wish; for now, we&#39;re just going to be doing our work on the <code>master</code> branch.</p>
 <h3 id="6-submitting-a-pull-request">6. Submitting a Pull Request</h3>
 <p>Once your changes are in your remote repository on Github, you can send a <strong>pull request</strong> to the original repository your forked. A pull request is effectively saying &quot;Hello maintainer of project X, I made some changes here in my forked copy and I think they&#39;re pretty good. You should pull them back into your repository.&quot;  This is a GitHub feature, so you&#39;ll need to head back to the browser to make this happen.</p>
 <p>A pull request has three major parts:</p>
 <ul>
-<li><strong>Source branch</strong> (on your forked repo)</li>
-<li><strong>Destination branch</strong> (the original repo)</li>
+<li><strong>Source branch</strong> (the branch that you&#39;re copying from, on your forked repo)</li>
+<li><strong>Destination branch</strong> (the branch that you&#39;re copying to, the original repo)</li>
 <li><strong>Title</strong> (a description of what changes were made)</li>
 <li><strong>Description</strong> (more info that can help the repository maintainers decide if they want to accept the pull request)</li>
 </ul>
-<h2 id="homework-and-assignments-on-github">Homework and Assignments on GitHub</h2>
-<p>For now, that&#39;s all you need to know.</p>
-<p>We&#39;ll revisit Git and Github again and again. </p>
-<p>At the end of this book, we will ask you to submit a pull request with your Fundamentals project. During WDI, your instructors will probably use a similar GitHub workflow to have you access new assignments and submit your answers back.</p>
+<blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
+<p> At the end of this book, we will ask you to submit a pull request with your Fundamentals project. During WDI, your instructors will probably use a similar GitHub workflow to have you access new assignments and submit your answers back.</p>
+</blockquote>
 <h2 id="confused">Confused?</h2>
 <p>If you ever get stuck working with Git or GitHub, don&#39;t worry, you are NOT the first. When you don&#39;t understand something, we encourage you to follow a three-step process:</p>
 <ol>
@@ -1062,7 +1059,7 @@
 </ol>
 <p>And trust us... you <em>will</em> get to the point where cloning and pulling are like breathing and sleeping.</p>
 <hr>
-<p>Ready for another quiz? <a href="05_quiz.html">Here we go!</a></p>
+<p>Ready for another quiz? <a href="06_quiz.html">Let&#39;s go.</a></p>
 
                     
                     </section>

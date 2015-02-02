@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.1.2" data-basepath=".." data-revision="1422650125608">
+    <div class="book" data-level="2.1.2" data-basepath=".." data-revision="1422898565145">
     
 
 <div class="book-summary">
@@ -579,27 +579,21 @@
                 
             
             
-            <ul class="articles">
-                
+        </li>
     
         
-        <li class="chapter " data-level="3.2.1.1" data-path="03_chapter/07_exercise.html">
+        <li class="chapter " data-level="3.2.2" data-path="03_chapter/07_exercise.html">
             
                 
                     <a href="../03_chapter/07_exercise.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.1.</b>
+                            <b>3.2.2.</b>
                         
                          Exercise
                     </a>
                 
             
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -708,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow in JavaScript
+                         Control Flow
                     </a>
                 
             
@@ -725,7 +719,7 @@
                         
                             <b>4.1.</b>
                         
-                         Control Flows
+                         Conditionals
                     </a>
                 
             
@@ -779,7 +773,7 @@
                         
                             <b>4.2.</b>
                         
-                         Conditionals and Loops
+                         Loops
                     </a>
                 
             
@@ -870,7 +864,7 @@
                         
                             <b>5.</b>
                         
-                         Functional JavaScript
+                         Functions
                     </a>
                 
             
@@ -886,7 +880,7 @@
                         
                             <b>6.</b>
                         
-                         Complex JS Data Types
+                         Complex Data Types in JS
                     </a>
                 
             
@@ -982,50 +976,40 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_37">
+                    <section class="normal" id="section-gitbook_35">
                     
-                        <h2 id="wdi-fundamentals-unit-2"><strong>WDI Fundamentals Unit 2</strong></h2>
+                        <h2 id="wdi-fundamentals---unit-2"><strong>WDI Fundamentals - Unit 2</strong></h2>
 <h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
-<p>This exercise aims to give you some practice with using the Git version control system.</p>
+<p>This exercise will give you some practice using Git.</p>
 <ol>
-<li><p>Open up the terminal application and change to the <code>fundamentals</code> directory you created in your home directory.</p>
+<li><p>Open your terminal and go into to the <code>fundamentals</code> directory you created earlier. Create a new directory inside it called &quot;git-practice&quot;.</p>
 </li>
-<li><p>Create a new directory inside <code>fundamentals</code> called &quot;git-practice&quot;.</p>
+<li><p>Use <code>cd</code> to navigate into that new directory; you can make sure you&#39;re in the right place by using the <code>pwd</code> command.</p>
 </li>
-<li><p>Use <code>cd</code> to navigate into that directory, then check to make sure the working directory has changed using the <code>pwd</code> command.</p>
-</li>
-<li><p>Use the <code>git init</code> command to create a Git repository in <code>git-practice</code>.</p>
-</li>
-</ol>
+<li><p>Use <code>git init</code> to create a Git repository in the <code>git-practice</code> directory.</p>
 <blockquote>
-<p><strong>CAUTION</strong> DO NOT create a git repository inside another git respository.  Always make sure you are initializing git within a folder whose parent directory does <strong>not</strong> contain a <code>.git</code> folder.</p>
+<p><strong>WARNING</strong>: DO NOT create a Git repository inside another Git respository.  Always make sure you are initializing Git within a folder whose parent directory does <strong>not</strong> contain a <code>.git</code> folder.
+Notice that there is now a <code>.git</code> directory in <code>git-practice</code> - you can see by using the <code>ls -a</code> command.</p>
 </blockquote>
-<ol>
-<li><p>Notice, that there is now a <code>.git</code> directory in <code>git-practice</code> by using the <code>ls -a</code> command.</p>
 </li>
-<li><p>Create a new file called README.txt.</p>
+<li><p>Create a new file called <code>README.txt</code> and run <code>git status</code>. What output do you get?</p>
 </li>
-<li><p>Look at the output of the <code>status</code> command; the README.txt you created should appear as an untracked file.</p>
+<li><p>Use the <code>add</code> command to add the new file to the staging area.  Run <code>git status</code> again - how has the output changed?</p>
 </li>
-<li><p>Use the <code>add</code> command to add the new file to the staging area.  Again, look at the output of the <code>status</code> command.</p>
-</li>
-<li><p>Now use the <code>commit</code> command to commit the contents of the staging area.</p>
+<li><p>Now that you&#39;re satisfied with the changes that you&#39;ve staged, commit them using <code>git commit -m &quot;...&quot;</code>. Give the commit an appropriate message - remember, it should be short but descriptive.</p>
 </li>
 <li><p>Create a directory called &quot;src&quot; and add a couple of files to it.</p>
 </li>
-<li><p>Use the <code>add</code> command, but name the directory, not the individual files. Use the status
-command. See how both files have been staged. Commit them.</p>
+<li><p>Use the <code>add</code> command, but add the <code>src</code> directory instead of the individual files. Use the status
+command - see how both files have been staged? Go ahead and commit the addition of these new files to the repo.</p>
 </li>
-<li><p>Make a change to one of the files. Use the <code>diff</code> command to view the details of the change.</p>
+<li><p>Make a change to one of the files, and run <code>git diff</code> to look at all the unstaged changes to our repo. What do you see?</p>
 </li>
-<li><p>Next, add the changed file, and notice how it moves to the staging area in the <code>status</code>
-output. Also observe that the <code>diff</code> command you did before using add now gives no output.
-Why not? What do you have to do to see a diff of the things in the staging area?</p>
+<li><p>Next, <code>add</code> the changed file and type <code>git diff</code> What&#39;s changed? Why? What do you have to do to see a <code>diff</code> of the things in the staging area?</p>
 </li>
-<li><p>Now – without committing – make another change to the same file you changed in step 12.
-Look at the <code>status</code> output, and the <code>diff</code> output. Notice how you can have both staged and unstaged changes, even when you’re talking about a single file. Observe the difference when you use the <code>add</code> command to stage the latest round of changes. Finally, <code>commit</code> them. You should now have started to get a feel for the staging area.</p>
+<li><p>Now – without adding or committing – make another change to the same file you changed in step 12. Look at the <code>status</code> output, and the <code>diff</code> output. See how you can have both staged and unstaged changes, even when you’re talking about a single file?</p>
 </li>
-<li><p>Use the log command in order to see all of the commits you made so far.</p>
+<li><p>Finally, <code>add</code> and <code>commit</code> all outstanding changes. Use the <code>log</code> command to see all of the commits you made so far.</p>
 </li>
 </ol>
 <hr>

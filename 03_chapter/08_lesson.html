@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="1422650125608">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="1422898565145">
     
 
 <div class="book-summary">
@@ -579,27 +579,21 @@
                 
             
             
-            <ul class="articles">
-                
+        </li>
     
         
-        <li class="chapter " data-level="3.2.1.1" data-path="03_chapter/07_exercise.html">
+        <li class="chapter " data-level="3.2.2" data-path="03_chapter/07_exercise.html">
             
                 
                     <a href="../03_chapter/07_exercise.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.1.</b>
+                            <b>3.2.2.</b>
                         
                          Exercise
                     </a>
                 
             
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -708,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow in JavaScript
+                         Control Flow
                     </a>
                 
             
@@ -725,7 +719,7 @@
                         
                             <b>4.1.</b>
                         
-                         Control Flows
+                         Conditionals
                     </a>
                 
             
@@ -779,7 +773,7 @@
                         
                             <b>4.2.</b>
                         
-                         Conditionals and Loops
+                         Loops
                     </a>
                 
             
@@ -870,7 +864,7 @@
                         
                             <b>5.</b>
                         
-                         Functional JavaScript
+                         Functions
                     </a>
                 
             
@@ -886,7 +880,7 @@
                         
                             <b>6.</b>
                         
-                         Complex JS Data Types
+                         Complex Data Types in JS
                     </a>
                 
             
@@ -982,27 +976,22 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_60">
+                    <section class="normal" id="section-gitbook_51">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
-<h1 id="expression-oddballs">Expression Oddballs</h1>
-<p>At this point, we&#39;ve covered most of what you should know about expressions. However, there are a few quirks and exceptions that we&#39;ve (until now) glossed over. Let&#39;s take a closer look at some of them.</p>
-<h2 id="undefined-and-null">Undefined and Null</h2>
+<h1 id="boolean-logic">Boolean Logic</h1>
+<p>At this point, we&#39;ve covered most of what you should know about basic expressions. However, there are a few quirks and exceptions that we&#39;ve (until now) glossed over, expecially related to boolean logic. Let&#39;s take a closer look at some of them.</p>
+<h3 id="undefined-and-null">Undefined and Null</h3>
 <p>What happens if we try to evaluate a variable that we haven&#39;t created or assigned value to? The answer is that JavaScript will usually let us do this, but it will evaluate that variable to one of the following special values to indicate that something&#39;s gone wrong.</p>
 <ul>
-<li><strong><code>undefined</code></strong> : When you trying to evaluate a variable that doesn&#39;t exist in your program, and JavaScript has no idea what you&#39;re referring to.</li>
-<li><strong><code>null</code></strong> : When the variable that you&#39;re referencing exists, but doesn&#39;t have any value assigned to it.</li>
+<li><strong><code>undefined</code></strong> is returned when a variable has been declared, but doesn&#39;t have any value assigned to it.</li>
+<li><strong><code>null</code></strong> is actually a value that you can assign to a variable as a representation of &quot;no value.&quot;</li>
 </ul>
-<h2 id="falsey--truthy">&#39;falsey&#39; / &#39;truthy&#39;</h2>
-<p>We&#39;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&quot;Happy birthday, &quot; + &quot;Tom&quot;</code>, the <code>+</code> operator is working with strings, so it performs a concatentation instead.</p>
-<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&#39;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &#39;falsey&#39; and &#39;truthy&#39;, and (at least in JavaScript) follow the following rules to determine how to behave.</p>
-<ul>
-<li>NOT : If the input is &#39;truthy&#39;, give back <code>false</code>; if the input is &#39;falsey&#39;, give back <code>true</code>.</li>
-<li>OR : Give back the first &#39;truthy&#39; value; if both values are &#39;falsey&#39;, give back the last &#39;falsey&#39; value.</li>
-<li>AND : Give back the first &#39;falsey&#39; value; if both values are &#39;truthy&#39;, give back the last &#39;truthy&#39; value.</li>
-</ul>
-<p>Here&#39;s a table to show you which kinds of values are which in JavaScript.</p>
+<h3 id="falsey--truthy">&#39;falsey&#39; / &#39;truthy&#39;</h3>
+<p>We&#39;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&quot;Happy birthday, &quot; + &quot;Tom&quot;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
+<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&#39;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &#39;falsey&#39; and &#39;truthy&#39;.</p>
+<p>Here&#39;s a table to show you which kinds of values are considered truthy and falsey in JavaScript.</p>
 <table>
 <thead>
 <tr>
@@ -1029,6 +1018,12 @@
 </tr>
 </tbody>
 </table>
+<p>In JavaScript, the boolean operators <code>!</code>, <code>||</code>, and <code>&amp;&amp;</code> follow the rules below to determine how to behave.</p>
+<ul>
+<li>NOT: If the input is &quot;truthy&quot;, return <code>false</code>; if the input is &quot;falsey&quot;, return <code>true</code>.</li>
+<li>OR: Return the first &quot;truthy&quot; value; if both values are &quot;falsey&quot;, return the last &quot;falsey&quot; value.</li>
+<li>AND: Return the first &quot;falsey&quot; value; if both values are &quot;truthy&quot;, return the last &quot;truthy&quot; value.</li>
+</ul>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Can you predict how the following expressions will be evaluated? Check your answers in repl.it.</p>
 <ul>
@@ -1039,7 +1034,7 @@
 <li><code>true &amp;&amp; !0</code></li>
 <li><code>null || 3</code></li>
 </ul>
-<p>One of the most common use-cases of this is when you&#39;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&#39;ve gotten from a user. If the user hasn&#39;t given any input, <code>x</code> might be <code>null</code>.</p>
+<p>One of the most common use cases of this is when you&#39;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&#39;ve gotten from a user. If the user hasn&#39;t given any input, <code>x</code> might be <code>null</code>.</p>
 <p>To compensate for this, we might write the expression <code>x = x || 10;</code>. If x has some &#39;truthy&#39; value, the OR operator will evaluate to <code>x</code>, so it would be as if we wrote <code>x = x</code>. However, if x were <code>null</code>, the OR operator would evaluate to 10 (because <code>null</code> is &#39;falsey&#39;). It&#39;s as if we&#39;ve said &quot;If x doesn&#39;t already have a value assigned, set it equal to 10&quot;. For that reason, this kind of operation is often called &#39;conditional assignment&#39;.</p>
 <hr>
 <p>Ready for another <a href="09_quiz.html">quiz</a>?</p>

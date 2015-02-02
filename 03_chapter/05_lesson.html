@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.2" data-basepath=".." data-revision="1422650125608">
+    <div class="book" data-level="3.2" data-basepath=".." data-revision="1422898565145">
     
 
 <div class="book-summary">
@@ -579,27 +579,21 @@
                 
             
             
-            <ul class="articles">
-                
+        </li>
     
         
-        <li class="chapter " data-level="3.2.1.1" data-path="03_chapter/07_exercise.html">
+        <li class="chapter " data-level="3.2.2" data-path="03_chapter/07_exercise.html">
             
                 
                     <a href="../03_chapter/07_exercise.html">
                         <i class="fa fa-check"></i>
                         
-                            <b>3.2.1.1.</b>
+                            <b>3.2.2.</b>
                         
                          Exercise
                     </a>
                 
             
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -708,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow in JavaScript
+                         Control Flow
                     </a>
                 
             
@@ -725,7 +719,7 @@
                         
                             <b>4.1.</b>
                         
-                         Control Flows
+                         Conditionals
                     </a>
                 
             
@@ -779,7 +773,7 @@
                         
                             <b>4.2.</b>
                         
-                         Conditionals and Loops
+                         Loops
                     </a>
                 
             
@@ -870,7 +864,7 @@
                         
                             <b>5.</b>
                         
-                         Functional JavaScript
+                         Functions
                     </a>
                 
             
@@ -886,7 +880,7 @@
                         
                             <b>6.</b>
                         
-                         Complex JS Data Types
+                         Complex Data Types in JS
                     </a>
                 
             
@@ -982,79 +976,74 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_69">
+                    <section class="normal" id="section-gitbook_60">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
 <h1 id="expressions-with-variables">Expressions with Variables</h1>
-<p>One major calculator function that we haven&#39;t mentioned so far is <code>memory</code> - many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript&#39;s answer to this is <strong>variables</strong>.</p>
-<p>Suppose that we wanted to save the result of our expression, <code>(99*746)-(837*23)</code>, and then multiply the whole thing by two later. We could store that result in a variable <code>x</code> using <code>=</code> (the &#39;assignment&#39; operator) as follows:</p>
-<p><code>x = (99*746)-(837*23);</code></p>
-<p>When we want to then use this result, we simply subsitute <code>x</code> for wherever our original expression might have gone; for instance, we could write <code>x * 2;</code>, and this expression would evaluate to double whatever value was stored in <code>x</code>.</p>
-<p>To figure out how to evaluate an expression containing variables, we simply draw a tree, as before - the only difference is that <code>x</code> (or whatever other variable we might be using) evaluates to whatever value it&#39;s storing at the time.</p>
-<h4 id="test-yourself">Test Yourself</h4>
+<p>One major calculator function that we haven&#39;t mentioned so far is <strong>memory</strong>. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript&#39;s answer to this is <strong>variables</strong>.</p>
+<p>Suppose that we wanted to save the result of our expression, <code>(99*746)-(837*23)</code>, and then multiply the whole thing by <code>2</code> later. We could store our first result in a variable <code>x</code> using <code>=</code> (the &#39;assignment&#39; operator) as follows:</p>
+<p><code>var x = (99*746)-(837*23);</code></p>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<p>  The <b>keyword</b> <code>var</code> stands for <code>variable</code> and is used to <em>declare</em> a variable the first time we use it. A variable <em>can</em> be declared without using the keyword <code>var</code>, but this has major implications on where that variable is stored and what code can access it. You&#39;ll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using <code>var</code>.</p>
+</blockquote>
+<p>When we want to then use this result, we simply subsitute <code>x</code> for wherever our original expression might have gone; for instance, we could write <code>x * 2;</code> and this expression would evaluate to double whatever value was stored in <code>x</code>.</p>
+<p>To figure out how to evaluate an expression containing variables, we simply draw a tree, as before. The only difference is that <code>x</code> (or whatever other variable we might be using) evaluates to whatever value it&#39;s storing at the time.</p>
+<h3 id="test-yourself">Test Yourself</h3>
 <p>Assume that <code>x</code> is equal to 10. What values do the following expressions evaluate to? Check your answers in repl.it.</p>
 <ul>
 <li><code>x + 20</code></li>
 <li><code>x * x</code></li>
 <li><code>3 * (x * x) - 2 * x + 5</code></li>
 </ul>
-<blockquote>
-<p>In JavaScript, a variable can be defined in one of two ways:
- <code>var x = 10;</code>
- <code>x = 10;</code>
-For now, just recognize that either of these will allow a variable to be created. However, the implications of using one vs the other are actually quite significant, and will be covered later on in this assignment (when we get to the topic of <strong>scope</strong>).</p>
-</blockquote>
 <p>We can redefine our variable <code>x</code> as many times as we want. However, <strong><em>only the most recent value of <code>x</code> is retained</em></strong> - once <code>x</code> gets redefined, its original value is lost forever.</p>
 <p>Suppose we ran the following lines of code in order, one by one.</p>
-<pre><code class="lang-javascript">  x = <span class="hljs-number">10</span>;
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
   x = <span class="hljs-number">1</span>;
   x = <span class="hljs-number">5</span>;
   x = <span class="hljs-number">15</span>;
   <span class="hljs-number">2</span> * x;
 </code></pre>
 <p>What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you&#39;re correct!</p>
-<blockquote>
-<p><em>Incidentally, in addition to allowing us to assign values to variables, <code>=</code> is also an operator, and it outputs a value after it&#39;s finished its &#39;assignment&#39; work. In particular, the <code>=</code> operator evaluates to whatever the expression to the right of the <code>=</code> evaluates to. In other words, the expression <code>x = 2</code> evaluates to <code>2</code>. And since these operations can be inputs to other operations, you may sometimes see expressions like</em></p>
-<p> <code>(x = 2) * 5</code></p>
-<p><em><code>x = 2</code> will first set <code>x</code> to 2, and then evaluate to 2; this result then gets multiplied by 5, causing the whole expression to evaluate to 10.</em></p>
+<blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
+<p> <code>=</code> is called the <b>assignment operator</b>. One interesting fact about it is that it actually returns a value after it&#39;s finished its &quot;assignment&quot; work. In particular, the <code>=</code> operator evaluates to whatever the expression to the right of the <code>=</code> evaluates to. In other words, the expression <code>x = 2</code> returns <code>2</code>.</p>
 </blockquote>
 <p>Sometimes, we find variables on both sides of the <code>=</code>. Suppose we have two variables, <code>x</code> and <code>y</code>, as in the example below.</p>
-<pre><code class="lang-javascript">  x = <span class="hljs-number">5</span>;
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">5</span>;
   <span class="hljs-keyword">var</span> y = <span class="hljs-number">10</span>;
   x = y + <span class="hljs-number">10</span>;
 </code></pre>
 <p>What happens in that third line? For starters, everything to the right of the <code>=</code> must be evaluated before any kind of assignment can happen. <code>y + 10</code> evaluates to 20, so what we&#39;re left with is the expression <code>x = 20</code>. This assigns the value 20 to <code>x</code>, and the entire expression evaluates to 20.</p>
 <p>Let&#39;s look at one more example using the same two variables, <code>x</code> and <code>y</code>.</p>
-<pre><code class="lang-javascript">  x = <span class="hljs-number">1</span>;
-  y = <span class="hljs-number">10</span>;
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">var</span> y = <span class="hljs-number">10</span>;
   x = y * <span class="hljs-number">2</span>;
   y = x + <span class="hljs-number">1</span>;
   x = y + <span class="hljs-number">1</span>;
   y = <span class="hljs-number">2</span> * x;
 </code></pre>
 <p>Feeling dizzy? Don&#39;t worry, we&#39;ll step through this one together.</p>
-<p>  <strong>Line 1</strong>: We assign <code>x</code> the value 1.</p>
-<p>  <strong>Line 2</strong>: We then assign <code>y</code> the value 10.</p>
-<p>  <strong>Line 3</strong>: As of this point in the code, <code>y</code>&#39;s value is 10, so we now redefine <code>x</code> and assign it the value 20.</p>
-<p>  <strong>Line 4</strong>: <code>x</code>&#39;s current value is 20, so <code>y</code> gets assigned a new value of 21.</p>
-<p>  <strong>Line 5</strong>: <code>y</code> was just changed to 21, so <code>x</code> becomes 22.</p>
+<p>  <strong>Line 1</strong>: We declare a new variable <code>x</code> and assign it the value <code>1</code>.</p>
+<p>  <strong>Line 2</strong>: We declare another new variable <code>y</code> and assign it the value 10.</p>
+<p>  <strong>Line 3</strong>: As of this point in the code, <code>y</code> has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to <code>x</code>.</p>
+<p>  <strong>Line 4</strong>: <code>x</code> now has a value of 20, so <code>y</code> gets assigned a new value of 21 (<code>20+1</code>).</p>
+<p>  <strong>Line 5</strong>: <code>y</code> was just changed to 21, so <code>x</code> becomes 22 (<code>21+1</code>).</p>
 <p>  <strong>Line 6</strong>: <code>x</code> is now 22, so <code>y</code> becomes <code>2 * 22</code>, or 44.</p>
 <p>One important thing to mention here is that <strong>at no point is any lasting relationship established between x and y</strong> (unlike how equations work in math). We are simply evaluating the expression on the right and assigning the result to the variable on the left.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Give these a try - see if you can predict the final values of <code>x</code>, <code>y</code>, and <code>z</code>. Check your answers in repl.it by copying the entire hunk of code into the editor window, running it, and then checking <code>x</code>,<code>y</code>, and <code>z</code> in the terminal.</p>
-<h1 id="1">1</h1>
-<pre><code class="lang-javascript">  x = <span class="hljs-number">1</span>;
-  y = <span class="hljs-number">2</span>;
-  z = <span class="hljs-number">3</span>;
+<p>Give these a try – see if you can predict the final values of <code>x</code>, <code>y</code>, and <code>z</code>. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking <code>x</code>,<code>y</code>, and <code>z</code> in the repl.it terminal.</p>
+<h5 id="challenge-1">Challenge #1</h5>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">var</span> y = <span class="hljs-number">2</span>;
+  <span class="hljs-keyword">var</span> z = <span class="hljs-number">3</span>;
   x = y;
   y = z;
   z = x;
 </code></pre>
-<h1 id="2">2</h1>
-<pre><code class="lang-javascript">  x = <span class="hljs-number">1</span>;
-  y = <span class="hljs-number">0</span>;
-  z = -<span class="hljs-number">1</span>;
+<h5 id="challenge-2">Challenge #2</h5>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">1</span>;
+  <span class="hljs-keyword">var</span> y = <span class="hljs-number">0</span>;
+  <span class="hljs-keyword">var</span> z = -<span class="hljs-number">1</span>;
   x = y + z;
   y = z * x;
   z = x - y;
@@ -1063,9 +1052,9 @@ For now, just recognize that either of these will allow a variable to be created
   z = z - <span class="hljs-number">1</span>;
 </code></pre>
 <p>Whoa! That last one&#39;s pretty weird - how can z be on both sides of the <code>=</code>? What do you think happens there?</p>
-<p>The key is remembering how the <code>=</code> operator works - before it assigns anything to the variable on the left, <em>it first evaluates the expression on the right</em>. This means that if we have any expression like, say, <code>x = x + 1</code>, what we are doing is taking the old value of <code>x</code>, adding one to it, and storing this new result back into <code>x</code>. In short, we are &#39;incrementing&#39; x : increasing its value by one, no matter what <code>x</code>&#39;s original value was.</p>
-<blockquote>
-<p><em>Needing to operate &#39;in place&#39; (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below</em></p>
+<p>The key is remembering how the <code>=</code> operator works - before it assigns anything to the variable on the left, <em>it first evaluates the expression on the right</em>. This means that if we have any expression like, say, <code>x = x + 1</code>, what we are doing is taking the old value of <code>x</code>, adding one to it, and storing this new result back into <code>x</code>. In short, we are &quot;incrementing&quot; x: increasing its value by one, no matter what <code>x</code>&#39;s original value was.</p>
+<h3 id="a-few-shortcuts">A few shortcuts</h3>
+<p>Needing to operate &#39;in place&#39; (in other words, storing the result back inside the original variable) is quite common in programming - so common that most languages include short-hand syntax for these kind of operations. Some examples are shown below.</p>
 <table>
 <thead>
 <tr>
@@ -1094,14 +1083,18 @@ For now, just recognize that either of these will allow a variable to be created
 <td><code>x = x % 10</code></td>
 <td><code>x %= 10</code></td>
 </tr>
+<tr>
+<td><code>x = x + 1</code></td>
+<td><code>x = x++</code></td>
+</tr>
 </tbody>
 </table>
-<p><em>Although JavaScript does </em>not<em> offer them, some languages (Ruby, for instance) allow you to even do this with logical operators, like OR (<code>||</code>) and AND (<code>&amp;&amp;</code>)!</em></p>
+<p>Although JavaScript does <em>not</em> offer them, some languages (Ruby, for instance) allow you to even do this with logical operators, like OR (<code>||</code>) and AND (<code>&amp;&amp;</code>).</p>
 <table>
 <thead>
 <tr>
-<th>Long-Form syntax</th>
-<th>Short-Hand Syntax</th>
+<th>Long-Hand Syntax (Ruby)</th>
+<th>Short-Hand Syntax (Ruby)</th>
 </tr>
 </thead>
 <tbody>
@@ -1115,7 +1108,6 @@ For now, just recognize that either of these will allow a variable to be created
 </tr>
 </tbody>
 </table>
-</blockquote>
 <hr>
 <p>Ready for another quiz? <a href="06_quiz.html">Here we go!</a></p>
 
