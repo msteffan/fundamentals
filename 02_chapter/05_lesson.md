@@ -12,7 +12,11 @@ To collaborate with others (and also to backup our files just in case our comput
 
 GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories and you can easily get a graphical representation of the versions of your files.
+In a lot of ways, Github is like Dropbox. 
+
+You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.
+
+Below is what the Github interface looks like for a repo called `awesome-project`:
 
 ![Github Interface](../assets/chapter2/github.gif)
 
@@ -26,6 +30,7 @@ In a lot of ways, Github is like Dropbox. You can provide specific teammates wit
 
 5. **Side Bar** - use the side bar to respond to issues, create pull requests, and change the settings for this repo.
 
+There are a ton of unique Github features crammed on this page, but we'll only be using three of them to start.
 
 
 ## Our GitHub Flow
@@ -47,7 +52,11 @@ This is what our workflow looks like:
 
 ### 1. Forking
 
-First, you're going to "fork" our repository on Github. "Forking" simply means creating a copy of someone else's GitHub repo, and associating it with *your* Github account. 
+First, you're going to "fork" our repository on Github by clicking the button we highlighted above. 
+
+> **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md)
+
+"Forking" adds a copy of someone else's GitHub repo to *your* Github account. 
 
 The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
@@ -71,8 +80,6 @@ If Joyent likes your change, they'll accept the commits that you included in you
 We're going to follow a similar process for the project you'll complete as part of Fundamentals.
 
 ### 2. Cloning
-
-Don't try to follow these steps yet. In the [Unit 1 Homework](09_assessment.md), we'll get to actually doing all this. For now, just try to understand the concepts.
 
 After we fork the repo, we still don't have a local copy on our computer. If we want to copy the *entire repo* (files and all historical commits) from our forked repo down to our computer, we can do that with a simple Git command. Before we start, first open up Terminal and navigate to the folder into which you want to copy the repo.
 

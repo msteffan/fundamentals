@@ -51,7 +51,7 @@ Git has identified that a change has been made - there is now a file in our repo
 ```
 $ git add post.txt
 ```
-The changes we've just made have now been *staged*, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or *unstaged*. If we run `git status` again, we'll see that the addition of `post.txt` is staged and is ready to be committed:
+The changes we've just made have now been *staged*, added to the list of changes that will be officially saved with our next commit; however, this list is not final, and any of these changes can be taken off the list, or *unstaged*. If we run `git status` again, we'll see that the addition of `post.txt` is staged and ready to be committed:
 
 ![Git Status of GA-Blog](../assets/chapter2/git_status_staged.gif)
 
