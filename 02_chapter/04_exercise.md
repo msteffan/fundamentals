@@ -1,4 +1,5 @@
-**WDI Fundamentals - Unit 2**
+**WDI Fundamentals Unit 2**
+
 ---
 
 ##![Your Turn](../assets/exercise.png) Your Turn

@@ -1,4 +1,6 @@
-![GA Logo](https://raw.github.com/generalassembly/ga-ruby-on-rails-for-devs/master/images/ga.png)
+![GA Logo](../assets/GA_logo.png)
+<br>
+<br>
 
 Dear WDI Student,
 
