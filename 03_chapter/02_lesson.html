@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="1422898565145">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="1422922321561">
     
 
 <div class="book-summary">
@@ -324,7 +324,7 @@
                         
                             <b>2.</b>
                         
-                         Version Control
+                         Git and Version Control
                     </a>
                 
             
@@ -441,10 +441,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
+        <li class="chapter " data-level="2.3" data-path="02_chapter/08_cheatsheet.html">
             
                 
-                    <a href="../02_chapter/09_cheatsheet.html">
+                    <a href="../02_chapter/08_cheatsheet.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -457,10 +457,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="02_chapter/08_assessment.html">
+        <li class="chapter " data-level="2.4" data-path="02_chapter/09_assessment.html">
             
                 
-                    <a href="../02_chapter/08_assessment.html">
+                    <a href="../02_chapter/09_assessment.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -486,7 +486,7 @@
                         
                             <b>3.</b>
                         
-                         Elements of a Computer Program
+                         Writing Expressions in JavaScript
                     </a>
                 
             
@@ -702,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow
+                         Control Flow in JS
                     </a>
                 
             
@@ -976,7 +976,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_54">
+                    <section class="normal" id="section-gitbook_62">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
@@ -1071,16 +1071,19 @@
 <p><code>(2+3)*(9-8)</code></p>
 <p>In order to perform the multiplication, we need to first know what we&#39;re multiplying – the <code>*</code> operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.</p>
 <p>We can represent this chain of dependencies using a logical structure called a <code>tree</code>.</p>
-<p><img src="../assets/chapter3/tree1.png" alt="Expression Tree for (2+3)*(9-8)"></p>
+<p><img src="../assets/chapter3/tree1.png" alt="Expression Tree for (2+3)*(9-8)">
+<br></p>
 <p>To evaluate any point (or &#39;node&#39;) in the tree, you simply (1) evaluate that node&#39;s left &#39;child&#39;, and then (2) evaluate its right &#39;child&#39;.&quot; In this case, to evaluate at the <code>*</code>, we first evaluate the <code>+</code> node, then the <code>-</code> node.</p>
 <p>What happens is we&#39;re dealing with a more complicated expression? Say...</p>
 <p><code>((9+2)*25)-5</code></p>
 <p>Since the <code>-</code> requires ((9+2)*25) to be evaluated in order to perform the subtraction, this means that <code>-</code> will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.</p>
-<p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9+2)*25)-5"></p>
+<p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9+2)*25)-5">
+<br></p>
 <p>One last tricky one: <code>1 + 1 + 1 + 1</code>. Obviously, we know that this is equal to 4. But what does the tree look like?</p>
 <p>In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as being <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5+2)</code>, or <code>3</code>.</p>
 <p>Following this rule, our expression of <code>1 + 1 + 1 + 1</code> could also be written <code>((((1) + 1) + 1) + 1)</code>. Is it easier to see the tree now?</p>
-<p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1"></p>
+<p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1">
+<br></p>
 <p>While we&#39;ve covered what seems like a lot of math in this section, don&#39;t worry – you&#39;re not going to be doing calculus in this course. It&#39;s important that we review these concepts because there will be many times that you&#39;ll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.</p>
 <hr>
 <p>Think you&#39;re solid on the basics of expressions? <a href="03_quiz.html">Take this quiz, and see how you do.</a></p>
@@ -1094,7 +1097,7 @@
         </div>
 
         
-        <a href="../03_chapter/README.html" class="navigation navigation-prev " aria-label="Previous page: Elements of a Computer Program"><i class="fa fa-angle-left"></i></a>
+        <a href="../03_chapter/README.html" class="navigation navigation-prev " aria-label="Previous page: Writing Expressions in JavaScript"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../03_chapter/03_quiz.html" class="navigation navigation-next " aria-label="Next page: Quiz"><i class="fa fa-angle-right"></i></a>

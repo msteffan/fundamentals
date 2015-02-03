@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.2" data-basepath=".." data-revision="1422898565145">
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="1422922321561">
     
 
 <div class="book-summary">
@@ -324,7 +324,7 @@
                         
                             <b>2.</b>
                         
-                         Version Control
+                         Git and Version Control
                     </a>
                 
             
@@ -441,10 +441,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
+        <li class="chapter " data-level="2.3" data-path="02_chapter/08_cheatsheet.html">
             
                 
-                    <a href="../02_chapter/09_cheatsheet.html">
+                    <a href="../02_chapter/08_cheatsheet.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -457,10 +457,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="02_chapter/08_assessment.html">
+        <li class="chapter " data-level="2.4" data-path="02_chapter/09_assessment.html">
             
                 
-                    <a href="../02_chapter/08_assessment.html">
+                    <a href="../02_chapter/09_assessment.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -486,7 +486,7 @@
                         
                             <b>3.</b>
                         
-                         Elements of a Computer Program
+                         Writing Expressions in JavaScript
                     </a>
                 
             
@@ -702,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow
+                         Control Flow in JS
                     </a>
                 
             
@@ -976,16 +976,18 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_37">
+                    <section class="normal" id="section-gitbook_38">
                     
-                        <p><strong>WDI Fundamentals - Unit 2</strong></p>
+                        <p><strong>WDI Fundamentals Unit 2</strong></p>
 <hr>
 <h2 id="publish-work-on-github">Publish Work on GitHub</h2>
 <p>So far, we&#39;ve been making changes &quot;locally&quot; - editing files and repositories on our computers.</p>
 <p>To collaborate with others (and also to backup our files just in case our computer is out of commission) we need to connect our local repository to a &quot;remote&quot; repository.</p>
 <h3 id="what-is-github">What is GitHub?</h3>
 <p>GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It&#39;s an implementation of the same Git software you installed on your computer, but it also comes with some additional features.</p>
-<p>In a lot of ways, Github is like Dropbox. You can provide specific teammates with access to different repositories and you can easily get a graphical representation of the versions of your files.</p>
+<p>In a lot of ways, Github is like Dropbox. </p>
+<p>You have a folder in the cloud, your <em>remote repo</em>, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.</p>
+<p>Below is what the Github interface looks like for a repo called <code>awesome-project</code>:</p>
 <p><img src="../assets/chapter2/github.gif" alt="Github Interface"></p>
 <ol>
 <li><p><strong>Repo Name and Owner</strong> - describes who owns the repository, what the name of the repo is and whether the repo is public or private.</p>
@@ -999,6 +1001,7 @@
 <li><p><strong>Side Bar</strong> - use the side bar to respond to issues, create pull requests, and change the settings for this repo.</p>
 </li>
 </ol>
+<p>There are a ton of unique Github features crammed on this page, but we&#39;ll only be using three of them to start.</p>
 <h2 id="our-github-flow">Our GitHub Flow</h2>
 <p>There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.</p>
 <p>The GA Instructional Team has put together some resources for you in a repository on GitHub; you&#39;ll need to retrieve these files and save a copy on your computer using Git. </p>
@@ -1009,7 +1012,11 @@
 <p><strong>Don&#39;t worry</strong>, we are going to cover this step by step, in plenty of detail.</p>
 <hr>
 <h3 id="1-forking">1. Forking</h3>
-<p>First, you&#39;re going to &quot;fork&quot; our repository on Github. &quot;Forking&quot; simply means creating a copy of someone else&#39;s GitHub repo, and associating it with <em>your</em> Github account. </p>
+<p>First, you&#39;re going to &quot;fork&quot; our repository on Github by clicking the button we highlighted above. </p>
+<blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
+<p> Don&#39;t follow these steps just yet. Read this chapter and then you&#39;ll have a chance to try it out yourself in the <a href="09_assessment.html">Unit 2 Homework</a></p>
+</blockquote>
+<p>&quot;Forking&quot; adds a copy of someone else&#39;s GitHub repo to <em>your</em> Github account. </p>
 <p>The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.</p>
 <p>Forking makes sense in the context of a collaborative platform like Github. Consider a project like Node.js, a JavaScript framework that you&#39;ll learn about in class. Node is completely open-source, which means that anyone can read (and even copy) the code that makes Node work - including you! Node&#39;s source code is available <a href="https://github.com/joyent/node" target="_blank">here</a> on Github; if you visit the main repo, you&#39;ll see that there are over 400 contributors who have made commits to Node.</p>
 <p>Although it is open-source and anyone can read through or offer to contribute to the code, it is <strong>maintained</strong> by a company called Joyent. Not all of the 400+ contributors have the ability to push their changes straight to Joyent&#39;s repository. That wouldn&#39;t be very efficient or safe - someone could accidentally make a change that conflicts with someone else&#39;s contributions, causing things to break. Changes need to be inspected and curated before they can officially be added to the project.</p>
@@ -1024,7 +1031,6 @@
 <p>If Joyent likes your change, they&#39;ll accept the commits that you included in your pull request, and you&#39;d now be listed as a contributor to Node. You could also tell all of your future employers that you were an open-source contributor!</p>
 <p>We&#39;re going to follow a similar process for the project you&#39;ll complete as part of Fundamentals.</p>
 <h3 id="2-cloning">2. Cloning</h3>
-<p>Don&#39;t try to follow these steps yet. In the <a href="09_assessment.html">Unit 1 Homework</a>, we&#39;ll get to actually doing all this. For now, just try to understand the concepts.</p>
 <p>After we fork the repo, we still don&#39;t have a local copy on our computer. If we want to copy the <em>entire repo</em> (files and all historical commits) from our forked repo down to our computer, we can do that with a simple Git command. Before we start, first open up Terminal and navigate to the folder into which you want to copy the repo.</p>
 <p>Once you&#39;ve navigated to your preferred location, type <code>git clone https://www.github.com/&lt;your username&gt;/&lt;repository name&gt;.git</code>. You can find the entire &quot;clone URL&quot; by looking on the right side of your Github repository.</p>
 <p><img src="" alt="Image showing where to copy the HTTPS clone URL - IMAGE NEEEDED"></p>

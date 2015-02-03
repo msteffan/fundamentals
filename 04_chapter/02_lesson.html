@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.1" data-basepath=".." data-revision="1422898565145">
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="1422922321561">
     
 
 <div class="book-summary">
@@ -324,7 +324,7 @@
                         
                             <b>2.</b>
                         
-                         Version Control
+                         Git and Version Control
                     </a>
                 
             
@@ -441,10 +441,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
+        <li class="chapter " data-level="2.3" data-path="02_chapter/08_cheatsheet.html">
             
                 
-                    <a href="../02_chapter/09_cheatsheet.html">
+                    <a href="../02_chapter/08_cheatsheet.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -457,10 +457,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="02_chapter/08_assessment.html">
+        <li class="chapter " data-level="2.4" data-path="02_chapter/09_assessment.html">
             
                 
-                    <a href="../02_chapter/08_assessment.html">
+                    <a href="../02_chapter/09_assessment.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -486,7 +486,7 @@
                         
                             <b>3.</b>
                         
-                         Elements of a Computer Program
+                         Writing Expressions in JavaScript
                     </a>
                 
             
@@ -702,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow
+                         Control Flow in JS
                     </a>
                 
             
@@ -976,7 +976,7 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_88">
+                    <section class="normal" id="section-gitbook_96">
                     
                         <p><strong>WDI Fundamentals Unit 4</strong></p>
 <hr>
@@ -1005,11 +1005,13 @@
   }
 </code></pre>
 <p>The condition is what&#39;s inside the parentheses; if that condition is truthy (and it is, in this case), the lines of code inside the curly braces (<code>{...}</code>) will be evaluated one by one.</p>
-<p>Let&#39;s take a step back for a minute, and consider something that&#39;s closer to our own experience : a flow chart.</p>
+<p>Let&#39;s take a step back for a minute, and consider something that&#39;s closer to our own experience: a flow chart.</p>
 <p><img src="../assets/chapter4/flow_charts.png" alt="XKCD Flow Chart">
-<em><small>src: <a href="http://xkcd.com/518/" target="_blank">http://xkcd.com/518/</a></small></em></p>
+<em><small>src: <a href="http://xkcd.com/518/" target="_blank">http://xkcd.com/518/</a></small></em>
+<br></p>
 <p>A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an <code>if</code> statement, we might come up with something like this:</p>
-<p><img src="../assets/chapter4/flow_chart_if.png" alt="Flow Chart for `If` Statement"></p>
+<p><img src="../assets/chapter4/flow_chart_if.png" alt="Flow Chart for `If` Statement">
+<br></p>
 <p>As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.</p>
 <p><code>if</code> can actually be modified in several ways to change its behavior. For instance, adding an <code>else if</code> to our <code>if</code> statement allows us to specify a second condition to test; however, <em>this second condition will only be tested if the first condition fails</em>.</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
@@ -1019,8 +1021,8 @@
     x += <span class="hljs-number">5</span>;
   }
 </code></pre>
-<aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif.png" alt="Flow Chart for `If...Else If` Statement"></aside>
-
+<p><aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif.png" alt="Flow Chart for `If...Else If` Statement"></aside>
+<br></p>
 <p>We can add as many <code>else if</code> statements as we want - just keep tacking them on.</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
     x += <span class="hljs-number">10</span>;
@@ -1031,8 +1033,8 @@
     x += <span class="hljs-number">3</span>;
   }
 </code></pre>
-<aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif-elseif.png" alt="Flow Chart for `If...Else If...Else If` Statement"></aside>
-
+<p><aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif-elseif.png" alt="Flow Chart for `If...Else If...Else If` Statement"></aside>
+<br></p>
 <p>However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an <code>else</code> to the end of our statement, like so.</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
     x += <span class="hljs-number">10</span>;
@@ -1045,8 +1047,8 @@
     x += <span class="hljs-number">1</span>;
   }
 </code></pre>
-<aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif-elseif-else.png" alt="Flow Chart for `If...Else If...Else If...Else` Statement"></aside>
-
+<p><aside style="float: left;"><img src="../assets/chapter4/flow_chart_if-elseif-elseif-else.png" alt="Flow Chart for `If...Else If...Else If...Else` Statement"></aside>
+<br></p>
 <p>Using <code>if...else if...else</code> statements allows us to write code that can behave very differently in different circumstances.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Consider following conditional statement:</p>
@@ -1068,7 +1070,7 @@
 </ul>
 <p>Try copying that whole statement into repl.it, and testing out different values for <code>x</code>. Were your answers correct?</p>
 <h2 id="switch-statement">Switch Statement</h2>
-<p>As we&#39;ve seen before, we can choose which condition will be executed using <code>if...else...if</code>; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example :</p>
+<p>As we&#39;ve seen before, we can choose which condition will be executed using <code>if...else...if</code>; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-comment">// day of the week in a number, sunday is 0, saturday is 6</span>
 dayNumber = <span class="hljs-number">1</span>
 <span class="hljs-keyword">if</span>(dayNumber == <span class="hljs-number">0</span>){
@@ -1165,7 +1167,7 @@ switch (dayNumber) {
         </div>
 
         
-        <a href="../04_chapter/README.html" class="navigation navigation-prev " aria-label="Previous page: Control Flow"><i class="fa fa-angle-left"></i></a>
+        <a href="../04_chapter/README.html" class="navigation navigation-prev " aria-label="Previous page: Control Flow in JS"><i class="fa fa-angle-left"></i></a>
         
         
         <a href="../04_chapter/03_quiz.html" class="navigation navigation-next " aria-label="Next page: Quiz"><i class="fa fa-angle-right"></i></a>

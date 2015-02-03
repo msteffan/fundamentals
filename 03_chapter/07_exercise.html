@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.2.2" data-basepath=".." data-revision="1422898565145">
+    <div class="book" data-level="3.2.2" data-basepath=".." data-revision="1422922321561">
     
 
 <div class="book-summary">
@@ -324,7 +324,7 @@
                         
                             <b>2.</b>
                         
-                         Version Control
+                         Git and Version Control
                     </a>
                 
             
@@ -441,10 +441,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.3" data-path="02_chapter/09_cheatsheet.html">
+        <li class="chapter " data-level="2.3" data-path="02_chapter/08_cheatsheet.html">
             
                 
-                    <a href="../02_chapter/09_cheatsheet.html">
+                    <a href="../02_chapter/08_cheatsheet.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.3.</b>
@@ -457,10 +457,10 @@
         </li>
     
         
-        <li class="chapter " data-level="2.4" data-path="02_chapter/08_assessment.html">
+        <li class="chapter " data-level="2.4" data-path="02_chapter/09_assessment.html">
             
                 
-                    <a href="../02_chapter/08_assessment.html">
+                    <a href="../02_chapter/09_assessment.html">
                         <i class="fa fa-check"></i>
                         
                             <b>2.4.</b>
@@ -486,7 +486,7 @@
                         
                             <b>3.</b>
                         
-                         Elements of a Computer Program
+                         Writing Expressions in JavaScript
                     </a>
                 
             
@@ -702,7 +702,7 @@
                         
                             <b>4.</b>
                         
-                         Control Flow
+                         Control Flow in JS
                     </a>
                 
             
@@ -976,40 +976,47 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_66">
+                    <section class="normal" id="section-gitbook_74">
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <hr>
 <h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
-<p><a href="http://repl.it/9S0" target="_blank">This repl.it session has been pre-loaded with the sample code below.</a></p>
-<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addTen</span><span class="hljs-params">(x)</span> </span>{
+<p>Follow <a href="http://repl.it/9gI" target="_blank">this link</a> to some sample code in a repl.it session - it should contain the following code:</p>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please Enter a Number"</span>);
+<span class="hljs-comment">//this console.log is here because this repl.it console does not display the prompt message, though any other environment would</span>
+<span class="hljs-keyword">var</span> x = prompt(<span class="hljs-string">"Please Enter a Number"</span>);
   <span class="hljs-comment">// If x is 10, your expression should evaluate to 20.</span>
   <span class="hljs-comment">// If x is 50, your expression should evaluate to 60.</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
-}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">triplePlusFive</span><span class="hljs-params">(x)</span> </span>{
-  <span class="hljs-comment">// If x is 5, your expression should evaluate to 20.</span>
-  <span class="hljs-comment">// If x is 20, your expression should evaluate to 65.</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
-}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please Enter a Number"</span>);
+<span class="hljs-keyword">var</span> y = prompt(<span class="hljs-string">"Please Enter a Number"</span>);
+  <span class="hljs-comment">// If y is 5, your expression should evaluate to 20.</span>
+  <span class="hljs-comment">// If y is 20, your expression should evaluate to 65.</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayHello</span><span class="hljs-params">(name)</span> </span>{
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"What is your name?"</span>);
+<span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
   <span class="hljs-comment">// If name is "Alice", your expression should evaluate to "Hello, Alice."</span>
   <span class="hljs-comment">// If name is "Bob", your expression should evaluate to "Hello, Bob."</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
-}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
 
-<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">sayGoodbye</span><span class="hljs-params">(name)</span> </span>{
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"What is your name?"</span>);
+<span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
   <span class="hljs-comment">// If name is "Charlene", your expression should evaluate to "Goodbye, Charlene."</span>
   <span class="hljs-comment">// If name is "David", your expression should evaluate to "Goodbye, David."</span>
-  <span class="hljs-keyword">return</span> <span class="hljs-comment">/*Your Expression*/</span>;
-}
+<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
 </code></pre>
-<p>As in the previous exercise, your job is to replace each of those <code>/*Your Expression*/</code> comments with an expression. This time, however, the expression will need to depend on a variable. Take a look at one of those lines that says <code>function</code>; unlike last time, there should be a variable listed in the parentheses to the right. This variable represents an <code>input</code> that our expression will be using. Write your expressions so that they behave like the descriptions given in the single-line comments.</p>
-<p>Once you&#39;ve finished, save <code>some_more_expressions.js</code>, copy the entire contents of the file into repl.it&#39;s editor, and click the <code>&gt;</code> button. Like last time, we&#39;ll be entering some commands (<code>addTen()</code>, <code>triplePlusFive()</code>,<code>sayHello()</code>, <code>sayGoodbye()</code>) into the console; however, this time, we&#39;ll need to specify some input values in order to see if our expressions were correct. We do this by putting input values in between the parentheses. For example, <code>addTen(5)</code> will use <code>5</code> as an input value; <code>sayHello(&quot;Max&quot;)</code> will use <code>&quot;Max&quot;</code> as an input value.</p>
-<p>Try testing out all of the different &#39;test cases&#39; that the comments specify in the console. If they all give you the answers that you expect, you&#39;re done! Save your repl.it session and (as before) put your name, cohort, and the new URL of your saved repl.it session into the form below.</p>
-<!-- FORM -->
+<p>As in the previous exercise, your job is to replace each of those <code>/*Your Expression*/</code> comments with an expression. </p>
+<p>This time, however, the expression will need to depend on a variable and this variable&#39;s value will be determined by a user input. There are several ways to get a value from a user in JavaScript, the simplest of which is to use <code>prompt</code>. It works by asking a user for an answer before they can continue and then assigning whatever they write to the variable you specify (in this case, <code>name</code>):</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
+<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello "</span> + name);
+</code></pre>
+<p>While <code>prompt</code> expects a user to write something in repl.it, repl.it does not show the prompt message.  We&#39;ve corrected that by writing the message to the console.</p>
+<p>Write your expressions so that they behave like the descriptions given in the single-line comments. Test if your expressions work correctly by running the code in the console.</p>
+<p>When you run your code, you should see the prompt message (visible because of the console.log line we added before we define the variable).</p>
+<p>Write your input and hit <kbd>ENTER</kbd>.</p>
+<p>Try testing out all of the different &#39;test cases&#39; that the comments specify in the console. If they all give you the answers that you expect, you&#39;re done!</p>
 <hr>
 <p><a href="08_lesson.html">Next : Expression Oddballs</a></p>
 
