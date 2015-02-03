@@ -17,7 +17,15 @@ console.log(typeof (/* Write your expression here*/));
 // Should equal 'boolean'
 ```
 
-Everything written next to "/" above, is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
+Everything written next to "/" above, is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. 
+
+There are two kinds of comments: 
+
+```javascript
+// This is single-linea comment
+/* This is a multiple line
+comment */
+```
 
 Your job, in this exercise, is to replace each of those comments with an expression that evaluates to either `string`, `number` or `boolean`, respectively. 
 

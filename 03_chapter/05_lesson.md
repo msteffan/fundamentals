@@ -1,6 +1,7 @@
 **WDI Fundamentals Unit 3**
 
 ---
+
 # Expressions with Variables
 
 One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.

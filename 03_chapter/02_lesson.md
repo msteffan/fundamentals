@@ -2,7 +2,6 @@
 
 ---
 
-
 # Data, Operators, and Expressions
 
 You've probably picked up a scientific calculator at some point in the past and started playing around with it. You punch in a big number (for example, 9876435), then `x`, and then another big number (say, 373848221), hit the `=` button, and the calculator spits back a result (in this case, 3692287654572135).

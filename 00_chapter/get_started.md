@@ -15,12 +15,10 @@ Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
 
 ---
 
-##Get Help from a GA Mentor
-
-In addition to help you'll find online and from your classmates on Slack, we're giving you around-the-clock access to WDI graduates. We'll email you about this program one week before class starts, so keep an eye on your inbox for an invitation.
-
----
 
 ## Feedback
 
-We need your help to improve this material!  Please don't hesitate to reach out by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly)
+We need your help to improve this material!  Please don't hesitate to reach out by emailing us at [AskImmersives@generalassemb.ly](AskImmersives@generalassemb.ly).
+
+
+[Let's get started!](../01_chapter/README.md)
