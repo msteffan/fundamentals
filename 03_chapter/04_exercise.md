@@ -4,16 +4,16 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9fn) to some sample code in a repl.it session - it should contain the following code:
+Follow [this link](http://repl.it/9g5) to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
-typeof (/* Write your expression here */);
+console.log(typeof (/* Write your expression here*/));
 // Should equal 'string'
 
-typeof (/* Write your expression here */);
+console.log(typeof (/* Write your expression here*/));
 // Should equal 'number'
 
-typeof (/* Write your expression here */);
+console.log(typeof (/* Write your expression here*/));
 // Should equal 'boolean'
 ```
 
@@ -23,9 +23,7 @@ Your job, in this exercise, is to replace each of those comments with an express
 
 You can use any expression you like, but make sure your expression includes at least one operator. 
 
-You can check your answers in the console by running the code (pressing the play button at the top of the editor).
-
->**HINT** To run an individual line of code without running the suceeding lines, try commenting out the lines you do not want to run using "//".
+You can check your answers in the console by running the code (pressing the play button at the top of the editor). We've written `console.log()`so that the console will print out the value of your expression.  Try running the code without `console.log()`.  The code will run, but you won't see that gratifying result of `string, number, boolean` on the screen.
 
 ---
 [On to the next lesson.](05_lesson.md)

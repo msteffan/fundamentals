@@ -4,9 +4,9 @@
 
 ## Project
 
-Let's use what we've just learned about flow control to make some more progress on our 'Rock Paper Scissors' project.
+Let's use what we've just learned about control flow to make some more progress on our 'Rock Paper Scissors' project.
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+- - -
 
 Go back to `RockPaperScissors.js`, and scroll down to the following code:
 
@@ -19,7 +19,7 @@ Go back to `RockPaperScissors.js`, and scroll down to the following code:
   }
 ```
 
-This time, we'll be using flow control to determine which value gets `return`ed: either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
+This time, we'll be using control flow to determine which value gets `return`ed: either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
 
 If you're feeling stuck, take a look back at Chapter 3 (Expressions). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
 

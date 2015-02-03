@@ -2,7 +2,7 @@
 
 ---
 
-# Flow Control Cheat Sheet
+# Control Flow Cheat Sheet
 
 Here are some notes on what's been covered in this chapter; feel free to copy this and extend it to make your own cheatsheet.
 

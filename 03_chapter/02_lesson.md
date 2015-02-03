@@ -103,6 +103,7 @@ In order to perform the multiplication, we need to first know what we're multipl
 We can represent this chain of dependencies using a logical structure called a `tree`.
 
 ![Expression Tree for (2+3)*(9-8)](../assets/chapter3/tree1.png)
+<br>
 
 To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
 
@@ -113,6 +114,7 @@ What happens is we're dealing with a more complicated expression? Say...
 Since the `-` requires ((9+2)*25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
 
 ![Expression Tree for ((9+2)*25)-5](../assets/chapter3/tree2.png)
+<br>
 
 One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
 
@@ -121,6 +123,7 @@ In this case, we actually need to look to the rules of math (and anyone interest
 Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
 
 ![Expression Tree for 1 + 1 + 1 + 1](../assets/chapter3/tree3.png)
+<br>
 
 While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts because there will be many times that you'll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.
 

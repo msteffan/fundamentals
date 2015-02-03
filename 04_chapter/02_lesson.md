@@ -39,14 +39,16 @@ JavaScript has a tool to do just that, called `if`. An `if` statement will take 
   ```
 The condition is what's inside the parentheses; if that condition is truthy (and it is, in this case), the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
-Let's take a step back for a minute, and consider something that's closer to our own experience : a flow chart.
+Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 
 ![XKCD Flow Chart](../assets/chapter4/flow_charts.png)
 *<small>src: [http://xkcd.com/518/](http://xkcd.com/518/)</small>*
+<br>
 
 A flow chart is a visual diagram telling us how to behave, depending on some set of conditions. If we were to try to draw a flow chart to describe an `if` statement, we might come up with something like this:
 
 ![Flow Chart for `If` Statement](../assets/chapter4/flow_chart_if.png)
+<br>
 
 As you can see, a person making their way through this diagram would need to make a decision; depending on whether or not our condition is truthy, they would either enter the block of code or skip it over entirely.
 
@@ -61,6 +63,7 @@ As you can see, a person making their way through this diagram would need to mak
   }
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
+<br>
 
 We can add as many `else if` statements as we want - just keep tacking them on.
 
@@ -75,6 +78,7 @@ We can add as many `else if` statements as we want - just keep tacking them on.
   }
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
+<br>
 
 However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
 
@@ -91,6 +95,7 @@ However, if all of the conditions fail, nothing will happen. To specify behavior
   }
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
+<br>
 
 Using `if...else if...else` statements allows us to write code that can behave very differently in different circumstances.
 
@@ -115,7 +120,7 @@ Try copying that whole statement into repl.it, and testing out different values 
 
 ## Switch Statement
 
-As we've seen before, we can choose which condition will be executed using `if...else...if`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example :
+As we've seen before, we can choose which condition will be executed using `if...else...if`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
 
 ```javascript
 // day of the week in a number, sunday is 0, saturday is 6

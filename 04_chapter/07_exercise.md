@@ -50,8 +50,6 @@ To test your code, run `fizzbuzz(20)` in the console; you should get back the re
  19
  buzz
 ```
-Once you're confident that your code works, save your repl.it session and enter that new URL (along with your name) into the form below.
-<!-- FORM -->
 
 ---
 [Let's review.](08_cheatsheet.md)

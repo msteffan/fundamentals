@@ -20,8 +20,8 @@ This exercise may be familiar to some of you. What we want this code to do is to
 
 > Don't remember how to determine if something divides evenly? Look back at Chapter 3 (Expressions) and take a look at the modulus (`%`) operator.
 
-To test your code, try running `fizzOrBuzz()` in the console, using multiple different values for `x`. Once you're confident that your code works, save your repl.it session and enter that new URL (along with your name) into the form below.
+To test your code, try running `fizzOrBuzz()` in the console, using multiple different values for `x`. 
 
-<!-- FORM -->
+---
 
-[Next : Loops](05_lesson.md)
+[Next: Loops](05_lesson.md)

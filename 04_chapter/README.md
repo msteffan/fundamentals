@@ -21,8 +21,8 @@ Suppose, however, that we were trying to cook something a little more complicate
 >
 > ...
 
-Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **flow control**, because it specifies the flow of the computer's actions through the program.
+Instructions like these require the cook to make decisions based on available data; in the context of programming, this is called **control flow**, because it specifies the flow of the computer's actions through the program.
 
-In this unit, we will look at how flow control gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
+In this unit, we will look at how control flow gets implemented in JavaScript; in particular, we'll be focusing on making decisions (conditionals) and repeated behavior (loops).
 
 [Let's get started.](02_lesson.md)
