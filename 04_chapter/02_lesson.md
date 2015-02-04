@@ -6,20 +6,29 @@
 
 ## The Ternary Operator (` __ ? __ : __ `)
 
-The simplest type of 'conditional' behavior found in JavaScript is an operator called a **ternary** operator. Its syntax is as follows:
+Conditions are the expressions that allow us to test whether or not to perform some action.
 
-  `some_expression ? truthy_value : falsey_value`
+In English, a conditional statement would be something like:
+>If Pooh's tummy rumbles, then he will go get some honey.
+>
 
-The ternary operator will evaluate to one of the two values on the right, depending on whether the expression on the left is truthy or falsey. Here's an example of a ternary operator with some actual values plugged in.
+The first condition must be met in order for Pooh to go get honey.
+
+The simplest type of conditional statement found in JavaScript involves the **ternary** operator. Its syntax is as follows:
+
+  `some_expression ? truthy_value : falsy_value`
+
+The ternary operator will evaluate to either the truthy or the falsy value, depending on whether the expression on the left is truthy or falsy. Here's an example of a ternary operator with some actual values plugged in.
 
   `true? 1 : 2`
 
 Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
 
-Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5)? 10 : 20)*10` will evaluate to 100 if `x` is greater than 5, or 200 if `x` is *not* greater than 5.
+Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5)? 10 : 20)*10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
 
 ### Test Yourself
-Suppose that we have two variables, `x` and `y`. `x` is (at the moment) equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
+Suppose that we have two variables, `x` and `y`. 
+To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
 * `(x%2 == 0)? "even" : "odd"`
 * `(x > y)? 1 : 0`
 * `(3)? 100 : -100`
@@ -28,7 +37,7 @@ Suppose that we have two variables, `x` and `y`. `x` is (at the moment) equal to
 
 ## `if..else if...else` Statements
 
-What if, rather than controlling how an expression evaluates, we wanted to use some truthy/falsey condition (hence the name 'conditionals') to optionally run one line of code vs another?
+What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?
 
 JavaScript has a tool to do just that, called `if`. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
   ```javascript

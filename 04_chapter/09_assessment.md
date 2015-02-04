@@ -6,22 +6,22 @@
 
 Let's use what we've just learned about control flow to make some more progress on our 'Rock Paper Scissors' project.
 
-- - -
+---
 
-Go back to `RockPaperScissors.js`, and scroll down to the following code:
+Open up `RockPaperScissors.js` in your text editor of choice, and scroll down to the following code:
 
 ```javascript
   function getWinner(playerMove,computerMove) {
       // This function should either give us back 'player', 'computer', or 'tie'.
       // The rules of the game are that rock beats scissors, scissors beats paper, and paper beats rock.
       // Assume that the only possible input values we can get are 'rock', 'paper', and 'scissors'.
-
   }
 ```
 
-This time, we'll be using control flow to determine which value gets `return`ed: either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
+Use control flow to determine which value gets `return`ed.
+> HINT: the possible outcomes are either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
 
-If you're feeling stuck, take a look back at Chapter 3 (Expressions). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
+If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/README.md). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
 
 > **Note** Remember, when you're programming, you need to figure out the solution before you ever start writing code. Here's a good general procedure you can follow:
 >

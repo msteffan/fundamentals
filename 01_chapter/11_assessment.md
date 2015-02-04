@@ -17,4 +17,4 @@ Close and restart your Terminal application.
 
 5. Change the name of the "wdi-fundamentals" folder to "fundamentals".  Do not change its location.
 
-6. We'll be using this folder to house your pre-course project, so keep it clean and don't delete it.
+6. We'll be using this folder to house your Fundamentals project, so keep it clean and don't delete it.
