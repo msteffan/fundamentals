@@ -36,8 +36,8 @@ When you open Terminal, you should see a window like this:
 
 This window is where you&rsquo;ll tell the computer what to do, and where the computer will display its reply.
 
-The <strong>prompt</strong> is the &lsquo;$&rsquo; that automatically shows up on the end of the first line. It&rsquo;s the command line equivalent of &lsquo;stand-by&rsquo; and indicates Terminal is ready to accept your <a href="#command"><strong>command</strong></a>. We&rsquo;ll learn a few commands later in this lesson.
+The **prompt** is the &lsquo;$&rsquo; that automatically shows up on the end of the first line. It&rsquo;s the command line equivalent of &lsquo;stand-by&rsquo; and indicates Terminal is ready to accept your **command**. We&rsquo;ll learn a few commands later in this lesson.
 
-The <strong>cursor</strong> follows the prompt and the text you type will appear here. Just like in every other setting where you've ever seen a cursor.
+The **cursor** follows the prompt and the text you type will appear here. Just like in every other setting where you've ever seen a cursor.
 
-The <strong>username</strong> of the person logged in precedes the prompt, and as you can see above, this user is named <em>samspade</em>.
+The **username** of the person logged in precedes the prompt, and as you can see above, this user is named *samspade*.
