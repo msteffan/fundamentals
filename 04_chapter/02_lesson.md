@@ -8,17 +8,13 @@
 
 Conditions are the expressions that allow us to test whether or not to perform some action.
 
-In English, a conditional statement would be something like:
->If Pooh's tummy rumbles, then he will go get some honey.
->
-
-The first condition must be met in order for Pooh to go get honey.
-
 The simplest type of conditional statement found in JavaScript involves the **ternary** operator. Its syntax is as follows:
 
   `some_expression ? truthy_value : falsy_value`
 
-The ternary operator will evaluate to either the truthy or the falsy value, depending on whether the expression on the left is truthy or falsy. Here's an example of a ternary operator with some actual values plugged in.
+The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy. 
+
+Here's an example of a ternary operator with some actual values plugged in.
 
   `true? 1 : 2`
 
@@ -35,7 +31,7 @@ To start,`x` is equal to 10, while `y` is equal to 20. What values would the fol
 * `('')? "hello" : "goodbye"`
 
 
-## `if..else if...else` Statements
+## `if..else` Statements
 
 What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?
 
@@ -106,7 +102,7 @@ However, if all of the conditions fail, nothing will happen. To specify behavior
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
 <br>
 
-Using `if...else if...else` statements allows us to write code that can behave very differently in different circumstances.
+Using `if...else` statements allows us to write code that can behave very differently in different circumstances.
 
 ### Test Yourself
 Consider following conditional statement:

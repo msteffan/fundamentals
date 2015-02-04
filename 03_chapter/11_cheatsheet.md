@@ -24,6 +24,38 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
   * When a variable is created, but is not assigned a value, it will be evaluated as `null`.
   * Any type of value, including `null`, can be passed into a logical operator as an input; based on whether these inputs are either 'truthy' or 'falsey', and what type of operator you're dealing with, the operator will behave in different ways.
 
+####Logical Operators
+
+Logical operators work on Boolean values to produce Boolean results.
+
+**AND operator `&&`**
+
+Condition | Condition 2 | Result
+----------------------------
+true | true | true
+true | false | false
+false | true | false
+false | false | false
+
+
+**OR operator `||`**
+Condition 1| Condition 2 | Result
+---------------------------------
+true | true | true
+true | false | true
+false | true | true
+false | false | false
+
+
+**NOT operator `!`**
+Condition | Result
+true  | false
+false | true
+
+We can use parentheses to change the order of operations for logical operators, just like we do with mathematical ones.
+
+
+
 ---
 
 Feeling confident? [Let's take what we've learned and apply it to a project.](12_assessment.md)
