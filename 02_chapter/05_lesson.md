@@ -60,8 +60,6 @@ First, you're going to **fork** our repository on Github by clicking the button 
 
 The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
-![Forking GIF](../assets/chapter2/fork_node.gif)
-
 Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
 
 ![Node.js Contributors](../assets/chapter2/node.png)
@@ -69,6 +67,8 @@ Let's walk through an example. Consider a project like Node.js, a JavaScript fra
 Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyant repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
 
 By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will, everyone does, Node.js won't be affected.
+
+![Forking GIF](../assets/chapter2/fork_node.gif)
 
 
 ### 2. Cloning
