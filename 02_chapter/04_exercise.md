@@ -11,7 +11,7 @@ This exercise will give you some practice using Git.
 2. Use `cd` to navigate into that new directory; you can make sure you're in the right place by using the `pwd` command.
 
 4. Use `git init` to create a Git repository in the `git-practice` directory.
-      > **WARNING**: DO NOT create a Git repository inside another Git respository.  Always make sure you are initializing Git within a folder whose parent directory does **not** contain a `.git` folder.
+      > **WARNING**: DO NOT create a Git repository inside another Git repository.  Always make sure you are initializing Git within a folder whose parent directory does **not** contain a `.git` folder.
   Notice that there is now a `.git` directory in `git-practice` - you can see by using the `ls -a` command.
 
 5. Create a new file called `README.txt` and run `git status`. What output do you get?

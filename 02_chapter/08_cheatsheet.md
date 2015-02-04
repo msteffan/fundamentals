@@ -4,6 +4,42 @@
 
 # Git Cheat Sheet
 
+####Git 
+* An open source program for tracking changes in text files. It was written by the author of the Linux operating system, and is the core technology that GitHub, the social and user interface, is built on top of.
+
+####Commit
+* An individual change to a file (or set of files). 
+* It's like when you save a file, except with Git, every time you save it creates a unique ID (a.k.a. the "SHA" or "hash") that allows you to keep record of what changes were made when and by who. 
+* Commits usually contain a commit message which is a brief description of what changes were made.
+* *Synonyms*: a revision
+
+####Diff
+* A diff is the difference in changes between two commits, or saved changes. 
+* The diff will visually describe what was added or removed from a file since its last commit.
+
+####Remote
+* The version of something that is hosted on a server, most likely GitHub.com. It can be connected to local clones so that changes can be synced.
+
+####Repository
+* The most basic element of Git. 
+* A repository is a project's folder, containing all of the project files (including documentation), and stores each file's revision history. Repositories can have multiple collaborators and can be either public or private.
+
+####Fork
+* A personal copy of another user's repository that lives on your account. 
+* Forks allow you to freely make changes to a project without affecting the original.
+* Forks remain attached to the original, allowing you to submit a pull request to the original's author to update with your changes.
+
+####Clone
+* A copy of a repository that lives on your computer instead of on a website's server somewhere, or the act of making that copy. 
+* With your clone you can edit the files in your preferred editor and use Git to keep track of your changes without having to be online. 
+* It is, however, connected to the remote version so that changes can be synced between the two. 
+* You can push your local changes to the remote to keep them synced when you're online.
+
+####Push
+* Pushing refers to sending your committed changes to a remote repository such as GitHub.com.
+* For instance, if you change something locally, you'd want to then push those changes so that others may access them.
+
+
 Command | Description
 ---|---
 `git init` | Tells Git to start monitoring the current folder you're in. In other words, for my working directory, create a new "timeline" where we can manage our source code.

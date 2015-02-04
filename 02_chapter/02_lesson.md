@@ -8,13 +8,14 @@
 
 To turn an ordinary directory into a Git repository (or *repo* for short), you have to **initialize** the repository (this just means adding a hidden folder called `.git/` to your project folder, which contains all the data that Git needs to operate.
 
-Simply change your working directory to the folder you'd like to track (for example, `~/myproject`) and run the command
+Simply change your working directory to the folder you'd like to track and run the command:
 
 ```
 $ git init
 ```
+> **CAUTION** Do not execute this command in your **home directory** –it will make it very difficult to work with any other repositories!
 
-> **HINT** When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
+When you take a look at your working directory in the GUI you probably won't see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the `.git/` directory you need to run `ls -a` from command line.
 
 If you delete the hidden .git directory, you will effectively "uninitialize" your repository and you will lose the data Git collected for you.
 
