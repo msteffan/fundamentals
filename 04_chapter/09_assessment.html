@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.4" data-basepath=".." data-revision="1422982797821">
+    <div class="book" data-level="4.4" data-basepath=".." data-revision="1423064375864">
     
 
 <div class="book-summary">
@@ -993,7 +993,26 @@
 </code></pre>
 <p>This time, we&#39;ll be using control flow to determine which value gets <code>return</code>ed: either &#39;player&#39; (if the player wins), &#39;computer&#39; (if the computer wins), or &#39;tie&#39; (if it&#39;s a draw).</p>
 <p>If you&#39;re feeling stuck, take a look back at Chapter 3 (Expressions). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?</p>
+<blockquote>
+<p><strong>Note</strong> Remember, when you&#39;re programming, you need to figure out the solution before you ever start writing code. Here&#39;s a good general procedure you can follow:</p>
+<ol>
+<li><p><strong>Understand the problem.</strong> In particular, try to determine (a) what you will be given, and (b) what you hope to get out. If you can&#39;t explain the problem in those kinds of terms, you won&#39;t be able to move further.</p>
+</li>
+<li><p><strong>Come up with test cases (and eventually, tests).</strong> Once you&#39;ve figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not your code is working. Once you&#39;ve learned a little more about writing code, you&#39;ll actually use these test cases to write tester code, which can be used to automatically confirm whether or not your project&#39;s code is working.</p>
+<blockquote>
+<p>Actually, this project has some tests built into it already, using a testing tool called Jasmine; to see the tests up close, just take a peek inside (but don&#39;t change!) the file <code>RockPaperScissorsSpec.js</code>, which sits inside the <code>spec</code> directory. These tests specify exactly how the code we write should behave - that&#39;s why they&#39;re called &#39;specs&#39;!</p>
+</blockquote>
+</li>
+<li><p><strong>Solve the problem in English.</strong> Or any human language, really. The point is, you shouldn&#39;t be <em>touching</em> your keyboard until you can explain, clearly and precisely, both what it is you&#39;re trying to do and how you&#39;re trying to do it.</p>
+</li>
+<li><p><strong>Write bad code, but bad code that works.</strong> Don&#39;t worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.</p>
+</li>
+<li><p><strong>&#39;Refactor&#39; your code.</strong> Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don&#39;t break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.</p>
+</li>
+</ol>
+</blockquote>
 <p>Once you&#39;ve finished (and have tested your code), commit the changes you&#39;ve made to the project&#39;s repository.</p>
+<hr>
 <p><a href="../05_chapter/README.html">Next up: Chapter 5</a></p>
 
                     

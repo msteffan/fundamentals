@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="1.4" data-basepath=".." data-revision="1422982797821">
+    <div class="book" data-level="1.4" data-basepath=".." data-revision="1423064375864">
     
 
 <div class="book-summary">
@@ -981,6 +981,49 @@
                         <p><strong>WDI Fundamentals Unit 1</strong></p>
 <hr>
 <h2 id="command-line-cheatsheet">Command Line CheatSheet</h2>
+<h4 id="command-line">Command Line</h4>
+<ul>
+<li>A text-based interface.</li>
+<li><em>Synonyms</em>: command-line interface (CLI), console</li>
+</ul>
+<h4 id="terminal">Terminal</h4>
+<ul>
+<li>An OSX application that provides text-based access to the operating system;</li>
+<li>Any device or application used for data entry and display in a computer system</li>
+<li><em>Synonyms</em>: client, computer terminal, terminal emulator</li>
+</ul>
+<h4 id="file-system">File System</h4>
+<ul>
+<li>A file system is a systematic way to control how information is stored and retrieved. It describes where one piece of information stops and where the next one begins. Each file system has its own structure and logic.</li>
+<li><em>Synonyms</em>: NTFS (Windows&#39; File System), HFS+ (Apple&#39;s File System), file allocation table, GFS (Global File System)</li>
+</ul>
+<h4 id="directory">Directory</h4>
+<ul>
+<li>An organizational unit, or container, used to organize computer files into a hierarchical structure.</li>
+<li><em>Synonyms</em>: folder, catalog, drawer</li>
+</ul>
+<h4 id="path">Path</h4>
+<ul>
+<li>A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each subdirectory is followed by a forward slash.</li>
+<li>An <em>absolute</em> or full path begins with the root directory and specifies every directory above the terminating file or dirctory name.</li>
+<li>A <em>relative</em> path does not include the root or parent directory names, and refers to a file or directory directly below the current working directory.</li>
+<li><em>Synonyms</em>: pathname</li>
+</ul>
+<h4 id="command">Command</h4>
+<ul>
+<li>The action we want the computer to take; always a single word.</li>
+<li><em>Synonyms</em>: utility</li>
+</ul>
+<h4 id="option">Option</h4>
+<ul>
+<li>Follows the &quot;command&quot; in a command line, to modify the behavior of the command in some way.</li>
+<li><em>Synonyms</em>: flag</li>
+</ul>
+<h4 id="argument">Argument</h4>
+<ul>
+<li>Follows the &quot;command&quot; and &quot;options&quot; (if any) in a command line, and is used to explain what we want the command to act on.</li>
+<li>The number of arguments used generally depends on the command: some don&#39;t need arguments, some require exactly one argument, some require lots of arguments, and some are flexible in the number they can take.</li>
+</ul>
 <table>
 <thead>
 <tr>
@@ -994,24 +1037,28 @@
 <td>Prints the working directory; returns the absolute path name of the current directory.</td>
 </tr>
 <tr>
-<td><code>ls -options path/to/directory</code></td>
+<td><code>ls [-options] [path/to/directory]</code></td>
 <td>Lists directory contents.</td>
 </tr>
 <tr>
-<td><code>cd -options path/to/directory</code></td>
+<td><code>cd [-options] [path/to/directory]</code></td>
 <td>Changes the current working directory to the specificed directory.</td>
 </tr>
 <tr>
-<td><code>mkdir path/to/directory</code></td>
+<td><code>mkdir [-options] [path/to/directory]</code></td>
 <td>Makes a new directory</td>
 </tr>
 <tr>
-<td><code>rm -r path/to/file</code></td>
+<td><code>rm -r [path/to/file] [path/to/file] ...</code></td>
 <td>Removes directories or files permanently</td>
 </tr>
 <tr>
-<td><code>mv path/to/file</code> or</td>
-<td>Removes directories or files permanently</td>
+<td><code>mv [-options] [path/to/file] [path/to/directory]</code></td>
+<td>Moves directories or files to a new local</td>
+</tr>
+<tr>
+<td><code>mv [-options] [path/to/file] [NEW_FILE_NAME]</code></td>
+<td>Renames a file or directory.</td>
 </tr>
 </tbody>
 </table>

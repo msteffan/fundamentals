@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.1" data-basepath=".." data-revision="1422982797821">
+    <div class="book" data-level="2.1" data-basepath=".." data-revision="1423064375864">
     
 
 <div class="book-summary">
@@ -983,11 +983,12 @@
 <h2 id="get-started-with-git">Get Started with Git</h2>
 <h3 id="initialize-a-repository">Initialize a Repository</h3>
 <p>To turn an ordinary directory into a Git repository (or <em>repo</em> for short), you have to <strong>initialize</strong> the repository (this just means adding a hidden folder called <code>.git/</code> to your project folder, which contains all the data that Git needs to operate.</p>
-<p>Simply change your working directory to the folder you&#39;d like to track (for example, <code>~/myproject</code>) and run the command</p>
+<p>Simply change your working directory to the folder you&#39;d like to track and run the command:</p>
 <pre><code>$ git init
-</code></pre><blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p> When you take a look at your working directory in the GUI you probably won&#39;t see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the <code>.git/</code> directory you need to run <code>ls -a</code> from command line.</p>
+</code></pre><blockquote>
+<p><strong>CAUTION</strong> Do not execute this command in your <strong>home directory</strong> –it will make it very difficult to work with any other repositories!</p>
 </blockquote>
+<p>When you take a look at your working directory in the GUI you probably won&#39;t see any additional files, because (if you remember from Unit 1) hidden files are not visible by default on your computer.  To see the <code>.git/</code> directory you need to run <code>ls -a</code> from command line.</p>
 <p>If you delete the hidden .git directory, you will effectively &quot;uninitialize&quot; your repository and you will lose the data Git collected for you.</p>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
 <p> You should never manually change the internal contents of your <code>.git</code> directory, unless your name is Linus Torvalds.</p>
