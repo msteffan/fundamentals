@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.1" data-basepath=".." data-revision="1423065640642">
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="1423086169059">
     
 
 <div class="book-summary">
@@ -976,20 +976,27 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_96">
+                    <section class="normal" id="section-gitbook_90">
                     
                         <p><strong>WDI Fundamentals Unit 4</strong></p>
 <hr>
 <h1 id="conditionals">Conditionals</h1>
 <h2 id="the-ternary-operator--__--__--__-">The Ternary Operator (<code>__ ? __ : __</code>)</h2>
-<p>The simplest type of &#39;conditional&#39; behavior found in JavaScript is an operator called a <strong>ternary</strong> operator. Its syntax is as follows:</p>
-<p>  <code>some_expression ? truthy_value : falsey_value</code></p>
-<p>The ternary operator will evaluate to one of the two values on the right, depending on whether the expression on the left is truthy or falsey. Here&#39;s an example of a ternary operator with some actual values plugged in.</p>
+<p>Conditions are the expressions that allow us to test whether or not to perform some action.</p>
+<p>In English, a conditional statement would be something like:</p>
+<blockquote>
+<p>If Pooh&#39;s tummy rumbles, then he will go get some honey.</p>
+</blockquote>
+<p>The first condition must be met in order for Pooh to go get honey.</p>
+<p>The simplest type of conditional statement found in JavaScript involves the <strong>ternary</strong> operator. Its syntax is as follows:</p>
+<p>  <code>some_expression ? truthy_value : falsy_value</code></p>
+<p>The ternary operator will evaluate to either the truthy or the falsy value, depending on whether the expression on the left is truthy or falsy. Here&#39;s an example of a ternary operator with some actual values plugged in.</p>
 <p>  <code>true? 1 : 2</code></p>
 <p>Since <code>true</code> is (obviously) truthy, this means that the <em>entire expression</em> will evaluate to the specified value - in this case, 1.</p>
-<p>Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x &gt; 5)? 10 : 20)*10</code> will evaluate to 100 if <code>x</code> is greater than 5, or 200 if <code>x</code> is <em>not</em> greater than 5.</p>
+<p>Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x &gt; 5)? 10 : 20)*10</code> will evaluate to 100 if <code>x</code> <em>is</em> greater than 5, or 200 if <code>x</code> <em>is not</em> greater than 5.</p>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Suppose that we have two variables, <code>x</code> and <code>y</code>. <code>x</code> is (at the moment) equal to 10, while <code>y</code> is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.</p>
+<p>Suppose that we have two variables, <code>x</code> and <code>y</code>. 
+To start,<code>x</code> is equal to 10, while <code>y</code> is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.</p>
 <ul>
 <li><code>(x%2 == 0)? &quot;even&quot; : &quot;odd&quot;</code></li>
 <li><code>(x &gt; y)? 1 : 0</code></li>
@@ -997,7 +1004,7 @@
 <li><code>(&#39;&#39;)? &quot;hello&quot; : &quot;goodbye&quot;</code></li>
 </ul>
 <h2 id="ifelse-ifelse-statements"><code>if..else if...else</code> Statements</h2>
-<p>What if, rather than controlling how an expression evaluates, we wanted to use some truthy/falsey condition (hence the name &#39;conditionals&#39;) to optionally run one line of code vs another?</p>
+<p>What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?</p>
 <p>JavaScript has a tool to do just that, called <code>if</code>. An <code>if</code> statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here&#39;s an example of an <code>if</code> statement in action.</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
     x += <span class="hljs-number">10</span>;
