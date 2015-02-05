@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.2.2" data-basepath=".." data-revision="1423086169059">
+    <div class="book" data-level="4.2.2" data-basepath=".." data-revision="1423153137042">
     
 
 <div class="book-summary">
@@ -981,48 +981,40 @@
                         <p><strong>WDI Fundamentals Unit 4</strong></p>
 <hr>
 <h2 id="your-turn">Your Turn</h2>
-<p>Follow <a href="http://repl.it/9RA" target="_blank">this link</a> to another repl.it session - it should contain the following code:</p>
-<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fizzOrBuzz</span><span class="hljs-params">(x)</span> </span>{
-    <span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> == <span class="hljs-number">0</span> &amp;&amp; x%<span class="hljs-number">5</span> == <span class="hljs-number">0</span>) {
-      <span class="hljs-keyword">return</span> <span class="hljs-string">'fizzbuzz'</span>;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> == <span class="hljs-number">0</span>) {
-      <span class="hljs-keyword">return</span> <span class="hljs-string">'fizz'</span>;
-    } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">5</span> == <span class="hljs-number">0</span>) {
-      <span class="hljs-keyword">return</span> <span class="hljs-string">'buzz'</span>
-    } <span class="hljs-keyword">else</span> {
-      <span class="hljs-keyword">return</span> x;
-    }
-  }
+<p>Here&#39;s the <a href="http://repl.it/aAQ" target="_blank">starter code</a> for your next exercise:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x <span class="hljs-comment">/* Test values of x here */</span>;
+<span class="hljs-keyword">var</span> result;
 
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fizzbuzz</span><span class="hljs-params">(num)</span> </span>{
-    <span class="hljs-comment">// YOUR CODE HERE</span>
-  }
+<span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> === <span class="hljs-number">0</span> &amp;&amp; x%<span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
+  result = <span class="hljs-string">'fizzbuzz'</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">3</span> === <span class="hljs-number">0</span>) {
+  result = <span class="hljs-string">'fizz'</span>;
+  } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (x%<span class="hljs-number">5</span> === <span class="hljs-number">0</span>) {
+  result = <span class="hljs-string">'buzz'</span>;
+  } <span class="hljs-keyword">else</span> {
+  result = x;
+}
+
+<span class="hljs-keyword">var</span> max;
+
+<span class="hljs-comment">/* WRITE YOUR CODE HERE */</span>
 </code></pre>
-<p>Replace that comment with code that will print out the result of <code>fizzOrBuzz()</code> to the console (using the command <code>console.log();</code>) for every number from 1 to <code>x</code>.</p>
-<p>To test your code, run <code>fizzbuzz(20)</code> in the console; you should get back the result</p>
-<pre><code class="lang-javascript"> <span class="hljs-number">1</span>
- <span class="hljs-number">2</span>
- fizz
- <span class="hljs-number">4</span>
- buzz
- fizz
- <span class="hljs-number">7</span>
- <span class="hljs-number">8</span>
- fizz
- buzz
- <span class="hljs-number">11</span>
- fizz
- <span class="hljs-number">13</span>
- <span class="hljs-number">14</span>
- fizzbuzz
- <span class="hljs-number">16</span>
- <span class="hljs-number">17</span>
- fizz
- <span class="hljs-number">19</span>
- buzz
+<p>Last time, we wrote code that took an input <code>x</code> and set a new <code>result</code> value according to a specific set of rules.</p>
+<p>This time, your challenge is to loop through every number from 1 to <code>max</code>, applying the same rules to each number and, finally, printing the result to the console using the command <code>console.log(result);</code>.</p>
+<p>For example, if you ran the finished code with <code>max</code> equal to 10, the following should be displayed in the console:</p>
+<pre><code class="lang-javascript">  <span class="hljs-number">1</span>
+  <span class="hljs-number">2</span>
+  fizz
+  <span class="hljs-number">4</span>
+  buzz
+  fizz
+  <span class="hljs-number">7</span>
+  <span class="hljs-number">8</span>
+  fizz
+  buzz
 </code></pre>
 <hr>
-<p><a href="08_cheatsheet.html">Let&#39;s review.</a></p>
+<p>Got it working? Nice job! <a href="08_cheatsheet.html">Let&#39;s review what we&#39;ve covered this chapter.</a></p>
 
                     
                     </section>

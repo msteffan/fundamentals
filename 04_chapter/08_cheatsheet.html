@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.3" data-basepath=".." data-revision="1423086169059">
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="1423153137042">
     
 
 <div class="book-summary">
@@ -992,18 +992,33 @@
 <p>e.g. &quot;Today is &quot; + ((temp &gt; 70)? &quot;&quot; : &quot;not&quot;) + &quot; hot.&quot;</p>
 </li>
 </ul>
-<h3 id="ifelse-ifelse-statements"><code>if...else if...else</code> Statements</h3>
+<h3 id="ifelse-statement-syntax"><code>if...else</code> statement syntax</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> CONDITION_1
+  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 is <span class="hljs-literal">true</span>
+elsif CONDITION_2
+  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 is <span class="hljs-literal">false</span> and CONDITION_2 is <span class="hljs-literal">true</span>
+elsif CONDITION_3
+  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 and CONDITION_2 are <span class="hljs-literal">false</span>, and CONDITION_3 is <span class="hljs-literal">true</span>
+<span class="hljs-keyword">else</span>
+  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1, CONDITION_2, and CONDITION_3 are <span class="hljs-literal">false</span>
+end
+</code></pre>
 <ul>
-<li>Used to run one of several blocks of code based on some condition (or a set of conditions).</li>
 <li>With <code>else if</code>, each additional condition will only be checked if all of the prior conditions have failed.</li>
-<li><code>else</code> specifies what happens if all prior conditions fail.</li>
-<li>When a program runs through `if...else if...else if... else&#39; statement, <strong>only one of the blocks will be executed</strong> at that time.</li>
 </ul>
-<h3 id="switch-statements"><code>switch</code> Statements</h3>
-<ul>
-<li><code>switch</code> can take away some of the duplication from long <code>if...else if...else</code> statements.</li>
-<li>One limitation of <code>switch</code> is that it can only use cases that are different values of the same expression - it is less flexible than <code>if...else if...else</code>.</li>
-</ul>
+<h3 id="switch-statement-syntax"><code>switch</code> statement syntax</h3>
+<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (expression)
+{
+<span class="hljs-keyword">case</span> LABEL1:
+  # Code to be executed <span class="hljs-keyword">if</span> expression = LABEL1
+  <span class="hljs-keyword">break</span>
+<span class="hljs-keyword">case</span> LABEL2:
+  # Code to be executed <span class="hljs-keyword">if</span> expression = LABEL2
+  <span class="hljs-keyword">break</span>
+<span class="hljs-keyword">default</span>:
+  # Code to be executed <span class="hljs-keyword">if</span> expression is different from both LABEL1 and LABEL2
+}
+</code></pre>
 <h2 id="loops">Loops</h2>
 <ul>
 <li>Loops are used to tell our programs to take repeated action.</li>
