@@ -41,14 +41,16 @@ When you're ready, skip ahead to the next section, shown below.
 
 ```javascript
 function getPlayerMove(move) {
-    // If a move is given, your expression should evaluate to that move.
-    // If move is not specified / is null, your expression should run getInput()
-    return /* Your Expression */;
-}
+	// Write an expression that operates on a variable called 'move'
+	// If a 'move' has a value, your expression should evaluate to that value.
+	// However, if 'move' is not specified / is null, your expression should equal 'getInput()'.
+	return /* Your Expression */;
+ }
 
 function getComputerMove(move) {
-    // If a move is given, your expression should evaluate to that move.
-    // If move is not specified / is null, your expression should equal `randomPlay()`
+	// Write an expression that operates on a variable called 'move'
+	// If a 'move' has a value, your expression should evaluate to that value.
+    // However, if 'move' is not specified / is null, your expression should equal 'randomPlay()'.
     return /* Your Expression */;
 }
 ```
@@ -57,7 +59,7 @@ Similar to how you've worked in the exercises, you will need to replace the `/* 
 
 Instructions for how this expression should behave are laid out in the single-line comments above.
 
-> **CAUTION** For now, don't worry about what `getInput()` or `randomPlay()` are, and just ignore that `function somethingSomething()` stuff - we'll be covering all of that in depth in Chapter 5. Just focus on writing your  expressions.
+> **CAUTION** For now, don't worry about what `getInput()` or `randomPlay()` are, and just ignore that `function somethingSomething(move)` stuff - we'll be covering all of that in depth in Chapter 5. Just focus on writing the  expression that comes after `return`.
 
 Go ahead and get started - once you've finished editing those two lines, save your code and make a commit to the project's repository.
 
