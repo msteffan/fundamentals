@@ -4,52 +4,45 @@
 
 ## Your Turn
 
-Follow [this link](http://repl.it/9RA) to another repl.it session - it should contain the following code:
+Here's the [starter code](http://repl.it/aAQ) for your next exercise:
 
 ```javascript
-  function fizzOrBuzz(x) {
-    if (x%3 == 0 && x%5 == 0) {
-      return 'fizzbuzz';
-    } else if (x%3 == 0) {
-      return 'fizz';
-    } else if (x%5 == 0) {
-      return 'buzz'
-    } else {
-      return x;
-    }
-  }
+var x /* Test values of x here */;
+var result;
 
-  function fizzbuzz(num) {
-    // YOUR CODE HERE
-  }
+if (x%3 === 0 && x%5 === 0) {
+  result = 'fizzbuzz';
+  } else if (x%3 === 0) {
+  result = 'fizz';
+  } else if (x%5 === 0) {
+  result = 'buzz';
+  } else {
+  result = x;
+}
+
+var max;
+
+/* WRITE YOUR CODE HERE */
 ```
 
-Replace that comment with code that will print out the result of `fizzOrBuzz()` to the console (using the command `console.log();`) for every number from 1 to `x`.
+Last time, we wrote code that took an input `x` and set a new `result` value according to a specific set of rules.
 
-To test your code, run `fizzbuzz(20)` in the console; you should get back the result
+This time, your challenge is to loop through every number from 1 to `max`, applying the same rules to each number and, finally, printing the result to the console using the command `console.log(result);`.
+
+For example, if you ran the finished code with `max` equal to 10, the following should be displayed in the console:
 
 ```javascript
- 1
- 2
- fizz
- 4
- buzz
- fizz
- 7
- 8
- fizz
- buzz
- 11
- fizz
- 13
- 14
- fizzbuzz
- 16
- 17
- fizz
- 19
- buzz
+  1
+  2
+  fizz
+  4
+  buzz
+  fizz
+  7
+  8
+  fizz
+  buzz
 ```
 
 ---
-[Let's review.](08_cheatsheet.md)
+Got it working? Nice job! [Let's review what we've covered this chapter.](08_cheatsheet.md)
