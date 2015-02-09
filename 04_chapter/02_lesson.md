@@ -69,8 +69,9 @@ As you can see, a person making their way through this diagram would need to mak
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
 <br>
+<br>
 
-We can add as many `else if` statements as we want - just keep tacking them on.
+<p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
 
 ```javascript
   if (x > 10) {

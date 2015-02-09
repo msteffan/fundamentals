@@ -64,7 +64,7 @@ Let's walk through an example. Consider a project like Node.js, a JavaScript fra
 
 ![Node.js Contributors](../assets/chapter2/node.png)
 
-Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyant repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
+Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
 
 By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will, everyone does, Node.js won't be affected.
 
