@@ -4,34 +4,22 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9g5) to some sample code in a repl.it session - it should contain the following code:
+Follow [this link](http://repl.it/9km) to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
-console.log(typeof (/* Write your expression here*/));
-// Should equal 'string'
-
-console.log(typeof (/* Write your expression here*/));
-// Should equal 'number'
-
-console.log(typeof (/* Write your expression here*/));
-// Should equal 'boolean'
+/* Your Expression Here */
 ```
 
-Everything written next to "/" above, is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. 
+This thing is called a *comment* - it tells the computer to completely ignore everything between the two `/` characters. There are two kinds of comments: **multi-line** comments (`/* comment */`), which can run across multiple lines, and 'single-line' comments (`// comment`), which only comment out everything following it on the current line.
 
-There are two kinds of comments: 
+1. Replace /* Your Expression */ with an expression that evaluates to the integer `30`. You can use any expression you like, but it must contain at least one (and ideally two or more) operations. You can test your answers by clicking the play button at the top of the page - it will spit out the evaluated result of your expression into the console.
 
-```javascript
-// This is single-linea comment
-/* This is a multiple line
-comment */
-```
+** Note ** It might also be a good idea to make sure the *type* of this result is correct - after all `30` and `"30"` are not the same. You can check this by entering `typeof whatever_your_expression_is` into the console.
 
-Your job, in this exercise, is to replace each of those comments with an expression that evaluates to either `string`, `number` or `boolean`, respectively. 
+2. Now replace your first expression with a second expression - this one should evaluate to "Hello World".
 
-You can use any expression you like, but make sure your expression includes at least one operator. 
+3. Finally, replace the previous expression with an expression that evaluates to the boolean `true`. Try using two or three operations for this one!
 
-You can check your answers in the console by running the code (pressing the play button at the top of the editor). We've written `console.log()`so that the console will print out the value of your expression.  Try running the code without `console.log()`.  The code will run, but you won't see that gratifying result of `string, number, boolean` on the screen.
 
 ---
 [On to the next lesson.](05_lesson.md)
