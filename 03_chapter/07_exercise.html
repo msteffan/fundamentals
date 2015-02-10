@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.2.2" data-basepath=".." data-revision="1423504520198">
+    <div class="book" data-level="3.2.2" data-basepath=".." data-revision="1423526899512">
     
 
 <div class="book-summary">
@@ -982,41 +982,21 @@
 <hr>
 <h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
 <p>Follow <a href="http://repl.it/9gI" target="_blank">this link</a> to some sample code in a repl.it session - it should contain the following code:</p>
-<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please Enter a Number"</span>);
-<span class="hljs-comment">//this console.log is here because this repl.it console does not display the prompt message, though any other environment would</span>
-<span class="hljs-keyword">var</span> x = prompt(<span class="hljs-string">"Please Enter a Number"</span>);
-  <span class="hljs-comment">// If x is 10, your expression should evaluate to 20.</span>
-  <span class="hljs-comment">// If x is 50, your expression should evaluate to 60.</span>
-<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please Enter a Number"</span>);
-<span class="hljs-keyword">var</span> y = prompt(<span class="hljs-string">"Please Enter a Number"</span>);
-  <span class="hljs-comment">// If y is 5, your expression should evaluate to 20.</span>
-  <span class="hljs-comment">// If y is 20, your expression should evaluate to 65.</span>
-<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"What is your name?"</span>);
-<span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
-  <span class="hljs-comment">// If name is "Alice", your expression should evaluate to "Hello, Alice."</span>
-  <span class="hljs-comment">// If name is "Bob", your expression should evaluate to "Hello, Bob."</span>
-<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
-
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"What is your name?"</span>);
-<span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
-  <span class="hljs-comment">// If name is "Charlene", your expression should evaluate to "Goodbye, Charlene."</span>
-  <span class="hljs-comment">// If name is "David", your expression should evaluate to "Goodbye, David."</span>
-<span class="hljs-built_in">console</span>.log(<span class="hljs-comment">/* Your Expression */</span>);
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x;
+<span class="hljs-comment">/* Your Expression */</span>
 </code></pre>
-<p>As in the previous exercise, your job is to replace each of those <code>/*Your Expression*/</code> comments with an expression. </p>
-<p>This time, however, the expression will need to depend on a variable and this variable&#39;s value will be determined by a user input. There are several ways to get a value from a user in JavaScript, the simplest of which is to use <code>prompt</code>. It works by asking a user for an answer before they can continue and then assigning whatever they write to the variable you specify (in this case, <code>name</code>):</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> name = prompt(<span class="hljs-string">"What is your name?"</span>);
-<span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Hello "</span> + name);
-</code></pre>
-<p>While <code>prompt</code> expects a user to write something in repl.it, repl.it does not show the prompt message.  We&#39;ve corrected that by writing the message to the console.</p>
-<p>Write your expressions so that they behave like the descriptions given in the single-line comments. Test if your expressions work correctly by running the code in the console.</p>
-<p>When you run your code, you should see the prompt message (visible because of the console.log line we added before we define the variable).</p>
-<p>Write your input and hit <kbd>ENTER</kbd>.</p>
-<p>Try testing out all of the different &#39;test cases&#39; that the comments specify in the console. If they all give you the answers that you expect, you&#39;re done!</p>
+<p>As in the previous exercise, your job is to replace the <code>/*Your Expression*/</code> comment with an expression. However, this time your expressions will need to depend on the variable <code>x</code>.</p>
+<ol>
+<li><p>Write an expression that evaluates to 10 more than <code>x</code>; if <code>x</code> is 10, the expression should evaluate to 20; if <code>x</code> is 50, the expression should evaluate to 60. Test your answer by changing the first line to <code>var x = some_value;</code> and clicking the &#39;play&#39; button.</p>
+</li>
+<li><p>Now replace that first expression with an expression that evaluates to triple the value of <code>x</code>, plus five; if <code>x</code> is 5, the expression should evaluate to 20; if <code>x</code> is 10, the expression should evaluate to 35. What happens if you set <code>x</code> to 100? Does it work like you&#39;d expect?</p>
+</li>
+<li><p>Next, replace that expression with one that evaluates to &quot;Hello, <code>x</code>.&quot;; if <code>x</code> is &quot;Alice&quot;, the expression should evaluate to &quot;Hello, Alice.&quot;; if <code>x</code> is &quot;Bob&quot;, the expression should evaluate to &quot;Hello, Bob.&quot;.</p>
+</li>
+<li><p>Finally, replace the prior expression with one that evaluates to &quot;Goodbye, <code>x</code>.&quot;; if <code>x</code> is &quot;Charlene&quot;, the expression should evaluate to &quot;Goodbye, Charlene.&quot;; if <code>x</code> is &quot;David&quot;, the expression should evaluate to &quot;Goodbye, David&quot;.</p>
+</li>
+</ol>
+<p>Try testing out all of the different &#39;test cases&#39; mentioned above. If they all give you the answers that you expect, you&#39;re done!</p>
 <hr>
 <p><a href="08_lesson.html">Next : Expression Oddballs</a></p>
 
