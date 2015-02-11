@@ -2,12 +2,37 @@
 
 ---
 
-##Unit 5 is coming soon...
+#####By the end of this Unit, you'll be able to:
+* Read JavaScript functions and predict their output values.
+* Write JavaScript functions, and use those functions within other functions.
+* Write anonymous functions
 
-![404 Cake](../assets/wip/hourglass.gif)
+---
 
-We'll notify you via the #wdi-fundamentals Slack channel as soon as it becomes available.
+You've had an opportunity to see some functions in the homework assignments at the end of units 3 and 4; now it's time to learn about writing them!
 
-If you're interested in learning more about Functions in the meantime, try:
+But first... a little math.
 
-* "[Functions](http://gitbookio.gitbooks.io/javascript/content/functions/README.html)" Chapter of **Introduction to Javascript**
+**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs. 
+
+Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
+
+<br>
+<center><img src="../assets/chapter5/function.png"></center>
+<br>
+
+If we were shown the output (`f(x)`) for each value of `x`:
+
+| x | f(x) |
+|:-:|:-:|
+| -1 | -2 |
+| 0 | 0 |
+| 1 | 2 |
+| 2 | 4 |
+| 3 | 6 |
+
+We could figure out that relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
+
+Functions play a similar role in programming - JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
+
+[Let's take a look.](02_lesson.md)
