@@ -29,13 +29,7 @@ To fix these issues, let's break the function into two smaller ones:
   }
 ```
 
-See how much easier this is to read? You can tell how it's supposed to work at a glance - very helpful if someone else is looking at your code (which is almost always the case).
-
-> **NOTE** Although there are many different perspectives about how to write good fuctions, here are a few basic guidelines:
-  * **Keep your functions small and simple.** Don't try to do too much in a single step.
-  * **Call things what they are.** A big part of what makes the code in our example readable is our choice of function names - they explicitly and succinctly refer to the value that's being returned (or, alternatively, the operation that is being done.)
-  * **Avoid repetition where possible.** Though it's important not to get carried away with this, having less duplication in your code usually makes your code easier to read and simpler to maintain.
-  * **Try to avoid hard-coding values inside your functions.** This typically makes your code more abstract and generalizable, allowing it to be reused in different contexts.
+See how much easier this is to read? You can tell how it's supposed to work at a glance - very helpful for someone other than the author to read the code.
 
 ## Problem Solving with Functions
 Let's look at a practical example. Say that we're working on a TicTacToe game. Fortunately, we're not the only ones on this project - our coworkers down the hall have taken care of getting input from the user. According to their notes, all nine cells' values will be accessible via a function called `cells`, which takes a string (e.g. 'a') as an input and evaluates to the value for that specific cell (as labelled below).

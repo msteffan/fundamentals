@@ -18,19 +18,29 @@ You have a folder in the cloud, your *remote repo*, which syncs with your comput
 
 Below is what the Github interface looks like for a repo called `awesome-project`:
 
-![Github Interface](../assets/chapter2/github.gif)
-
 1. **Repo Name and Owner** - describes who owns the repository, what the name of the repo is and whether the repo is public or private.
+
+	![Repo Name and Owner](../assets/chapter2/username_github.gif)
 
 2. **Overview** - displays the number of commits, branches, releases and contributors to a particular repo.  Selecting any one of these options will bring a detailed view of that selection.
 
+	![Overview](../assets/chapter2/overview_github.gif)
+
 3. **Repo File Structure** - displays the contents of the repo.  Selecting any file or folder will open a detailed view of that file and allow you to edit the content directly.
+
+	![File Structure](../assets/chapter2/contents_github.gif)
 
 4. **Fork button** - allows you copy a version of this repo (`user/awesome-project`) to your own Github account.
 
+	![Fork button](../assets/chapter2/fork_github.gif)
+
 5. **Side Bar** - use the side bar to respond to issues, create pull requests, and change the settings for this repo.
 
+	![Side bar](../assets/chapter2/sidebar_github.gif)
+
 There are a ton of unique Github features crammed on this page, but we'll only be using three of them to start.
+
+---
 
 
 ## Our GitHub Flow
@@ -48,11 +58,22 @@ This is what our workflow looks like:
 
 **Don't worry**, we are going to cover this step by step, in plenty of detail.
 
----
+
 
 ### 1. Forking
 
-First, you're going to **fork** our repository on Github by clicking the button we highlighted above. 
+Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
+
+<br>
+![Node.js Contributors](../assets/chapter2/node.png)
+<br>
+
+Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
+
+To create a copy of Joyent's repo, you would need to **fork** it by clicking the button we highlighted above.
+
+![Forking GIF](../assets/chapter2/fork_node.gif)
+
 
 > **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md).
 
@@ -60,32 +81,30 @@ First, you're going to **fork** our repository on Github by clicking the button 
 
 The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
-Let's walk through an example. Consider a project like Node.js, a JavaScript framework that you'll learn about in class. Node.js is completely open-source, which means that anyone can read (and even copy) the code that makes it work - including you! The source code is publicly available [here](https://github.com/joyent/node) on Github; if you visit the main repo, you'll see that there are over 400 contributors who have made committed changes to Node.js.
-
-![Node.js Contributors](../assets/chapter2/node.png)
-
-Although it is open-source and anyone can read or contribute to the code, it is **maintained** by a company called Joyent. Not all of the 400+ contributors have the ability to edit the original Joyent repo – that wouldn't be very efficient or safe. Someone could accidentally make a change that conflicts with someone else's contributions, causing things to break. Changes need to be inspected and approved before they can officially be added to the project.
-
 By forking Joyent's repo, you could have a full working copy of the Node.js source code to play with. When you break something, which you will, everyone does, Node.js won't be affected.
 
-![Forking GIF](../assets/chapter2/fork_node.gif)
+
 
 
 ### 2. Cloning
 
-Next, after you've forked our repo, you'll want to place a local copy on your computer. 
+Next, you'll want to be able to edit the code
 
-To copy your fork down to your computer, you'll need to open up the Terminal and use a Git command.
+To make a local copy of a fork, you'll need to open up the Terminal and use a Git command.
 
 You need to navigate to the place where you'd like to store the repo, and then type:
+
 ```
 git clone <clone URL>
 ```
-You can find the `<clone URL>` on right side of your Github repository:
+
+> **CAUTION** Do not include the "<>" symbols in your Git command.  Just write the URL.
+
+You can find the `<clone URL>` on right side of the forked repo on Github:
 
 ![Node.js Clone](../assets/chapter2/node_clone.png)
 
-By issuing the clone command, you ask GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
+By issuing the clone command, you're asking GitHub via command line for a copy of your remote repo, and this copy or **clone** ends up in your working directory.
 
 
 ### 3 & 4. Editing and Committing
@@ -105,13 +124,12 @@ If you're curious, here's a brief overview:
 
 ### 6. Submitting a Pull Request
 
-Once your changes are pushed to your remote repository on Github, you can notify GA of your changes by submitting a **pull request** to our original repo. 
+Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**. 
 
 A pull request is effectively saying "Hello maintainer of project X, I made some changes here in my forked copy and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
 
 We're going to cover how to submit a pull request in a later chapter.
 
-> **NOTE** At the end of this book, we will ask you to submit a pull request with your Fundamentals project. During WDI, your instructors will probably use a similar GitHub workflow to have you access new assignments and submit your answers back.
 
 ## Confused?
 

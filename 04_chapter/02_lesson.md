@@ -36,13 +36,14 @@ To start,`x` is equal to 10, while `y` is equal to 20. What values would the fol
 What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?
 
 JavaScript has a tool to do just that, called `if`. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
+ 
   ```javascript
   if (x > 10) {
     x += 10;
     y += 10;
   }
   ```
-The condition is what's inside the parentheses; if that condition is truthy (and it is, in this case), the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
+The condition is what's inside the parentheses; if that condition is truthy, the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
 Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
 

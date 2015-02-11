@@ -10,7 +10,7 @@
 
 In the previous unit, we spent some time writing very simple programs - sets of instructions that were interpreted by our computer one at a time, in order. Kind of like a recipe, no?
 
-Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following exerpt from "French Toast a la GA"
+Suppose, however, that we were trying to cook something a little more complicated. For example, consider the following excerpt from "French Toast a la GA"
 > ...
 >
 > 3: Whisk eggs, milk, honey and kosher salt until eggs are no longer visible.

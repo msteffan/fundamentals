@@ -6,7 +6,7 @@
 
 Now that we've learned a little bit about expressions, let's apply some of this material to our 'Rock Paper Scissors' project.
 
-- - -
+---
 
 Go back into the project repo, wherever you've decided to put it, and open up the file `RockPaperScissors.js` (inside the `app/js` directory).
 
@@ -53,7 +53,7 @@ Similar to how you've done this in your exercises, you will need to replace the 
 
 > **CAUTION** For now, don't worry about what `getInput()` or `randomPlay()` are, and just ignore that `function somethingSomething()` stuff - we'll be covering all of that in depth in Chapter 5. Just focus on subbing in your new expressions.
 
-Go ahead and get started - once you've finished editing those two lines, save your code and make a commit to the project's repository.
+Go ahead and get started - once you've finished editing those two lines, save your code and make a commit to your project's repository.
 
 ---
 [Next up: Chapter 4](../04_chapter/README.md)
