@@ -75,26 +75,26 @@ In addition to containing multiple elements, arrays also have a number of in-bui
   All arrays have a property called `length`, which evaluates to the tell you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
 
   ```javascript
-    ['a','b','c'].length;  // Evaluates to 3
+    ['a','b','c'].length;  // evaluates to 3
 
     var x = [10,20,30,40];
-    x.length;              // Evaluates to 4
+    x.length;              // evaluates to 4
   ```
 
   One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.
 
   ```javascript
     var team = ['ted','lem','phil','linda','veronica',];
-    team[team.length - 1]   // evaluates to 'veronica'.
-    team[team.length - 2]   // evaluates to 'linda'.
+    team[team.length - 1];   // evaluates to 'veronica'.
+    team[team.length - 2];   // evaluates to 'linda'.
   ```
 
 * `.push(...)` and `.pop(...)`
   `push` and `pop` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. `push` in particular a very convenient way to build up an array over time - you're simply adding another item to the list. As a side note (since it's rare to use them this way),`push` evaluates to the value of the element it's adding, while `pop` evaluates to the the value of the element it's just removed.
     ```javascript
       var ghosts = ['blinky','inky','pinky'];
-      ghosts.push('clyde')  // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky','clyde'].
-      ghosts.pop()          // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky'] again.
+      ghosts.push('clyde');  // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky','clyde'].
+      ghosts.pop();          // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky'] again.
     ```
 
 * `.indexOf(...)`
