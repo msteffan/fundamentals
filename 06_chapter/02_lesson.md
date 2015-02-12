@@ -53,7 +53,7 @@
     var x = array_of_arrays[1]; //Evaluates to ['d','e','f']
     x[0]; //Evaluates to 'd'
   ```
-  But the variable `x` there is unnecessary - it's just standing in for `['d','e','f']`. We can access that element directly from `my_array_of_arrays` using the following syntax.
+  But the variable `x` there is unnecessary - it's just standing in for `['d','e','f']`. We can access that element directly from `array_of_arrays` using the following syntax.
   ```javascript
     array_of_arrays[1][0]; // Evaluates to 'd'
   ```
