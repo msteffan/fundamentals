@@ -33,7 +33,7 @@
   * `my_numbers[1] * 2`
 
 ## Adding Complexity - Arrays of Arrays
-  In addition to storing numbers, strings, booleans, or even functions as elements, arrays can go 'full-Inception' by storing *other arrays*.
+  In addition to storing numbers, strings, or booleans as elements, arrays can go 'full-Inception' by storing *other arrays*.
     ![We need to go deeper.](http://i1.kym-cdn.com/photos/images/newsfeed/000/531/557/a88.jpg)
 
   Here's an example of what this can look like.
