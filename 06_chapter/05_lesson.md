@@ -97,7 +97,7 @@ function myFunc(x) {
 Try to implement each of the following things in repl.it using `.map()` and `.forEach()`
 * Start with a variable `x` and an array of your choosing. Write an expression that will increase `x` by 10 once for every element in the array.
 * Create an array of masses in kilograms, and use it to produce an array of those same masses in pounds (hint: it's roughly 2.2 pounds to the kilogram).
-* Strings also have a `.length` property, just like arrays. Create an array of strings, and use it to produce an array containing the length of each string.
+* Believe it or not, Strings have a `.length` property just like arrays do. Armed with this knowledge, create an array of strings, and use an iterator to produce an array containing the length of each string.
 
 If you're interested, you can read the full documentation on `.map()` and `.forEach()` here:
 * [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
