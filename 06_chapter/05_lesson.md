@@ -54,7 +54,18 @@
   Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!
 
   ### Test Yourself
-  *
+  Create a new repl.it session with the following JavaScript code:
+  ```javascript
+    var old_array = [12,45,6,23,19,20,20,15,30,42];
+  ```
+  How could you use iteration to generate a new array called `new_array` from `old_array`, so that...
+  * Each value in `new_array` is the value of its corresponding element in `old_array`, plus 5?
+  * Each value in `new_array` is the square of the value of its corresponding element in `old_array`?
+  * Every **odd-indexed** value in `new_array` is *double* its corresponding elemnt in `old_array`, while every **even-indexed** value is unchanged?
+  * `new_array` is the exact mirror image of `old_array`?
+
+  These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
+
 
 ---
-[Test your understanding with this next quiz!](06_quiz.md)
+Feeling confident? [Test your understanding with this next quiz.](06_quiz.md)
