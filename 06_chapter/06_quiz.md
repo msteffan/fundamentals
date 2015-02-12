@@ -8,4 +8,4 @@
 
 ---
 
-[Let's practice this some more.](07_exercise.md)
+[Here's an exercise to practice what we've just gone over.](07_exercise.md)

@@ -52,4 +52,4 @@ What will the following lines do? Check your answers in repl.it.
 > **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in repl.it!
 
 ---
-[]()
+[Test your understanding with this next quiz!](06_quiz.md)
