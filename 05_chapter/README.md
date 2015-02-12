@@ -3,9 +3,9 @@
 ---
 
 #####By the end of this Unit, you'll be able to:
-* Read JavaScript functions and predict their output values.
-* Write JavaScript functions, and use those functions within other functions.
-* Write anonymous functions
+* Define a function with one or more parameters
+* Execute a function within a program or in the console
+* Given a function and a set of arguments, predict the output of a function
 
 ---
 
