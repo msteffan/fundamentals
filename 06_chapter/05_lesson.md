@@ -80,20 +80,24 @@
 
   As you can see, `.map()` takes in the function we've just defined, `square`, as a parameter. It then applies that function to every element in our original array, and stores the result at that same position in a new array. Finally, the function evaluates to the new array that it's just created. As you can see, this is both simpler and cleaner than trying to do the same thing with a loop.
 
-  Another example of an iterator is `.each()`. `.each()` also takes a function as an argument, but unlike `.map()`, it doesn't create a new array; instead, it executes the function that gets passed in once for every element in the array. Also unlike `.map(), `.each()` will always evaluate to the original array that it's called from.
+  Another example of an iterator is `.forEach()`. `.forEach()` also takes a function as an argument, but unlike `.map()`, it doesn't create a new array; instead, it executes the function that gets passed in once for every element in the array. Also unlike `.map(), `.forEach()` will always evaluate to the original array that it's called from.
   ```javascript
   function myFunc() {
     console.log('Hello!');
   }
 
-  [10,2,7].each(myFunc); // runs `myFunc` three times, and evaluates to [10,2,7] once it finishes
+  [10,2,7].forEach(myFunc); // runs `myFunc` three times, and evaluates to [10,2,7] once it finishes
   ```
 
   ###Test Yourself
-  Try to implement each of the following things in repl.it using `.map()` and `.each()`
+  Try to implement each of the following things in repl.it using `.map()` and `.forEach()`
   * Start with a variable `x` and an array of your chooseing. Write an expression that will increase `x` by 10 once for every element in the array.
   * Create an array of masses in kilograms, and use it to produce an array of those same masses in pounds (hint: it's roughly 2.2 pounds to the kilogram).
   * Strings also have a `.length` property, just like arrays. Create an array of strings, and use it to produce an array containing the length of each string.
+
+  If you're interested, you can read the full documentation on `.map()` and `.forEach()` work here:
+  * [.map()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+  * [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 ---
 Feeling confident? [Test your understanding of iteration with this next quiz.](06_quiz.md)
