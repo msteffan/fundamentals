@@ -6,10 +6,6 @@
 
   In the past few units, we've only been able to operate on one value at a time. One of the most useful things about a collecttion (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on *a set of values*. This process is called **iteration** - doing something over and over and over again for every element in a set.
 
-  There are several ways that this can be done.
-
-  ## Iterating with Loops
-  One of the most common patterns in old-school programming is using loops to iterate through an array.
   Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celcius - which would then be stored in a separate array.
   ```javascript
     var temps_in_f = [100, 72, 88, 15, 25, 32];
@@ -21,13 +17,44 @@
       return degrees* 5 / 9  - 32;
     }
   ```
-  So how do we go about operating on the elements in `temps_in_f`? Well, we could just start at the beginning and work our way through, one value at a time. The first operation we'd perform is `fahrToCelc(temps_in_f[0])`
-
-  To add this value to `temps_in_c`, we can use a built-in function that all arrays have called `push()`. Push will take whatever value is passed in as a parameter and add it as the last element of the array. For example, if we have an array called `my_array` equal to `[1,2,3]`, calling `my_array.push(4)` will change `my_array` so that it equals `[1,2,3,4]`. If `my_array` were empty, push would set that new element as its first element.
+  So how do we go about operating on the elements in `temps_in_f`? Well, we could just start at the beginning and work our way through, one value at a time.
   ```javascript
     temps_in_c.push(fahrToCelc(temps_in_f[0]));
   ```
-  We could then do the same thing with the next element in `temps_in_f`, listed at index 1.
+  Then, we could run an almost identical command to operate on every subsequent element in `temps_in_f`.
+  ```javascript
+    temps_in_c.push(fahrToCelc(temps_in_f[1]));
+    temps_in_c.push(fahrToCelc(temps_in_f[2]));
+    temps_in_c.push(fahrToCelc(temps_in_f[3]));
+    temps_in_c.push(fahrToCelc(temps_in_f[4]));
+    temps_in_c.push(fahrToCelc(temps_in_f[5]));
+  ```
+  However, this code is extremely repetitious, and it also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to run this code exactly as many times as there are elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the `for` loop.
+  ```javascript
+    for (var i = 0; i < temps_in_f.length; i += 1) {
+      temps_in_c.push(fahrToCelc(temps_in_f[i]));
+    }
+  ```
+  By starting our count at zero, stopping before `i` reaches the length of the array, and increasing `i` by one every time, we can hit every element in our array in ascending order and perform the same operation on each one sequentially.
+
+  However, we could just as easily have gone in the opposite direction - starting at the last element, and ending with the first - simply by specifying different settings for the `for` loop:
+  ```javascript
+    for (var i = (temps_in_f.length - 1); i >= 0; i -= 1) {
+      temps_in_c.push(fahrToCelc(temps_in_f[i]));
+    }
+  ```
+
+  We could even operate only on every third element, like so:
+  ```javascript
+    for (var i = 2; i < temps_in_f.length; i += 3) {
+      temps_in_c.push(fahrToCelc(temps_in_f[i]));
+    }
+  ```
+
+  Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!
+
+  ### Test Yourself
+  *
 
 ---
 [Test your understanding with this next quiz!](06_quiz.md)
