@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-Follow [this link](http://repl.it/9gI) to some sample code in a repl.it session - it should contain the following code:
+Follow [this link](http://repl.it/ajt) to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
 var x;

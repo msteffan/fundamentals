@@ -5,7 +5,9 @@
 ## Project
 
 Now that we've learned a bit more about how Functions work in JavaScript, let's revisit our 'Rock Paper Scissors' project.
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+---
+
 
 Go back to `RockPaperScissors.js`, and scroll down to the following code:
 
@@ -30,6 +32,6 @@ As you might infer from the title, the purpose of this function is to run the 'R
 
 Once your code is working, you can commit your changes and move on to the next chapter.
 
-[Next up: Chapter 6]()
+[Next up: Chapter 6](../06_chapter/README.md)
 
 > If any of you are interested in an additional challenge, try writing another function called `playTo(x)` that allows us to play Rock Paper Scissors until either the player or the computer has won `x` times. Feel free to steal liberally from `playToFive()`.

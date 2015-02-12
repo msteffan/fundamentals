@@ -2,87 +2,137 @@
 
 ---
 
-#Writing Your Own Functions
+#Functional JavaScript
 
-Suppose that we wanted to create a function called `sumOfCubes`, which would take four inputs (`a`,`b`,`c`, and `d`) and evaluate to `a` cubed plus `b` cubed plus `c` cubed plus `d` cubed. 
+Functions can also be used as procedures - miniature, self-contained programs that are executed one line at a time whenever the function is called. 
 
-We could write that whole thing out explicitly, like so:
+When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run. 
 
-```javascript
-  function sumOfCubes(a,b,c,d) {
-    return (a * a * a) + (b * b * b) + (c * c * c) + (d * d * d);
-  }
-```
+For instance, let's go back to the "French Toast a la GA" recipe from Unit 4.  
+Every time a soaked slice of bread is ready to be cooked, we need to:
 
-This function has a couple of practical issues.
-* The `return` statement is very long and difficult to read; it'd be very easy to miss a typo.
-* If we wanted to change the way we cube each paramater, we'd have to go back and change the cubing operation for each variable by hand. That's a lot of work, and presents another opportunity to make a mistake.
 
-To fix these issues, let's break the function into two smaller ones:
+> 5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.
+>
 
-```javascript
-  function cubeOf(x) {
-    return x * x * x;
-  }
-  function sumOfCubes(a,b,c,d) {
-    return cubeOf(a) + cubeOf(b) + cubeOf(c) + cubeOf(d);
-  }
-```
-
-See how much easier this is to read? You can tell how it's supposed to work at a glance - very helpful for someone other than the author to read the code.
+Rather than writing out explicitly how this should be done each time, we could write a function, (say `cookSoggyBread()`) to handle the procedure, and simply call that function any time the bread slices need to be cooked.
 
 ## Problem Solving with Functions
-Let's look at a practical example. Say that we're working on a TicTacToe game. Fortunately, we're not the only ones on this project - our coworkers down the hall have taken care of getting input from the user. According to their notes, all nine cells' values will be accessible via a function called `cells`, which takes a string (e.g. 'a') as an input and evaluates to the value for that specific cell (as labelled below).
 
+Let's look at a practical example. Say that we're working on a TicTacToe game. 
+
+We're not going to build the actual game, just write out the logic that would determine the winner.
+
+In TicTacToe, there are nine possible values (for every cell on the board):
+
+```
     | a | b | c |
     | d | e | f |
     | g | h | i |
+```   
 
-Each cell's value will either be `'x'`, `'o'`, or `null`.
+Each of these values will start as `null`, until a user assigns them a new value, either `'o'` or `'x'`
 
-Our job is to write the game logic - specifically, the logic that detemines who, if anyone, has won the game. To do this, we'll be writing a function called `getWinner`; it should give us back either `'x'` (if X has won), `'o'` (if O has won), or `null` (if neither side has won).
+To play around with this invisible TicTacToe board, we've provided some code:
+
+```javascript
+function cellValue(key) {
+    switch(key) {
+        case 'a': return null;
+        case 'b': return null;
+        case 'c': return null;
+        case 'd': return null;
+        case 'e': return null;
+        case 'f': return null;
+        case 'g': return null;
+        case 'h': return null;
+        case 'i': return null;
+        default : return null;
+    }
+}
+```
+To assign a value to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:
+
+```
+    | null | null |   x  |
+    | null |   o  | null |
+    | null |   o  |   x  |
+```    
+
+You would edit the switch statement like such:
+
+```javascript
+function cellValue(key) {
+    switch(key) {
+        case 'a': return null;
+        case 'b': return null;
+        case 'c': return 'x';
+        case 'd': return null;
+        case 'e': return 'o';
+        case 'f': return null;
+        case 'g': return null;
+        case 'h': return 'o';
+        case 'i': return 'x';
+        default : return null;
+    }
+}
+```
+
+Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
+
+We'll call it  `getWinner` and it will give us back either `'x'` (if X has won), `'o'` (if O has won), or `null` (if neither side has won).
+
 ```javascript
   function getWinner() {
   }
 ```
-But where do we go from here?
 
-One way to determine the winner might be to check if either X or O has won, or if neither has won. What if we had functions that could tell us those things? We could call them `isWinnerX` and `isWinnerO` - `isWinnerX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
+So where do we go from here?
+
+One way to determine the winner might be to check whether X has won and then to check whether O has won.
+What if two functions existed that would magically determine this for us? We could call them `winnerIsX` and `winnerIsO` - `winnerIsX` could give us back `true` if X has won and `false` if it hasn't. If such functions existed, we could rewrite `getWinner` like this:
+
 ```javascript
   function getWinner() {
-    if (isWinnerX()) {
+    if (winnerIsX()) {
       return 'x';
     }
-    if (isWinnerO()) {
+    if (winnerIsO()) {
       return 'o';
     }
     return null;
   }
 ```
-OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems.
 
-Let's focus on `isWinnerX` first - the solution to `isWinnerO` will probably be almost exactly the same. In TicTacToe, there are three ways that X can win: on a row, on a column, or on a diagonal. Wouldn't it be great if there were functions to determine those things? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`. In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so we write the following:
+OK! Now we're getting somewhere. Instead of solving one big problem, we're solving two smaller problems –how do we determine whether X or O won?
+
+Let's focus on `winnerIsX` first. In TicTacToe, there are three ways that X can win: via a row, a column, or  a diagonal. 
+
+Wouldn't it be great if we had functions to determine these too? We could call them `winsRowX`, `winsColumnX`, and `winsDiagonalX`. 
+
+In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so to determine `winnerIsX` we could write the following:
+
 ```javascript
-  function getWinner() {
-    if (isWinnerX()) {
-      return 'x';
-    }
-    if (isWinnerO()) {
-      return 'o';
-    }
-    return null;
-  function isWinnerX() {
+  function winnerIsX() {
     return winsRowX() || winsColumnX() || winsDiagonalX();
   }
 ```
-Even smaller problems!
 
-Let's look at `winsRowX` - what does it mean to win a row? According to our table from earlier, there are three cells in a row; the first row is `a`,`b`, and `c`; the second row is `d`,`e`, and `f`; the third row is `g`,`h`, and `i`. It seems like if any of these three sets are all equal to `x`, then X has won via a row. Let's dive just one level deeper, with a function to test if any three variables are equal to `x` (let's call it `allThreeX`).
+You can't execute anything yet.  Just stick with us –we only have a few more tiny problems to solve!
+
+Let's look at `winsRowX` - what does it mean to win a row? 
+
+According to our cell key from earlier, there are three cells in a row; the first row is `a`,`b`, and `c`; the second row is `d`,`e`, and `f`; the third row is `g`,`h`, and `i`. 
+
+If any of these three sets are all equal to `x`, then X has won via a row. 
+
+Let's dive just one level deeper, with a function to test if any one of the three rows are equal to `x` (let's call it `allThreeX`).
+
 ```javascript
   function winsRowX() {
-    return allThreeX(cells('a'), cells('b'), cells('c')) ||
-           allThreeX(cells('d'), cells('e'), cells('f')) ||
-           allThreeX(cells('g'), cells('h'), cells('i'));
+    return allThreeX(cellValue('a'), cellValue('e'),))    
+           allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
+           allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
   }
   function allThreeX(cell_one, cell_two, cell_three) {
   }
@@ -120,7 +170,8 @@ We can also use `allThreeX` to write functions for `winsColumnX` and `winsDiagon
   }
 ```
 
-Now that we've broken it into a much smaller problem, our `allThreeX` function is fairly easy to write!
+Now that we've broken it into one much smaller problem, our `allThreeX` function is fairly easy to write!
+
 ```javascript
   function allThreeX(cell_one, cell_two, cell_three) {
     return (cell_one === 'x') && (cell_two === 'x') && (cell_three === 'x');
@@ -129,10 +180,13 @@ Now that we've broken it into a much smaller problem, our `allThreeX` function i
 
 Excellent! Now, `isWinnerX` should be able to tell us if X has won.
 
-Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. But that pretty duplicative - those functions would be exactly the same, except for that hard-coded value of 'x'. It would be better if we could make allThreeX more general. What if we rewrote it like this?
+Now, we could go ahead and start writing a function called `allThreeO` to do the same thing for O as we've done for X. 
+
+But that pretty duplicative - those functions would be exactly the same, except for that hard-coded value of 'x'. It would be better if we could make allThreeX more general. What if we rewrote it like this?
+
 ```javascript
   function allThree(player, cell_one, cell_two, cell_three) {
-    return (cell_one === player) && (cell_two === player) && (cell_three === player);
+    return (cell_one === '') && (cell_two === 'o') && (cell_three === 'o');
   }
 ```
 Now `allThree` can be used to test for X **or** for O; by getting rid of our hard-coded data, we were able to make this function do double-duty!
@@ -170,6 +224,8 @@ Let's do the same thing for all the other functions we wrote.
     return (cell_one === player) && (cell_two === player) && (cell_three === player);
   }
 ```
+
+
 
 If you want, you can play around with this code in [this repl.it session](http://repl.it/aOU), which also contains some dummy code to mock up how `cells` might work. Try testing each of the different functions with different input values, and see what happens!
 

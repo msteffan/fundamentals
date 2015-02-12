@@ -42,20 +42,6 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 * Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
 * Learning how to decompose a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice!
 
-## Other Important Things about Functions
-### Anonymous Functions
-* In JavaScript, functions can be stored in variables just like numbers, strings, and booleans. Once stored, they can be called by entering the name of the variable containing the function, followed by a pair of parentheses (`(...)`).
-* Because it's possible to call these functions by something other than their name, it's not necessary for these functions to have names. Instead, they can simply be created as **anonymous functions**, like so:
-```javascript
-  function (x) {return 2 * x;}
-```
-* Since an anonymous function has no name, it can't be called from elsewhere in your program. However, if you put this anonymous function inside a variable, that function can be referenced from anywhere in your program where that variable is reachable (*see 'Scope'*).
-### Scope
-* A variable's scope can be thought of as the subset of a program where that variable exists and can be referenced.
-* In JavaScript, all variables are either *globally scoped* (existing as long as the program does, and accessible anywhere within the program) or *locally scoped* (only as long-lived and far-reaching as the functions that contain them). Generally, you should avoid using globally-scoped variables - it's much better to keep each function *modular*, or self-contained.
-* Any variable created within a function's local scope can be accessed anywhere inside that function. However, the reverse is not true - variables can exist within an interior function but not be accessible to the parent scope.
-* All function parameters are, by default, created as local variables in that function's scope.
-
 
 ---
 [Let's apply what we've learned about Functions to our 'Rock, Paper, Scissors' project.](12_assessment.md)

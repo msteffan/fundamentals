@@ -38,8 +38,7 @@ Test your code for several different input values. What do you get if `num` is 1
 If you're satisfied that your code is working as expected, go ahead an move on to the next lesson.
 
 ---
-[Other Stuff - Scope, Anonymous Functions](08_lesson.md)
-
+[Let's review everything we've covered in this unit.](08_cheatsheet.md)
 
 
 
