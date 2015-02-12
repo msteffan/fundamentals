@@ -66,6 +66,34 @@
 
   These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
 
+  ## Iterator Methods : `.map()` and `.each()`
+
+  Although using loops to iterate through arrays gives you a lot fo flexibility and control, most of the time, you just want to go through every element in your array one at a time, in order, and doing this with a loop creates a lot of overhead. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) **iterators**.
+
+  One of the most commonly used iterators is `.map()` - this is the tool of choice any time you want to transform one set of values into a different (but equally-sized) set of values. Although it can take more paramaters, `.map()` can be run with just one : a function. Take a look at the example below:
+  ```javascript
+  function square(x) {return x * x;}
+
+  [1,2,3].map(square); // evaluates to [1,4,9]
+  ```
+  > **WARNING** It's important that you **do not** include parentheses when passing in that function - otherwise, `.map()` will be operating on the *result* of your function (since adding parentheses causes the function to be called), rather than the function itself.
+
+  As you can see, `.map()` takes in the function we've just defined, `square`, as a parameter. It then applies that function to every element in our original array, and stores the result at that same position in a new array. Finally, the function evaluates to the new array that it's just created. As you can see, this is both simpler and cleaner than trying to do the same thing with a loop.
+
+  Another example of an iterator is `.each()`. `.each()` also takes a function as an argument, but unlike `.map()`, it doesn't create a new array; instead, it executes the function that gets passed in once for every element in the array. Also unlike `.map(), `.each()` will always evaluate to the original array that it's called from.
+  ```javascript
+  function myFunc() {
+    console.log('Hello!');
+  }
+
+  [10,2,7].each(myFunc); // runs `myFunc` three times, and evaluates to [10,2,7] once it finishes
+  ```
+
+  ###Test Yourself
+  Try to implement each of the following things in repl.it using `.map()` and `.each()`
+  * Start with a variable `x` and an array of your chooseing. Write an expression that will increase `x` by 10 once for every element in the array.
+  * Create an array of masses in kilograms, and use it to produce an array of those same masses in pounds (hint: it's roughly 2.2 pounds to the kilogram).
+  * Strings also have a `.length` property, just like arrays. Create an array of strings, and use it to produce an array containing the length of each string.
 
 ---
-Feeling confident? [Test your understanding with this next quiz.](06_quiz.md)
+Feeling confident? [Test your understanding of iteration with this next quiz.](06_quiz.md)
