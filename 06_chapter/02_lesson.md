@@ -73,6 +73,7 @@ In addition to containing multiple elements, arrays also have a number of in-bui
 * `.length`
 
   All arrays have a property called `length`, which evaluates to the tell you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
+
     ```javascript
       ['a','b','c'].length;
         // Evaluates to 3
