@@ -49,7 +49,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 
 ### Problem Solving with Functions
 * Sometimes, when you're trying to figure out how to break apart a problem, it can be helpful to imagine functions that could accomplish specific pieces of it.
-* Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this [decomposition]((http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29).
+* Learning how to break down a complicated problem into smaller pieces is one of the most important parts of programming, and the best way to get better at it is to practice! In programming, we call this [decomposition](http://en.wikipedia.org/wiki/Decomposition_%28computer_science%29).
 
 
 ---

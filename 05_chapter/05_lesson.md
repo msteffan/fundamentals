@@ -203,7 +203,7 @@ But that pretty duplicative - those functions would be exactly the same, except 
 
 ```javascript
   function allThree(player, cell_one, cell_two, cell_three) {
-    return (cell_one === 'player') && (cell_two === 'player') && (cell_three === 'player');
+    return (cell_one === player) && (cell_two === player) && (cell_three === player);
   }
 ```
 
