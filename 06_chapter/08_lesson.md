@@ -4,7 +4,7 @@
 
 # Collections - Associative Arrays
 
-## Organizational Systems for Arrays
+## Drawbacks of Ordinary Arrays
 
 So far, all of the arrays that we've seen so far have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following example.
 
@@ -80,8 +80,7 @@ Keys can be strings or numbers (or even another type of data that we haven't tal
       }
     }
 ```
->**NOTE** Nesting associative arrays works just like nesting ordinary arrays. If we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidate_data['yearsExperience']['javascript']`.
-
+>**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidate_data['yearsExperience']['javascript']`.
 
 ### Test Yourself
 Consider the following associative array.
