@@ -2,13 +2,18 @@
 
 ---
 
-##Your Turn
+##![Your Turn](../assets/exercise.png) Your Turn
 
-This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the decriptions given below using repl.it's editor.
+This time around, you won't be given any starter code. Instead, you'll need to write some functions from scratch, based on the descriptions given below using repl.it's editor.
 
-After you finish writing each function in repl.it's editor window, click 'play' to run the code, and then try *calling* each function from the console window. Use different parameters to make sure they work as expected.
+###Instructions
 
-Go ahead an open up a new session in [repl.it](repl.it) so that we can get started!
+1. Go ahead an open up a new session in [repl.it](repl.it)
+2. Write the code for the functions described below, using repl.it's editor window
+3. Click 'play' to run the code
+4. Try *calling* each function from the console window. Use different parameters to make sure they work as expected.
+
+**Let's get started!**
 
 Write the following functions:
 * `sayHello`, which accepts one parameter, called `name`; it should return a greeting to a person with that name, i.e. "Hello, *name*".

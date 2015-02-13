@@ -28,7 +28,9 @@ Go back to `RockPaperScissors.js`, and scroll down to the following code:
 }
 ```
 
-As you might infer from the title, the purpose of this function is to run the 'Rock Paper Scissors' game until either the player or the computer has won a total of five games. Please write whatever code will be necessary for this function to work.
+As you might infer from the title, the purpose of this function is to run the 'Rock Paper Scissors' game until either the player or the computer has won a total of five games. 
+
+Please write whatever code will be necessary for this function to work.
 
 Once your code is working, you can commit your changes and move on to the next chapter.
 
