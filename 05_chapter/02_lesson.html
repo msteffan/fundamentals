@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Unit 2 Homework | WDI Fundamentals</title>
+        <title>Defining and Calling Functions | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 1.5.0">
@@ -19,10 +19,10 @@
         
     
     
-    <link rel="next" href="../03_chapter/README.html" />
+    <link rel="next" href="../05_chapter/03_quiz.html" />
     
     
-    <link rel="prev" href="../02_chapter/08_cheatsheet.html" />
+    <link rel="prev" href="../05_chapter/README.html" />
     
 
         
@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="2.4" data-basepath=".." data-revision="1423869328463">
+    <div class="book" data-level="5.1" data-basepath=".." data-revision="1423869328463">
     
 
 <div class="book-summary">
@@ -457,7 +457,7 @@
         </li>
     
         
-        <li class="chapter active" data-level="2.4" data-path="02_chapter/09_assessment.html">
+        <li class="chapter " data-level="2.4" data-path="02_chapter/09_assessment.html">
             
                 
                     <a href="../02_chapter/09_assessment.html">
@@ -873,7 +873,7 @@
                 
     
         
-        <li class="chapter " data-level="5.1" data-path="05_chapter/02_lesson.html">
+        <li class="chapter active" data-level="5.1" data-path="05_chapter/02_lesson.html">
             
                 
                     <a href="../05_chapter/02_lesson.html">
@@ -1122,51 +1122,95 @@
                 <div class="page-inner">
                 
                 
-                    <section class="normal" id="section-gitbook_51">
+                    <section class="normal" id="section-gitbook_122">
                     
-                        <p><strong>WDI Fundamentals - Unit 2</strong></p>
+                        <p><strong>WDI Fundamentals Unit 5</strong></p>
 <hr>
-<h2 id="your-turnassetsexercisepng-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
-<p><br>
-As you move through the next few chapters, you will be charged with working on a project as your final assignment from WDI Fundamentals. Each chapter will introduce you to new tools and ideas, but it will be your job to figure out how to incorporate and use them to complete the assignment.</p>
-<hr>
-<p><strong>Title:</strong> Rock, Paper, Scissors App</p>
-<p><strong>Description:</strong> You will be building an application in JavaScript capable of playing the game &#39;Rock, Paper, Scissors&#39; with a user via a console or terminal. In particular, your app will need to:</p>
+<h1 id="functions">Functions</h1>
+<h2 id="defining-javascript-functions">Defining JavaScript Functions</h2>
+<p>To create a new function, we must <em>declare</em> it as we would a variable.  A <strong>function declaration</strong> typically looks like this:</p>
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">nameOfMyFunction</span><span class="hljs-params">(x)</span> </span>{
+    <span class="hljs-comment">//body of the function 'nameOfMyFunction';</span>
+  }
+</code></pre>
+<p>As you can see, the first line begins with the word <code>function</code> followed by <code>nameOfMyFunction</code>, which is how we&#39;d like to refer to that function later.</p>
+<p>Next, we write a lists of the input values we&#39;d like to use, enclosed in parentheses and separtated by commas. These values are called <strong>parameters</strong> of the function.  Above, we only used one parameter <code>x</code>.</p>
+<p>Finally, we write the body of our function, enclosed by a pair of curly braces (<code>{}</code>).</p>
+<p>Let&#39;s look at an example:</p>
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tripleIt</span><span class="hljs-params">(x)</span> </span>{
+    <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>*x;
+  }
+</code></pre>
+<p>This function takes one parameter <code>x</code>. The body of the function consists of one statement that says to return the parameter of the function (that is, <code>x</code>) multiplied by 3. </p>
+<p>This is the first time we&#39;re seeing a <code>return</code> statement –it does exactly what it sounds like it does. <code>return</code> gives back the output of the function.</p>
+<h3 id="naming-functions">Naming Functions</h3>
+<p>Functions names should describe as best as possible what the function does - rule of thumb is to keep the name short and simple.</p>
+<p>You may have noticed how we capitalize names in JavaScript using the <strong>CamelCase</strong> style. Remember that identifiers <em>(how we name things)</em> can&#39;t use spaces between them.</p>
+<p>To make it easier to read a name like <code>nameofmyfunction</code>, capitalize the first letter of each word (see the resemblance to a three-humped camel?)</p>
+<p>Examples of naming functions:</p>
+<p><strong>good</strong>: <code>calculatePerimeter</code>
+<strong>bad</strong>:  <code>thisfunctioncalculatestheperimeterofarectangle</code> (no camelCase, too verbose)
+<strong>bad</strong>:  <code>my new function</code> (contains spaces)
+<strong>bad</strong>:  <code>myNewFunction</code> (doesn&#39;t explain what it does!)</p>
+<h2 id="calling-javascript-functions">Calling JavaScript Functions</h2>
+<p>Declaring a function does not execute the instructions we include in its body –we simply gave that function a name and specified how it should work given a set of parameters.</p>
+<p>To actually <em>evaluate</em> a function, we have to <strong>call</strong> that function as follows:</p>
+<pre><code class="lang-javascript"> nameOfMyFunction();
+</code></pre>
+<p>In the case of <code>function tripleIt(x)</code>, if we wanted to call the function by passing the value 4, we would write:</p>
+<pre><code class="lang-javascript">tripleIt(<span class="hljs-number">4</span>)
+</code></pre>
+<blockquote>
+<p><strong>NOTE</strong>: The number <code>4</code> used when the function is called is known as an <strong>argument</strong>.</p>
+</blockquote>
+<p>The function would execute its statements and evaluate to the value <code>12</code>. </p>
+<p>Just like a variable, we can use the return value of this function in any expression. For example:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = tripleIt(<span class="hljs-number">1</span>);                         <span class="hljs-comment">// a == 3</span>
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">100</span> * tripleIt(<span class="hljs-number">4</span>);                   <span class="hljs-comment">// b == 112</span>
+<span class="hljs-keyword">var</span> c = <span class="hljs-number">200</span> + (tripleIt(<span class="hljs-number">20</span>) / tripleIt(<span class="hljs-number">10</span>)); <span class="hljs-comment">// c == 202</span>
+</code></pre>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Suppose that we&#39;ve defined the function &#39;glorp&#39; as follows:</p>
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">glorp</span><span class="hljs-params">(someNumber)</span> </span>{
+    <span class="hljs-keyword">return</span> someNumber*<span class="hljs-number">5</span> - <span class="hljs-number">3</span>;
+  }
+</code></pre>
+<p>What will each of the following expressions evaluate to?</p>
 <ul>
-<li>Accept a move from a player.</li>
-<li>Get a random move from the computer.</li>
-<li>Compare the player&#39;s move to the computer&#39;s move in order to determine a winner.</li>
-<li>Keep track of how many times the player and the computer have won.</li>
-<li>Run until either the player or the computer has won five times.</li>
+<li>glorp(10)</li>
+<li>2 * (glorp(5) + 10)</li>
+<li>glorp(1 + 2)</li>
+<li>glorp(glorp(1))</li>
 </ul>
-<p>The first two bullets have largely been taken care of for you via the code we&#39;ll provide you. Feel free to read through it, but (for now) please don&#39;t change it - doing so may cause problems with your project.</p>
-<p>To access the existing code for this project, you will need to fork and clone the repository that contains it. To do this, take the following steps.</p>
-<ol>
-<li><p>If you don&#39;t have one already, <a href="07_exercise.html">create an account</a> on GitHub.com.</p>
-</li>
-<li><p>Go to <a href="https://github.com/ga-students/wdi-fundamentals-rps" target="_blank">this address</a> to find the repository containing the existing code. 
- Once there, click the button that says &#39;Fork&#39; - this will create a copy of the original repository under <strong>your</strong> GitHub account.</p>
-</li>
-<li><p>Go take a look and confirm that you now have a copy of <code>wdi-fundamentals-rps</code> in your list of repositories.</p>
-</li>
-<li><p>Open your fork of the repo (and note that Github lists your repo as a fork of the original).</p>
-<p> <img src="../assets/chapter2/clone_ga-students.png" alt="Image showing &quot;forked from ga-students/wdi-fundamentals-rps&quot;"></p>
-</li>
-<li><p>Find the Clone URL listed on this page and copy it to your clipboard.</p>
-<p> <img src="../assets/chapter2/clone_http.png" alt="Image showing &quot;clone HTTP address&quot;"></p>
-</li>
-<li><p>Open up the terminal application on your computer, and navigate to the <code>fundamentals</code> directory within your home directory. 
- Once there, run the following Git command from command line:
-<br>
-<code>git clone &lt;HTTPS clone URL&gt;</code> (substituting the clone URL you copied above)
-<br>
- This will copy your forked repo from GitHub to your own computer, so that you can work on it.</p>
-</li>
-<li><p>If you have followed these directions correctly, you should now have a repository in your <code>fundamentals</code> folder called <code>wdi-fundamentals-rps</code>. This repository contains three folders and a couple of other files.  The ONLY file you should edit is <code>rockpaperscissors.js</code> - it can be found at <code>wdi-fundamentals-rps/app/js/rockpaperscissors.js</code>.</p>
-</li>
-</ol>
+<p>Test your answers in repl.it by copying the function definition into the editor, clicking the &#39;play&#39; button, and typing each of these expressions into the console.</p>
 <hr>
-<p>That&#39;s it for now! We&#39;ll be coming back to this project at the end of every chapter, but for now, it&#39;s time to <a href="../03_chapter/README.html">move on to Chapter 3</a>.</p>
+<h2 id="the-return-statement">The Return Statement</h2>
+<p>As mentioned above, <code>return</code> specifies the value of the function when it&#39;s executed. It has another important job - it tells the function to immediately stop whatever it&#39;s doing. </p>
+<p>Consider the following program:</p>
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doAThing</span><span class="hljs-params">(x)</span> </span>{
+    <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
+      <span class="hljs-keyword">return</span> x + <span class="hljs-number">10</span>;
+    }
+    <span class="hljs-keyword">return</span> x;
+  }
+</code></pre>
+<p>If <code>x</code> is greater than 10, the computer will run the <code>if</code> statement and hit that first <code>return</code> statement (<code>x + 10</code>).</p>
+<p>This will <em>immediately end the function</em> - that second <code>return</code> statement won&#39;t be reached.</p>
+<h3 id="test-yourself">Test Yourself</h3>
+<p>Where will the function stop if <code>x</code> is 5? 10? 20? What value will be returned in each case?</p>
+<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">categorize</span><span class="hljs-params">(x)</span> </span>{
+    <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">8</span>) {
+      <span class="hljs-keyword">return</span> <span class="hljs-number">8</span>;
+    }
+    x += <span class="hljs-number">3</span>;
+    <span class="hljs-keyword">if</span> (x &lt; <span class="hljs-number">15</span>) {
+      <span class="hljs-keyword">return</span> x;
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">100</span>;
+  }
+</code></pre>
+<hr>
+<p><a href="03_quiz.html">Here comes another quiz - do your best!</a></p>
 
                     
                     </section>
@@ -1177,10 +1221,10 @@ As you move through the next few chapters, you will be charged with working on a
         </div>
 
         
-        <a href="../02_chapter/08_cheatsheet.html" class="navigation navigation-prev " aria-label="Previous page: Cheat Sheet"><i class="fa fa-angle-left"></i></a>
+        <a href="../05_chapter/README.html" class="navigation navigation-prev " aria-label="Previous page: Functions"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../03_chapter/README.html" class="navigation navigation-next " aria-label="Next page: Writing Expressions in JavaScript"><i class="fa fa-angle-right"></i></a>
+        <a href="../05_chapter/03_quiz.html" class="navigation navigation-next " aria-label="Next page: Quiz"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
