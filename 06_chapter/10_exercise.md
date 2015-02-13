@@ -2,5 +2,26 @@
 
 ---
 
+##![Your Turn](../assets/exercise.png) Your Turn
+
+In this exercise, we'll return to our checkers game one last time. This time, however, we won't be writing a function; instead, your mission, should you choose to accept it, is to create a nested array called `pieces` to store the locations of every piece on the board.
+
+`pieces` should be an associative array, with two keys : 'red' and 'black'. Each of these keys should correspond to a normal array listing out all of the different pieces for that color. Each piece should be identified by a two-element array in the pattern of `[row,col]`; for example, the list of Red pieces would be [0,1], [0,3], [0,5], [0,7], etc.
+
+To test your work, run each of the following two commands in the repli.it console
+```javascript
+  pieces['red'].map(function(piece){
+      var row = piece[0];
+      var col = piece[1];
+      return checkerboard[row][col] == 'R';
+    });
+  pieces['black'].map(function(piece){
+      var row = piece[0];
+      var col = piece[1];
+      return checkerboard[row][col] == 'B';
+    });
+```
+Both of these expressions should return an array full of boolean values. If both expressions' arrays are all `true`, then congratulations - you're done!
+
 ---
-[]()
+[Let's review what's been covered in this unit.](11_cheatsheet.md)
