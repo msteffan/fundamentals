@@ -40,7 +40,7 @@ If Floyd eats his lunch, does it affect anyone else's food? Nope! The *associati
 `'Shannon'` | `'soup'`
  `'Josh'` | `'pasta'`
 
-This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array associates each value with a reference called a **key**. This system also has some drawbacks. For instance, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements; an associative is not the right tool for keeping track of soemthign like that. But there are definitely use cases where an associative array is an extremely valuable tool.
+This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array *associates* each value with a reference called a **key**. This system also has some drawbacks. For instance, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements; an associative is not the right tool for keeping track of soemthign like that. But there are definitely use cases where an associative array is an extremely valuable tool.
 
 ## Associative Arrays in JavaScript
 
@@ -64,7 +64,7 @@ If we wanted to alter that value, we could perform an assignment, just like we m
 
 Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.
 
-  `lunches['Elena'] = 'meatloaf'
+  `lunches['Elena'] = 'meatloaf'`
 
 Keys can be strings or numbers (or even another type of data that we haven't talked about, *symbols*), and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
 ```javascript
@@ -80,6 +80,8 @@ Keys can be strings or numbers (or even another type of data that we haven't tal
       }
     }
 ```
+>**NOTE** Nesting associative arrays works just like nesting ordinary arrays. If we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidate_data['yearsExperience']['javascript']`.
+
 
 ### Test Yourself
 Consider the following associative array.
