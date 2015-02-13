@@ -2,7 +2,7 @@
 
 ---
 
-# Associative Arrays
+# Collections - Associative Arrays
 
 ## Organizational Systems for Arrays
 
