@@ -49,9 +49,13 @@
 ## Collections - Associative Arrays
 ### Drawbacks of Ordinary Arrays
   * A typical array works by referenceing elements solely based on their position, e.g. "the first element, the second element ..." etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.
-  * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to.
+  * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
 ### Associative Arrays in JavaScript
-  *
+  * An associative array can be defined by enclosing a list of key-value pairs in curly braces (`{...}`). Each key-value pair is written as `some_key : some_value`, and each pair is separated by commas.
+  * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the associative array. e.g. `my_associative_array['my_key']`
+  * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. `my_associative_array['my_key'] = 'a_value'`
+  * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. `my_associative_array['some_new_key'] = 'some_new_value'`
+  * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
 
 ---
-[]()
+[Project Time!](12_assessment.md)
