@@ -54,5 +54,47 @@ Here's what the 'lunches' table above might look like as an associative array.
                   'Shannon' : 'soup' };
 ```
 
+Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
+
+  `lunches['Matt']`
+
+If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.
+
+  `lunches['Matt'] = 'turkey sandwich'`
+
+Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.
+
+  `lunches['Elena'] = 'meatloaf'
+
+Keys can be strings or numbers (or even another type of data that we haven't talked about, *symbols*), and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
+```javascript
+  var candidate_data = {
+    'name' : "John Doe",
+    'age' : 32,
+    'isFullTime' : true,
+    'pastEmployers' : ['Microsoft','Google','Amazon'],
+    'yearsExperience' : {
+      'ruby' : 3,
+      'java' : 6,
+      'javascript' : 5
+      }
+    }
+```
+
+### Test Yourself
+Consider the following associative array.
+```javascript
+  var pet = {
+    'species' : 'iguana',
+    'gender' : 'female',
+    'age' : 12,
+    'name' : 'Godzilla'
+    }
+```
+What code could we write to perform the following tasks?
+* Retrieve the value for 'name' from the associative array.
+* Assign the value for 'age' to 13.
+* Add a new key 'favoriteFood', with value 'crickets'
+
 ---
-[]()
+[Ready for one last quiz?](09_quiz.md)
