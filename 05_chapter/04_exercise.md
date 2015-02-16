@@ -8,7 +8,7 @@ This time around, you won't be given any starter code. Instead, you'll need to w
 
 ###Instructions
 
-1. Go ahead an open up a new session in [repl.it](repl.it)
+1. Go ahead an open up a new session in [repl.it](http://repl.it)
 2. Write the code for the functions described below, using repl.it's editor window
 3. Click 'play' to run the code
 4. Try *calling* each function from the console window. Use different parameters to make sure they work as expected.

@@ -47,7 +47,7 @@
 * [Functions](05_chapter/README.md)
 	* [Defining and Calling Functions](05_chapter/02_lesson.md)
        * [Quiz](05_chapter/03_quiz.md)
-       * [Exercise](04_chapter/05_exercise.md)
+       * [Exercise](05_chapter/04_exercise.md)
 	* [Problem Solving with Functions](05_chapter/05_lesson.md)
        * [Quiz](05_chapter/06_quiz.md)
        * [Exercise](05_chapter/07_exercise.md)

@@ -215,15 +215,15 @@ Let's do the same thing for all the other functions we wrote:
 
 ```javascript
   function getWinner() {
-    if (isWinner('x')) {
+    if (winnerIs('x')) {
       return 'x';
     }
-    if (isWinner('o')) {
+    if (winnerIs('o')) {
       return 'o';
     }
     return null;
   }
-  function isWinner(player) {
+  function winnerIs(player) {
     return winsRow(player) || winsColumn(player) || winsDiagonal(player);
   }
   function winsRow(player) {

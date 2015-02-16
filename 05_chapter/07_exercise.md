@@ -33,11 +33,11 @@ For reference, running `fizzbuzz(15)` should result in the following text being 
   fizzbuzz
 ```
 
-Once again, there's no starter code for this exercise - just open up a new session in [repl.it](repl.it). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous lesson!
+Once again, there's no starter code for this exercise - just open up a new session in [repl.it](http://repl.it). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous lesson!
 
 Test your code for several different input values. What do you get if `num` is 1? 10? 30?
 
-If you're satisfied that your code is working as expected, go ahead an move on to the next lesson.
+If you're satisfied that your code is working as expected, go ahead and move on to the next lesson.
 
 ---
 [Let's review everything we've covered in this unit.](08_cheatsheet.md)

@@ -11,4 +11,4 @@
 ---
 
 
-[Let's practice functions a bit more with some exercises.](04_exercise.md)
+[Let's practice functions a bit more with some exercises.](/04_exercise.md)
