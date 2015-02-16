@@ -13,7 +13,7 @@ You've had an opportunity to see some functions in the homework assignments at t
 
 But first... a little math.
 
-**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs. 
+**Function** is a term that comes out of mathematics - you may remember seeing it in a high school algebra class. The basic idea of a function is simple - it's a relationship between a set of inputs and a set of outputs.
 
 Consider the relationship between a variable `x` and the function `f`. The function `f` takes the input `x` and spits out a single output (`f(x)`).
 
@@ -31,8 +31,8 @@ If we were shown the output (`f(x)`) for each value of `x`:
 | 2 | 4 |
 | 3 | 6 |
 
-We could figure out that relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
+We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
 
-Functions play a similar role in programming - JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
+Functions play a similar role in programming – JS Functions, like mathematical functions, perform transformations. They take input values and return an output value.
 
 [Let's take a look.](02_lesson.md)
