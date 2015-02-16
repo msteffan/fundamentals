@@ -72,7 +72,7 @@ Just like a variable, we can use the return value of this function in any expres
 
 ```javascript
 var a = tripleIt(1);                         // a == 3
-var b = 100 * tripleIt(4);                   // b == 112
+var b = 100 * tripleIt(4);                   // b == 1200
 var c = 200 + (tripleIt(20) / tripleIt(10)); // c == 202
 ```
 
