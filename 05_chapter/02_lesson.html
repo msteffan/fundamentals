@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="5.1" data-basepath=".." data-revision="1423936895454">
+    <div class="book" data-level="5.1" data-basepath=".." data-revision="1424138753514">
     
 
 <div class="book-summary">
@@ -1134,26 +1134,28 @@
   }
 </code></pre>
 <p>As you can see, the first line begins with the word <code>function</code> followed by <code>nameOfMyFunction</code>, which is how we&#39;d like to refer to that function later.</p>
-<p>Next, we write a lists of the input values we&#39;d like to use, enclosed in parentheses and separtated by commas. These values are called <strong>parameters</strong> of the function.  Above, we only used one parameter <code>x</code>.</p>
+<p>Next, we write a list of the input values we&#39;d like to use, enclosed in parentheses and separated by commas. These values are called <strong>parameters</strong> of the function.  Above, we only used one parameter, <code>x</code>.</p>
 <p>Finally, we write the body of our function, enclosed by a pair of curly braces (<code>{}</code>).</p>
 <p>Let&#39;s look at an example:</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">tripleIt</span><span class="hljs-params">(x)</span> </span>{
     <span class="hljs-keyword">return</span> <span class="hljs-number">3</span>*x;
   }
 </code></pre>
-<p>This function takes one parameter <code>x</code>. The body of the function consists of one statement that says to return the parameter of the function (that is, <code>x</code>) multiplied by 3. </p>
-<p>This is the first time we&#39;re seeing a <code>return</code> statement –it does exactly what it sounds like it does. <code>return</code> gives back the output of the function.</p>
+<p>This function takes one parameter – <code>x</code>. The body of the function consists of one statement that says to return the parameter of the function (that is, <code>x</code>) multiplied by 3.</p>
+<p>This is the first time we&#39;re seeing a <code>return</code> statement – it does exactly what it sounds like it does. <code>return</code> gives back the output of the function.</p>
 <h3 id="naming-functions">Naming Functions</h3>
-<p>Functions names should describe as best as possible what the function does - rule of thumb is to keep the name short and simple.</p>
-<p>You may have noticed how we capitalize names in JavaScript using the <strong>CamelCase</strong> style. Remember that identifiers <em>(how we name things)</em> can&#39;t use spaces between them.</p>
-<p>To make it easier to read a name like <code>nameofmyfunction</code>, capitalize the first letter of each word (see the resemblance to a three-humped camel?)</p>
+<p>Function names should describe what the function does as best as possible, and a general rule of thumb is to keep the name short and simple.</p>
+<p>You may have noticed how we capitalize names in JavaScript using the <strong>camelCase</strong> style. Remember that identifiers <em>(how we name things)</em> can&#39;t use spaces between them.</p>
+<p>To make it easier to read a name like <code>nameofmyfunction</code>, capitalize the first letter of each word (e.g. <code>nameOfMyFunction</code> – see the resemblance to a three-humped camel?)</p>
 <p>Examples of naming functions:</p>
-<p><strong>good</strong>: <code>calculatePerimeter</code>
-<strong>bad</strong>:  <code>thisfunctioncalculatestheperimeterofarectangle</code> (no camelCase, too verbose)
-<strong>bad</strong>:  <code>my new function</code> (contains spaces)
-<strong>bad</strong>:  <code>myNewFunction</code> (doesn&#39;t explain what it does!)</p>
+<ul>
+<li><strong>bad</strong>:  <code>thisfunctioncalculatestheperimeterofarectangle</code> (no camelCase, too verbose)</li>
+<li><strong>bad</strong>:  <code>my new function</code> (contains spaces)</li>
+<li><strong>bad</strong>:  <code>myNewFunction</code> (doesn&#39;t explain what it does!)</li>
+<li><strong>good</strong>: <code>calculatePerimeter</code> (describes what it does, short, and uses camelCase)</li>
+</ul>
 <h2 id="calling-javascript-functions">Calling JavaScript Functions</h2>
-<p>Declaring a function does not execute the instructions we include in its body –we simply gave that function a name and specified how it should work given a set of parameters.</p>
+<p>Declaring a function does not execute the instructions we include in its body. After declaring, we&#39;ve simply given the function a name and specified how it should work when it is given a set of parameters.</p>
 <p>To actually <em>evaluate</em> a function, we have to <strong>call</strong> that function as follows:</p>
 <pre><code class="lang-javascript"> nameOfMyFunction();
 </code></pre>
@@ -1163,10 +1165,10 @@
 <blockquote>
 <p><strong>NOTE</strong>: The number <code>4</code> used when the function is called is known as an <strong>argument</strong>.</p>
 </blockquote>
-<p>The function would execute its statements and evaluate to the value <code>12</code>. </p>
+<p>The function would execute its statements and evaluate to the value <code>12</code>.</p>
 <p>Just like a variable, we can use the return value of this function in any expression. For example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> a = tripleIt(<span class="hljs-number">1</span>);                         <span class="hljs-comment">// a == 3</span>
-<span class="hljs-keyword">var</span> b = <span class="hljs-number">100</span> * tripleIt(<span class="hljs-number">4</span>);                   <span class="hljs-comment">// b == 112</span>
+<span class="hljs-keyword">var</span> b = <span class="hljs-number">100</span> * tripleIt(<span class="hljs-number">4</span>);                   <span class="hljs-comment">// b == 1200</span>
 <span class="hljs-keyword">var</span> c = <span class="hljs-number">200</span> + (tripleIt(<span class="hljs-number">20</span>) / tripleIt(<span class="hljs-number">10</span>)); <span class="hljs-comment">// c == 202</span>
 </code></pre>
 <h3 id="test-yourself">Test Yourself</h3>
@@ -1185,7 +1187,7 @@
 <p>Test your answers in repl.it by copying the function definition into the editor, clicking the &#39;play&#39; button, and typing each of these expressions into the console.</p>
 <hr>
 <h2 id="the-return-statement">The Return Statement</h2>
-<p>As mentioned above, <code>return</code> specifies the value of the function when it&#39;s executed. It has another important job - it tells the function to immediately stop whatever it&#39;s doing. </p>
+<p>As mentioned above, <code>return</code> specifies the value of the function when it&#39;s executed. It has another important job - it tells the function to immediately stop whatever it&#39;s doing.</p>
 <p>Consider the following program:</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">doAThing</span><span class="hljs-params">(x)</span> </span>{
     <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {

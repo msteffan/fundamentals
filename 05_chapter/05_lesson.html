@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="5.2" data-basepath=".." data-revision="1423936895454">
+    <div class="book" data-level="5.2" data-basepath=".." data-revision="1424138753514">
     
 
 <div class="book-summary">
@@ -1127,9 +1127,9 @@
                         <p><strong>WDI Fundamentals Unit 5</strong></p>
 <hr>
 <h1 id="functional-javascript">Functional JavaScript</h1>
-<p>Functions can also be used as procedures - miniature, self-contained programs that are executed one line at a time whenever the function is called.</p>
+<p>Functions can also be used as procedures – miniature, self-contained programs that are executed one line at a time whenever the function is called.</p>
 <p>When you have a set of tasks that need to be repeated, it can often be helpful to turn that set of tasks into a function, and call it every time that the procedure should be run.</p>
-<p>For instance, let&#39;s go back to the &quot;French Toast a la GA&quot; recipe from Unit 4.<br>Every time a soaked slice of bread is ready to be cooked, we need to:</p>
+<p>For instance, let&#39;s go back to the &quot;French Toast a la GA&quot; recipe from Unit 4. Every time a soaked slice of bread is ready to be cooked, we need to:</p>
 <blockquote>
 <p>5: Transfer the slices to your frying pan and cook on a medium-low heat until brown on the bottom.</p>
 </blockquote>
@@ -1158,7 +1158,7 @@
     }
 }
 </code></pre>
-<p>To assign a value (<code>x</code>, <code>o</code>)to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:</p>
+<p>To assign a value (<code>x</code>, <code>o</code>) to any cell on the board, edit the return value for the corresponding case.  For example, if you want the board to read:</p>
 <pre><code>    | null | null |   x  |
     | null |   o  | null |
     | null |   o  |   x  |
@@ -1178,15 +1178,15 @@
     }
 }
 </code></pre>
-<h3 id="who-is-the-winnner">Who is the Winnner?</h3>
+<h3 id="who-is-the-winner">Who is the Winner?</h3>
 <p>Now, let&#39;s write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.</p>
 <p>We&#39;ll call it <code>getWinner</code> and it will give us back either <code>&#39;x&#39;</code> (if X has won), <code>&#39;o&#39;</code> (if O has won), or <code>null</code> (if neither side has won).</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span><span class="hljs-params">()</span> </span>{
   }
 </code></pre>
 <p>So where do we go from here?</p>
-<p>One way to determine the winner might be to check whether X has won and then to check whether O has won.What if two functions existed that would magically determine this for us? </p>
-<p>We could call them <code>winnerIsX</code> and <code>winnerIsO</code> - <code>winnerIsX</code> could give us back <code>true</code> if X has won and <code>false</code> if it hasn&#39;t. If such functions existed, we could rewrite <code>getWinner</code> like this:</p>
+<p>One way to determine the winner might be to check whether X has won and then to check whether O has won. What if two functions existed that would magically determine this for us?</p>
+<p>We could call them <code>winnerIsX</code> and <code>winnerIsO</code>.  <code>winnerIsX</code> could give us back <code>true</code> if X has won and <code>false</code> if it hasn&#39;t. If such functions existed, we could rewrite <code>getWinner</code> like this:</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">if</span> (winnerIsX()) {
       <span class="hljs-keyword">return</span> <span class="hljs-string">'x'</span>;
@@ -1197,26 +1197,26 @@
     <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
   }
 </code></pre>
-<p>OK! Now we&#39;re getting somewhere. Instead of solving one big problem, we&#39;re solving two smaller problems –how do we determine whether X or O won?</p>
+<p>OK! Now we&#39;re getting somewhere. Instead of solving one big problem, we&#39;re solving two smaller problems – how do we determine whether X or O won?</p>
 <h3 id="determing-if-x-has-won">Determing if <code>x</code> has won</h3>
-<p>Let&#39;s focus on <code>winnerIsX</code> first. </p>
+<p>Let&#39;s focus on <code>winnerIsX</code> first.</p>
 <p>In TicTacToe, there are three ways that X can win:</p>
 <ol>
 <li>All cells in a row contain an <code>x</code></li>
 <li>All cells in a column contain an <code>x</code></li>
-<li>All cells in a diagonal contain an <code>x</code> </li>
+<li>All cells in a diagonal contain an <code>x</code></li>
 </ol>
-<p>Wouldn&#39;t it be great if we had functions to determine these too? We could call them <code>winsRowX</code>, <code>winsColumnX</code>, and <code>winsDiagonalX</code>. </p>
+<p>Wouldn&#39;t it be great if we had functions to determine these too? We could call them <code>winsRowX</code>, <code>winsColumnX</code>, and <code>winsDiagonalX</code>.</p>
 <p>In this case, X would win if there were a row victory OR a column victory OR a diagonal victory, so to determine <code>winnerIsX</code> we could write the following:</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">winnerIsX</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">return</span> winsRowX() || winsColumnX() || winsDiagonalX();
   }
 </code></pre>
-<p>You can&#39;t execute anything yet.  Just stick with us –we only have a few more tiny problems to solve!</p>
+<p>You can&#39;t execute anything yet.  Just stick with us – we only have a few more tiny problems to solve!</p>
 <h4 id="winning-by-rows">Winning by Rows</h4>
-<p>Let&#39;s look at <code>winsRowX</code> - what does it actually mean to win a row? </p>
+<p>Let&#39;s look at <code>winsRowX</code> – what does it actually mean to win a row?</p>
 <p>According to our cell key from earlier, there are three cells in a row; the first row is <code>a</code>,<code>b</code>, and <code>c</code>; the second row is <code>d</code>,<code>e</code>, and <code>f</code>; the third row is <code>g</code>,<code>h</code>, and <code>i</code>.</p>
-<p>If any of these three sets are all equal to <code>x</code>, then X has won via a row. </p>
+<p>If any of these three sets are all equal to <code>x</code>, then X has won via a row.</p>
 <p>Let&#39;s dive just one level deeper, with a function to test if any one of the three rows are equal to <code>x</code> (let&#39;s call it <code>allThreeX</code>).</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">winsRowX</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">return</span> allThreeX(cellValue(<span class="hljs-string">'a'</span>), cellValue(<span class="hljs-string">'b'</span>), cellValue(<span class="hljs-string">'c'</span>)) ||
@@ -1263,8 +1263,9 @@
 </code></pre>
 <p>Excellent! Now, <code>isWinnerX</code> should be able to tell us if X has won.</p>
 <h3 id="determining-if-o-has-won">Determining if <code>o</code> has won</h3>
-<p>Now, we could go ahead and start writing a function called <code>allThreeO</code> to do the same thing for O as we&#39;ve done for X. </p>
-<p>But that pretty duplicative - those functions would be exactly the same, except for that hard-coded value of &#39;x&#39;. It would be better if we could make allThreeX more general. What if we rewrote it like this?</p>
+<p>Now, we could go ahead and start writing a function called <code>allThreeO</code> to do the same thing for O as we&#39;ve done for X. But that seems pretty duplicative.</p>
+<p>There&#39;s a principle we&#39;ll emphasize in this course – one that is so universally agreed upon an that it has a name. The principle is this: if you find yourself writing almost the exact same code in two places, take a moment to figure out how you can reorganize. We often refer to this concept as writing &quot;DRY&quot; code – with &quot;DRY&quot; standing for &quot;Don&#39;t Repeat Yourself&quot;. In this case, we&#39;re considering writing two functions which would be exactly the same, except for that hard-coded value of &#39;x&#39; vs &#39;o&#39;. Wouldn&#39;t it better if we could make the function <code>allThreeX</code> more general so that it worked for both players?</p>
+<p>Let&#39;s see what we can do.</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">allThree</span><span class="hljs-params">(player, cell_one, cell_two, cell_three)</span> </span>{
     <span class="hljs-keyword">return</span> (cell_one === player) &amp;&amp; (cell_two === player) &amp;&amp; (cell_three === player);
   }
@@ -1273,15 +1274,15 @@
 <p>Now <code>allThree</code> can be used to test for <code>x</code> <strong>or</strong> for <code>o</code>; by getting rid of our hard-coded data, we were able to make this function do double-duty!</p>
 <p>Let&#39;s do the same thing for all the other functions we wrote:</p>
 <pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getWinner</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-keyword">if</span> (isWinner(<span class="hljs-string">'x'</span>)) {
+    <span class="hljs-keyword">if</span> (winnerIs(<span class="hljs-string">'x'</span>)) {
       <span class="hljs-keyword">return</span> <span class="hljs-string">'x'</span>;
     }
-    <span class="hljs-keyword">if</span> (isWinner(<span class="hljs-string">'o'</span>)) {
+    <span class="hljs-keyword">if</span> (winnerIs(<span class="hljs-string">'o'</span>)) {
       <span class="hljs-keyword">return</span> <span class="hljs-string">'o'</span>;
     }
     <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;
   }
-  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">isWinner</span><span class="hljs-params">(player)</span> </span>{
+  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">winnerIs</span><span class="hljs-params">(player)</span> </span>{
     <span class="hljs-keyword">return</span> winsRow(player) || winsColumn(player) || winsDiagonal(player);
   }
   <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">winsRow</span><span class="hljs-params">(player)</span> </span>{
