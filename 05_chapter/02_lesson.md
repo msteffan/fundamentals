@@ -30,7 +30,7 @@ Let's look at an example:
 
 This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (that is, `x`) multiplied by 3.
 
-This is the first time we're seeing a `return` statement – it does exactly what it sounds like it does. `return` gives back the output of the function.
+This is the first time we're seeing a `return` statement – it does exactly what it sounds like it does. `return` gives back the output of the function.
 
 ###Naming Functions
 
@@ -38,7 +38,7 @@ Function names should describe what the function does as best as possible, and a
 
 You may have noticed how we capitalize names in JavaScript using the **camelCase** style. Remember that identifiers *(how we name things)* can't use spaces between them.
 
-To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
+To make it easier to read a name like `nameofmyfunction`, capitalize the first letter of each word (e.g. `nameOfMyFunction` – see the resemblance to a three-humped camel?)
 
 Examples of naming functions:
 

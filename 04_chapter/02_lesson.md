@@ -127,7 +127,7 @@ Try copying that whole statement into repl.it, and testing out different values 
 
 ## Switch Statement
 
-As we've seen before, we can choose which condition will be executed using `if...else...if`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
+As we've seen before, we can choose which condition will be executed using `if...else if...else`; however, if we have a lot of conditions, the code become a bit repetitive and hard to read. For example:
 
 ```javascript
 // day of the week in a number, sunday is 0, saturday is 6
