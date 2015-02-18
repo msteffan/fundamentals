@@ -26,21 +26,23 @@ Let's imagine that every person in this totally hypothetical office has a 'lunch
 
 |  label  |  value  |
 |:-------:|:-------:|
- `'Matt'` | `'tuna sandwich'`
-`'Floyd'` | `'salad'`
- `'Shannon'` | `'soup'`
- `'Josh'` | `'pasta'`
+| `'Matt'` | `'tuna sandwich'` |
+| `'Floyd'` | `'salad'` |
+| `'Shannon'` | `'soup'` |
+| `'Josh'` | `'pasta'` |
 
 If Floyd eats his lunch, does it affect anyone else's food? Nope! The *association* between each label (read: reference) and the food (read: value) it refers to is preserved.
 
 |  label  |  value  |
 |:-------:|:-------:|
- `'Matt'` | `'tuna sandwich'`
-`'Floyd'` | `null`
-`'Shannon'` | `'soup'`
- `'Josh'` | `'pasta'`
+| `'Matt'` | `'tuna sandwich'` |
+| `'Floyd'` | `null` |
+| `'Shannon'` | `'soup'` |
+| `'Josh'` | `'pasta'` |
 
-This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array *associates* each value with a reference called a **key**. This system also has some drawbacks. For instance, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements; an associative is not the right tool for keeping track of soemthign like that. But there are definitely use cases where an associative array is an extremely valuable tool.
+This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
+
+As you start building applications, you'll find a ton of situations where you want to associate keys to values.
 
 ## Associative Arrays in JavaScript
 
@@ -96,6 +98,8 @@ What code could we write to perform the following tasks?
 * Retrieve the value for 'name' from the associative array.
 * Assign the value for 'age' to 13.
 * Add a new key 'favoriteFood', with value 'crickets'
+
+>**NOTE** What we've called an associative array above are actually just JavaScript *objects*. You'll learn all about objects throughout WDI, and use them for far more complex use cases than tracking everyone's lunches.
 
 ---
 [Ready for one last quiz?](09_quiz.md)
