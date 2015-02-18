@@ -64,5 +64,4 @@
       * [Quiz](06_chapter/09_quiz.md)
       * [Exercise](06_chapter/10_exercise.md)
 	* [Cheat Sheet](06_chapter/11_cheatsheet.md)
-	* [Unit 3 Homework](06_chapter/12_assessment.md)
-
+	* [Unit 6 Homework](06_chapter/12_assessment.md)

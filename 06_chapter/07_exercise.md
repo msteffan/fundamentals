@@ -20,7 +20,7 @@
 
     This function should work similarly to `setUpRed`, placing black pieces (`'B'`) on the board at the positions indicated in the picture.
 
-Feel free to us either loops or iterators to write these functions - just make sure that they act *exactly* like the descriptions.
+Feel free to use either loops or iterators to write these functions - just make sure that they act *exactly* like the descriptions.
 
 ---
 

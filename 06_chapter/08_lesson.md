@@ -6,25 +6,29 @@
 
 ## Drawbacks of Ordinary Arrays
 
-So far, all of the arrays that we've seen so far have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following example.
+So far, all of the arrays that we've seen so far have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:
 
-Say we have a line of people waiting for the bus (or the latest iPhone, if you prefer.). We'll model these people using the array below.
+Say we have a line of people waiting in line to buy the latest iPhone. We'll model these people using the array below.
 
-  `['Rachel','Monica','Phoebe','Joey','Chandler','Ross']`
+```javascript
+['Rachel','Monica','Phoebe','Joey','Chandler','Ross']
+```
 
 We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.
 
 But suppose that Monica decides she's waited long enough for an iPhone, and decides to leave the line and get an Android phone instead. What happens when Monica leaves?
 
-  `['Rachel','Phoebe','Joey','Chandler','Ross']`
+```javascript
+['Rachel','Phoebe','Joey','Chandler','Ross']
+```
 
 Well, Rachel stays in the same place. But suddenly, Phoebe isn't at index 2 - she's now at index *1*, while *Joey* is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, as it were, 'disarray'.
 
-This system does a good job of keeping track of everyone's order, but its biggest drawback is that our method of referencing any element is tied to its position *rather than the element itself*. Fortunately, there are other ways of keeping track of things - for example, labelling them.
+This system does a good job of keeping track of everyone's order, but its biggest drawback is that our method of referencing any element is tied to its position *rather than the element itself*. Fortunately, there are other ways of keeping track of things - for example, labeling them.
 
 Let's imagine that every person in this totally hypothetical office has a 'lunch' that they keep in the fridge.
 
-|  label  |  value  |
+|  Label  |  Value  |
 |:-------:|:-------:|
 | `'Matt'` | `'tuna sandwich'` |
 | `'Floyd'` | `'salad'` |
@@ -33,7 +37,7 @@ Let's imagine that every person in this totally hypothetical office has a 'lunch
 
 If Floyd eats his lunch, does it affect anyone else's food? Nope! The *association* between each label (read: reference) and the food (read: value) it refers to is preserved.
 
-|  label  |  value  |
+|  Label  |  Value  |
 |:-------:|:-------:|
 | `'Matt'` | `'tuna sandwich'` |
 | `'Floyd'` | `null` |
@@ -42,7 +46,7 @@ If Floyd eats his lunch, does it affect anyone else's food? Nope! The *associati
 
 This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
 
-As you start building applications, you'll find a ton of situations where you want to associate keys to values.
+As you start building applications, you'll find many situations where you'll want to associate keys to values.
 
 ## Associative Arrays in JavaScript
 

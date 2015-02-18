@@ -43,7 +43,14 @@
   * To change the way that you iterate through the array, just change the settings of your `for` loop.
 
 ### Iterator Functions
-  * `.map()` creates a new array from your original array by applying some function to each element in the original; it returns the new array.
+
+`.map()` 
+
+| Syntax | Parameters|
+|:---:|:---:|
+ 
+*Description*:  
+
   * `.forEach()` executes some function once for each element in the array it's called on.
 
 ## Collections - Associative Arrays
