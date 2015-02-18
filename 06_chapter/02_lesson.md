@@ -5,6 +5,7 @@
 # Collections - Arrays
 ## What is an Array?
 
+
 An array is an ordered list of items, also known as **elements**, separated by commas and sitauted between brackets `[]`. Arrays can contain different types of elements, like `["red", 42, "gorilla", false]`, but we generally use arrays to deal with elements of the same type.
 
 ###Finding Elements in an Array
@@ -20,12 +21,12 @@ If we wanted to find the element `'mary'`, we would need to remember that she is
 The position of `'mary'` in the array is known as its *index value* (or just *index*).
 
 As you can see, there are four strings contained within this array.
-  The first element (index of 0) in the array is 'ellen'.
-  The second element (index of 1) is 'mary'.
-  The third element (index of 2) is 'doug'.
-  The final element (index of 3) is 'pat'.
+- The first element (index of 0) in the array is 'ellen'.
+- The second element (index of 1) is 'mary'.
+- The third element (index of 2) is 'doug'.
+- The final element (index of 3) is 'pat'.
 
-**Note that the index for the first position in an array is 0**. So even though `'mary'` is the second element in the array, we would need to call her out as the element with an index of 1.
+> **Note that the index for the first position in an array is 0**. So even though `'mary'` is the second element in the array, we would need to call her out as the element with an index of 1.
 
 
 
@@ -47,20 +48,22 @@ Changing an element in an array is just as easy; just write an assignment operat
 Just like with a variable, this expression will evaluate to the value on the right.
 
 ### Test Yourself
-Suppose that we've defined the following array of numbers.
 
-`my_numbers = [4,65,0,29];`
-    
-Assuming that the following expressions are evaluated in order, what will each one evaluate to?
+Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
-  * `my_numbers[0]`
-  * `my_numbers[1] = 10`
-  * `my_numbers[2] = 5`
-  * `my_numbers[1] * 2`
+```javascript
+my_numbers = [4,65,0,29];
+my_numbers[0];
+my_numbers[1] = 10;
+my_numbers[2] = 5;
+my_numbers[1] * 2;
+console.log(my_numbers)
+```
+Confirm your answer by entering the above code in a new Repl.it session.
 
-## Nested Arrays
+## Adding Complexity – Nested Arrays
   
-In addition to storing numbers, strings, or booleans as elements, arrays can go 'full-Inception' by storing *other arrays*.
+In addition to storing numbers, strings, or booleans as elements, arrays can go 'Full Inception' by storing *other arrays*.
 
 Here's an example of what this can look like.
 
@@ -68,12 +71,12 @@ Here's an example of what this can look like.
 array_of_arrays = [['a','b','c'],['d','e','f'],['g','h','i']];
 ```
 
-You might also see it written like this - it's a bit more readable this way.
+You might also see it written like this – it's a bit more readable this way.
 
 ```javascript
 array_of_arrays = [['a','b','c'],
-                  ['d','e','f'],
-                  ['g','h','i']];
+                   ['d','e','f'],
+                   ['g','h','i']];
 ```
 
 Each element of `array_of_arrays` *is itself an array*. Calling `array_of_arrays[1]` will give us back the second array, `['d','e','f']`.
@@ -84,31 +87,39 @@ Of course, what we're probably most interested in are the inner elements (string
 var x = array_of_arrays[1]; //Evaluates to ['d','e','f']
 x[0]; //Evaluates to 'd'
   ```
-  But the variable `x` there is unnecessary - it's just standing in for `['d','e','f']`. We can access that element directly from `array_of_arrays` using the following syntax:
-  
+
+But the variable `x` there is unnecessary - it's just standing in for `['d','e','f']`. We can access that element directly from `array_of_arrays` using the following syntax:
+
 ```javascript
 array_of_arrays[1][0]; // Evaluates to 'd'
 ```
 
-If you imagine an array of arrays as a grid of values, you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.
+If you imagine an array of arrays as a grid of values (like in the example above), you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.
 
 ### Test Yourself
 
-Let's imagine that we're working with `array_of_arrays` from the example above. Assuming that each of the following expressions is evaluated in order, what will each one evaluate to?
- * `array_of_arrays[0][0]`
- * `array_of_arrays[1][2]`
- * `array_of_arrays[2][2] = 'z'`
- * `array_of_arrays[2][1] = array_of_arrays[1][0]`
+Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
+
+```javascript
+array_of_arrays = [['a','b','c'],['d','e','f'],['g','h','i']];
+array_of_arrays[0][0];
+array_of_arrays[1][2];
+array_of_arrays[2][2] = 'z';
+array_of_arrays[2][1] = array_of_arrays[1][0];
+console.log(array_of_arrays);
+```
+
+Confirm your answer by entering the above code in a new Repl.it session.
 
 ## Additional Array Features
 
-In addition to containing multiple elements, arrays also have a number of in-built properties and functions that give them many useful abilities. Here are a couple examples:
+In addition to containing multiple elements, arrays also have a number of built-in properties and functions that give them many useful abilities. Here are a couple of them:
 
 ###Finding and Accessing Elements in an Array
 
 ####.length
 
-All arrays have a property called `length`, which evaluates to the tell you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
+All arrays have a property called `length`, which tells you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
 
 ```javascript
 ['a','b','c'].length;  // evaluates to 3
@@ -116,9 +127,10 @@ All arrays have a property called `length`, which evaluates to the tell you how 
 var x = [10,20,30,40];
 x.length;              // evaluates to 4
 ```
-> **NOTE** Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.
 
 One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.
+
+> **NOTE** Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.
 
 ```javascript
 var team = ['ted','lem','phil','linda','veronica',];
@@ -128,6 +140,7 @@ team[team.length - 2];   // evaluates to 'linda'.
 
 ####.indexOf()
 This function evaluates to the index of the first element in the array that matches the value in parentheses. If no match is found, the function evaluates to -1.
+
 ```javascript
 var animals = ['bear','beetle','boa'];
 animals.indexOf('boa')  // evaluates to 2
@@ -138,21 +151,26 @@ animals.indexOf('bee')  // evaluates to -1
 ###Adding and Removing Elements in an Array
 
 ####.push() and .pop()
-`push` and `pop` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. `push` in particular a very convenient way to build up an array over time - you're simply adding another item to the list. As a side note (since it's rare to use them this way),`push` evaluates to the value of the element it's adding, while `pop` evaluates to the the value of the element it's just removed.
+`push` and `pop` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. `push` in particular is a very convenient way to build up an array over time - you're simply adding another item to the list.
   
 ```javascript
 var ghosts = ['blinky','inky','pinky'];
 ghosts.push('clyde');  // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky','clyde'].
 ghosts.pop();          // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky'] again.
-    ```
-
+```
 
 ### Test Yourself
-What will the following lines do? Check your answers in repl.it.
-* `['a','b','c'].indexOf('b')`
-* `[true,false,false,true].length`
-* `x = ['paul','john','george']; x.push('ringo');`
-* `y = ['soda','tart','weasel']; y.pop();`
+
+What will the following lines do?
+
+```javascript
+['a','b','c'].indexOf('b')
+[true,false,false,true].length
+x = ['paul','john','george']; x.push('ringo');
+y = ['soda','tart','weasel']; y.pop();
+```
+
+Confirm your answer by entering each of the above lines of code on the repl.it console.
 
 > **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in repl.it!
 
