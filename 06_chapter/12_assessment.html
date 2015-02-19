@@ -44,7 +44,7 @@
 
 
         
-    <div class="book" data-level="6.5" data-basepath=".." data-revision="1424294344036">
+    <div class="book" data-level="6.5" data-basepath=".." data-revision="1424326709630">
     
 
 <div class="book-summary">
@@ -1332,19 +1332,21 @@
 <li><code>playToFive</code> which runs the Rock Paper Scissors game until either the player or the computer has won five times.</li>
 </ul>
 <p>Now it&#39;s time to submit the project.</p>
-<h2 id="merging-with-the-upstream">Merging with the Upstream</h2>
-<p>Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal:</p>
+<h2 id="merging-with-upstream">Merging with Upstream</h2>
+<p>Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal</p>
 <pre><code class="lang-bash">git remote add upstream https://github.com/ga-students/wdi-fundamentals-rps.git
-
-git pull upstream student
+</code></pre>
+<p>Here, we add another remote (link to a repo) to our local copy of the repository. If you type <code>git remote -v</code> you should now see an <code>origin</code> remote pointing to your forked copy of the repo, and an <code>upstream</code> remote pointing to the original one.</p>
+<p>Next, we want to make sure that if anyone modified the &quot;upstream&quot; or original repo, we have all those changes incorporated into our local one. To do that, type:</p>
+<pre><code class="lang-bash">git pull upstream student
 </code></pre>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
-<p> These commands tell Git to try to merge the latest version of the original repository with the version you have on your computer. You probably won&#39;t hit any issues here, but it&#39;s possible that you might get a scary-looking error message. If that happens, <1> take a deep breath (everything&#39;s going to be fine, we promise!), and <2> contact either Matt Brendzel or JD Maresco on Slack - they&#39;ll help you work through the problem.</2></1></p>
+<p> Since these commands tell Git to try to merge the latest version of the original repository with the version you have on your computer, you could run into some conflicts between your files and the files on the remote. You probably won&#39;t hit any issues here, but it&#39;s possible that you might get a scary-looking error message. Post to the #wdi-fundamentals channel if that&#39;s the case, and we&#39;ll make sure you get help.</p>
 </blockquote>
-<p>At this point, if all goes well, you&#39;ll be asked to make another commit; write your commit message in the following format so that we can identify your submission!</p>
+<p>At this point, if all goes well, you&#39;ll be asked to make another commit. Enter your commit message in the following format (replace the date with the start date of your course) so that we can identify your work when we look through all of the submissions.</p>
 <p> <code>&quot;WDI Boston 2010-01-01 :: John Doe&quot;</code></p>
 <h2 id="making-a-pull-request">Making a Pull Request</h2>
-<p>The last step to submitting your assignment will be to make a <strong>pull request</strong>. A pull request (PR for short) essentially means asking the person whose code you forked if you can add your code back to their project. Although we won&#39;t be merging your submissions back into the original repo, making a PR also allows us to easily see the code that you&#39;ve written.</p>
+<p>The final step to submitting your assignment will be to make a <strong>pull request</strong>. When you submit a pull request (PR for short) you are asking the owner of a repository to &quot;pull&quot; (and merge) your code modifications back into their repo. Although we won&#39;t be merging your submissions back into the original repo, we&#39;ll look at them and be able to review the code that you&#39;ve written.</p>
 <p>Let&#39;s get started!</p>
 <ol>
 <li><p><code>push</code> your code up to your remote repo on GitHub.com, using the command <code>git push origin student</code>.</p>
