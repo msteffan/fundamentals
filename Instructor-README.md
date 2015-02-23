@@ -29,7 +29,7 @@ Let us know in the student-tracker spreadsheet whether your students' JavaScript
 
 |Points | Grade | Description|
 | -------------------|
-|2 | Exceedes Expectations | Code is human readable valid JS with absolutely no errors.
+|2 | Exceeds Expectations | Code is human readable valid JS with absolutely no errors.
 |1 | Meets Expectations| Code is human readable valid JS for the most part, with a few minor errors
 |0 | Does Not Meet Expectations | Code is not human readable nor valid JS with 5 major errors or more.
 
@@ -58,9 +58,3 @@ We've set up autmatic testing using Travis CI, and so if you would prefer to rev
 	![All Pull Requests in Travis-CI](assets/instructors/PR_intravis.png)
 	<br>
 	![Your students](assets/instructors/PR_comments_intravis.png)
-
-
-
-
-
-
