@@ -10,25 +10,31 @@ As of the last time you worked on `wdi-fundamentals-rps`, you should have the fo
 
 Now it's time to submit the project.
 
-## Merging with the Upstream
+## Merging with Upstream
 
 Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal:
 
 ```bash
 git remote add upstream https://github.com/ga-students/wdi-fundamentals-rps.git
+```
 
+Here, we add another remote (link to a repo) to our local copy of the repository. If you type `git remote -v` you should now see an `origin` remote pointing to your forked copy of the repo, and an `upstream` remote pointing to the original one.
+
+Next, we want to make sure that if anyone modified the "upstream" or original repo, we have all those changes incorporated into our local one. To do that, type:
+
+```bash
 git pull upstream student
 ```
 
-> **CAUTION** These commands tell Git to try to merge the latest version of the original repository with the version you have on your computer. You probably won't hit any issues here, but it's possible that you might get a scary-looking error message. If that happens, <1> take a deep breath (everything's going to be fine, we promise!), and <2> contact either Matt Brendzel or JD Maresco on Slack - they'll help you work through the problem.
+> **WARNING** Since these commands tell Git to try to merge the latest version of the original repository with the version you have on your computer, you could run into some conflicts between your files and the files on the remote. You probably won't hit any issues here, but it's possible that you might get a scary-looking error message. Post to the #wdi-fundamentals channel if that's the case, and we'll make sure you get help.
 
-At this point, if all goes well, you'll be asked to make another commit; write your commit message in the following format so that we can identify your submission!
+At this point, if all goes well, you'll be asked to make another commit. Enter your commit message in the following format (replace the date with the start date of your course) so that we can identify your work when we look through all of the submissions.
 
  `"WDI Boston 2010-01-01 :: John Doe"`
 
 ## Making a Pull Request
 
-The last step to submitting your assignment will be to make a **pull request**. A pull request (PR for short) essentially means asking the person whose code you forked if you can add your code back to their project. Although we won't be merging your submissions back into the original repo, making a PR also allows us to easily see the code that you've written.
+The final step to submitting your assignment will be to make a **pull request**. When you submit a pull request (PR for short) you are asking the owner of a repository to "pull" (and merge) your code modifications back into their repo. Although we won't be merging your submissions back into the original repo, we'll look at them and be able to review the code that you've written.
 
 Let's get started!
 
