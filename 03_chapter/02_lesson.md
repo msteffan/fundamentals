@@ -106,7 +106,7 @@ We can represent this chain of dependencies using a logical structure called a `
 
 To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
 
-What happens is we're dealing with a more complicated expression? Say...
+What happens if we're dealing with a more complicated expression? Say...
 
 `((9+2)*25)-5`
 

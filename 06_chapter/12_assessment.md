@@ -12,13 +12,15 @@ Now it's time to submit the project.
 
 ## Merging with the Upstream
 
-Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal
+Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal:
+
 ```bash
-git remote set-url upstream git@github.com:ga-students/wdi-fundamentals-rps.git
+git remote add upstream https://github.com/ga-students/wdi-fundamentals-rps.git
 
 git pull upstream student
 ```
-> **WARNING** These commands tell Git to try to merge the latest version of the original repository with the version you have on your computer. You probably won't hit any issues here, but it's possible that you might get a scary-looking error message. If that happens, <1> take a deep breath (everything's going to be fine, we promise!), and <2> contact either Matt Brendzel or JD Maresco on Slack - they'll help you work through the problem.
+
+> **CAUTION** These commands tell Git to try to merge the latest version of the original repository with the version you have on your computer. You probably won't hit any issues here, but it's possible that you might get a scary-looking error message. If that happens, <1> take a deep breath (everything's going to be fine, we promise!), and <2> contact either Matt Brendzel or JD Maresco on Slack - they'll help you work through the problem.
 
 At this point, if all goes well, you'll be asked to make another commit; write your commit message in the following format so that we can identify your submission!
 
