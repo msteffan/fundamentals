@@ -10,11 +10,11 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 ### Ternary Operator
 * The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.
 
-  e.g. `(x > 10)? "Greater than 10." : "Less than 10.";`
+  e.g. `(x > 10)? 'Greater than 10.' : 'Less than 10.';`
 
 * It can also be used inside larger expressions.
 
-  e.g. `"Today is " + ((temp > 70)? "" : "not") + " hot.";`
+  e.g. `'Today is ' + ((temp > 70)? '' : 'not') + ' hot.';`
 
 ### `if...else` statement syntax
 

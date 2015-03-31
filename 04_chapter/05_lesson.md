@@ -54,9 +54,9 @@ A while loop can run **indefinitely** as long as your condition remains true; th
 Consider the following example.
 ```javascript
   var z = 0;
-  var myString = ""
+  var myString = '';
   while (z < 5) {
-    myString += "X";
+    myString += 'X';
     z += 1;
   }
 ```

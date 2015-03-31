@@ -12,7 +12,7 @@ The simplest type of conditional statement found in JavaScript involves the **te
 
   `some_expression ? truthy_value : falsy_value`
 
-The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy. 
+The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy.
 
 Here's an example of a ternary operator with some actual values plugged in.
 
@@ -23,12 +23,12 @@ Since `true` is (obviously) truthy, this means that the *entire expression* will
 Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5)? 10 : 20)*10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
 
 ### Test Yourself
-Suppose that we have two variables, `x` and `y`. 
+Suppose that we have two variables, `x` and `y`.
 To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* `(x%2 == 0)? "even" : "odd"`
+* `(x%2 == 0)? 'even' : 'odd'`
 * `(x > y)? 1 : 0`
 * `(3)? 100 : -100`
-* `('')? "hello" : "goodbye"`
+* `('')? 'hello' : 'goodbye'`
 
 
 ## `if..else` Statements
@@ -36,7 +36,7 @@ To start,`x` is equal to 10, while `y` is equal to 20. What values would the fol
 What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?
 
 JavaScript has a tool to do just that, called `if`. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
- 
+
   ```javascript
   if (x > 10) {
     x += 10;
@@ -133,22 +133,22 @@ As we've seen before, we can choose which condition will be executed using `if..
 // day of the week in a number, sunday is 0, saturday is 6
 dayNumber = 1
 if(dayNumber == 0){
-  day = "Sunday";
+  day = 'Sunday';
 } else if(dayNumber == 1){
-  day = "Monday";
+  day = 'Monday';
 } else if(dayNumber == 2){
-  day = "Tuesday";
+  day = 'Tuesday';
 } else if(dayNumber == 3){
-  day = "Wednesday";
+  day = 'Wednesday';
 } else if(dayNumber == 4){
-  day = "Thursday";
+  day = 'Thursday';
 } else if(dayNumber == 5){
-  day = "Friday";
+  day = 'Friday';
 } else if(dayNumber == 6){
-  day = "Saturday";
+  day = 'Saturday';
 } else {
   day = null;
-  alert("wrong value for day");
+  alert('wrong value for day');
 }
 
 ```
@@ -163,29 +163,29 @@ dayNumber = 1
 
 switch (dayNumber) {
   case 0:
-    day = "Sunday";
+    day = 'Sunday';
     break;
   case 1:
-    day = "Monday";
+    day = 'Monday';
     break;
   case 2:
-    day = "Tuesday";
+    day = 'Tuesday';
     break;
   case 3:
-    day = "Wednesday";
+    day = 'Wednesday';
     break;
   case 4:
-    day = "Thursday";
+    day = 'Thursday';
     break;
   case 5:
-    day = "Friday";
+    day = 'Friday';
     break;
   case 6:
-    day = "Saturday";
+    day = 'Saturday';
     break;
   default:
     day = null;
-  alert("wrong value for day");
+  alert('wrong value for day');
 }
 ```
 This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
@@ -223,8 +223,3 @@ What value will `y` be assigned when `x` is ...
 * "Hello"?
 
 [Here's a short quiz on everything we've covered so far](03_quiz.md) - do your best!
-
-
-
-
-
