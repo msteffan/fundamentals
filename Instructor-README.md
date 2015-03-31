@@ -58,9 +58,3 @@ We've set up autmatic testing using Travis CI, and so if you would prefer to rev
 	![All Pull Requests in Travis-CI](assets/instructors/PR_intravis.png)
 	<br>
 	![Your students](assets/instructors/PR_comments_intravis.png)
-
-
-
-
-
-
