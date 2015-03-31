@@ -6,9 +6,9 @@
 
 One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.
 
-Suppose that we wanted to save the result of our expression, `(99*746)-(837*23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
+Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 * 23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
 
-`var x = (99*746)-(837*23);`
+`var x = (99 * 746) - (837 * 23);`
 
 > **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
@@ -65,9 +65,9 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 
   __Line 3__: As of this point in the code, `y` has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to `x`.
 
-  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20+1`).
+  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20 + 1`).
 
-  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21+1`).
+  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21 + 1`).
 
   __Line 6__: `x` is now 22, so `y` becomes `2 * 22`, or 44.
 
