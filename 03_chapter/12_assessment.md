@@ -14,7 +14,7 @@ When you look inside the file you should first see a block of code that looks li
 
 ```javascript
 function getInput() {
-    console.log('Please choose either "rock", "paper", or "scissors".')
+    console.log('Please choose either "rock", "paper", or "scissors".');
     return prompt();
 }
 function randomPlay() {
