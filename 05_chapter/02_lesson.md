@@ -10,7 +10,7 @@ To create a new function, we must *declare* it as we would a variable.  A **func
 
 ```javascript
 function nameOfMyFunction(x) {
-  //body of the function 'nameOfMyFunction';
+  // Body of the function 'nameOfMyFunction';
 }
 ```
 

@@ -4,7 +4,7 @@
 
 ##![Your Turn](../assets/exercise.png) Your Turn
 
-    Let's go back to the 'checkerboard' code we wrote for the last exercise. This time, you'll be tasked with using what you've just learned about iteration to write a couple of brand new functions:
+Let's go back to the 'checkerboard' code we wrote for the last exercise. This time, you'll be tasked with using what you've just learned about iteration to write a couple of brand new functions:
 
 * `clearBoard()`
 

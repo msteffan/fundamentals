@@ -11,7 +11,7 @@ Let's use what we've just learned about control flow to make some more progress 
 Open up `RockPaperScissors.js` in your text editor of choice, and scroll down to the following code:
 
 ```javascript
-function getWinner(playerMove,computerMove) {
+function getWinner(playerMove, computerMove) {
     // This function should either give us back 'player', 'computer', or 'tie'.
     // The rules of the game are that rock beats scissors, scissors beats paper, and paper beats rock.
     // Assume that the only possible input values we can get are 'rock', 'paper', and 'scissors'.

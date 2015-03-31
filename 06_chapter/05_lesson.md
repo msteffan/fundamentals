@@ -62,9 +62,9 @@ for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
 We could even operate only on every third element, by changing the value we increment i, like so (see `i += 3` ?):
 
 ```javascript
-  for (var i = 2; i < tempsInF.length; i += 3) {
-    tempsInC.push(fahrToCelc(tempsInF[i]));
-  }
+for (var i = 2; i < tempsInF.length; i += 3) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
+}
 ```
 
 Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!

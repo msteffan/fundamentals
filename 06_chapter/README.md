@@ -14,7 +14,7 @@ Congratulations, you've almost made it to the end of WDI Fundamentals!
 In Unit 5, you learned to create your own functions that could generate specific behaviors. If you wanted to get the average of three variables, `x`, `y`, and `z`, you could write the following:
 
 ```javascript
-function avgOfThree(x,y,z) {
+function avgOfThree(x, y, z) {
     return (x + y + z) / 3;
 }
 ```

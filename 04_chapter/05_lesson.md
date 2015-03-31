@@ -102,12 +102,12 @@ Let's make a few modifications to our while loop from earlier.
 As you can see, there are a couple of key ingredients to making our `for` loop work. We need
 1. an 'initialization', which sets up a starting situation (e.g. var x = 0)
 2. a condition, which gets evaluated each time we're about to execute the block (e.g. x < 10)
-3. a 'final expression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
+3. a 'finalExpression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
 
 The general syntax for a `for` loop is
 
 ```javascript
-for (initialization; condition; final expression) {
+for (initialization; condition; finalExpression) {
   // A block of code.
 }
 ```

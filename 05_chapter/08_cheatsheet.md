@@ -15,7 +15,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 
 ```javascript
 function myFunctionName() {
-  //Body of the function
+  // Body of the function
 }
 ```
 

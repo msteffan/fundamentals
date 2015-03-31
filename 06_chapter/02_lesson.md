@@ -13,7 +13,7 @@ An array is an ordered list of items, also known as **elements**, separated by c
 The order of elements in an array matters. Let's take a look at the following example:
 
 ```javascript
-myFriends = ['ellen', 'mary', 'doug', 'pat']
+var myFriends = ['ellen', 'mary', 'doug', 'pat'];
 ```
 
 If we wanted to find the element `'mary'`, we would need to remember that she is the second element in the array.
@@ -38,7 +38,7 @@ Now that we know her index value, to find `'mary'` we would simply write:
 We could save what we found in a variable like so:
 
 ```javascript
-var bestFriend = myFriends[1]
+var bestFriend = myFriends[1];
 ```
 
 Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.
@@ -52,7 +52,7 @@ Just like with a variable, this expression will evaluate to the value on the rig
 Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
 ```javascript
-myNumbers = [4, 65, 0, 29];
+var var myNumbers = [4, 65, 0, 29];
 myNumbers[0];
 myNumbers[1] = 10;
 myNumbers[2] = 5;
@@ -68,15 +68,15 @@ In addition to storing numbers, strings, or booleans as elements, arrays can go 
 Here's an example of what this can look like.
 
 ```javascript
-arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
+var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
 ```
 
 You might also see it written like this – it's a bit more readable this way.
 
 ```javascript
-arrayOfArrays = [['a', 'b', 'c'],
-                 ['d', 'e', 'f'],
-                 ['g', 'h', 'i']];
+var arrayOfArrays = [['a', 'b', 'c'],
+                     ['d', 'e', 'f'],
+                     ['g', 'h', 'i']];
 ```
 
 Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]` will give us back the second array, `['d', 'e', 'f']`.
@@ -101,7 +101,7 @@ If you imagine an array of arrays as a grid of values (like in the example above
 Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
 ```javascript
-arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
+var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
 arrayOfArrays[0][0];
 arrayOfArrays[1][2];
 arrayOfArrays[2][2] = 'z';
@@ -133,7 +133,7 @@ One especially nice thing about knowing the length of the array is that it allow
 > **NOTE** Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.
 
 ```javascript
-var team = ['ted', 'lem', 'phil', 'linda', 'veronica',];
+var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
 team[team.length - 1];   // Evaluates to 'veronica'.
 team[team.length - 2];   // Evaluates to 'linda'.
 ```
@@ -166,8 +166,8 @@ What will the following lines do?
 ```javascript
 ['a', 'b', 'c'].indexOf('b');
 [true, false, false, true].length;
-x = ['paul', 'john', 'george']; x.push('ringo');
-y = ['soda', 'tart', 'weasel']; y.pop();
+var x = ['paul', 'john', 'george']; x.push('ringo');
+var y = ['soda', 'tart', 'weasel']; y.pop();
 ```
 
 Confirm your answer by entering each of the above lines of code on the repl.it console.

@@ -20,7 +20,7 @@ Here's an example of a ternary operator with some actual values plugged in.
 
 Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
 
-Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5)? 10 : 20)*10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
+Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5) ? 10 : 20) * 10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
 
 ### Test Yourself
 Suppose that we have two variables, `x` and `y`.
@@ -134,20 +134,20 @@ As we've seen before, we can choose which condition will be executed using `if..
 
 ```javascript
 // day of the week in a number, sunday is 0, saturday is 6
-dayNumber = 1
+var dayNumber = 1;
 if(dayNumber === 0){
   day = 'Sunday';
-} else if(dayNumber === 1){
+} else if(dayNumber === 1) {
   day = 'Monday';
-} else if(dayNumber === 2){
+} else if(dayNumber === 2) {
   day = 'Tuesday';
-} else if(dayNumber === 3){
+} else if(dayNumber === 3) {
   day = 'Wednesday';
-} else if(dayNumber === 4){
+} else if(dayNumber === 4) {
   day = 'Thursday';
-} else if(dayNumber === 5){
+} else if(dayNumber === 5) {
   day = 'Friday';
-} else if(dayNumber === 6){
+} else if(dayNumber === 6) {
   day = 'Saturday';
 } else {
   day = null;
@@ -160,8 +160,9 @@ What this code does, fundamentally, is pretty simple - it takes in a number (rep
 is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
 
 Enter the `switch` statement:
-```
-dayNumber = 1
+
+```javascript
+var dayNumber = 1;
 
 switch (dayNumber) {
   case 0:
@@ -187,7 +188,7 @@ switch (dayNumber) {
     break;
   default:
     day = null;
-  alert('wrong value for day');
+    alert('wrong value for day');
 }
 ```
 This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
