@@ -20,7 +20,7 @@ Write the following functions:
 * `areBothEven`, which accepts two parameters, `a` and `b`; it should return `true` if `a` and `b` are both even, but `false` otherwise.
 * `hotOrNot`, which accepts one parameter, `temp`; it should return `"hot"` if `temp` is above 75, but should return `"not hot"` otherwise.
 * `threeIfNull`, which accepts one parameter,`num`. If num is `null`, it should return 3, but otherwise, it should return the value of `num`.
-* `greatest`, which accepts three parameters (`x`, `y`, and `z`), and returns the one with the greatest value. For example, `greatest(5,10,1)` would evaluate to 10. HINT: Feel free to use the `compare` function that was provided in the Unit 4 homework as inspiration!
+* `greatest`, which accepts three parameters (`x`, `y`, and `z`), and returns the one with the greatest value. For example, `greatest(5, 10, 1)` would evaluate to 10. HINT: Feel free to use the `compare` function that was provided in the Unit 4 homework as inspiration!
 
 Once you've written and tested all of these functions, go ahead and move on to the next lesson.
 
