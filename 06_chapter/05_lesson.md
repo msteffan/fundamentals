@@ -8,40 +8,42 @@ In the past few units, we've only been able to operate on one value at a time. O
 
 ##Iterating with Loops
 
-Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celcius - which would then be stored in a separate array.
+Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celsius - which would then be stored in a separate array.
 
 ```javascript
-var temps_in_f = [100, 72, 88, 15, 25, 32];
-var temps_in_c = [];
+var tempsInF = [100, 72, 88, 15, 25, 32];
+var tempsInC = [];
 ```
 
-The formula for converting between Fahrenheit and Celcius temperatures is **C = (5/9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+The formula for converting between Fahrenheit and Celsius temperatures is **C = (5 / 9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
 
 ```javascript
 function fahrToCelc(degrees) {
   return degrees * 5 / 9  - 32;
 }
 ```
-So how do we go about operating on the elements in `temps_in_f`? Well, we could just start at the beginning and work our way through, one value at a time.
+
+So how do we go about operating on the elements in `tempsInF`? Well, we could just start at the beginning and work our way through, one value at a time.
+
 ```javascript
-temps_in_c.push(fahrToCelc(temps_in_f[0]));
+tempsInC.push(fahrToCelc(tempsInF[0]));
 ```
 
-Then, we could run an almost identical command to operate on each element in `temps_in_f` and push the converted value onto the `temps_in_c` array.
+Then, we could run an almost identical command to operate on each element in `tempsInF` and push the converted value onto the `tempsInC` array.
 
 ```javascript
-  temps_in_c.push(fahrToCelc(temps_in_f[1]));
-  temps_in_c.push(fahrToCelc(temps_in_f[2]));
-  temps_in_c.push(fahrToCelc(temps_in_f[3]));
-  temps_in_c.push(fahrToCelc(temps_in_f[4]));
-  temps_in_c.push(fahrToCelc(temps_in_f[5]));
+  tempsInC.push(fahrToCelc(tempsInF[1]));
+  tempsInC.push(fahrToCelc(tempsInF[2]));
+  tempsInC.push(fahrToCelc(tempsInF[3]));
+  tempsInC.push(fahrToCelc(tempsInF[4]));
+  tempsInC.push(fahrToCelc(tempsInF[5]));
 ```
 
 However, this code is extremely repetitious, and it also forces us to hard-code exactly how many times we want the operation to be performed. It'd be better if there were a way to run this code exactly as many times as there are elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the `for` loop.
 
 ```javascript
-for (var i = 0; i < temps_in_f.length; i += 1) {
-  temps_in_c.push(fahrToCelc(temps_in_f[i]));
+for (var i = 0; i < tempsInF.length; i += 1) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
 }
 ```
 
@@ -52,17 +54,17 @@ By starting our count at zero, stopping before `i` reaches the length of the arr
 We could just as easily have gone in the opposite direction - starting at the last element, and ending with the first - simply by specifying different settings in the `for` loop:
 
 ```javascript
-for (var i = (temps_in_f.length - 1); i >= 0; i -= 1) {
-  temps_in_c.push(fahrToCelc(temps_in_f[i]));
+for (var i = (tempsInF.length - 1); i >= 0; i -= 1) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
 }
 ```
 
 We could even operate only on every third element, by changing the value we increment i, like so (see `i += 3` ?):
 
 ```javascript
-  for (var i = 2; i < temps_in_f.length; i += 3) {
-    temps_in_c.push(fahrToCelc(temps_in_f[i]));
-  }
+for (var i = 2; i < tempsInF.length; i += 3) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
+}
 ```
 
 Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!
@@ -72,18 +74,18 @@ Despite being one of the most basic ways to iterate through an array, in JavaScr
 Create a new repl.it session with the following JavaScript code:
 
 ```javascript
-var old_array = [12,45,6,23,19,20,20,15,30,42];
+var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];
 ```
 
-How could you use iteration to generate a new array called `new_array` from `old_array`, so that...
-* Each value in `new_array` is the value of its corresponding element in `old_array`, plus 5? (`[1,2,3]` becomes `[6,7,8]`)
-* Each value in `new_array` is the square of the value of its corresponding element in `old_array`? (`[1,2,3]` becomes `[1,4,9]`)
-* Every *odd-indexed* value in `new_array` is double its corresponding element in `old_array`, while every *even-indexed* value is unchanged? (`[3,4,5,2,6]` becomes `[3,8,5,4,6]`)
-* `new_array` is the exact mirror image of `old_array`? (`[1,2,3]` becomes `[3,2,1]`)
+How could you use iteration to generate a new array called `newArray` from `oldArray`, so that...
+* Each value in `newArray` is the value of its corresponding element in `oldArray`, plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`)
+* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`)
+* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`)
+* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`)
 
 These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
 
-## Iterator Functions : `.map()` and `.each()`
+## Iterator Functions : `.map()` and `.forEach()`
 
 Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) **iterators**.
 
@@ -91,11 +93,12 @@ One of the most commonly used iterators is `.map()` - this is the tool of choice
 
 ```javascript
 function square(x) {
-  console.log(x * x)
+  console.log(x * x);
   return x * x;
 }
 
-var resultingArray = [1,2,3].map(square); // prints out 1, 4, and 9, then returns the array [1,4,9] and stores it in resultingArray
+var resultingArray = [1, 2, 3].map(square); // Prints out 1, 4, and 9, then
+// returns the array [1, 4, 9] and stores it in resultingArray
 ```
 
 >**WARNING** It's important that you *do not* include parentheses when passing in that function. Including `square` as an argument passes the whole function. Including `square()` as the argument would pass in the result of calling the function. That's not what you want, normally.
@@ -106,11 +109,12 @@ Another example of an iterator is `.forEach()`. `.forEach()` also takes a functi
 
 ```javascript
 function square(x) {
-  console.log(x * x)
+  console.log(x * x);
   return x * x;
 }
 
-var resultingArray = [1,2,3].forEach(square); // prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(
+var resultingArray = [1, 2, 3].forEach(square); // Prints out 1, 4, and 9, but
+// doesn't return an array. This means resultingArray is undefined :(
 ```
 
 ###Test Yourself

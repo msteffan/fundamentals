@@ -12,23 +12,23 @@ The simplest type of conditional statement found in JavaScript involves the **te
 
   `some_expression ? truthy_value : falsy_value`
 
-The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy. 
+The expression on the left is called a 'condition,' because the entire expression will evaluate to either the value on the left or the value on the right depending on whether the condition is truthy or falsy.
 
 Here's an example of a ternary operator with some actual values plugged in.
 
-  `true? 1 : 2`
+  `true ? 1 : 2`
 
 Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
 
-Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5)? 10 : 20)*10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
+Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, `((x > 5) ? 10 : 20) * 10` will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
 
 ### Test Yourself
-Suppose that we have two variables, `x` and `y`. 
+Suppose that we have two variables, `x` and `y`.
 To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* `(x%2 == 0)? "even" : "odd"`
-* `(x > y)? 1 : 0`
-* `(3)? 100 : -100`
-* `('')? "hello" : "goodbye"`
+* `(x%2 === 0) ? 'even' : 'odd'`
+* `(x > y) ? 1 : 0`
+* `(3) ? 100 : -100`
+* `('') ? 'hello' : 'goodbye'`
 
 
 ## `if..else` Statements
@@ -36,13 +36,14 @@ To start,`x` is equal to 10, while `y` is equal to 20. What values would the fol
 What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?
 
 JavaScript has a tool to do just that, called `if`. An `if` statement will take in a condition and, if that condition is truthy, will run whatever code you specify. Here's an example of an `if` statement in action.
- 
-  ```javascript
-  if (x > 10) {
-    x += 10;
-    y += 10;
-  }
-  ```
+
+```javascript
+if (x > 10) {
+  x += 10;
+  y += 10;
+}
+```
+
 The condition is what's inside the parentheses; if that condition is truthy, the lines of code inside the curly braces (`{...}`) will be evaluated one by one.
 
 Let's take a step back for a minute, and consider something that's closer to our own experience: a flow chart.
@@ -61,12 +62,12 @@ As you can see, a person making their way through this diagram would need to mak
 `if` can actually be modified in several ways to change its behavior. For instance, adding an `else if` to our `if` statement allows us to specify a second condition to test; however, *this second condition will only be tested if the first condition fails*.
 
 ```javascript
-  if (x > 10) {
-    x += 10;
-    y += 10;
-  } else if (x > 5) {
-    x += 5;
-  }
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
+}
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif.png)</aside>
 <br>
@@ -75,14 +76,14 @@ As you can see, a person making their way through this diagram would need to mak
 <p>We can add as many `else if` statements as we want - just keep tacking them on.</p>
 
 ```javascript
-  if (x > 10) {
-    x += 10;
-    y += 10;
-  } else if (x > 5) {
-    x += 5;
-  } else if (x > 3) {
-    x += 3;
-  }
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
+} else if (x > 3) {
+  x += 3;
+}
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If` Statement](../assets/chapter4/flow_chart_if-elseif-elseif.png)</aside>
 <br>
@@ -90,16 +91,16 @@ As you can see, a person making their way through this diagram would need to mak
 However, if all of the conditions fail, nothing will happen. To specify behavior for this outcome, we must add an `else` to the end of our statement, like so.
 
 ```javascript
-  if (x > 10) {
-    x += 10;
-    y += 10;
-  } else if (x > 5) {
-    x += 5;
-  } else if (x > 3) {
-    x += 3;
-  } else {
-    x += 1;
-  }
+if (x > 10) {
+  x += 10;
+  y += 10;
+} else if (x > 5) {
+  x += 5;
+} else if (x > 3) {
+  x += 3;
+} else {
+  x += 1;
+}
 ```
 <aside style="float: left;">![Flow Chart for `If...Else If...Else If...Else` Statement](../assets/chapter4/flow_chart_if-elseif-elseif-else.png)</aside>
 <br>
@@ -108,6 +109,7 @@ Using `if...else` statements allows us to write code that can behave very differ
 
 ### Test Yourself
 Consider following conditional statement:
+
 ```javascript
 if (x > 5) {
   y = 50;
@@ -117,6 +119,7 @@ if (x > 5) {
   y = 100;
 }
 ```
+
 * What value will be assigned to `y` if ...
   * `x` is 10?
   * `x` is 4?
@@ -131,61 +134,61 @@ As we've seen before, we can choose which condition will be executed using `if..
 
 ```javascript
 // day of the week in a number, sunday is 0, saturday is 6
-dayNumber = 1
-if(dayNumber == 0){
-  day = "Sunday";
-} else if(dayNumber == 1){
-  day = "Monday";
-} else if(dayNumber == 2){
-  day = "Tuesday";
-} else if(dayNumber == 3){
-  day = "Wednesday";
-} else if(dayNumber == 4){
-  day = "Thursday";
-} else if(dayNumber == 5){
-  day = "Friday";
-} else if(dayNumber == 6){
-  day = "Saturday";
+var dayNumber = 1;
+if(dayNumber === 0){
+  day = 'Sunday';
+} else if(dayNumber === 1) {
+  day = 'Monday';
+} else if(dayNumber === 2) {
+  day = 'Tuesday';
+} else if(dayNumber === 3) {
+  day = 'Wednesday';
+} else if(dayNumber === 4) {
+  day = 'Thursday';
+} else if(dayNumber === 5) {
+  day = 'Friday';
+} else if(dayNumber === 6) {
+  day = 'Saturday';
 } else {
   day = null;
-  alert("wrong value for day");
+  alert('wrong value for day');
 }
-
 ```
 
 What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
-  `} else if(dayNumber == __ ){`
+  `} else if(dayNumber === __ ) {`
 is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
 
 Enter the `switch` statement:
-```
-dayNumber = 1
+
+```javascript
+var dayNumber = 1;
 
 switch (dayNumber) {
   case 0:
-    day = "Sunday";
+    day = 'Sunday';
     break;
   case 1:
-    day = "Monday";
+    day = 'Monday';
     break;
   case 2:
-    day = "Tuesday";
+    day = 'Tuesday';
     break;
   case 3:
-    day = "Wednesday";
+    day = 'Wednesday';
     break;
   case 4:
-    day = "Thursday";
+    day = 'Thursday';
     break;
   case 5:
-    day = "Friday";
+    day = 'Friday';
     break;
   case 6:
-    day = "Saturday";
+    day = 'Saturday';
     break;
   default:
     day = null;
-  alert("wrong value for day");
+    alert('wrong value for day');
 }
 ```
 This code works exactly the same as our `if..else..if`, but although it's slightly longer (in terms of lines), it is significantly easier to read.
@@ -198,6 +201,7 @@ Although the `switch` statement sometimes has some advantages over `if...else if
 
 ### Test Yourself
 Consider the following `switch` statement.
+
 ```javascript
 switch (2 * x) {
  case 2:
@@ -216,6 +220,7 @@ switch (2 * x) {
     y = 1;
 }
 ```
+
 What value will `y` be assigned when `x` is ...
 * 1?
 * 4?
@@ -223,8 +228,3 @@ What value will `y` be assigned when `x` is ...
 * "Hello"?
 
 [Here's a short quiz on everything we've covered so far](03_quiz.md) - do your best!
-
-
-
-
-

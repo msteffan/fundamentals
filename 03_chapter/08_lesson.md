@@ -12,17 +12,17 @@ What happens if we try to evaluate a variable that we haven't created or assigne
 * **`null`** is actually a value that you can assign to a variable as a representation of "no value."
 
 ### 'falsey' / 'truthy'
-We've seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression `"Happy birthday, " + "Tom"`, the `+` operator is working with strings, so it performs a concatenation instead.
+We've seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression `1 + 2 + 3 + 4`, the `+` operator is performing addition; however, in the expression `'Happy birthday, ' + 'Tom'`, the `+` operator is working with strings, so it performs a concatenation instead.
 
 Another example of this is the logical operators NOT(`!`), OR (`||`), and AND (`&&`); although they're primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either 'falsey' and 'truthy'.
 
 Here's a table to show you which kinds of values are considered truthy and falsey in JavaScript.
 
-| 'Falsey' |  'Truthy' |
-|----------|-----------|
-| `false` | `true` |
-| 0 | All numbers except 0, including 'Infinity' (what you get after dividing by 0) |
-| Empty strings ("") | All non-empty strings |
+| 'Falsey'            |  'Truthy' |
+|-                    |-          |
+| `false`             | `true`    |
+| 0                   | All numbers except 0, including 'Infinity' (what you get after dividing by 0) |
+| Empty strings ('')  | All non-empty strings |
 | Undefined, Null, and NaN ('Not A Number', a special type of numeric value) | Pretty much everything else |
 
 
@@ -35,7 +35,7 @@ In JavaScript, the boolean operators `!`, `||`, and `&&` follow the rules below 
 Can you predict how the following expressions will be evaluated? Check your answers in repl.it.
 * `1 || true`
 * `3 || null`
-* `!("")`
+* `!('')`
 * `false && undefined`
 * `true && !0`
 * `null || 3`

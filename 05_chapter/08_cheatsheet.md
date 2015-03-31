@@ -14,26 +14,28 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 * Functions must be **defined** before they can be used. To define a function, use the following recipe:
 
 ```javascript
-  function myFunctionName() {
-    //Body of the function
-  }
+function myFunctionName() {
+  // Body of the function
+}
 ```
 
 * To use, or **call** a function, simply type the name of your function, followed by `()` (plus any inputs that you might be passing in).
+
 ```javascript
-  myFunctionName()
+myFunctionName()
 ```
 
 
 ### `return` Statements
 * In addition to specifying a final value for the function to give back as a result, a `return` statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not `x`.
+
 ```javascript
-  function someFunc(x) {
-    if (x > 10) {
-      return 15;
-    }
-    return x;
+function someFunc(x) {
+  if (x > 10) {
+    return 15;
   }
+  return x;
+}
 ```
 
 ## Using Functions in the Field

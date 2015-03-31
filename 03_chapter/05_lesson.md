@@ -6,9 +6,9 @@
 
 One major calculator function that we haven't mentioned so far is **memory**. Many calculators have buttons that can be used to store the results of calculations in memory for later use. JavaScript's answer to this is **variables**.
 
-Suppose that we wanted to save the result of our expression, `(99*746)-(837*23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
+Suppose that we wanted to save the result of our expression, `(99 * 746) - (837 * 23)`, and then multiply the whole thing by `2` later. We could store our first result in a variable `x` using `=` (the 'assignment' operator) as follows:
 
-`var x = (99*746)-(837*23);`
+`var x = (99 * 746) - (837 * 23);`
 
 > **HINT**  The <b>keyword</b> `var` stands for `variable` and is used to *declare* a variable the first time we use it. A variable *can* be declared without using the keyword `var`, but this has major implications on where that variable is stored and what code can access it. You'll learn more about this when you cover the concept of <b>scope</b>. For now, always declare your variables using `var`.
 
@@ -28,11 +28,11 @@ We can redefine our variable `x` as many times as we want. However, ***only the 
 Suppose we ran the following lines of code in order, one by one.
 
 ```javascript
-  var x = 10;
-  x = 1;
-  x = 5;
-  x = 15;
-  2 * x;
+var x = 10;
+x = 1;
+x = 5;
+x = 15;
+2 * x;
 ```
 What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you're correct!
 
@@ -41,22 +41,24 @@ What does that last expression evaluate to? Or, put differently, what is the mos
 Sometimes, we find variables on both sides of the `=`. Suppose we have two variables, `x` and `y`, as in the example below.
 
 ```javascript
-  var x = 5;
-  var y = 10;
-  x = y + 10;
+var x = 5;
+var y = 10;
+x = y + 10;
 ```
 
 What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10` evaluates to 20, so what we're left with is the expression `x = 20`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
 
 Let's look at one more example using the same two variables, `x` and `y`.
+
 ```javascript
-  var x = 1;
-  var y = 10;
-  x = y * 2;
-  y = x + 1;
-  x = y + 1;
-  y = 2 * x;
+var x = 1;
+var y = 10;
+x = y * 2;
+y = x + 1;
+x = y + 1;
+y = 2 * x;
 ```
+
 Feeling dizzy? Don't worry, we'll step through this one together.
 
   __Line 1__: We declare a new variable `x` and assign it the value `1`.
@@ -65,9 +67,9 @@ Feeling dizzy? Don't worry, we'll step through this one together.
 
   __Line 3__: As of this point in the code, `y` has a value of 10. We multiply that by 2, resulting in 20. We assign that resulting value to `x`.
 
-  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20+1`).
+  __Line 4__: `x` now has a value of 20, so `y` gets assigned a new value of 21 (`20 + 1`).
 
-  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21+1`).
+  __Line 5__: `y` was just changed to 21, so `x` becomes 22 (`21 + 1`).
 
   __Line 6__: `x` is now 22, so `y` becomes `2 * 22`, or 44.
 
@@ -77,25 +79,28 @@ One important thing to mention here is that **at no point is any lasting relatio
 Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
 
 ##### Challenge \#1
+
 ```javascript
-  var x = 1;
-  var y = 2;
-  var z = 3;
-  x = y;
-  y = z;
-  z = x;
+var x = 1;
+var y = 2;
+var z = 3;
+x = y;
+y = z;
+z = x;
 ```
+
 ##### Challenge \#2
+
 ```javascript
-  var x = 1;
-  var y = 0;
-  var z = -1;
-  x = y + z;
-  y = z * x;
-  z = x - y;
-  x = y * y;
-  y = z * z;
-  z = z - 1;
+var x = 1;
+var y = 0;
+var z = -1;
+x = y + z;
+y = z * x;
+z = x - y;
+x = y * y;
+y = z * z;
+z = z - 1;
 ```
 
 Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?

@@ -12,7 +12,8 @@ Now it's time to submit the project.
 
 ## Merging with Upstream
 
-Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal
+Before we do anything else, we should make sure that our project is still in sync with the original repo. Run the following commands in the terminal:
+
 ```bash
 git remote add upstream https://github.com/ga-students/wdi-fundamentals-rps.git
 ```

@@ -13,10 +13,10 @@ An array is an ordered list of items, also known as **elements**, separated by c
 The order of elements in an array matters. Let's take a look at the following example:
 
 ```javascript
-my_friends = ['ellen','mary','doug','pat']
+var myFriends = ['ellen', 'mary', 'doug', 'pat'];
 ```
 
-If we wanted to find the element `'mary'`, we would need to remember that she is the second element in the array. 
+If we wanted to find the element `'mary'`, we would need to remember that she is the second element in the array.
 
 The position of `'mary'` in the array is known as its *index value* (or just *index*).
 
@@ -33,17 +33,17 @@ As you can see, there are four strings contained within this array.
 
 Now that we know her index value, to find `'mary'` we would simply write:
 
-`my_friends[1]`
+`myFriends[1]`
 
 We could save what we found in a variable like so:
 
 ```javascript
-var best_friend = my_friends[1]
+var bestFriend = myFriends[1];
 ```
 
 Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.
 
-`my_friends[3] = 'steve'`
+`myFriends[3] = 'steve'`
 
 Just like with a variable, this expression will evaluate to the value on the right.
 
@@ -52,46 +52,46 @@ Just like with a variable, this expression will evaluate to the value on the rig
 Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
 ```javascript
-my_numbers = [4,65,0,29];
-my_numbers[0];
-my_numbers[1] = 10;
-my_numbers[2] = 5;
-my_numbers[1] * 2;
-console.log(my_numbers)
+var var myNumbers = [4, 65, 0, 29];
+myNumbers[0];
+myNumbers[1] = 10;
+myNumbers[2] = 5;
+myNumbers[1] * 2;
+console.log(myNumbers);
 ```
 Confirm your answer by entering the above code in a new Repl.it session.
 
 ## Adding Complexity – Nested Arrays
-  
+
 In addition to storing numbers, strings, or booleans as elements, arrays can go 'Full Inception' by storing *other arrays*.
 
 Here's an example of what this can look like.
 
 ```javascript
-array_of_arrays = [['a','b','c'],['d','e','f'],['g','h','i']];
+var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
 ```
 
 You might also see it written like this – it's a bit more readable this way.
 
 ```javascript
-array_of_arrays = [['a','b','c'],
-                   ['d','e','f'],
-                   ['g','h','i']];
+var arrayOfArrays = [['a', 'b', 'c'],
+                     ['d', 'e', 'f'],
+                     ['g', 'h', 'i']];
 ```
 
-Each element of `array_of_arrays` *is itself an array*. Calling `array_of_arrays[1]` will give us back the second array, `['d','e','f']`.
+Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]` will give us back the second array, `['d', 'e', 'f']`.
 
 Of course, what we're probably most interested in are the inner elements (strings, in this case). We could probably do the following:
 
 ```javascript
-var x = array_of_arrays[1]; //Evaluates to ['d','e','f']
-x[0]; //Evaluates to 'd'
+var x = arrayOfArrays[1]; // Evaluates to ['d', 'e', 'f']
+x[0]; // Evaluates to 'd'
   ```
 
-But the variable `x` there is unnecessary - it's just standing in for `['d','e','f']`. We can access that element directly from `array_of_arrays` using the following syntax:
+But the variable `x` there is unnecessary - it's just standing in for `['d', 'e', 'f']`. We can access that element directly from `arrayOfArrays` using the following syntax:
 
 ```javascript
-array_of_arrays[1][0]; // Evaluates to 'd'
+arrayOfArrays[1][0]; // Evaluates to 'd'
 ```
 
 If you imagine an array of arrays as a grid of values (like in the example above), you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.
@@ -101,12 +101,12 @@ If you imagine an array of arrays as a grid of values (like in the example above
 Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
 ```javascript
-array_of_arrays = [['a','b','c'],['d','e','f'],['g','h','i']];
-array_of_arrays[0][0];
-array_of_arrays[1][2];
-array_of_arrays[2][2] = 'z';
-array_of_arrays[2][1] = array_of_arrays[1][0];
-console.log(array_of_arrays);
+var arrayOfArrays = [['a', 'b', 'c'], ['d', 'e', 'f'], ['g', 'h', 'i']];
+arrayOfArrays[0][0];
+arrayOfArrays[1][2];
+arrayOfArrays[2][2] = 'z';
+arrayOfArrays[2][1] = arrayOfArrays[1][0];
+console.log(arrayOfArrays);
 ```
 
 Confirm your answer by entering the above code in a new Repl.it session.
@@ -122,10 +122,10 @@ In addition to containing multiple elements, arrays also have a number of built-
 All arrays have a property called `length`, which tells you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
 
 ```javascript
-['a','b','c'].length;  // evaluates to 3
+['a', 'b', 'c'].length;  // Evaluates to 3
 
-var x = [10,20,30,40];
-x.length;              // evaluates to 4
+var x = [10, 20, 30, 40];
+x.length; // Evaluates to 4
 ```
 
 One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.
@@ -133,30 +133,30 @@ One especially nice thing about knowing the length of the array is that it allow
 > **NOTE** Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.
 
 ```javascript
-var team = ['ted','lem','phil','linda','veronica',];
-team[team.length - 1];   // evaluates to 'veronica'.
-team[team.length - 2];   // evaluates to 'linda'.
+var team = ['ted', 'lem', 'phil', 'linda', 'veronica'];
+team[team.length - 1];   // Evaluates to 'veronica'.
+team[team.length - 2];   // Evaluates to 'linda'.
 ```
 
 ####.indexOf()
 This function evaluates to the index of the first element in the array that matches the value in parentheses. If no match is found, the function evaluates to -1.
 
 ```javascript
-var animals = ['bear','beetle','boa'];
-animals.indexOf('boa')  // evaluates to 2
-animals.indexOf('bear') // evaluates to 0
-animals.indexOf('bee')  // evaluates to -1
+var animals = ['bear', 'beetle', 'boa'];
+animals.indexOf('boa');  // Evaluates to 2
+animals.indexOf('bear'); // Evaluates to 0
+animals.indexOf('bee');  // Evaluates to -1
 ```
 
 ###Adding and Removing Elements in an Array
 
 ####.push() and .pop()
 `push` and `pop` are two related functions that allow you to either add an element to (`push`) or remove the last element from (`pop`) the end of an array. `push` in particular is a very convenient way to build up an array over time - you're simply adding another item to the list.
-  
+
 ```javascript
-var ghosts = ['blinky','inky','pinky'];
-ghosts.push('clyde');  // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky','clyde'].
-ghosts.pop();          // evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky'] again.
+var ghosts = ['blinky', 'inky', 'pinky'];
+ghosts.push('clyde');  // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky', 'clyde'].
+ghosts.pop();          // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky'] again.
 ```
 
 ### Test Yourself
@@ -164,10 +164,10 @@ ghosts.pop();          // evaluates to 'clyde'; `ghosts` is now ['blinky','inky'
 What will the following lines do?
 
 ```javascript
-['a','b','c'].indexOf('b')
-[true,false,false,true].length
-x = ['paul','john','george']; x.push('ringo');
-y = ['soda','tart','weasel']; y.pop();
+['a', 'b', 'c'].indexOf('b');
+[true, false, false, true].length;
+var x = ['paul', 'john', 'george']; x.push('ringo');
+var y = ['soda', 'tart', 'weasel']; y.pop();
 ```
 
 Confirm your answer by entering each of the above lines of code on the repl.it console.

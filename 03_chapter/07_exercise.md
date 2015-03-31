@@ -13,7 +13,7 @@ var x;
 
 As in the previous exercise, your job is to replace the `/*Your Expression*/` comment with an expression. However, this time your expressions will need to depend on the variable `x`.
 
-1. Write an expression that evaluates to 10 more than `x`; if `x` is 10, the expression should evaluate to 20; if `x` is 50, the expression should evaluate to 60. Test your answer by changing the first line to `var x = some_value;` and clicking the 'play' button.
+1. Write an expression that evaluates to 10 more than `x`; if `x` is 10, the expression should evaluate to 20; if `x` is 50, the expression should evaluate to 60. Test your answer by changing the first line to `var x = someValue;` and clicking the 'play' button.
 
 2. Now replace that first expression with an expression that evaluates to triple the value of `x`, plus five; if `x` is 5, the expression should evaluate to 20; if `x` is 10, the expression should evaluate to 35. What happens if you set `x` to 100? Does it work like you'd expect?
 
