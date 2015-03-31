@@ -25,7 +25,7 @@ Naturally, an expression with a ternary operator can also be incorporated into l
 ### Test Yourself
 Suppose that we have two variables, `x` and `y`.
 To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* `(x%2 == 0) ? 'even' : 'odd'`
+* `(x%2 === 0) ? 'even' : 'odd'`
 * `(x > y) ? 1 : 0`
 * `(3) ? 100 : -100`
 * `('') ? 'hello' : 'goodbye'`
@@ -132,19 +132,19 @@ As we've seen before, we can choose which condition will be executed using `if..
 ```javascript
 // day of the week in a number, sunday is 0, saturday is 6
 dayNumber = 1
-if(dayNumber == 0){
+if(dayNumber === 0){
   day = 'Sunday';
-} else if(dayNumber == 1){
+} else if(dayNumber === 1){
   day = 'Monday';
-} else if(dayNumber == 2){
+} else if(dayNumber === 2){
   day = 'Tuesday';
-} else if(dayNumber == 3){
+} else if(dayNumber === 3){
   day = 'Wednesday';
-} else if(dayNumber == 4){
+} else if(dayNumber === 4){
   day = 'Thursday';
-} else if(dayNumber == 5){
+} else if(dayNumber === 5){
   day = 'Friday';
-} else if(dayNumber == 6){
+} else if(dayNumber === 6){
   day = 'Saturday';
 } else {
   day = null;
@@ -154,7 +154,7 @@ if(dayNumber == 0){
 ```
 
 What this code does, fundamentally, is pretty simple - it takes in a number (representing a particular day of the week) and spits out a string containing the name of that day. However, this code is not easy to read, and a lot of code is repeated - for example,
-  `} else if(dayNumber == __ ){`
+  `} else if(dayNumber === __ ) {`
 is repeated 7 times. What's more, if we ever want to change the name of our `dayNumber` variable, we'll need to swap it out every times it appears, which is a bit of a pain.
 
 Enter the `switch` statement:
