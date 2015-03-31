@@ -16,7 +16,7 @@ The expression on the left is called a 'condition,' because the entire expressio
 
 Here's an example of a ternary operator with some actual values plugged in.
 
-  `true? 1 : 2`
+  `true ? 1 : 2`
 
 Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
 
@@ -25,10 +25,10 @@ Naturally, an expression with a ternary operator can also be incorporated into l
 ### Test Yourself
 Suppose that we have two variables, `x` and `y`.
 To start,`x` is equal to 10, while `y` is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.
-* `(x%2 == 0)? 'even' : 'odd'`
-* `(x > y)? 1 : 0`
-* `(3)? 100 : -100`
-* `('')? 'hello' : 'goodbye'`
+* `(x%2 == 0) ? 'even' : 'odd'`
+* `(x > y) ? 1 : 0`
+* `(3) ? 100 : -100`
+* `('') ? 'hello' : 'goodbye'`
 
 
 ## `if..else` Statements
