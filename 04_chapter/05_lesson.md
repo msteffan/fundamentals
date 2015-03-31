@@ -19,10 +19,11 @@ We're going to make one small (but very important) change to this - instead of a
 <br>
 
 Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
+
 ```javascript
-  while (someCondition) {
-    // A block of code.
-  }
+while (someCondition) {
+  // A block of code.
+}
 ```
 As you can see, it is written in almost exactly the same way as an `if` statement.
 
@@ -30,36 +31,40 @@ As you can see, it is written in almost exactly the same way as an `if` statemen
 * Consider the following code.
 
 ```javascript
-  var x = 10;
-  while (x > 5) {
-    x -= 2;
-  }
+var x = 10;
+while (x > 5) {
+  x -= 2;
+}
 ```
-  How many times will this loop run? What will the final value of `x` be when it finishes?
+
+How many times will this loop run? What will the final value of `x` be when it finishes?
 
 * Here's another loop.
 
 ```javascript
-  var x = 10;
-  var y = 1;
-  while (x < 20) {
-    y += 1;
-  }
+var x = 10;
+var y = 1;
+while (x < 20) {
+  y += 1;
+}
 ```
-  How many times will this loop run? What happens when you try to run this code?
+
+How many times will this loop run? What happens when you try to run this code?
 
 
 A while loop can run **indefinitely** as long as your condition remains true; this is usually a bad thing, so when using a while loop, it's **very important** to plan out beforehand how you will 'escape' the loop by making your condition evaluate to `false`.
 
 Consider the following example.
+
 ```javascript
-  var z = 0;
-  var myString = '';
-  while (z < 5) {
-    myString += 'X';
-    z += 1;
-  }
+var z = 0;
+var myString = '';
+while (z < 5) {
+  myString += 'X';
+  z += 1;
+}
 ```
+
 Q: How many times does this loop run? What's the final value of myString?
 
 A: Each time this loop runs, the value of `z` increases by 1; since its initial value is 0, and the condition becomes `false` the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string `myString` has a final value of "XXXXX" (5 Xs).
@@ -100,19 +105,22 @@ As you can see, there are a couple of key ingredients to making our `for` loop w
 3. a 'final expression', which gets evaluated immediately after the block executes *but before the condition is evaluated again* (e.g. x += 1;)
 
 The general syntax for a `for` loop is
+
 ```javascript
-  for (initialization; condition; final expression) {
-    // A block of code.
-  }
+for (initialization; condition; final expression) {
+  // A block of code.
+}
 ```
 
 ### Test Yourself
+
 ```javascript
-  var x = 10;
-  for (var i = 0; i < x; i += 1) {
-    console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
-  }
+var x = 10;
+for (var i = 0; i < x; i += 1) {
+  console.log('HELLO'); // This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.
+}
 ```
+
 * How many times will 'HELLO' be printed out in the console?
 * What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
 * What if (all else the same) we changed the condition from `i < x` to `i <= x`?

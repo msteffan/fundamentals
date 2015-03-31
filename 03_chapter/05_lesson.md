@@ -28,11 +28,11 @@ We can redefine our variable `x` as many times as we want. However, ***only the 
 Suppose we ran the following lines of code in order, one by one.
 
 ```javascript
-  var x = 10;
-  x = 1;
-  x = 5;
-  x = 15;
-  2 * x;
+var x = 10;
+x = 1;
+x = 5;
+x = 15;
+2 * x;
 ```
 What does that last expression evaluate to? Or, put differently, what is the most recent value of x (as of that line) multiplied by 2? If you guessed 30, then you're correct!
 
@@ -41,22 +41,24 @@ What does that last expression evaluate to? Or, put differently, what is the mos
 Sometimes, we find variables on both sides of the `=`. Suppose we have two variables, `x` and `y`, as in the example below.
 
 ```javascript
-  var x = 5;
-  var y = 10;
-  x = y + 10;
+var x = 5;
+var y = 10;
+x = y + 10;
 ```
 
 What happens in that third line? For starters, everything to the right of the `=` must be evaluated before any kind of assignment can happen. `y + 10` evaluates to 20, so what we're left with is the expression `x = 20`. This assigns the value 20 to `x`, and the entire expression evaluates to 20.
 
 Let's look at one more example using the same two variables, `x` and `y`.
+
 ```javascript
-  var x = 1;
-  var y = 10;
-  x = y * 2;
-  y = x + 1;
-  x = y + 1;
-  y = 2 * x;
+var x = 1;
+var y = 10;
+x = y * 2;
+y = x + 1;
+x = y + 1;
+y = 2 * x;
 ```
+
 Feeling dizzy? Don't worry, we'll step through this one together.
 
   __Line 1__: We declare a new variable `x` and assign it the value `1`.
@@ -77,25 +79,28 @@ One important thing to mention here is that **at no point is any lasting relatio
 Give these a try – see if you can predict the final values of `x`, `y`, and `z`. Check your answers in repl.it by copying the entire chunk of code into the editor window, running it, and then checking `x`,`y`, and `z` in the repl.it terminal.
 
 ##### Challenge \#1
+
 ```javascript
-  var x = 1;
-  var y = 2;
-  var z = 3;
-  x = y;
-  y = z;
-  z = x;
+var x = 1;
+var y = 2;
+var z = 3;
+x = y;
+y = z;
+z = x;
 ```
+
 ##### Challenge \#2
+
 ```javascript
-  var x = 1;
-  var y = 0;
-  var z = -1;
-  x = y + z;
-  y = z * x;
-  z = x - y;
-  x = y * y;
-  y = z * z;
-  z = z - 1;
+var x = 1;
+var y = 0;
+var z = -1;
+x = y + z;
+y = z * x;
+z = x - y;
+x = y * y;
+y = z * z;
+z = z - 1;
 ```
 
 Whoa! That last one's pretty weird - how can z be on both sides of the `=`? What do you think happens there?

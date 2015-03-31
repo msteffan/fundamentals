@@ -53,11 +53,12 @@ As you start building applications, you'll find many situations where you'll wan
 Much like a normal array is written using square braces (`[...]`), an associative array is written using curly braces (`{...}`). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (`:`).
 
 Here's what the 'lunches' table above might look like as an associative array.
+
 ```javascript
-  var lunches = { 'Josh' : 'pasta',
-                  'Floyd' : 'salad',
-                  'Matt' : 'tuna sandwich',
-                  'Shannon' : 'soup' };
+var lunches = { 'Josh' : 'pasta',
+                'Floyd' : 'salad',
+                'Matt' : 'tuna sandwich',
+                'Shannon' : 'soup' };
 ```
 
 Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
@@ -73,30 +74,32 @@ Adding new key-value pairs looks just like assignment - you simply set your new 
   `lunches['Elena'] = 'meatloaf'`
 
 Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
+
 ```javascript
-  var candidateData = {
-    'name' : "John Doe",
-    'age' : 32,
-    'isFullTime' : true,
-    'pastEmployers' : ['Microsoft','Google','Amazon'],
-    'yearsExperience' : {
-      'ruby' : 3,
-      'java' : 6,
-      'javascript' : 5
-      }
+var candidateData = {
+  'name' : "John Doe",
+  'age' : 32,
+  'isFullTime' : true,
+  'pastEmployers' : ['Microsoft','Google','Amazon'],
+  'yearsExperience' : {
+    'ruby' : 3,
+    'java' : 6,
+    'javascript' : 5
     }
+  }
 ```
 >**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidateData['yearsExperience']['javascript']`.
 
 ### Test Yourself
 Consider the following associative array.
+
 ```javascript
-  var pet = {
-    'species' : 'iguana',
-    'gender' : 'female',
-    'age' : 12,
-    'name' : 'Godzilla'
-    }
+var pet = {
+  'species' : 'iguana',
+  'gender' : 'female',
+  'age' : 12,
+  'name' : 'Godzilla'
+  }
 ```
 What code could we write to perform the following tasks?
 * Retrieve the value for 'name' from the associative array.
