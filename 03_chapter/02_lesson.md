@@ -24,13 +24,13 @@ Calculators can only operate on numbers, but computers can perform calculations 
 * **Numbers**: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they're considered the same. <br>
 <u>Examples</u>: `20`, `-4.5`, `300`,`99.99`
 
-* **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, `'single-quote'` (also sometimes called 'string literals') and `"double-quote"`. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: `"hello"`, `"goodbye"`, `"moc.liamg@gmail.com"`
+* **Strings**: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, `'single-quote'` (also sometimes called 'string literals') and `"double-quote"`. Though there are some differences between the two, don't worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: `'hello'`, `'goodbye'`, `'moc.liamg@gmail.com'`
 
 * **Booleans**: This one's probably new for you. Boolean-type data only has two possible values, `true` and `false`.
 
 If you forget what type of data you're dealing with, you can run the `typeof` command. Try typing the following lines into repl.it - what responses do you get?
 
-* `typeof "hello";`
+* `typeof 'hello';`
 * `typeof 24;`
 * `typeof 3.45;`
 * `typeof true;`
@@ -41,7 +41,7 @@ If you forget what type of data you're dealing with, you can run the `typeof` co
 Try to predict the types of each of the following bits of data. Check your answers with `typeof` in repl.it - were you correct?
 
 * `24`
-* `"99"`
+* `'99'`
 * `'true'`
 * `false`
 
@@ -52,7 +52,7 @@ Of course, simply having data sitting around isn't very useful. Operators take v
 * **Arithmetic** (`+`,`-`,`*`,`/`): These all work like you'd expect. In the expression `2 + 2`, the `+` operator takes both `2`s as inputs, and causes that whole expression to evaluate to `4`.
 
 >**Note** When given String arguments, the `+` operator actually behaves differently - it 'concatenates' two strings together to make one big string.
-<br><u>For example</u>: `"Hello" + " " + "Bob"` will evaluate to `"Hello Bob"`.
+<br><u>For example</u>: `'Hello' + ' ' + 'Bob'` will evaluate to `'Hello Bob'`.
 
 * **Modulus** (`%`): Remember remainders? For example, `5` divided by `3` equals `1` with a remainder of `2`. The modulus operator takes two numbers as inputs and returns what's leftover from the division.
 <br><u>For example</u>: `15 % 4` will evaluate to `3`.
@@ -67,13 +67,13 @@ Of course, simply having data sitting around isn't very useful. Operators take v
     5 === 5;
       => true
 
-    5 === "5";
+    5 === '5';
       => false
 
     5 == 5;
       => true
 
-    5 == "5";
+    5 == '5';
       => true
     ```
 
@@ -88,7 +88,7 @@ Can you predict what will the results of these operations will be? Check your an
 * `true && false;`
 * `45 % 6;`
 * `8 === 8.0;`
-* `"Hello" + " " + "World";`
+* `'Hello' + ' ' + 'World';`
 
 ## Expressions
 So, what happens when we bring several of these operators and values together?
