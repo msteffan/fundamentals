@@ -8,14 +8,14 @@ In the past few units, we've only been able to operate on one value at a time. O
 
 ##Iterating with Loops
 
-Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celcius - which would then be stored in a separate array.
+Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celsius - which would then be stored in a separate array.
 
 ```javascript
 var temps_in_f = [100, 72, 88, 15, 25, 32];
 var temps_in_c = [];
 ```
 
-The formula for converting between Fahrenheit and Celcius temperatures is **C = (5/9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+The formula for converting between Fahrenheit and Celsius temperatures is **C = (5/9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
 
 ```javascript
 function fahrToCelc(degrees) {
@@ -83,7 +83,7 @@ How could you use iteration to generate a new array called `new_array` from `old
 
 These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
 
-## Iterator Functions : `.map()` and `.each()`
+## Iterator Functions : `.map()` and `.forEach()`
 
 Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) **iterators**.
 
