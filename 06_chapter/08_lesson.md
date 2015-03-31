@@ -11,7 +11,7 @@ So far, all of the arrays that we've seen so far have stored and managed their e
 Say we have a line of people waiting in line to buy the latest iPhone. We'll model these people using the array below.
 
 ```javascript
-['Rachel','Monica','Phoebe','Joey','Chandler','Ross']
+ ['Rachel','Monica','Phoebe','Joey','Chandler','Ross']
 ```
 
 We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.
@@ -44,7 +44,7 @@ If Floyd eats his lunch, does it affect anyone else's food? Nope! The *associati
 | `'Shannon'` | `'soup'` |
 | `'Josh'` | `'pasta'` |
 
-This is the basic principle underlying an **associative array** (also known in some languages as *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
+This is the basic principle underlying an **associative array** (also known in some languages as a *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
 
 As you start building applications, you'll find many situations where you'll want to associate keys to values.
 
@@ -72,7 +72,7 @@ Adding new key-value pairs looks just like assignment - you simply set your new 
 
   `lunches['Elena'] = 'meatloaf'`
 
-Keys can be strings or numbers (or even another type of data that we haven't talked about, *symbols*), and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
+Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
 ```javascript
   var candidate_data = {
     'name' : "John Doe",
