@@ -65,21 +65,21 @@ Of course, simply having data sitting around isn't very useful. Operators take v
 
     ```javascript
     5 === 5;
-      => true
+    // => true
 
     5 === '5';
-      => false
+    // => false
 
     5 == 5;
-      => true
+    // => true
 
     5 == '5';
-      => true
+    // => true
     ```
 
 * **Logical Operators** (`!`,`||`,`&&`): These operators both take and give back boolean values.
     * NOT (`!`) will reverse the value of any boolean.
-        `!true` => `false`
+        `!true` // `false`
     * OR  (`||`) takes in two boolean arguments; if at least one is `true`, then it will evaluate to `true`, but if both are `false` it will evaluate as `false`.
     * AND (`&&`) also takes in two boolean arguments; however, it will only evaluate as `true` if both of the arguments are `true`; otherwise, it will evaluate to `false`.
 

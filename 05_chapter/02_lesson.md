@@ -54,8 +54,8 @@ Declaring a function does not execute the instructions we include in its body. A
 
 To actually *evaluate* a function, we have to **call** that function as follows:
 
- ```javascript
- nameOfMyFunction();
+```javascript
+nameOfMyFunction();
  ```
 
 In the case of `function tripleIt(x)`, if we wanted to call the function by passing the value 4, we would write:
@@ -82,9 +82,9 @@ var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 Suppose that we've defined the function 'glorp' as follows:
 
 ```javascript
-  function glorp(someNumber) {
-    return someNumber * 5 - 3;
-  }
+function glorp(someNumber) {
+  return someNumber * 5 - 3;
+}
 ```
 
 What will each of the following expressions evaluate to?
