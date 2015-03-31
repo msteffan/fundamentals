@@ -145,7 +145,7 @@ Let's dive just one level deeper, with a function to test if any one of the thre
     		allThreeX(cellValue('d'), cellValue('e'), cellValue('f')) ||
     		allThreeX(cellValue('g'), cellValue('h'), cellValue('i'));
   }
-  function allThreeX(cell_one, cell_two, cell_three) {
+  function allThreeX(cellOne, cellTwo, cellThree) {
   }
 ```
 
@@ -180,15 +180,15 @@ We can also use `allThreeX` to write functions for `winsColumnX` and `winsDiagon
   function winsDiagonalX() {
     return allThreeX(cells('a'), cells('e'), cells('i')) || allThreeX(cells('c'), cells('e'), cells('g'));
   }
-  function allThreeX(cell_one, cell_two, cell_three) {
+  function allThreeX(cellOne, cellTwo, cellThree) {
   }
 ```
 
 Now that we've broken it into one much smaller problem, our `allThreeX` function is fairly easy to write!
 
 ```javascript
-  function allThreeX(cell_one, cell_two, cell_three) {
-    return (cell_one === 'x') && (cell_two === 'x') && (cell_three === 'x');
+  function allThreeX(cellOne, cellTwo, cellThree) {
+    return (cellOne === 'x') && (cellTwo === 'x') && (cellThree === 'x');
   }
 ```
 
@@ -203,8 +203,8 @@ There's a principle we'll emphasize in this course – one that is so universall
 Let's see what we can do.
 
 ```javascript
-  function allThree(player, cell_one, cell_two, cell_three) {
-    return (cell_one === player) && (cell_two === player) && (cell_three === player);
+  function allThree(player, cellOne, cellTwo, cellThree) {
+    return (cellOne === player) && (cellTwo === player) && (cellThree === player);
   }
 ```
 
@@ -241,8 +241,8 @@ Let's do the same thing for all the other functions we wrote:
     return allThree(player, cells('a'), cells('e'), cells('i')) ||
            allThree(player, cells('c'), cells('e'), cells('g'));
   }
-  function allThree(player, cell_one, cell_two, cell_three) {
-    return (cell_one === player) && (cell_two === player) && (cell_three === player);
+  function allThree(player, cellOne, cellTwo, cellThree) {
+    return (cellOne === player) && (cellTwo === player) && (cellThree === player);
   }
 ```
 

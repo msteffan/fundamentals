@@ -24,7 +24,7 @@ Let's look at an example:
 
 ```javascript
   function tripleIt(x) {
-    return 3*x;
+    return 3 * x;
   }
 ```
 
@@ -71,9 +71,9 @@ The function would execute its statements and evaluate to the value `12`.
 Just like a variable, we can use the return value of this function in any expression. For example:
 
 ```javascript
-var a = tripleIt(1);                         // a == 3
-var b = 100 * tripleIt(4);                   // b == 1200
-var c = 200 + (tripleIt(20) / tripleIt(10)); // c == 202
+var a = tripleIt(1);                         // a === 3
+var b = 100 * tripleIt(4);                   // b === 1200
+var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 ```
 
 
@@ -83,7 +83,7 @@ Suppose that we've defined the function 'glorp' as follows:
 
 ```javascript
   function glorp(someNumber) {
-    return someNumber*5 - 3;
+    return someNumber * 5 - 3;
   }
 ```
 
