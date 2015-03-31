@@ -20,7 +20,7 @@ We're going to make one small (but very important) change to this - instead of a
 
 Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a `while` loop, and can be found in nearly every programming language. Here's the general rule for how a while loop is written in JavaScript.
 ```javascript
-  while (some_condition) {
+  while (someCondition) {
     // A block of code.
   }
 ```
@@ -54,9 +54,9 @@ A while loop can run **indefinitely** as long as your condition remains true; th
 Consider the following example.
 ```javascript
   var z = 0;
-  var myString = ""
+  var myString = '';
   while (z < 5) {
-    myString += "X";
+    myString += 'X';
     z += 1;
   }
 ```
