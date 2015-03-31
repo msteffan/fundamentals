@@ -15,6 +15,7 @@
 ### Adding Complexity - Nested Arrays
   * As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called **nesting**.
   * To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element's index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,
+
     ```javascript
       var myNestedArray = [['a','b','c'],
                              ['d','e','f'],
@@ -44,12 +45,7 @@
 
 ### Iterator Functions
 
-`.map()`
-
-| Syntax | Parameters|
-|:---:|:---:|
-
-*Description*:  
+  * `.map()` creates a new array with the results of calling a provided function on every element in this array.
 
   * `.forEach()` executes some function once for each element in the array it's called on.
 

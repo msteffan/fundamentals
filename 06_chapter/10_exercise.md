@@ -13,6 +13,7 @@ Here's that diagram again, in case you forgot how to set up the baord.
 ![Picture of Checkerboard](http://www.maniacworld.com/Checkers/checkers.jpg)
 
 To test your work, run each of the following two operations in the repli.it console
+
 ```javascript
   pieces['red'].map(function(piece){
       var row = piece[0];
@@ -26,6 +27,7 @@ To test your work, run each of the following two operations in the repli.it cons
       return checkerboard[row][col] === 'B';
     });
 ```
+
 Each of these operations should return an array full of boolean values. If both arrays' values are all `true`, then congratulations - you're done!
 
 ---

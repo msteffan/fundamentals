@@ -16,21 +16,21 @@ Your job this time will be to write a function called `fizzbuzz` that takes a pa
 For reference, running `fizzbuzz(15)` should result in the following text being printed in the console:
 
 ```javascript
-  1
-  2
-  fizz
-  4
-  buzz
-  fizz
-  7
-  8
-  fizz
-  buzz
-  11
-  fizz
-  13
-  14
-  fizzbuzz
+1
+2
+fizz
+4
+buzz
+fizz
+7
+8
+fizz
+buzz
+11
+fizz
+13
+14
+fizzbuzz
 ```
 
 Once again, there's no starter code for this exercise - just open up a new session in [repl.it](http://repl.it). Feel free to solve this problem any way you like, but consider the guidelines mentioned in the previous lesson!
