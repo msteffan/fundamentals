@@ -15,14 +15,14 @@ In Unit 5, you learned to create your own functions that could generate specific
 
 ```javascript
   function avgOfThree(x,y,z) {
-    return (x + y + z)/3;
+    return (x + y + z) / 3;
   }
 ```
 
 However, this is a *very* specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify [the code in repl.it](http://repl.it/bJM) like so:
 ```javascript
-  function avgOfTen(a,b,c,d,e,f,g,h,i,j) {
-    return (a + b + c + d + e + f + g + h + i + j)/10;
+  function avgOfTen(a, b, c, d, e, f, g, h, i, j) {
+    return (a + b + c + d + e + f + g + h + i + j) / 10;
   }
 ```
 Ok, now try writing `function avgOfOneHundred()`.

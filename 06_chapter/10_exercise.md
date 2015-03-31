@@ -17,13 +17,13 @@ To test your work, run each of the following two operations in the repli.it cons
   pieces['red'].map(function(piece){
       var row = piece[0];
       var col = piece[1];
-      return checkerboard[row][col] == 'R';
+      return checkerboard[row][col] === 'R';
     });
 
   pieces['black'].map(function(piece){
       var row = piece[0];
       var col = piece[1];
-      return checkerboard[row][col] == 'B';
+      return checkerboard[row][col] === 'B';
     });
 ```
 Each of these operations should return an array full of boolean values. If both arrays' values are all `true`, then congratulations - you're done!
