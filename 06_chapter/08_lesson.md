@@ -74,7 +74,7 @@ Adding new key-value pairs looks just like assignment - you simply set your new 
 
 Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
 ```javascript
-  var candidate_data = {
+  var candidateData = {
     'name' : "John Doe",
     'age' : 32,
     'isFullTime' : true,
@@ -86,7 +86,7 @@ Keys are strings and basically anything can be used as a value (including an arr
       }
     }
 ```
->**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidate_data['yearsExperience']['javascript']`.
+>**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidateData['yearsExperience']['javascript']`.
 
 ### Test Yourself
 Consider the following associative array.
