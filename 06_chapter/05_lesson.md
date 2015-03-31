@@ -15,7 +15,7 @@ var tempsInF = [100, 72, 88, 15, 25, 32];
 var tempsInC = [];
 ```
 
-The formula for converting between Fahrenheit and Celsius temperatures is **C = (5/9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+The formula for converting between Fahrenheit and Celsius temperatures is **C = (5 / 9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
 
 ```javascript
 function fahrToCelc(degrees) {
@@ -72,14 +72,14 @@ Despite being one of the most basic ways to iterate through an array, in JavaScr
 Create a new repl.it session with the following JavaScript code:
 
 ```javascript
-var oldArray = [12,45,6,23,19,20,20,15,30,42];
+var oldArray = [12, 45, 6, 23, 19, 20, 20, 15, 30, 42];
 ```
 
 How could you use iteration to generate a new array called `newArray` from `oldArray`, so that...
-* Each value in `newArray` is the value of its corresponding element in `oldArray`, plus 5? (`[1,2,3]` becomes `[6,7,8]`)
-* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1,2,3]` becomes `[1,4,9]`)
-* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3,4,5,2,6]` becomes `[3,8,5,4,6]`)
-* `newArray` is the exact mirror image of `oldArray`? (`[1,2,3]` becomes `[3,2,1]`)
+* Each value in `newArray` is the value of its corresponding element in `oldArray`, plus 5? (`[1, 2, 3]` becomes `[6, 7, 8]`)
+* Each value in `newArray` is the square of the value of its corresponding element in `oldArray`? (`[1, 2, 3]` becomes `[1, 4, 9]`)
+* Every *odd-indexed* value in `newArray` is double its corresponding element in `oldArray`, while every *even-indexed* value is unchanged? (`[3, 4, 5, 2, 6]` becomes `[3, 8, 5, 4, 6]`)
+* `newArray` is the exact mirror image of `oldArray`? (`[1, 2, 3]` becomes `[3, 2, 1]`)
 
 These ones are a bit tricky, so don't get discouraged if the answers don't come immediately; just keep experimenting with your code until it works!
 
@@ -91,11 +91,11 @@ One of the most commonly used iterators is `.map()` - this is the tool of choice
 
 ```javascript
 function square(x) {
-  console.log(x * x)
+  console.log(x * x);
   return x * x;
 }
 
-var resultingArray = [1,2,3].map(square); // prints out 1, 4, and 9, then returns the array [1,4,9] and stores it in resultingArray
+var resultingArray = [1, 2, 3].map(square); // prints out 1, 4, and 9, then returns the array [1, 4, 9] and stores it in resultingArray
 ```
 
 >**WARNING** It's important that you *do not* include parentheses when passing in that function. Including `square` as an argument passes the whole function. Including `square()` as the argument would pass in the result of calling the function. That's not what you want, normally.
@@ -106,11 +106,11 @@ Another example of an iterator is `.forEach()`. `.forEach()` also takes a functi
 
 ```javascript
 function square(x) {
-  console.log(x * x)
+  console.log(x * x);
   return x * x;
 }
 
-var resultingArray = [1,2,3].forEach(square); // prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(
+var resultingArray = [1, 2, 3].forEach(square); // prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(
 ```
 
 ###Test Yourself

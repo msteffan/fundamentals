@@ -11,7 +11,7 @@ So far, all of the arrays that we've seen so far have stored and managed their e
 Say we have a line of people waiting in line to buy the latest iPhone. We'll model these people using the array below.
 
 ```javascript
- ['Rachel','Monica','Phoebe','Joey','Chandler','Ross']
+['Rachel', 'Monica', 'Phoebe', 'Joey', 'Chandler', 'Ross']
 ```
 
 We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.
@@ -19,7 +19,7 @@ We can refer to each person by their position in line: Rachel is first (index: 0
 But suppose that Monica decides she's waited long enough for an iPhone, and decides to leave the line and get an Android phone instead. What happens when Monica leaves?
 
 ```javascript
-['Rachel','Phoebe','Joey','Chandler','Ross']
+['Rachel', 'Phoebe', 'Joey', 'Chandler', 'Ross']
 ```
 
 Well, Rachel stays in the same place. But suddenly, Phoebe isn't at index 2 - she's now at index *1*, while *Joey* is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, as it were, 'disarray'.

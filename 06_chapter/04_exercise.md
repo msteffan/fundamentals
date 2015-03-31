@@ -6,14 +6,14 @@
 
 Here's a link to some [sample code](http://repl.it/agR) on repl.it :
 ```javascript
-  var checkerboard = [[null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null],
-                      [null,null,null,null,null,null,null,null]];
+  var checkerboard = [[null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null],
+                      [null, null, null, null, null, null, null, null]];
   function setSquare(player, row, col) {
     // Your Code Here
   }
