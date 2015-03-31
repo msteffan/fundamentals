@@ -57,7 +57,7 @@ myNumbers[0];
 myNumbers[1] = 10;
 myNumbers[2] = 5;
 myNumbers[1] * 2;
-console.log(myNumbers)
+console.log(myNumbers);
 ```
 Confirm your answer by entering the above code in a new Repl.it session.
 
@@ -84,8 +84,8 @@ Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]`
 Of course, what we're probably most interested in are the inner elements (strings, in this case). We could probably do the following:
 
 ```javascript
-var x = arrayOfArrays[1]; //Evaluates to ['d', 'e', 'f']
-x[0]; //Evaluates to 'd'
+var x = arrayOfArrays[1]; // Evaluates to ['d', 'e', 'f']
+x[0]; // Evaluates to 'd'
   ```
 
 But the variable `x` there is unnecessary - it's just standing in for `['d', 'e', 'f']`. We can access that element directly from `arrayOfArrays` using the following syntax:
@@ -122,10 +122,10 @@ In addition to containing multiple elements, arrays also have a number of built-
 All arrays have a property called `length`, which tells you how many elements are currently present in the array. To access this value, simply tack on `.length` to the end of an array (or, alternatively, a variable containing that array). Here are some examples of `.length` in action.
 
 ```javascript
-['a', 'b', 'c'].length;  // evaluates to 3
+['a', 'b', 'c'].length;  // Evaluates to 3
 
 var x = [10, 20, 30, 40];
-x.length;              // evaluates to 4
+x.length; // Evaluates to 4
 ```
 
 One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.
@@ -134,8 +134,8 @@ One especially nice thing about knowing the length of the array is that it allow
 
 ```javascript
 var team = ['ted', 'lem', 'phil', 'linda', 'veronica',];
-team[team.length - 1];   // evaluates to 'veronica'.
-team[team.length - 2];   // evaluates to 'linda'.
+team[team.length - 1];   // Evaluates to 'veronica'.
+team[team.length - 2];   // Evaluates to 'linda'.
 ```
 
 ####.indexOf()
@@ -143,9 +143,9 @@ This function evaluates to the index of the first element in the array that matc
 
 ```javascript
 var animals = ['bear', 'beetle', 'boa'];
-animals.indexOf('boa');  // evaluates to 2
-animals.indexOf('bear'); // evaluates to 0
-animals.indexOf('bee');  // evaluates to -1
+animals.indexOf('boa');  // Evaluates to 2
+animals.indexOf('bear'); // Evaluates to 0
+animals.indexOf('bee');  // Evaluates to -1
 ```
 
 ###Adding and Removing Elements in an Array
@@ -155,8 +155,8 @@ animals.indexOf('bee');  // evaluates to -1
 
 ```javascript
 var ghosts = ['blinky', 'inky', 'pinky'];
-ghosts.push('clyde');  // evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky', 'clyde'].
-ghosts.pop();          // evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky'] again.
+ghosts.push('clyde');  // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky', 'clyde'].
+ghosts.pop();          // Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky'] again.
 ```
 
 ### Test Yourself

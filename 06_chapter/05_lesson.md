@@ -95,7 +95,7 @@ function square(x) {
   return x * x;
 }
 
-var resultingArray = [1, 2, 3].map(square); // prints out 1, 4, and 9, then returns the array [1, 4, 9] and stores it in resultingArray
+var resultingArray = [1, 2, 3].map(square); // Prints out 1, 4, and 9, then returns the array [1, 4, 9] and stores it in resultingArray
 ```
 
 >**WARNING** It's important that you *do not* include parentheses when passing in that function. Including `square` as an argument passes the whole function. Including `square()` as the argument would pass in the result of calling the function. That's not what you want, normally.
@@ -110,7 +110,7 @@ function square(x) {
   return x * x;
 }
 
-var resultingArray = [1, 2, 3].forEach(square); // prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(
+var resultingArray = [1, 2, 3].forEach(square); // Prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(
 ```
 
 ###Test Yourself
