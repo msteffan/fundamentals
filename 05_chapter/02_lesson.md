@@ -24,7 +24,7 @@ Let's look at an example:
 
 ```javascript
   function tripleIt(x) {
-    return 3*x;
+    return 3 * x;
   }
 ```
 
@@ -83,7 +83,7 @@ Suppose that we've defined the function 'glorp' as follows:
 
 ```javascript
   function glorp(someNumber) {
-    return someNumber*5 - 3;
+    return someNumber * 5 - 3;
   }
 ```
 
