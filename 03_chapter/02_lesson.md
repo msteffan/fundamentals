@@ -95,29 +95,29 @@ So, what happens when we bring several of these operators and values together?
 
 Consider the following expression:
 
-`(2+3)*(9-8)`
+`(2 + 3) * (9 - 8)`
 
 In order to perform the multiplication, we need to first know what we're multiplying – the `*` operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.
 
 We can represent this chain of dependencies using a logical structure called a `tree`.
 
-![Expression Tree for (2+3)*(9-8)](../assets/chapter3/tree1.png)
+![Expression Tree for (2 + 3) * (9 - 8)](../assets/chapter3/tree1.png)
 <br>
 
 To evaluate any point (or 'node') in the tree, you simply (1) evaluate that node's left 'child', and then (2) evaluate its right 'child'." In this case, to evaluate at the `*`, we first evaluate the `+` node, then the `-` node.
 
 What happens if we're dealing with a more complicated expression? Say...
 
-`((9+2)*25)-5`
+`((9 + 2) * 25) - 5`
 
-Since the `-` requires ((9+2)*25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
+Since the `-` requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that `-` will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.
 
-![Expression Tree for ((9+2)*25)-5](../assets/chapter3/tree2.png)
+![Expression Tree for ((9 + 2) * 25) - 5](../assets/chapter3/tree2.png)
 <br>
 
 One last tricky one: `1 + 1 + 1 + 1`. Obviously, we know that this is equal to 4. But what does the tree look like?
 
-In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can [check out this wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as being `(10 - 5) + 2`, or `7`, rather than `10 - (5+2)`, or `3`.
+In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can [check out this wikipedia page](http://en.wikipedia.org/wiki/Operator_associativity)). As it turns out, mathematical expressions are actually evaluated ***from left to right***. In other words, given the expression `10 - 5 + 2`, we interpret this as being `(10 - 5) + 2`, or `7`, rather than `10 - (5 + 2)`, or `3`.
 
 Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((((1) + 1) + 1) + 1)`. Is it easier to see the tree now?
 

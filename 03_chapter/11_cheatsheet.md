@@ -29,7 +29,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 | Operator | Meaning	              | True expressions |
 |:-:       |:-                        |:-:               |
 | ==       | Equality                 | 10 == '10'       |
-| ===      | Strict equality          | (2*5) === 10     |
+| ===      | Strict equality          | (2 * 5) === 10   |
 | !=	   | Inequality               | 9 != 10          |
 | !==	   | Strict inequality        | '10' !== 10      |
 | >        | Greater than	          | 20 > 10          |
