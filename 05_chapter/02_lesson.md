@@ -9,9 +9,9 @@
 To create a new function, we must *declare* it as we would a variable.  A **function declaration** typically looks like this:
 
 ```javascript
-  function nameOfMyFunction(x) {
-    //body of the function 'nameOfMyFunction';
-  }
+function nameOfMyFunction(x) {
+  //body of the function 'nameOfMyFunction';
+}
 ```
 
 As you can see, the first line begins with the word `function` followed by `nameOfMyFunction`, which is how we'd like to refer to that function later.
@@ -23,9 +23,9 @@ Finally, we write the body of our function, enclosed by a pair of curly braces (
 Let's look at an example:
 
 ```javascript
-  function tripleIt(x) {
-    return 3 * x;
-  }
+function tripleIt(x) {
+  return 3 * x;
+}
 ```
 
 This function takes one parameter – `x`. The body of the function consists of one statement that says to return the parameter of the function (that is, `x`) multiplied by 3.
@@ -54,9 +54,9 @@ Declaring a function does not execute the instructions we include in its body. A
 
 To actually *evaluate* a function, we have to **call** that function as follows:
 
- ```javascript
- nameOfMyFunction();
- ```
+```javascript
+nameOfMyFunction();
+```
 
 In the case of `function tripleIt(x)`, if we wanted to call the function by passing the value 4, we would write:
 
@@ -82,9 +82,9 @@ var c = 200 + (tripleIt(20) / tripleIt(10)); // c === 202
 Suppose that we've defined the function 'glorp' as follows:
 
 ```javascript
-  function glorp(someNumber) {
-    return someNumber * 5 - 3;
-  }
+function glorp(someNumber) {
+  return someNumber * 5 - 3;
+}
 ```
 
 What will each of the following expressions evaluate to?
@@ -104,12 +104,12 @@ As mentioned above, `return` specifies the value of the function when it's execu
 Consider the following program:
 
 ```javascript
-  function doAThing(x) {
-    if (x > 10) {
-      return x + 10;
-    }
-    return x;
+function doAThing(x) {
+  if (x > 10) {
+    return x + 10;
   }
+  return x;
+}
 ```
 
 If `x` is greater than 10, the computer will run the `if` statement and hit that first `return` statement (`x + 10`).
@@ -121,16 +121,16 @@ This will *immediately end the function* - that second `return` statement won't 
 Where will the function stop if `x` is 5? 10? 20? What value will be returned in each case?
 
 ```javascript
-  function categorize(x) {
-    if (x < 8) {
-      return 8;
-    }
-    x += 3;
-    if (x < 15) {
-      return x;
-    }
-    return 100;
+function categorize(x) {
+  if (x < 8) {
+    return 8;
   }
+  x += 3;
+  if (x < 15) {
+    return x;
+  }
+  return 100;
+}
 ```
 
 ---

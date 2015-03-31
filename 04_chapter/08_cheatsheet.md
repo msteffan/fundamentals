@@ -37,15 +37,15 @@ if (condition1) {
 
 ```javascript
 switch (expression) {
-    case value1:
-      // Code to be executed if expression === value1
-      break;
-    case value2:
-      // Code to be executed if expression === value2
-      break;
-    default:
-      // Code to be executed if expression is different from both value1 and value2
-    }
+  case value1:
+    // Code to be executed if expression === value1
+    break;
+  case value2:
+    // Code to be executed if expression === value2
+    break;
+  default:
+    // Code to be executed if expression is different from both value1 and value2
+  }
 ```
 
 ## Loops

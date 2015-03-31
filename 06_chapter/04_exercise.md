@@ -5,22 +5,24 @@
 ##![Your Turn](../assets/exercise.png) Your Turn
 
 Here's a link to some [sample code](http://repl.it/agR) on repl.it :
-```javascript
-  var checkerboard = [[null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null],
-                      [null, null, null, null, null, null, null, null]];
-  function setSquare(player, row, col) {
-    // Your Code Here
-  }
 
-  function getPieceAt(row, col) {
-    // Your Code Here
-  }
+```javascript
+var checkerboard = [[null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null],
+                    [null, null, null, null, null, null, null, null]];
+
+function setSquare(player, row, col) {
+  // Your Code Here
+}
+
+function getPieceAt(row, col) {
+  // Your Code Here
+}
 ```
 
 In this exercise, we'll be laying the groundwork for a Checkers game. Your task is to implement two functions:

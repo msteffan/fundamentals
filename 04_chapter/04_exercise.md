@@ -7,9 +7,9 @@
 Follow [this link](http://repl.it/9nF) to some sample code in a repl.it session - it should contain the following code:
 
 ```javascript
-  var x;
-  var result;
-  /* YOUR CODE HERE */
+var x;
+var result;
+/* YOUR CODE HERE */
 ```
 
 This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns the following values to `result`:

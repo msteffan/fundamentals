@@ -20,7 +20,7 @@ This student-tracker spreadsheet also contains the students' score on each quiz.
 We are definitely exploring ways to set up a dashboard, to automate a lot of this data collection.
 
 ###3) Grade Student projects.
-Ok, this sounds more time-intensive than it is.  All students are required to submit a final cumulative project –a RockPaperScissors.js file, containing a functioning javascript app.
+Ok, this sounds more time-intensive than it is.  All students are required to submit a final cumulative project –a RockPaperScissors.js file, containing a functioning JavaScript app.
 
 Please review student projects (submitted via pull request to [this repo](https://github.com/ga-students/wdi-fundamentals-rps).
 
