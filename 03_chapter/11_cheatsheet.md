@@ -23,19 +23,19 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 ####Special Cases
   * When a variable is created, but is not assigned a value, it will be evaluated as `null`.
   * Any type of value, including `null`, can be passed into a logical operator as an input; based on whether these inputs are either 'truthy' or 'falsey', and what type of operator you're dealing with, the operator will behave in different ways.
-  
+
 ####Comparison Operators
 
-Operator |	Meaning	| True expressions |
-|:---:|:-----:|:-------:|
-| == | Equality | 10 == '10' |
-| === | Strict equality | (2*5) === 10 |
-| !=	| Inequality | 9 != 10 |
-| !==	| Strict inequality | "10" !== 10 |
-| > | Greater than	| 20 > 10 |
-| >= | Greater than or equal | "10" >= 10 |
-| <	| Less than	| 10 < 30 | 
-| <= | Less than or equal | "10"<= 10 |
+| Operator | Meaning	              | True expressions |
+|:-:       |:-                        |:-:               |
+| ==       | Equality                 | 10 == '10'       |
+| ===      | Strict equality          | (2*5) === 10     |
+| !=	   | Inequality               | 9 != 10          |
+| !==	   | Strict inequality        | "10" !== 10      |
+| >        | Greater than	          | 20 > 10          |
+| >=       | Greater than or equal    | "10" >= 10       |
+| <	       | Less than	              | 10 < 30          |
+| <=       | Less than or equal       | "10"<= 10        |
 
 ####Logical Operators
 
