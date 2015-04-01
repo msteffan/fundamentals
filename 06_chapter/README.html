@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1335,14 +1335,14 @@
 <hr>
 <p>Congratulations, you&#39;ve almost made it to the end of WDI Fundamentals!</p>
 <p>In Unit 5, you learned to create your own functions that could generate specific behaviors. If you wanted to get the average of three variables, <code>x</code>, <code>y</code>, and <code>z</code>, you could write the following:</p>
-<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">avgOfThree</span><span class="hljs-params">(x,y,z)</span> </span>{
-    <span class="hljs-keyword">return</span> (x + y + z)/<span class="hljs-number">3</span>;
-  }
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">avgOfThree</span><span class="hljs-params">(x, y, z)</span> </span>{
+    <span class="hljs-keyword">return</span> (x + y + z) / <span class="hljs-number">3</span>;
+}
 </code></pre>
 <p>However, this is a <em>very</em> specific use case. What if you wanted to be able to find the average of ten numbers? Try to modify <a href="http://repl.it/bJM" target="_blank">the code in repl.it</a> like so:</p>
-<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">avgOfTen</span><span class="hljs-params">(a,b,c,d,e,f,g,h,i,j)</span> </span>{
-    <span class="hljs-keyword">return</span> (a + b + c + d + e + f + g + h + i + j)/<span class="hljs-number">10</span>;
-  }
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">avgOfTen</span><span class="hljs-params">(a, b, c, d, e, f, g, h, i, j)</span> </span>{
+    <span class="hljs-keyword">return</span> (a + b + c + d + e + f + g + h + i + j) / <span class="hljs-number">10</span>;
+}
 </code></pre>
 <p>Ok, now try writing <code>function avgOfOneHundred()</code>.</p>
 <p>Or don&#39;t. It would be exhausting to write a hundred different identical variations of this function. The more variables we want to keep track of, the more code we have to write – the length of our code is growing even though our program is not growing in complexity.</p>

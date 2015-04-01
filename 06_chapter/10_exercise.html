@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6.3.2" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6.3.2" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1335,13 +1335,13 @@
 <pre><code class="lang-javascript">  pieces[<span class="hljs-string">'red'</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
       <span class="hljs-keyword">var</span> row = piece[<span class="hljs-number">0</span>];
       <span class="hljs-keyword">var</span> col = piece[<span class="hljs-number">1</span>];
-      <span class="hljs-keyword">return</span> checkerboard[row][col] == <span class="hljs-string">'R'</span>;
+      <span class="hljs-keyword">return</span> checkerboard[row][col] === <span class="hljs-string">'R'</span>;
     });
 
   pieces[<span class="hljs-string">'black'</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
       <span class="hljs-keyword">var</span> row = piece[<span class="hljs-number">0</span>];
       <span class="hljs-keyword">var</span> col = piece[<span class="hljs-number">1</span>];
-      <span class="hljs-keyword">return</span> checkerboard[row][col] == <span class="hljs-string">'B'</span>;
+      <span class="hljs-keyword">return</span> checkerboard[row][col] === <span class="hljs-string">'B'</span>;
     });
 </code></pre>
 <p>Each of these operations should return an array full of boolean values. If both arrays&#39; values are all <code>true</code>, then congratulations - you&#39;re done!</p>

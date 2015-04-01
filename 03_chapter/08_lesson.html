@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1335,7 +1335,7 @@
 <li><strong><code>null</code></strong> is actually a value that you can assign to a variable as a representation of &quot;no value.&quot;</li>
 </ul>
 <h3 id="falsey--truthy">&#39;falsey&#39; / &#39;truthy&#39;</h3>
-<p>We&#39;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&quot;Happy birthday, &quot; + &quot;Tom&quot;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
+<p>We&#39;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&#39;Happy birthday, &#39; + &#39;Tom&#39;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
 <p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&#39;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &#39;falsey&#39; and &#39;truthy&#39;.</p>
 <p>Here&#39;s a table to show you which kinds of values are considered truthy and falsey in JavaScript.</p>
 <table>
@@ -1355,7 +1355,7 @@
 <td>All numbers except 0, including &#39;Infinity&#39; (what you get after dividing by 0)</td>
 </tr>
 <tr>
-<td>Empty strings (&quot;&quot;)</td>
+<td>Empty strings (&#39;&#39;)</td>
 <td>All non-empty strings</td>
 </tr>
 <tr>
@@ -1375,7 +1375,7 @@
 <ul>
 <li><code>1 || true</code></li>
 <li><code>3 || null</code></li>
-<li><code>!(&quot;&quot;)</code></li>
+<li><code>!(&#39;&#39;)</code></li>
 <li><code>false &amp;&amp; undefined</code></li>
 <li><code>true &amp;&amp; !0</code></li>
 <li><code>null || 3</code></li>

@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1340,14 +1340,14 @@
 <li><p><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&#39;re considered the same. <br>
 <u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>,<code>99.99</code></p>
 </li>
-<li><p><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&#39;single-quote&#39;</code> (also sometimes called &#39;string literals&#39;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&#39;t worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: <code>&quot;hello&quot;</code>, <code>&quot;goodbye&quot;</code>, <code>&quot;moc.liamg@gmail.com&quot;</code></p>
+<li><p><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&#39;single-quote&#39;</code> (also sometimes called &#39;string literals&#39;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&#39;t worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: <code>&#39;hello&#39;</code>, <code>&#39;goodbye&#39;</code>, <code>&#39;moc.liamg@gmail.com&#39;</code></p>
 </li>
 <li><p><strong>Booleans</strong>: This one&#39;s probably new for you. Boolean-type data only has two possible values, <code>true</code> and <code>false</code>.</p>
 </li>
 </ul>
 <p>If you forget what type of data you&#39;re dealing with, you can run the <code>typeof</code> command. Try typing the following lines into repl.it - what responses do you get?</p>
 <ul>
-<li><code>typeof &quot;hello&quot;;</code></li>
+<li><code>typeof &#39;hello&#39;;</code></li>
 <li><code>typeof 24;</code></li>
 <li><code>typeof 3.45;</code></li>
 <li><code>typeof true;</code></li>
@@ -1359,7 +1359,7 @@
 <p>Try to predict the types of each of the following bits of data. Check your answers with <code>typeof</code> in repl.it - were you correct?</p>
 <ul>
 <li><code>24</code></li>
-<li><code>&quot;99&quot;</code></li>
+<li><code>&#39;99&#39;</code></li>
 <li><code>&#39;true&#39;</code></li>
 <li><code>false</code></li>
 </ul>
@@ -1370,7 +1370,7 @@
 </ul>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> When given String arguments, the <code>+</code> operator actually behaves differently - it &#39;concatenates&#39; two strings together to make one big string.
-<br><u>For example</u>: <code>&quot;Hello&quot; + &quot; &quot; + &quot;Bob&quot;</code> will evaluate to <code>&quot;Hello Bob&quot;</code>.</p>
+<br><u>For example</u>: <code>&#39;Hello&#39; + &#39; &#39; + &#39;Bob&#39;</code> will evaluate to <code>&#39;Hello Bob&#39;</code>.</p>
 </blockquote>
 <ul>
 <li><p><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&#39;s leftover from the division.
@@ -1381,23 +1381,24 @@
 </li>
 <li><p><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &#39;strict equality&#39; - it will only evaluate <code>true</code> if both sides are completely identical in data type and value - while the second, the &#39;loose equality&#39;, has a little more wiggle room.
 <br><u>For example</u>:</p>
-<pre><code class="lang-javascript">  <span class="hljs-number">5</span> === <span class="hljs-number">5</span>;
-    =&gt; <span class="hljs-literal">true</span>
-
-  <span class="hljs-number">5</span> === <span class="hljs-string">"5"</span>;
-    =&gt; <span class="hljs-literal">false</span>
-
-  <span class="hljs-number">5</span> == <span class="hljs-number">5</span>;
-    =&gt; <span class="hljs-literal">true</span>
-
-  <span class="hljs-number">5</span> == <span class="hljs-string">"5"</span>;
-    =&gt; <span class="hljs-literal">true</span>
-</code></pre>
 </li>
-<li><p><strong>Logical Operators</strong> (<code>!</code>,<code>||</code>,<code>&amp;&amp;</code>): These operators both take and give back boolean values.</p>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-number">5</span> === <span class="hljs-number">5</span>;
+<span class="hljs-comment">// =&gt; true</span>
+
+<span class="hljs-number">5</span> === <span class="hljs-string">'5'</span>;
+<span class="hljs-comment">// =&gt; false</span>
+
+<span class="hljs-number">5</span> == <span class="hljs-number">5</span>;
+<span class="hljs-comment">// =&gt; true</span>
+
+<span class="hljs-number">5</span> == <span class="hljs-string">'5'</span>;
+<span class="hljs-comment">// =&gt; true</span>
+</code></pre>
 <ul>
+<li><strong>Logical Operators</strong> (<code>!</code>,<code>||</code>,<code>&amp;&amp;</code>): These operators both take and give back boolean values.<ul>
 <li>NOT (<code>!</code>) will reverse the value of any boolean.
-  <code>!true</code> =&gt; <code>false</code></li>
+  <code>!true</code> // <code>false</code></li>
 <li>OR  (<code>||</code>) takes in two boolean arguments; if at least one is <code>true</code>, then it will evaluate to <code>true</code>, but if both are <code>false</code> it will evaluate as <code>false</code>.</li>
 <li>AND (<code>&amp;&amp;</code>) also takes in two boolean arguments; however, it will only evaluate as <code>true</code> if both of the arguments are <code>true</code>; otherwise, it will evaluate to <code>false</code>.</li>
 </ul>
@@ -1409,24 +1410,24 @@
 <li><code>true &amp;&amp; false;</code></li>
 <li><code>45 % 6;</code></li>
 <li><code>8 === 8.0;</code></li>
-<li><code>&quot;Hello&quot; + &quot; &quot; + &quot;World&quot;;</code></li>
+<li><code>&#39;Hello&#39; + &#39; &#39; + &#39;World&#39;;</code></li>
 </ul>
 <h2 id="expressions">Expressions</h2>
 <p>So, what happens when we bring several of these operators and values together?</p>
 <p>Consider the following expression:</p>
-<p><code>(2+3)*(9-8)</code></p>
+<p><code>(2 + 3) * (9 - 8)</code></p>
 <p>In order to perform the multiplication, we need to first know what we&#39;re multiplying – the <code>*</code> operator must wait until both of the expressions in parentheses have been evaluated before it can proceed.</p>
 <p>We can represent this chain of dependencies using a logical structure called a <code>tree</code>.</p>
-<p><img src="../assets/chapter3/tree1.png" alt="Expression Tree for (2+3)*(9-8)">
+<p><img src="../assets/chapter3/tree1.png" alt="Expression Tree for (2 + 3) * (9 - 8)">
 <br></p>
 <p>To evaluate any point (or &#39;node&#39;) in the tree, you simply (1) evaluate that node&#39;s left &#39;child&#39;, and then (2) evaluate its right &#39;child&#39;.&quot; In this case, to evaluate at the <code>*</code>, we first evaluate the <code>+</code> node, then the <code>-</code> node.</p>
-<p>What happens is we&#39;re dealing with a more complicated expression? Say...</p>
-<p><code>((9+2)*25)-5</code></p>
-<p>Since the <code>-</code> requires ((9+2)*25) to be evaluated in order to perform the subtraction, this means that <code>-</code> will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.</p>
-<p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9+2)*25)-5">
+<p>What happens if we&#39;re dealing with a more complicated expression? Say...</p>
+<p><code>((9 + 2) * 25) - 5</code></p>
+<p>Since the <code>-</code> requires ((9 + 2) * 25) to be evaluated in order to perform the subtraction, this means that <code>-</code> will be at the top of our expression tree. Here is the full tree - first we perform the addition, then the multiplication, and then finally the subtraction.</p>
+<p><img src="../assets/chapter3/tree2.png" alt="Expression Tree for ((9 + 2) * 25) - 5">
 <br></p>
 <p>One last tricky one: <code>1 + 1 + 1 + 1</code>. Obviously, we know that this is equal to 4. But what does the tree look like?</p>
-<p>In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as being <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5+2)</code>, or <code>3</code>.</p>
+<p>In this case, we actually need to look to the rules of math (and anyone interested in some in-depth reading on that subject can <a href="http://en.wikipedia.org/wiki/Operator_associativity" target="_blank">check out this wikipedia page</a>). As it turns out, mathematical expressions are actually evaluated <strong><em>from left to right</em></strong>. In other words, given the expression <code>10 - 5 + 2</code>, we interpret this as being <code>(10 - 5) + 2</code>, or <code>7</code>, rather than <code>10 - (5 + 2)</code>, or <code>3</code>.</p>
 <p>Following this rule, our expression of <code>1 + 1 + 1 + 1</code> could also be written <code>((((1) + 1) + 1) + 1)</code>. Is it easier to see the tree now?</p>
 <p><img src="../assets/chapter3/tree3.png" alt="Expression Tree for 1 + 1 + 1 + 1">
 <br></p>

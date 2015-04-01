@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1330,11 +1330,12 @@
 <h2 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h2>
 <p>So far, all of the arrays that we&#39;ve seen so far have stored and managed their elements by their indices. This is a very convenient way of managing things, but it also has some disadvantages. Consider the following:</p>
 <p>Say we have a line of people waiting in line to buy the latest iPhone. We&#39;ll model these people using the array below.</p>
-<pre><code class="lang-javascript">[<span class="hljs-string">'Rachel'</span>,<span class="hljs-string">'Monica'</span>,<span class="hljs-string">'Phoebe'</span>,<span class="hljs-string">'Joey'</span>,<span class="hljs-string">'Chandler'</span>,<span class="hljs-string">'Ross'</span>]
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> friends = [<span class="hljs-string">'Rachel'</span>, <span class="hljs-string">'Monica'</span>, <span class="hljs-string">'Phoebe'</span>, <span class="hljs-string">'Joey'</span>, <span class="hljs-string">'Chandler'</span>, <span class="hljs-string">'Ross'</span>];
 </code></pre>
 <p>We can refer to each person by their position in line: Rachel is first (index: 0), followed by Monica (index: 1), Phoebe (index:2), and so on. Great! This is an easy way to keep track of who is where.</p>
 <p>But suppose that Monica decides she&#39;s waited long enough for an iPhone, and decides to leave the line and get an Android phone instead. What happens when Monica leaves?</p>
-<pre><code class="lang-javascript">[<span class="hljs-string">'Rachel'</span>,<span class="hljs-string">'Phoebe'</span>,<span class="hljs-string">'Joey'</span>,<span class="hljs-string">'Chandler'</span>,<span class="hljs-string">'Ross'</span>]
+<pre><code class="lang-javascript">friends.splice(<span class="hljs-number">1</span>, <span class="hljs-number">1</span>); <span class="hljs-comment">// ["Monica"]</span>
+friends; <span class="hljs-comment">// ['Rachel', 'Phoebe', 'Joey', 'Chandler', 'Ross']</span>
 </code></pre>
 <p>Well, Rachel stays in the same place. But suddenly, Phoebe isn&#39;t at index 2 - she&#39;s now at index <em>1</em>, while <em>Joey</em> is now the one at index 2! In fact, every person after Monica ends up taking one big step forward in line, throwing all of our references into, as it were, &#39;disarray&#39;.</p>
 <p>This system does a good job of keeping track of everyone&#39;s order, but its biggest drawback is that our method of referencing any element is tied to its position <em>rather than the element itself</em>. Fortunately, there are other ways of keeping track of things - for example, labeling them.</p>
@@ -1392,15 +1393,15 @@
 </tr>
 </tbody>
 </table>
-<p>This is the basic principle underlying an <strong>associative array</strong> (also known in some languages as <em>hash</em>). An associative array <em>associates</em> each value with a reference called a <strong>key</strong> (in this case the person&#39;s name). An important note is that, because each key/value pair is independent of any of the others, the array doesn&#39;t keep a consistent &#39;order&#39; to its elements.</p>
+<p>This is the basic principle underlying an <strong>associative array</strong> (also known in some languages as a <em>hash</em>). An associative array <em>associates</em> each value with a reference called a <strong>key</strong> (in this case the person&#39;s name). An important note is that, because each key/value pair is independent of any of the others, the array doesn&#39;t keep a consistent &#39;order&#39; to its elements.</p>
 <p>As you start building applications, you&#39;ll find many situations where you&#39;ll want to associate keys to values.</p>
 <h2 id="associative-arrays-in-javascript">Associative Arrays in JavaScript</h2>
 <p>Much like a normal array is written using square braces (<code>[...]</code>), an associative array is written using curly braces (<code>{...}</code>). Key-value pairs are separated by commas, just like individual values are in a normal array; within each of these pairs, keys are separated from their values by colons (<code>:</code>).</p>
 <p>Here&#39;s what the &#39;lunches&#39; table above might look like as an associative array.</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> lunches = { <span class="hljs-string">'Josh'</span> : <span class="hljs-string">'pasta'</span>,
-                  <span class="hljs-string">'Floyd'</span> : <span class="hljs-string">'salad'</span>,
-                  <span class="hljs-string">'Matt'</span> : <span class="hljs-string">'tuna sandwich'</span>,
-                  <span class="hljs-string">'Shannon'</span> : <span class="hljs-string">'soup'</span> };
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> lunches = { <span class="hljs-string">'Josh'</span> : <span class="hljs-string">'pasta'</span>,
+                <span class="hljs-string">'Floyd'</span> : <span class="hljs-string">'salad'</span>,
+                <span class="hljs-string">'Matt'</span> : <span class="hljs-string">'tuna sandwich'</span>,
+                <span class="hljs-string">'Shannon'</span> : <span class="hljs-string">'soup'</span> };
 </code></pre>
 <p>Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (<code>[...]</code>). In this case, if we wanted to access the value stored under &#39;Matt&#39;, we could type</p>
 <p>  <code>lunches[&#39;Matt&#39;]</code></p>
@@ -1408,30 +1409,30 @@
 <p>  <code>lunches[&#39;Matt&#39;] = &#39;turkey sandwich&#39;</code></p>
 <p>Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.</p>
 <p>  <code>lunches[&#39;Elena&#39;] = &#39;meatloaf&#39;</code></p>
-<p>Keys can be strings or numbers (or even another type of data that we haven&#39;t talked about, <em>symbols</em>), and basically anything can be used as a value (including an array, or even another associative array). Here&#39;s an example of all of the above:</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> candidate_data = {
-    <span class="hljs-string">'name'</span> : <span class="hljs-string">"John Doe"</span>,
-    <span class="hljs-string">'age'</span> : <span class="hljs-number">32</span>,
-    <span class="hljs-string">'isFullTime'</span> : <span class="hljs-literal">true</span>,
-    <span class="hljs-string">'pastEmployers'</span> : [<span class="hljs-string">'Microsoft'</span>,<span class="hljs-string">'Google'</span>,<span class="hljs-string">'Amazon'</span>],
-    <span class="hljs-string">'yearsExperience'</span> : {
-      <span class="hljs-string">'ruby'</span> : <span class="hljs-number">3</span>,
-      <span class="hljs-string">'java'</span> : <span class="hljs-number">6</span>,
-      <span class="hljs-string">'javascript'</span> : <span class="hljs-number">5</span>
-      }
+<p>Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here&#39;s an example of all of the above:</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> candidateData = {
+  <span class="hljs-string">'name'</span> : <span class="hljs-string">"John Doe"</span>,
+  <span class="hljs-string">'age'</span> : <span class="hljs-number">32</span>,
+  <span class="hljs-string">'isFullTime'</span> : <span class="hljs-literal">true</span>,
+  <span class="hljs-string">'pastEmployers'</span> : [<span class="hljs-string">'Microsoft'</span>,<span class="hljs-string">'Google'</span>,<span class="hljs-string">'Amazon'</span>],
+  <span class="hljs-string">'yearsExperience'</span> : {
+    <span class="hljs-string">'ruby'</span> : <span class="hljs-number">3</span>,
+    <span class="hljs-string">'java'</span> : <span class="hljs-number">6</span>,
+    <span class="hljs-string">'javascript'</span> : <span class="hljs-number">5</span>
     }
+  }
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidate_data[&#39;yearsExperience&#39;][&#39;javascript&#39;]</code>.</p>
+<p> Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData[&#39;yearsExperience&#39;][&#39;javascript&#39;]</code>.</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Consider the following associative array.</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> pet = {
-    <span class="hljs-string">'species'</span> : <span class="hljs-string">'iguana'</span>,
-    <span class="hljs-string">'gender'</span> : <span class="hljs-string">'female'</span>,
-    <span class="hljs-string">'age'</span> : <span class="hljs-number">12</span>,
-    <span class="hljs-string">'name'</span> : <span class="hljs-string">'Godzilla'</span>
-    }
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> pet = {
+  <span class="hljs-string">'species'</span> : <span class="hljs-string">'iguana'</span>,
+  <span class="hljs-string">'gender'</span> : <span class="hljs-string">'female'</span>,
+  <span class="hljs-string">'age'</span> : <span class="hljs-number">12</span>,
+  <span class="hljs-string">'name'</span> : <span class="hljs-string">'Godzilla'</span>
+  }
 </code></pre>
 <p>What code could we write to perform the following tasks?</p>
 <ul>

@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1329,64 +1329,65 @@
 <h1 id="iterating-over-arrays">Iterating Over Arrays</h1>
 <p>In the past few units, we&#39;ve only been able to operate on one value at a time. One of the most useful things about a collection (and arrays in particular) is that, if we structure our code correctly, we can actually perform the same operation on <em>each value within a collection</em>. This process is called <strong>iteration</strong> - doing something over and over and over again, for each element in a set.</p>
 <h2 id="iterating-with-loops">Iterating with Loops</h2>
-<p>Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celcius - which would then be stored in a separate array.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> temps_in_f = [<span class="hljs-number">100</span>, <span class="hljs-number">72</span>, <span class="hljs-number">88</span>, <span class="hljs-number">15</span>, <span class="hljs-number">25</span>, <span class="hljs-number">32</span>];
-<span class="hljs-keyword">var</span> temps_in_c = [];
+<p>Suppose that we were given an array of starting values to work with - say, temperatures in degrees Fahrenheit - and wanted to convert them into another set of values - say temperatures in degrees Celsius - which would then be stored in a separate array.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> tempsInF = [<span class="hljs-number">100</span>, <span class="hljs-number">72</span>, <span class="hljs-number">88</span>, <span class="hljs-number">15</span>, <span class="hljs-number">25</span>, <span class="hljs-number">32</span>];
+<span class="hljs-keyword">var</span> tempsInC = [];
 </code></pre>
-<p>The formula for converting between Fahrenheit and Celcius temperatures is <strong>C = (5/9 * F)  - 32</strong>, where <code>F</code> is the temperature in degrees Fahrenheit and <code>C</code> is the temperature in degrees Celsius. Because this is an operation that we&#39;d like to do frequently, we might create a function for it like the one below.</p>
+<p>The formula for converting between Fahrenheit and Celsius temperatures is <strong>C = (5 / 9 * F)  - 32</strong>, where <code>F</code> is the temperature in degrees Fahrenheit and <code>C</code> is the temperature in degrees Celsius. Because this is an operation that we&#39;d like to do frequently, we might create a function for it like the one below.</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fahrToCelc</span><span class="hljs-params">(degrees)</span> </span>{
   <span class="hljs-keyword">return</span> degrees * <span class="hljs-number">5</span> / <span class="hljs-number">9</span>  - <span class="hljs-number">32</span>;
 }
 </code></pre>
-<p>So how do we go about operating on the elements in <code>temps_in_f</code>? Well, we could just start at the beginning and work our way through, one value at a time.</p>
-<pre><code class="lang-javascript">temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">0</span>]));
+<p>So how do we go about operating on the elements in <code>tempsInF</code>? Well, we could just start at the beginning and work our way through, one value at a time.</p>
+<pre><code class="lang-javascript">tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">0</span>]));
 </code></pre>
-<p>Then, we could run an almost identical command to operate on each element in <code>temps_in_f</code> and push the converted value onto the <code>temps_in_c</code> array.</p>
-<pre><code class="lang-javascript">  temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">1</span>]));
-  temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">2</span>]));
-  temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">3</span>]));
-  temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">4</span>]));
-  temps_in_c.push(fahrToCelc(temps_in_f[<span class="hljs-number">5</span>]));
+<p>Then, we could run an almost identical command to operate on each element in <code>tempsInF</code> and push the converted value onto the <code>tempsInC</code> array.</p>
+<pre><code class="lang-javascript">  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">1</span>]));
+  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">2</span>]));
+  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">3</span>]));
+  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">4</span>]));
+  tempsInC.push(fahrToCelc(tempsInF[<span class="hljs-number">5</span>]));
 </code></pre>
 <p>However, this code is extremely repetitious, and it also forces us to hard-code exactly how many times we want the operation to be performed. It&#39;d be better if there were a way to run this code exactly as many times as there are elements in the first array. Fortunately, there is a tool perfectly suited for this task - our old friend the <code>for</code> loop.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; temps_in_f.length; i += <span class="hljs-number">1</span>) {
-  temps_in_c.push(fahrToCelc(temps_in_f[i]));
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; tempsInF.length; i += <span class="hljs-number">1</span>) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
 }
 </code></pre>
 <p>Take a minute to think about what&#39;s going on above.</p>
 <p>By starting our count at zero, stopping before <code>i</code> reaches the length of the array, and increasing <code>i</code> by one every time, <code>i</code> will be successively set to the index of every element in our array, allowing us to perform the same operation on each element.</p>
 <p>We could just as easily have gone in the opposite direction - starting at the last element, and ending with the first - simply by specifying different settings in the <code>for</code> loop:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = (temps_in_f.length - <span class="hljs-number">1</span>); i &gt;= <span class="hljs-number">0</span>; i -= <span class="hljs-number">1</span>) {
-  temps_in_c.push(fahrToCelc(temps_in_f[i]));
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = (tempsInF.length - <span class="hljs-number">1</span>); i &gt;= <span class="hljs-number">0</span>; i -= <span class="hljs-number">1</span>) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
 }
 </code></pre>
 <p>We could even operate only on every third element, by changing the value we increment i, like so (see <code>i += 3</code> ?):</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">2</span>; i &lt; temps_in_f.length; i += <span class="hljs-number">3</span>) {
-    temps_in_c.push(fahrToCelc(temps_in_f[i]));
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">2</span>; i &lt; tempsInF.length; i += <span class="hljs-number">3</span>) {
+  tempsInC.push(fahrToCelc(tempsInF[i]));
+}
 </code></pre>
 <p>Despite being one of the most basic ways to iterate through an array, in JavaScript (and many other languages) this is also one of the most versatile ones!</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Create a new repl.it session with the following JavaScript code:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> old_array = [<span class="hljs-number">12</span>,<span class="hljs-number">45</span>,<span class="hljs-number">6</span>,<span class="hljs-number">23</span>,<span class="hljs-number">19</span>,<span class="hljs-number">20</span>,<span class="hljs-number">20</span>,<span class="hljs-number">15</span>,<span class="hljs-number">30</span>,<span class="hljs-number">42</span>];
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> oldArray = [<span class="hljs-number">12</span>, <span class="hljs-number">45</span>, <span class="hljs-number">6</span>, <span class="hljs-number">23</span>, <span class="hljs-number">19</span>, <span class="hljs-number">20</span>, <span class="hljs-number">20</span>, <span class="hljs-number">15</span>, <span class="hljs-number">30</span>, <span class="hljs-number">42</span>];
 </code></pre>
-<p>How could you use iteration to generate a new array called <code>new_array</code> from <code>old_array</code>, so that...</p>
+<p>How could you use iteration to generate a new array called <code>newArray</code> from <code>oldArray</code>, so that...</p>
 <ul>
-<li>Each value in <code>new_array</code> is the value of its corresponding element in <code>old_array</code>, plus 5? (<code>[1,2,3]</code> becomes <code>[6,7,8]</code>)</li>
-<li>Each value in <code>new_array</code> is the square of the value of its corresponding element in <code>old_array</code>? (<code>[1,2,3]</code> becomes <code>[1,4,9]</code>)</li>
-<li>Every <em>odd-indexed</em> value in <code>new_array</code> is double its corresponding element in <code>old_array</code>, while every <em>even-indexed</em> value is unchanged? (<code>[3,4,5,2,6]</code> becomes <code>[3,8,5,4,6]</code>)</li>
-<li><code>new_array</code> is the exact mirror image of <code>old_array</code>? (<code>[1,2,3]</code> becomes <code>[3,2,1]</code>)</li>
+<li>Each value in <code>newArray</code> is the value of its corresponding element in <code>oldArray</code>, plus 5? (<code>[1, 2, 3]</code> becomes <code>[6, 7, 8]</code>)</li>
+<li>Each value in <code>newArray</code> is the square of the value of its corresponding element in <code>oldArray</code>? (<code>[1, 2, 3]</code> becomes <code>[1, 4, 9]</code>)</li>
+<li>Every <em>odd-indexed</em> value in <code>newArray</code> is double its corresponding element in <code>oldArray</code>, while every <em>even-indexed</em> value is unchanged? (<code>[3, 4, 5, 2, 6]</code> becomes <code>[3, 8, 5, 4, 6]</code>)</li>
+<li><code>newArray</code> is the exact mirror image of <code>oldArray</code>? (<code>[1, 2, 3]</code> becomes <code>[3, 2, 1]</code>)</li>
 </ul>
 <p>These ones are a bit tricky, so don&#39;t get discouraged if the answers don&#39;t come immediately; just keep experimenting with your code until it works!</p>
-<h2 id="iterator-functions--map-and-each">Iterator Functions : <code>.map()</code> and <code>.each()</code></h2>
+<h2 id="iterator-functions--map-and-foreach">Iterator Functions : <code>.map()</code> and <code>.forEach()</code></h2>
 <p>Although using loops to iterate through arrays gives you a lot of flexibility and control, most of the time you just want to go through every element in your array one at a time, in order, and doing this with a loop can be a little tedious. Fortunately, arrays have some built-functions specifically designed for this kind of work, called (unsurprisingly) <strong>iterators</strong>.</p>
 <p>One of the most commonly used iterators is <code>.map()</code> - this is the tool of choice any time you want to transform one set of values into a different (but equally-dimensioned) set of values. Although it can take more paramaters, <code>.map()</code> can be run with just one : a function. Take a look at the example below:</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">square</span><span class="hljs-params">(x)</span> </span>{
-  <span class="hljs-built_in">console</span>.log(x * x)
+  <span class="hljs-built_in">console</span>.log(x * x);
   <span class="hljs-keyword">return</span> x * x;
 }
 
-<span class="hljs-keyword">var</span> resultingArray = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>].map(square); <span class="hljs-comment">// prints out 1, 4, and 9, then returns the array [1,4,9] and stores it in resultingArray</span>
+<span class="hljs-keyword">var</span> resultingArray = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].map(square); <span class="hljs-comment">// Prints out 1, 4, and 9, then</span>
+<span class="hljs-comment">// returns the array [1, 4, 9] and stores it in resultingArray</span>
 </code></pre>
 <blockquote class="clearfix alert alert-warning"><strong class="fa fa-4x fa-exclamation-triangle"></strong>
 <p> It&#39;s important that you <em>do not</em> include parentheses when passing in that function. Including <code>square</code> as an argument passes the whole function. Including <code>square()</code> as the argument would pass in the result of calling the function. That&#39;s not what you want, normally.</p>
@@ -1394,11 +1395,12 @@
 <p>As you can see, <code>.map()</code> takes in the function we&#39;ve just defined, <code>square</code>, as a parameter. It then applies that function to every element in our original array, and stores the result at that same position in a new array. Finally, the function returns the new array that it&#39;s just created. As you can see, this is both simpler and cleaner than trying to do the same thing with a loop.</p>
 <p>Another example of an iterator is <code>.forEach()</code>. <code>.forEach()</code> also takes a function as an argument, but unlike <code>.map()</code>, it doesn&#39;t create a new array and return it. However, it does still execute the function that gets passed for each element in the array.</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">square</span><span class="hljs-params">(x)</span> </span>{
-  <span class="hljs-built_in">console</span>.log(x * x)
+  <span class="hljs-built_in">console</span>.log(x * x);
   <span class="hljs-keyword">return</span> x * x;
 }
 
-<span class="hljs-keyword">var</span> resultingArray = [<span class="hljs-number">1</span>,<span class="hljs-number">2</span>,<span class="hljs-number">3</span>].forEach(square); <span class="hljs-comment">// prints out 1, 4, and 9, but doesn't return an array. This means resultingArray is undefined :(</span>
+<span class="hljs-keyword">var</span> resultingArray = [<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>].forEach(square); <span class="hljs-comment">// Prints out 1, 4, and 9, but</span>
+<span class="hljs-comment">// doesn't return an array. This means resultingArray is undefined :(</span>
 </code></pre>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Try to implement each of the following things in repl.it using <code>.map()</code> and <code>.forEach()</code></p>

@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="3.5" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="3.5" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1332,17 +1332,18 @@
 <p>Go back into the project repo, wherever you&#39;ve decided to put it, and open up the file <code>RockPaperScissors.js</code> (inside the <code>app/js</code> directory).</p>
 <p>When you look inside the file you should first see a block of code that looks like this :</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">getInput</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">"Please choose either 'rock', 'paper', or 'scissors'."</span>)
+    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'Please choose either "rock", "paper", or "scissors".'</span>);
     <span class="hljs-keyword">return</span> prompt();
 }
+
 <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">randomPlay</span><span class="hljs-params">()</span> </span>{
     <span class="hljs-keyword">var</span> randomNumber = <span class="hljs-built_in">Math</span>.random();
     <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.33</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"rock"</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'rock'</span>;
     } <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (randomNumber &lt; <span class="hljs-number">0.66</span>) {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"paper"</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'paper'</span>;
     } <span class="hljs-keyword">else</span> {
-        <span class="hljs-keyword">return</span> <span class="hljs-string">"scissors"</span>;
+        <span class="hljs-keyword">return</span> <span class="hljs-string">'scissors'</span>;
     }
 }
 </code></pre>

@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="5.3" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="5.3" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1334,26 +1334,26 @@
 <li>A <strong>function</strong> is a custom operation that can be run on command. It can be use both as an operator (accepting input values and calculating output values) and as a subroutine (do this thing... then do this thing...).</li>
 <li>Functions must be <strong>defined</strong> before they can be used. To define a function, use the following recipe:</li>
 </ul>
-<pre><code class="lang-javascript">  <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunctionName</span><span class="hljs-params">()</span> </span>{
-    <span class="hljs-comment">//Body of the function</span>
-  }
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunctionName</span><span class="hljs-params">()</span> </span>{
+  <span class="hljs-comment">// Body of the function</span>
+}
 </code></pre>
 <ul>
-<li>To use, or <strong>call</strong> a function, simply type the name of your function, followed by <code>()</code> (plus any inputs that you might be passing in).<pre><code class="lang-javascript">myFunctionName()
-</code></pre>
-</li>
+<li>To use, or <strong>call</strong> a function, simply type the name of your function, followed by <code>()</code> (plus any inputs that you might be passing in).</li>
 </ul>
+<pre><code class="lang-javascript">myFunctionName()
+</code></pre>
 <h3 id="return-statements"><code>return</code> Statements</h3>
 <ul>
-<li>In addition to specifying a final value for the function to give back as a result, a <code>return</code> statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not <code>x</code>.<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">someFunc</span><span class="hljs-params">(x)</span> </span>{
+<li>In addition to specifying a final value for the function to give back as a result, a <code>return</code> statement will cause the function that contains it to immediately end when that line is run. For example, if the function below is operating on a number greater than ten, it will stop executing at its second line, and return 15, not <code>x</code>.</li>
+</ul>
+<pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">someFunc</span><span class="hljs-params">(x)</span> </span>{
   <span class="hljs-keyword">if</span> (x &gt; <span class="hljs-number">10</span>) {
     <span class="hljs-keyword">return</span> <span class="hljs-number">15</span>;
   }
   <span class="hljs-keyword">return</span> x;
 }
 </code></pre>
-</li>
-</ul>
 <h2 id="using-functions-in-the-field">Using Functions in the Field</h2>
 <h3 id="best-practices-for-writing-functions">Best Practices for Writing Functions</h3>
 <ul>

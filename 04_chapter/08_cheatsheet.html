@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.3" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1332,38 +1332,37 @@
 <h3 id="ternary-operator">Ternary Operator</h3>
 <ul>
 <li><p>The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.</p>
-<p>e.g. <code>(x &gt; 10)? &quot;Greater than 10.&quot; : &quot;Less than 10.&quot;;</code></p>
+<p>e.g. <code>(x &gt; 10) ? &#39;Greater than 10.&#39; : &#39;Less than 10.&#39;;</code></p>
 </li>
 <li><p>It can also be used inside larger expressions.</p>
-<p>e.g. &quot;Today is &quot; + ((temp &gt; 70)? &quot;&quot; : &quot;not&quot;) + &quot; hot.&quot;</p>
+<p>e.g. <code>&#39;Today is &#39; + ((temp &gt; 70)? &#39;&#39; : &#39;not&#39;) + &#39; hot.&#39;;</code></p>
 </li>
 </ul>
 <h3 id="ifelse-statement-syntax"><code>if...else</code> statement syntax</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> CONDITION_1
-  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 is <span class="hljs-literal">true</span>
-elsif CONDITION_2
-  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 is <span class="hljs-literal">false</span> and CONDITION_2 is <span class="hljs-literal">true</span>
-elsif CONDITION_3
-  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1 and CONDITION_2 are <span class="hljs-literal">false</span>, and CONDITION_3 is <span class="hljs-literal">true</span>
-<span class="hljs-keyword">else</span>
-  # Code to be executed <span class="hljs-keyword">if</span> CONDITION_1, CONDITION_2, and CONDITION_3 are <span class="hljs-literal">false</span>
-end
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition1) {
+  <span class="hljs-comment">// Code to be executed if condition1 is true</span>
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (condition2) {
+  <span class="hljs-comment">// Code to be executed if condition1 is false and condition2 is true</span>
+} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> (condition3) {
+  <span class="hljs-comment">// Code to be executed if condition1 and condition2 are false, and condition3 is true</span>
+} <span class="hljs-keyword">else</span> {
+  <span class="hljs-comment">// Code to be executed if condition1, condition2, and condition3 are false</span>
+}
 </code></pre>
 <ul>
 <li>With <code>else if</code>, each additional condition will only be checked if all of the prior conditions have failed.</li>
 </ul>
 <h3 id="switch-statement-syntax"><code>switch</code> statement syntax</h3>
-<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (expression)
-{
-<span class="hljs-keyword">case</span> LABEL1:
-  # Code to be executed <span class="hljs-keyword">if</span> expression = LABEL1
-  <span class="hljs-keyword">break</span>
-<span class="hljs-keyword">case</span> LABEL2:
-  # Code to be executed <span class="hljs-keyword">if</span> expression = LABEL2
-  <span class="hljs-keyword">break</span>
-<span class="hljs-keyword">default</span>:
-  # Code to be executed <span class="hljs-keyword">if</span> expression is different from both LABEL1 and LABEL2
-}
+<pre><code class="lang-javascript"><span class="hljs-keyword">switch</span> (expression) {
+  <span class="hljs-keyword">case</span> value1:
+    <span class="hljs-comment">// Code to be executed if expression === value1</span>
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">case</span> value2:
+    <span class="hljs-comment">// Code to be executed if expression === value2</span>
+    <span class="hljs-keyword">break</span>;
+  <span class="hljs-keyword">default</span>:
+    <span class="hljs-comment">// Code to be executed if expression is different from both value1 and value2</span>
+  }
 </code></pre>
 <h2 id="loops">Loops</h2>
 <ul>

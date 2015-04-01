@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="4.2" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1336,71 +1336,71 @@
 <p><img src="../assets/chapter4/flow_chart_if-to-while.png" alt="Flow Chart `If` -&gt; `While`">
 <br></p>
 <p>Now, we have a loop - so long as our condition remains true (or at least truthy), we will continue to run that block of code over and over again. This type of loop is called a <code>while</code> loop, and can be found in nearly every programming language. Here&#39;s the general rule for how a while loop is written in JavaScript.</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">while</span> (some_condition) {
-    <span class="hljs-comment">// A block of code.</span>
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">while</span> (someCondition) {
+  <span class="hljs-comment">// A block of code.</span>
+}
 </code></pre>
 <p>As you can see, it is written in almost exactly the same way as an <code>if</code> statement.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <ul>
 <li>Consider the following code.</li>
 </ul>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
-  <span class="hljs-keyword">while</span> (x &gt; <span class="hljs-number">5</span>) {
-    x -= <span class="hljs-number">2</span>;
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">while</span> (x &gt; <span class="hljs-number">5</span>) {
+  x -= <span class="hljs-number">2</span>;
+}
 </code></pre>
-<p>  How many times will this loop run? What will the final value of <code>x</code> be when it finishes?</p>
+<p>How many times will this loop run? What will the final value of <code>x</code> be when it finishes?</p>
 <ul>
 <li>Here&#39;s another loop.</li>
 </ul>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
-  <span class="hljs-keyword">var</span> y = <span class="hljs-number">1</span>;
-  <span class="hljs-keyword">while</span> (x &lt; <span class="hljs-number">20</span>) {
-    y += <span class="hljs-number">1</span>;
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">var</span> y = <span class="hljs-number">1</span>;
+<span class="hljs-keyword">while</span> (x &lt; <span class="hljs-number">20</span>) {
+  y += <span class="hljs-number">1</span>;
+}
 </code></pre>
-<p>  How many times will this loop run? What happens when you try to run this code?</p>
+<p>How many times will this loop run? What happens when you try to run this code?</p>
 <p>A while loop can run <strong>indefinitely</strong> as long as your condition remains true; this is usually a bad thing, so when using a while loop, it&#39;s <strong>very important</strong> to plan out beforehand how you will &#39;escape&#39; the loop by making your condition evaluate to <code>false</code>.</p>
 <p>Consider the following example.</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> z = <span class="hljs-number">0</span>;
-  <span class="hljs-keyword">var</span> myString = <span class="hljs-string">""</span>
-  <span class="hljs-keyword">while</span> (z &lt; <span class="hljs-number">5</span>) {
-    myString += <span class="hljs-string">"X"</span>;
-    z += <span class="hljs-number">1</span>;
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> z = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">var</span> myString = <span class="hljs-string">''</span>;
+<span class="hljs-keyword">while</span> (z &lt; <span class="hljs-number">5</span>) {
+  myString += <span class="hljs-string">'X'</span>;
+  z += <span class="hljs-number">1</span>;
+}
 </code></pre>
 <p>Q: How many times does this loop run? What&#39;s the final value of myString?</p>
 <p>A: Each time this loop runs, the value of <code>z</code> increases by 1; since its initial value is 0, and the condition becomes <code>false</code> the moment that z becomes 5, this means that our loop runs exactly 5 times. As a result, the string <code>myString</code> has a final value of &quot;XXXXX&quot; (5 Xs).</p>
 <p>Confused? Here&#39;s the play-by-play.</p>
 <ul>
 <li><code>z</code> is set to 0 and <code>myString</code> is set to &quot;&quot;.</li>
-<li><code>z</code> is 0, so <code>z &lt; 5</code> is true =&gt; the block gets executed.<ul>
+<li><code>z</code> is 0, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
 <li>(in the block) <code>&quot;X&quot;</code> gets added to the end of <code>myString</code>; it is now &quot;X&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 1. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 1, so <code>z &lt; 5</code> is true =&gt; the block gets executed.<ul>
+<li><code>z</code> is 1, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
 <li>(in the block) <code>&quot;X&quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 2. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 2, so <code>z &lt; 5</code> is true =&gt; the block gets executed.<ul>
+<li><code>z</code> is 2, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
 <li>(in the block) <code>&quot;X&quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 3. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 3, so <code>z &lt; 5</code> is true =&gt; the block gets executed.<ul>
+<li><code>z</code> is 3, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
 <li>(in the block) <code>&quot;X&quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 4. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 4, so <code>z &lt; 5</code> is true =&gt; the block gets executed.<ul>
+<li><code>z</code> is 4, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
 <li>(in the block) <code>&quot;X&quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXXXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 5. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is now 5, so <code>z &lt; 5</code> is now <strong>false</strong> (since 5 is <strong>not</strong> less than 5) =&gt; the block does not get executed again.</li>
+<li><code>z</code> is now 5, therefore <code>z &lt; 5</code> is now <strong>false</strong> (since 5 is <strong>not</strong> less than 5) so the block does not get executed again.</li>
 <li>We&#39;re done!</li>
 </ul>
 <p>What&#39;s most interesting about this kind of setup is that if we changed that condition from <code>z &lt; 5</code> to <code>z &lt; 10</code>, or <code>z &lt; 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the <code>while</code> loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.</p>
@@ -1412,18 +1412,18 @@
 <ol>
 <li>an &#39;initialization&#39;, which sets up a starting situation (e.g. var x = 0)</li>
 <li>a condition, which gets evaluated each time we&#39;re about to execute the block (e.g. x &lt; 10)</li>
-<li>a &#39;final expression&#39;, which gets evaluated immediately after the block executes <em>but before the condition is evaluated again</em> (e.g. x += 1;)</li>
+<li>a &#39;finalExpression&#39;, which gets evaluated immediately after the block executes <em>but before the condition is evaluated again</em> (e.g. x += 1;)</li>
 </ol>
 <p>The general syntax for a <code>for</code> loop is</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (initialization; condition; final expression) {
-    <span class="hljs-comment">// A block of code.</span>
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">for</span> (initialization; condition; finalExpression) {
+  <span class="hljs-comment">// A block of code.</span>
+}
 </code></pre>
 <h3 id="test-yourself">Test Yourself</h3>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
-  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; x; i += <span class="hljs-number">1</span>) {
-    <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'HELLO'</span>); <span class="hljs-comment">// This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.</span>
-  }
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = <span class="hljs-number">10</span>;
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; x; i += <span class="hljs-number">1</span>) {
+  <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'HELLO'</span>); <span class="hljs-comment">// This is a command to our console, telling it to display the text 'HELLO' and advance to a new line.</span>
+}
 </code></pre>
 <ul>
 <li>How many times will &#39;HELLO&#39; be printed out in the console?</li>

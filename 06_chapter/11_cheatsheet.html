@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6.4" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6.4" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1332,20 +1332,22 @@
 <ul>
 <li>An array is an ordered list of values; these values can be strings, booleans, numbers... even other arrays.</li>
 <li>The values within an array, called <strong>elements</strong>, are accessed by their position (via a value called an <strong>index</strong>) within the array.</li>
-<li>An array can be defined by enclosing a list of values within square braces, like so : <code>var my_array = [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;]</code></li>
-<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the end of the array. e.g. <code>my_array[2]</code></li>
-<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a variable. e.g. <code>my_array[1] = &#39;f&#39;</code></li>
+<li>An array can be defined by enclosing a list of values within square braces, like so : <code>var myArray = [&#39;a&#39;,&#39;b&#39;,&#39;c&#39;,&#39;d&#39;]</code></li>
+<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the end of the array. e.g. <code>myArray[2]</code></li>
+<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a variable. e.g. <code>myArray[1] = &#39;f&#39;</code></li>
 </ul>
 <h3 id="adding-complexity---nested-arrays">Adding Complexity - Nested Arrays</h3>
 <ul>
 <li>As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called <strong>nesting</strong>.</li>
-<li>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&#39;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> my_nested_array = [[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],
+<li><p>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&#39;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> myNestedArray = [[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],
                          [<span class="hljs-string">'d'</span>,<span class="hljs-string">'e'</span>,<span class="hljs-string">'f'</span>],
                          [<span class="hljs-string">'g'</span>,<span class="hljs-string">'h'</span>,<span class="hljs-string">'i'</span>]];
 </code></pre>
-you could access the element &#39;f&#39; by writing <code>my_nested_array[1][2]</code>.</li>
+<p>you could access the element &#39;f&#39; by writing <code>myNestedArray[1][2]</code>.</p>
+</li>
 <li>Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change.
-e.g. <code>my_nested_array[0][3] = &#39;z&#39;;</code></li>
+e.g. <code>myNestedArray[0][3] = &#39;z&#39;;</code></li>
 </ul>
 <h3 id="additional-array-features">Additional Array Features</h3>
 <ul>
@@ -1358,8 +1360,8 @@ e.g. <code>my_nested_array[0][3] = &#39;z&#39;;</code></li>
 <h2 id="iterating-over-arrays">Iterating Over Arrays</h2>
 <h3 id="iterating-with-loops">Iterating with Loops</h3>
 <ul>
-<li><p><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function <code>someFunction</code> for every element in array <code>my_array</code>, from left to right.</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; my_array.length; i += <span class="hljs-number">1</span>) {
+<li><p><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function <code>someFunction</code> for every element in array <code>myArray</code>, from left to right.</p>
+<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i += <span class="hljs-number">1</span>) {
     someFunction(myArray[i]);
   }
 </code></pre>
@@ -1367,23 +1369,11 @@ e.g. <code>my_nested_array[0][3] = &#39;z&#39;;</code></li>
 <li>To change the way that you iterate through the array, just change the settings of your <code>for</code> loop.</li>
 </ul>
 <h3 id="iterator-functions">Iterator Functions</h3>
-<p><code>.map()</code> </p>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">Syntax</th>
-<th style="text-align:center">Parameters</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center"></td>
-</tr>
-</tbody>
-</table>
-<p><em>Description</em>:  </p>
 <ul>
-<li><code>.forEach()</code> executes some function once for each element in the array it&#39;s called on.</li>
+<li><p><code>.map()</code> creates a new array with the results of calling a provided function on every element in this array.</p>
+</li>
+<li><p><code>.forEach()</code> executes some function once for each element in the array it&#39;s called on.</p>
+</li>
 </ul>
 <h2 id="collections---associative-arrays">Collections - Associative Arrays</h2>
 <h3 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h3>
@@ -1391,10 +1381,10 @@ e.g. <code>my_nested_array[0][3] = &#39;z&#39;;</code></li>
 <li>A typical array works by referenceing elements solely based on their position, e.g. &quot;the first element, the second element ...&quot; etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.</li>
 <li>An associative array generates an enduring relationship between a reference (called a <strong>key</strong>) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.<h3 id="associative-arrays-in-javascript">Associative Arrays in JavaScript</h3>
 </li>
-<li>An associative array can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>some_key : some_value</code>, and each pair is separated by commas.</li>
-<li>To retrieve the value that&#39;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the associative array. e.g. <code>my_associative_array[&#39;my_key&#39;]</code></li>
-<li>To edit the value that&#39;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>my_associative_array[&#39;my_key&#39;] = &#39;a_value&#39;</code></li>
-<li>Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>my_associative_array[&#39;some_new_key&#39;] = &#39;some_new_value&#39;</code></li>
+<li>An associative array can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
+<li>To retrieve the value that&#39;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the associative array. e.g. <code>myassociativeArray[&#39;myKey&#39;]</code></li>
+<li>To edit the value that&#39;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray[&#39;myKey&#39;] = &#39;aValue&#39;</code></li>
+<li>Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray[&#39;someNewKey&#39;] = &#39;someNewValue&#39;</code></li>
 <li>Nesting for associative arrays works <em>exactly</em> like it does for ordinary arrays.</li>
 </ul>
 <hr>

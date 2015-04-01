@@ -46,7 +46,7 @@
 
 
         
-    <div class="book" data-level="6.1" data-basepath=".." data-revision="1424326709630">
+    <div class="book" data-level="6.1" data-basepath=".." data-revision="1427894427240">
     
 
 <div class="book-summary">
@@ -1331,9 +1331,9 @@
 <p>An array is an ordered list of items, also known as <strong>elements</strong>, separated by commas and sitauted between brackets <code>[]</code>. Arrays can contain different types of elements, like <code>[&quot;red&quot;, 42, &quot;gorilla&quot;, false]</code>, but we generally use arrays to deal with elements of the same type.</p>
 <h3 id="finding-elements-in-an-array">Finding Elements in an Array</h3>
 <p>The order of elements in an array matters. Let&#39;s take a look at the following example:</p>
-<pre><code class="lang-javascript">my_friends = [<span class="hljs-string">'ellen'</span>,<span class="hljs-string">'mary'</span>,<span class="hljs-string">'doug'</span>,<span class="hljs-string">'pat'</span>]
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myFriends = [<span class="hljs-string">'ellen'</span>, <span class="hljs-string">'mary'</span>, <span class="hljs-string">'doug'</span>, <span class="hljs-string">'pat'</span>];
 </code></pre>
-<p>If we wanted to find the element <code>&#39;mary&#39;</code>, we would need to remember that she is the second element in the array. </p>
+<p>If we wanted to find the element <code>&#39;mary&#39;</code>, we would need to remember that she is the second element in the array.</p>
 <p>The position of <code>&#39;mary&#39;</code> in the array is known as its <em>index value</em> (or just <em>index</em>).</p>
 <p>As you can see, there are four strings contained within this array.</p>
 <ul>
@@ -1346,50 +1346,50 @@
 <p><strong>Note that the index for the first position in an array is 0</strong>. So even though <code>&#39;mary&#39;</code> is the second element in the array, we would need to call her out as the element with an index of 1.</p>
 </blockquote>
 <p>Now that we know her index value, to find <code>&#39;mary&#39;</code> we would simply write:</p>
-<p><code>my_friends[1]</code></p>
+<p><code>myFriends[1]</code></p>
 <p>We could save what we found in a variable like so:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> best_friend = my_friends[<span class="hljs-number">1</span>]
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bestFriend = myFriends[<span class="hljs-number">1</span>];
 </code></pre>
 <p>Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.</p>
-<p><code>my_friends[3] = &#39;steve&#39;</code></p>
+<p><code>myFriends[3] = &#39;steve&#39;</code></p>
 <p>Just like with a variable, this expression will evaluate to the value on the right.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?</p>
-<pre><code class="lang-javascript">my_numbers = [<span class="hljs-number">4</span>,<span class="hljs-number">65</span>,<span class="hljs-number">0</span>,<span class="hljs-number">29</span>];
-my_numbers[<span class="hljs-number">0</span>];
-my_numbers[<span class="hljs-number">1</span>] = <span class="hljs-number">10</span>;
-my_numbers[<span class="hljs-number">2</span>] = <span class="hljs-number">5</span>;
-my_numbers[<span class="hljs-number">1</span>] * <span class="hljs-number">2</span>;
-<span class="hljs-built_in">console</span>.log(my_numbers)
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> <span class="hljs-keyword">var</span> myNumbers = [<span class="hljs-number">4</span>, <span class="hljs-number">65</span>, <span class="hljs-number">0</span>, <span class="hljs-number">29</span>];
+myNumbers[<span class="hljs-number">0</span>];
+myNumbers[<span class="hljs-number">1</span>] = <span class="hljs-number">10</span>;
+myNumbers[<span class="hljs-number">2</span>] = <span class="hljs-number">5</span>;
+myNumbers[<span class="hljs-number">1</span>] * <span class="hljs-number">2</span>;
+<span class="hljs-built_in">console</span>.log(myNumbers);
 </code></pre>
 <p>Confirm your answer by entering the above code in a new Repl.it session.</p>
 <h2 id="adding-complexity--nested-arrays">Adding Complexity – Nested Arrays</h2>
 <p>In addition to storing numbers, strings, or booleans as elements, arrays can go &#39;Full Inception&#39; by storing <em>other arrays</em>.</p>
 <p>Here&#39;s an example of what this can look like.</p>
-<pre><code class="lang-javascript">array_of_arrays = [[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],[<span class="hljs-string">'d'</span>,<span class="hljs-string">'e'</span>,<span class="hljs-string">'f'</span>],[<span class="hljs-string">'g'</span>,<span class="hljs-string">'h'</span>,<span class="hljs-string">'i'</span>]];
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arrayOfArrays = [[<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>], [<span class="hljs-string">'d'</span>, <span class="hljs-string">'e'</span>, <span class="hljs-string">'f'</span>], [<span class="hljs-string">'g'</span>, <span class="hljs-string">'h'</span>, <span class="hljs-string">'i'</span>]];
 </code></pre>
 <p>You might also see it written like this – it&#39;s a bit more readable this way.</p>
-<pre><code class="lang-javascript">array_of_arrays = [[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],
-                   [<span class="hljs-string">'d'</span>,<span class="hljs-string">'e'</span>,<span class="hljs-string">'f'</span>],
-                   [<span class="hljs-string">'g'</span>,<span class="hljs-string">'h'</span>,<span class="hljs-string">'i'</span>]];
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arrayOfArrays = [[<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>],
+                     [<span class="hljs-string">'d'</span>, <span class="hljs-string">'e'</span>, <span class="hljs-string">'f'</span>],
+                     [<span class="hljs-string">'g'</span>, <span class="hljs-string">'h'</span>, <span class="hljs-string">'i'</span>]];
 </code></pre>
-<p>Each element of <code>array_of_arrays</code> <em>is itself an array</em>. Calling <code>array_of_arrays[1]</code> will give us back the second array, <code>[&#39;d&#39;,&#39;e&#39;,&#39;f&#39;]</code>.</p>
+<p>Each element of <code>arrayOfArrays</code> <em>is itself an array</em>. Calling <code>arrayOfArrays[1]</code> will give us back the second array, <code>[&#39;d&#39;, &#39;e&#39;, &#39;f&#39;]</code>.</p>
 <p>Of course, what we&#39;re probably most interested in are the inner elements (strings, in this case). We could probably do the following:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = array_of_arrays[<span class="hljs-number">1</span>]; <span class="hljs-comment">//Evaluates to ['d','e','f']</span>
-x[<span class="hljs-number">0</span>]; <span class="hljs-comment">//Evaluates to 'd'</span>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = arrayOfArrays[<span class="hljs-number">1</span>]; <span class="hljs-comment">// Evaluates to ['d', 'e', 'f']</span>
+x[<span class="hljs-number">0</span>]; <span class="hljs-comment">// Evaluates to 'd'</span>
 </code></pre>
-<p>But the variable <code>x</code> there is unnecessary - it&#39;s just standing in for <code>[&#39;d&#39;,&#39;e&#39;,&#39;f&#39;]</code>. We can access that element directly from <code>array_of_arrays</code> using the following syntax:</p>
-<pre><code class="lang-javascript">array_of_arrays[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]; <span class="hljs-comment">// Evaluates to 'd'</span>
+<p>But the variable <code>x</code> there is unnecessary - it&#39;s just standing in for <code>[&#39;d&#39;, &#39;e&#39;, &#39;f&#39;]</code>. We can access that element directly from <code>arrayOfArrays</code> using the following syntax:</p>
+<pre><code class="lang-javascript">arrayOfArrays[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]; <span class="hljs-comment">// Evaluates to 'd'</span>
 </code></pre>
 <p>If you imagine an array of arrays as a grid of values (like in the example above), you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?</p>
-<pre><code class="lang-javascript">array_of_arrays = [[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>],[<span class="hljs-string">'d'</span>,<span class="hljs-string">'e'</span>,<span class="hljs-string">'f'</span>],[<span class="hljs-string">'g'</span>,<span class="hljs-string">'h'</span>,<span class="hljs-string">'i'</span>]];
-array_of_arrays[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];
-array_of_arrays[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>];
-array_of_arrays[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>] = <span class="hljs-string">'z'</span>;
-array_of_arrays[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>] = array_of_arrays[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];
-<span class="hljs-built_in">console</span>.log(array_of_arrays);
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> arrayOfArrays = [[<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>], [<span class="hljs-string">'d'</span>, <span class="hljs-string">'e'</span>, <span class="hljs-string">'f'</span>], [<span class="hljs-string">'g'</span>, <span class="hljs-string">'h'</span>, <span class="hljs-string">'i'</span>]];
+arrayOfArrays[<span class="hljs-number">0</span>][<span class="hljs-number">0</span>];
+arrayOfArrays[<span class="hljs-number">1</span>][<span class="hljs-number">2</span>];
+arrayOfArrays[<span class="hljs-number">2</span>][<span class="hljs-number">2</span>] = <span class="hljs-string">'z'</span>;
+arrayOfArrays[<span class="hljs-number">2</span>][<span class="hljs-number">1</span>] = arrayOfArrays[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>];
+<span class="hljs-built_in">console</span>.log(arrayOfArrays);
 </code></pre>
 <p>Confirm your answer by entering the above code in a new Repl.it session.</p>
 <h2 id="additional-array-features">Additional Array Features</h2>
@@ -1397,39 +1397,39 @@ array_of_arrays[<span class="hljs-number">2</span>][<span class="hljs-number">1<
 <h3 id="finding-and-accessing-elements-in-an-array">Finding and Accessing Elements in an Array</h3>
 <h4 id="length">.length</h4>
 <p>All arrays have a property called <code>length</code>, which tells you how many elements are currently present in the array. To access this value, simply tack on <code>.length</code> to the end of an array (or, alternatively, a variable containing that array). Here are some examples of <code>.length</code> in action.</p>
-<pre><code class="lang-javascript">[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>].length;  <span class="hljs-comment">// evaluates to 3</span>
+<pre><code class="lang-javascript">[<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>].length;  <span class="hljs-comment">// Evaluates to 3</span>
 
-<span class="hljs-keyword">var</span> x = [<span class="hljs-number">10</span>,<span class="hljs-number">20</span>,<span class="hljs-number">30</span>,<span class="hljs-number">40</span>];
-x.length;              <span class="hljs-comment">// evaluates to 4</span>
+<span class="hljs-keyword">var</span> x = [<span class="hljs-number">10</span>, <span class="hljs-number">20</span>, <span class="hljs-number">30</span>, <span class="hljs-number">40</span>];
+x.length; <span class="hljs-comment">// Evaluates to 4</span>
 </code></pre>
 <p>One especially nice thing about knowing the length of the array is that it allows us to easily find the last (or second-to-last, or third-to-last) element in the array.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> Because the first element in an array has an index of 0, for an array of any length, the index of the last element will be equal to the length minus one.</p>
 </blockquote>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> team = [<span class="hljs-string">'ted'</span>,<span class="hljs-string">'lem'</span>,<span class="hljs-string">'phil'</span>,<span class="hljs-string">'linda'</span>,<span class="hljs-string">'veronica'</span>,];
-team[team.length - <span class="hljs-number">1</span>];   <span class="hljs-comment">// evaluates to 'veronica'.</span>
-team[team.length - <span class="hljs-number">2</span>];   <span class="hljs-comment">// evaluates to 'linda'.</span>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> team = [<span class="hljs-string">'ted'</span>, <span class="hljs-string">'lem'</span>, <span class="hljs-string">'phil'</span>, <span class="hljs-string">'linda'</span>, <span class="hljs-string">'veronica'</span>];
+team[team.length - <span class="hljs-number">1</span>];   <span class="hljs-comment">// Evaluates to 'veronica'.</span>
+team[team.length - <span class="hljs-number">2</span>];   <span class="hljs-comment">// Evaluates to 'linda'.</span>
 </code></pre>
 <h4 id="indexof">.indexOf()</h4>
 <p>This function evaluates to the index of the first element in the array that matches the value in parentheses. If no match is found, the function evaluates to -1.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> animals = [<span class="hljs-string">'bear'</span>,<span class="hljs-string">'beetle'</span>,<span class="hljs-string">'boa'</span>];
-animals.indexOf(<span class="hljs-string">'boa'</span>)  <span class="hljs-comment">// evaluates to 2</span>
-animals.indexOf(<span class="hljs-string">'bear'</span>) <span class="hljs-comment">// evaluates to 0</span>
-animals.indexOf(<span class="hljs-string">'bee'</span>)  <span class="hljs-comment">// evaluates to -1</span>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> animals = [<span class="hljs-string">'bear'</span>, <span class="hljs-string">'beetle'</span>, <span class="hljs-string">'boa'</span>];
+animals.indexOf(<span class="hljs-string">'boa'</span>);  <span class="hljs-comment">// Evaluates to 2</span>
+animals.indexOf(<span class="hljs-string">'bear'</span>); <span class="hljs-comment">// Evaluates to 0</span>
+animals.indexOf(<span class="hljs-string">'bee'</span>);  <span class="hljs-comment">// Evaluates to -1</span>
 </code></pre>
 <h3 id="adding-and-removing-elements-in-an-array">Adding and Removing Elements in an Array</h3>
 <h4 id="push-and-pop">.push() and .pop()</h4>
 <p><code>push</code> and <code>pop</code> are two related functions that allow you to either add an element to (<code>push</code>) or remove the last element from (<code>pop</code>) the end of an array. <code>push</code> in particular is a very convenient way to build up an array over time - you&#39;re simply adding another item to the list.</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> ghosts = [<span class="hljs-string">'blinky'</span>,<span class="hljs-string">'inky'</span>,<span class="hljs-string">'pinky'</span>];
-ghosts.push(<span class="hljs-string">'clyde'</span>);  <span class="hljs-comment">// evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky','clyde'].</span>
-ghosts.pop();          <span class="hljs-comment">// evaluates to 'clyde'; `ghosts` is now ['blinky','inky','pinky'] again.</span>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> ghosts = [<span class="hljs-string">'blinky'</span>, <span class="hljs-string">'inky'</span>, <span class="hljs-string">'pinky'</span>];
+ghosts.push(<span class="hljs-string">'clyde'</span>);  <span class="hljs-comment">// Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky', 'clyde'].</span>
+ghosts.pop();          <span class="hljs-comment">// Evaluates to 'clyde'; `ghosts` is now ['blinky', 'inky', 'pinky'] again.</span>
 </code></pre>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>What will the following lines do?</p>
-<pre><code class="lang-javascript">[<span class="hljs-string">'a'</span>,<span class="hljs-string">'b'</span>,<span class="hljs-string">'c'</span>].indexOf(<span class="hljs-string">'b'</span>)
-[<span class="hljs-literal">true</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">false</span>,<span class="hljs-literal">true</span>].length
-x = [<span class="hljs-string">'paul'</span>,<span class="hljs-string">'john'</span>,<span class="hljs-string">'george'</span>]; x.push(<span class="hljs-string">'ringo'</span>);
-y = [<span class="hljs-string">'soda'</span>,<span class="hljs-string">'tart'</span>,<span class="hljs-string">'weasel'</span>]; y.pop();
+<pre><code class="lang-javascript">[<span class="hljs-string">'a'</span>, <span class="hljs-string">'b'</span>, <span class="hljs-string">'c'</span>].indexOf(<span class="hljs-string">'b'</span>);
+[<span class="hljs-literal">true</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">false</span>, <span class="hljs-literal">true</span>].length;
+<span class="hljs-keyword">var</span> x = [<span class="hljs-string">'paul'</span>, <span class="hljs-string">'john'</span>, <span class="hljs-string">'george'</span>]; x.push(<span class="hljs-string">'ringo'</span>);
+<span class="hljs-keyword">var</span> y = [<span class="hljs-string">'soda'</span>, <span class="hljs-string">'tart'</span>, <span class="hljs-string">'weasel'</span>]; y.pop();
 </code></pre>
 <p>Confirm your answer by entering each of the above lines of code on the repl.it console.</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
