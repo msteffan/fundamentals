@@ -66,6 +66,4 @@ The total number of tweets that have been made by wilw so far?
 
 ---
 
-
-
 [One last exercise - this time on associative arrays.](10_exercise.md)
