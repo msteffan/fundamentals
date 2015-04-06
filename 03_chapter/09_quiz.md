@@ -2,9 +2,9 @@
 
 ---
 
-What does this statement evaluate to?*
+What does this statement evaluate to? ```10 > 9 > 8 === true;```
 - [ ] true
-- [ ] false
+- [x] false
 - [ ] null
 - [ ] undefined
 
@@ -16,9 +16,9 @@ What does this statement evaluate to?*
 > Operators convert booleans to numbers, so this evaluates to: (1 > 8)
 > Which is false.
 
-Evaluate the last statement:*
+Evaluate the last statement: `var x; x === x;`
 HINT: what is the value of "x === x;"?
-- [ ] true
+- [x] true
 - [ ] false
 - [ ] null
 - [ ] undefined
@@ -27,7 +27,7 @@ HINT: what is the value of "x === x;"?
 > The statement "x === x"  would evaluate to true, because the variable does exist.
 > The variable "x" alone would evaluate to null, as it exists but has not been assigned a value.
 
-Again, evaluate the last statement:*
+Again, evaluate the last statement: `var x; x === x; y === y;`
 HINT: what is the value of "y === y"?
 var x;
 x === x;
@@ -36,7 +36,7 @@ y === y;
 - [ ] true
 - [ ] false
 - [ ] null
-- [ ] undefined
+- [x] undefined
 
 > Not quite. If you were to run this code in the console, JavaScript's response
 would be ""ReferenceError: y is not defined".  JavaScript has no idea what "y"
@@ -44,43 +44,38 @@ is and would not be able to evaluate the statement.  So, the statement is
 undefined.
 
 What is the value of the variable "a"?*
-
-var a = (null == false);
+```var a = (null == false);
 var b = (null == null);
 var c = (undefined == null);
 var d = (false == "");
-var e = (false === 0);
-
+var e = (false === 0);```
 - [ ] true
-- [ ] false
+- [x] false
 
 > Not quite.
 > While "null" has an inherently false value (it is "falsy"), it is not equivalent to anything except itself or the "undefined" value.
 
-What is the value of the variable "c"?*
-
-var a = (null == false);
+What is the value of the variable "c"?
+```var a = (null == false);
 var b = (null == null);
 var c = (undefined == null);
 var d = (false == "");
-var e = (false === 0);
-
-- [ ] true
+var e = (false === 0);```
+- [x] true
 - [ ] false
 
 > Not quite.
 > While "undefined" and "null" are falsy values, it is true that "undefined == null".
 
-What is the value of  d || e ?*
+What is the value of  d || e ?
 HINT: first evaluate "d" and "e"
-
-var a = (null == false);
+```var a = (null == false);
 var b = (null == null);
 var c = (undefined == null);
 var d = (false == "");
-var e = (false === 0);
+var e = (false === 0);```
 
-- [ ] true
+- [x] true
 - [ ] false
 
 > Not quite.
