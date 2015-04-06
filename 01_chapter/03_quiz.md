@@ -13,7 +13,7 @@ Answer the following questions based on this image: ![:image](../assets/chapter1
 
 > Not quite.
 >
-> (B) is the working directory –it always precedes the username and reflects the users location in the file system. The "~" tilde is shorthand for the Home Directory.
+> (B) is the working directory – it precedes the username and reflects the users location in the file system. The `~` tilde is shorthand for the Home Directory.
 
 `brunomars` is the:
 - [ ] Name of the computer
@@ -33,7 +33,7 @@ Answer the following questions based on this image: ![:image](../assets/chapter1
 
 > Not quite.
 >
-> The blinking cursor after the "$" indicates that the computer is ready to accept the user's command.  The computer will not return this prompt until it is done completing whatever task you asked of it.
+> The blinking cursor after the `$` indicates that the computer is ready to accept the user's command.  The computer will not return this prompt until it is done completing whatever task you asked of it.
 
 ---
 
