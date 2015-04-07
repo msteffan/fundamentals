@@ -1,17 +1,27 @@
 {
-"generator": "site",
-"title": "WDI Fundamentals",
-"description": null,
-"plugins": ["quizzes","exercises","richquotes","toconsole","nestedmd","ga"],
-"pluginsConfig": {
-	"toconsole": {
-        "buttontext": "Evaluate in console"
-    },
+  "gitbook": "2.0.0",
+  "title": "WDI Fundamentals",
+  "language": "en",
+  "description": null,
+  "plugins": [
+    "quizzes@1.0.0",
+    "exercises@2.0.0-alpha.3",
+    "richquotes",
+    "nestedmd",
+    "ga"
+  ],
+  "pluginsConfig": {
     "richquotes" : {
         "todos": true
     },
     "ga": {
-    	"token": "UA-59130211-1"
+      "token": "UA-59130211-1"
     }
- }
+ },
+  "styles": {
+    "website": "styles/website.css"
+  },
+  "structure": {
+    "readme": "intro.md"
+  }
 }

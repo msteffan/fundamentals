@@ -6,7 +6,7 @@
 ## What is an Array?
 
 
-An array is an ordered list of items, also known as **elements**, separated by commas and sitauted between brackets `[]`. Arrays can contain different types of elements, like `["red", 42, "gorilla", false]`, but we generally use arrays to deal with elements of the same type.
+An array is an ordered list of items, also known as **elements**, separated by commas and situated between brackets `[]`. Arrays can contain different types of elements, like `["red", 42, "gorilla", false]`, but we generally use arrays to deal with elements of the same type.
 
 ###Finding Elements in an Array
 

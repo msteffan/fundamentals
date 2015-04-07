@@ -1,6 +1,6 @@
 # Summary
 
-* [Welcome](README.md) 
+* [Welcome](intro.md)
 	* [Get Help When You Need It](00_chapter/get_started.md)
 * [Think like a Programmer](01_chapter/README.md)
 	* [How Your Computer is Organized](01_chapter/02_lesson.md)
@@ -65,3 +65,4 @@
       * [Exercise](06_chapter/10_exercise.md)
 	* [Cheat Sheet](06_chapter/11_cheatsheet.md)
 	* [Unit 6 Homework](06_chapter/12_assessment.md)
+* [Getting Feedback](07_feedback/README.md)

@@ -2,7 +2,7 @@
 
 ---
 
-##Join the WDI Community on Slack!
+## Join the WDI Community on Slack!
 
 We design our immersive courses to help you embrace and excel in the challenge of lifelong learning. This means that when you get stuck, the instructors, developers-in-residence, and TAs you work with will often help you drive your own process of discovery, rather than just giving you the right answer.
 
@@ -12,9 +12,13 @@ Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
 
 ![Step-by-step Slack Tutorial](../assets/chapter0/slack_tutorial.gif)
 
-
 ---
 
+## Getting Help
+
+By the time you've completed Fundamentals, you will have built a game in JavaScript which you can run on the command line. You'll also have the chance to connect with an online mentor to get feedback on your code. You don't need to do anything now (we'll remind you at the end of Fundamentals), but you can read more about GA Mentors [here](07_feedback/README.md).
+
+---
 
 ## Feedback
 
