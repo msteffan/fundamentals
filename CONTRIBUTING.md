@@ -34,7 +34,6 @@ Or simply build the static website using:
 $ gitbook build
 ```
 
-<<<<<<< HEAD
 Install necessary plugins for development
 
 ```
@@ -50,7 +49,24 @@ Quizzes are hosted through TypeForm. To make changes to quizzes contact JD?
 
 # Deployment
 
-The Github pages version is currently deployed. Currently any changes or issues should be filed as pull requests against GitLab/Development and then those changes must be merged in, and pushed to Github/GHPages branch.
+The subtree `_book` is deployed to Github on the `gh-pages` branch.
+Currently any changes or issues should be filed as pull requests against GitLab/Development.
+
+Deployment scheme compiled from these sources
+- https://gist.github.com/cobyism/4730490
+- http://stevenclontz.com/blog/2014/05/08/git-subtree-push-for-deployment/
+
+```
+# replace build_folder as appropriate
+git subtree push --prefix _book origin gh-pages
+```
+
+One caveat here. Since git subtree push doesn’t have a --force option, you will have trouble on the first push if you have an existing gh-pages branch. You can actually chain git commands together to fix this, thankfully.
+
+```
+git push origin `git subtree split --prefix _book master`:gh-pages --force
+```
+
 
 # Roadmap
 
