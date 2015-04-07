@@ -54,4 +54,4 @@ Well done! You've made it through six tough tutorials on JavaScript. Give yourse
 
 ---
 
-Now that you've finished your project, we encourage you to [learn more about GA Mentors](../07_feedback/README.md), and how you can get feedback on your code before your course begins.
+Now that you've finished your project, we encourage you to [learn more about GA Mentors](../07_feedback/intro.md), and how you can get feedback on your code before your course begins.
