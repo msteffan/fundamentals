@@ -10,4 +10,6 @@ We hope you find WDI to be as rewarding as it is challenging — we can assure y
 
 The entire ebook is six units long and we expect it to take you around 40 hours to complete it.
 
+By the time you've completed Fundamentals, you'll have built a game in JavaScript which you can run on the command line. You'll also have the chance to connect with an online mentor to get feedback on your code. You can read more about that [here](07_feedback/README.md). 
+
 [Ok, let's get started!](00_chapter/get_started.md)
