@@ -48,6 +48,7 @@ We've set up autmatic testing using Travis CI, and so if you would prefer to rev
 	<br>
 	![Where to find ga-students repo](assets/instructors/ga-students_travis.png)
 	<br>
+
 * Click the "Pull Requests" tab to view the pull requests for this repo, in addition to an assessment of whether the project build failed or passed.
  	<br>
  	![Where to find Pull Requests in Travis-CI](assets/instructors/pr_tab_intravis.png)
