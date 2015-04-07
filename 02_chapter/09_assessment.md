@@ -23,7 +23,7 @@ To access the existing code for this project, you will need to fork and clone th
 
 1. If you don't have one already, [create an account](07_exercise.md) on GitHub.com.
 
-2. Go to [this address](https://github.com/ga-students/wdi-fundamentals-rps) to find the repository containing the existing code. 
+2. Go to [this address](https://github.com/ga-students/wdi-fundamentals-rps) to find the repository containing the existing code.
 	Once there, click the button that says 'Fork' - this will create a copy of the original repository under **your** GitHub account.
 
 3. Go take a look and confirm that you now have a copy of `wdi-fundamentals-rps` in your list of repositories.
@@ -36,7 +36,7 @@ To access the existing code for this project, you will need to fork and clone th
 
 	![Image showing "clone HTTP address"](../assets/chapter2/clone_http.png)
 
-6. Open up the terminal application on your computer, and navigate to the `fundamentals` directory within your home directory. 
+6. Open up the terminal application on your computer, and navigate to the `fundamentals` directory within your home directory.
 	Once there, run the following Git command from command line:
 <br>
 `git clone <HTTPS clone URL>` (substituting the clone URL you copied above)
@@ -47,6 +47,6 @@ To access the existing code for this project, you will need to fork and clone th
 
 ---
 
-That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/README.md).
+That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/intro.md).
 
 

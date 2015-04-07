@@ -34,6 +34,6 @@ Please write whatever code will be necessary for this function to work.
 
 Once your code is working, you can commit your changes and move on to the next chapter.
 
-[Next up: Chapter 6](../06_chapter/README.md)
+[Next up: Chapter 6](../06_chapter/intro.md)
 
 > If any of you are interested in an additional challenge, try writing another function called `playTo(x)` that allows us to play Rock Paper Scissors until either the player or the computer has won `x` times. Feel free to steal liberally from `playToFive()`.

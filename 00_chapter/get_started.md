@@ -16,7 +16,7 @@ Next, go to [slack.com](https://slack.com/signin), enter "ga-students" where the
 
 ## Getting Help
 
-By the time you've completed Fundamentals, you will have built a game in JavaScript which you can run on the command line. You'll also have the chance to connect with an online mentor to get feedback on your code. You don't need to do anything now (we'll remind you at the end of Fundamentals), but you can read more about GA Mentors [here](07_feedback/intro.md).
+By the time you've completed Fundamentals, you will have built a game in JavaScript which you can run on the command line. You'll also have the chance to connect with an online mentor to get feedback on your code. You don't need to do anything now (we'll remind you at the end of Fundamentals), but you can read more about GA Mentors [here](../07_feedback/intro.md).
 
 ---
 

@@ -21,7 +21,7 @@ function getWinner(playerMove, computerMove) {
 Use control flow to determine which value gets `return`ed.
 > HINT: the possible outcomes are either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
 
-If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/README.md). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
+If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/intro.md). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
 
 > **Note** Remember, when you're programming, you need to figure out the solution before you ever start writing code. Here's a good general procedure you can follow:
 >
@@ -39,4 +39,4 @@ If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/REA
 Once you've finished (and have tested your code), commit the changes you've made to the project's repository.
 
 ---
-[Next up: Chapter 5](../05_chapter/README.md)
+[Next up: Chapter 5](../05_chapter/intro.md)

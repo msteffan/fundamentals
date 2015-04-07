@@ -57,4 +57,4 @@ Similar to how you've done this in your exercises, you will need to replace the 
 Go ahead and get started - once you've finished editing those two lines, save your code and make a commit to your project's repository.
 
 ---
-[Next up: Chapter 4](../04_chapter/README.md)
+[Next up: Chapter 4](../04_chapter/intro.md)
