@@ -34,6 +34,7 @@ Or simply build the static website using:
 $ gitbook build
 ```
 
+<<<<<<< HEAD
 Install necessary plugins for development
 
 ```
@@ -71,20 +72,3 @@ The Github pages version is currently deployed. Currently any changes or issues 
 
 - [Gitbook](https://github.com/GitbookIO/gitbook)
 - [AirBnB Style Guide](https://github.com/airbnb/javascript)
-
-#
-
-this should happen a week before:
-Producer makes a list of studnets who have not done prework,
-sends an email that says you have not done
-emails instructors,
-
-instructors will have a list of students who have done the prework so that they can follow up with the students at installfest
-
-students want feedback on their prework so that they know that someone is looking at their work so that they feel accountable otherwise they won't do the prework.
-
-regional directors will dictate what happens to students who don't complete prework by day one.
-
-Hari and Andrew made a Ruby version with JD
-Dana Reilly re-wrote it to make sense with JS and make each unit build towards one product
-No one watched screencasts
