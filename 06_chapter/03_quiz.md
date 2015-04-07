@@ -2,10 +2,70 @@
 
 ---
 
-<div class="typeform-widget" data-url="https://ga-immersives.typeform.com/to/YEnzkq" data-text="NEW Fundamentals 6.1" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+In JavaScript, how would we access the second element in an array called "myArray"?
 
-*These quizzes can be fickle –if you do not see anything above, please try refreshing the page!
+- [ ] `myArray[2]`
+- [ ] `myArray(2)`
+- [x] `myArray[1]`
+- [ ] `myArray(1)`
+
+> Not quite.
+> To access the second element in an array, you would need to use the command:
+> myArray[1]
+> Remember that the first element in an array has an index of 0.
+
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var fruits = ['apple', 'orange', 'banana'];
+fruits.pop();
+fruits.push('grape');
+fruits.push('banana');
+```
+
+---
+After the above code has executed, what does the fruits array contain?
+
+- [ ] `['apple', 'orange', 'banana']`
+- [ ] `['orange', 'banana', 'grape', 'banana']`
+- [x] `['apple', 'orange', 'grape', 'banana']`
+- [ ] `['banana', 'grape', 'apple', 'orange']`
+
+> Not quite.
+> This code would remove "banana", add "grape" and then add "banana" back to the last position of the array.
+
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var ages = [26, 28, 30, 28, 17];
+```
+---
+What would 'ages[2];' evaluate to?
+
+- [ ] 26
+- [ ] 28
+- [x] 30
+- [ ] 17
+
+> Not quite.
+> ages[2] would return the element "30".
+
+What would 'ages.indexOf(28);' evaluate to?
+- [ ] 0
+- [x] 1
+- [ ] 2
+- [ ] 3
+- [ ] 4
+- [ ] 5
+
+> Not quite.
+> .indexOf() returns the first – least – index of an element within the array
+> equal to the specified value, or -1 if none is found.  So .indexOf(28) would
+> evaluate to 1.
 
 ---
 [Let's get some practice with creating and editing arrays.](04_exercise.md)

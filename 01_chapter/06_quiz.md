@@ -2,10 +2,45 @@
 
 ---
 
-<div class="typeform-widget" data-url="https://gahub.typeform.com/to/MxzusH" data-text="NEW Fundamentals 1.2" style="width:100%;height:500px;"></div>
-<script>(function(){var qs,js,q,s,d=document,gi=d.getElementById,ce=d.createElement,gt=d.getElementsByTagName,id='typef_orm',b='https://s3-eu-west-1.amazonaws.com/share.typeform.com/';if(!gi.call(d,id)){js=ce.call(d,'script');js.id=id;js.src=b+'widget.js';q=gt.call(d,'script')[0];q.parentNode.insertBefore(js,q)}})()</script>
+Answer the following questions based on this image: ![:image](../assets/chapter1/quiz2.gif)
 
-*These quizzes can be fickle –if you do not see anything below, please try refreshing the page!
+What is the name of Ada's working directory at the end of this terminal session?
+
+- [ ] users
+- [x] desktop
+- [ ] cd
+- [ ] adalovelace
+
+> Not quite.
+>
+> The working directory is desktop, as you can see in the prompt and the frame
+> of the terminal window. The full path for desktop is
+> `/Users/adalovelace/desktop/` but this question asked for its name alone.
+
+What was Ada's working directory at the beginning of this terminal session?
+
+- [ ] desktop
+- [x] home
+- [ ] cd
+- [ ] adalovelace
+
+> Not quite.
+>
+> The working directory was Ada's home directory, the full path for which is
+> `/Users/adalovelace/`. It is represented by the `~` tilde symbol in the first
+> line of this terminal session, before Ada changes her working directory to desktop.
+
+What does the desktop of Ada's computer contain?
+
+- [ ] `/Users/adalovelace/`
+- [ ] a folder called "ls"
+- [x] Analytical_Engine.txt, scientific_memoirs.pdf, and a directory called 'notes'
+- [ ] Nothing, it's empty
+
+> Not quite.
+>
+> As you can after Ada lists the contents of desktop (her current working
+> directory), the computer returns the names of two files and a folder
 
 ---
 
