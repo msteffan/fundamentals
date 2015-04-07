@@ -1,15 +1,21 @@
-.book .book-body .page-wrapper .page-inner section.quiz {
+.book .book-body .page-wrapper .page-inner section.quiz,
+.book .book-body .page-wrapper .page-inner .exercise {
   border: none;
 }
 
-.book .book-body .page-wrapper .page-inner section.quiz .header {
+.book .book-body .page-wrapper .page-inner .quiz .header {
   background: none;
   color: black;
 }
 
-.book .book-body .page-wrapper .page-inner section.quiz .message {}
+.book .book-body .page-wrapper .page-inner .exercise .header {
+  background: rgb(246, 246, 246);
+  color: black;
+}
 
-.book .book-body .page-wrapper .page-inner section.quiz .question-header {
+.book .book-body .page-wrapper .page-inner .quiz .message {}
+
+.book .book-body .page-wrapper .page-inner .quiz .question-header {
   background-color: rgb(246, 246, 246);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-style: solid;
@@ -33,7 +39,8 @@
   text-decoration: none solid rgb(34, 34, 34);
 }
 
-.book .book-body .page-wrapper .page-inner section.quiz .action-submit {
+.book .book-body .page-wrapper .page-inner .quiz .action-submit,
+.book .book-body .page-wrapper .page-inner .exercise .action-submit {
   background-color: rgb(250, 69, 66);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 3px;
@@ -80,7 +87,8 @@
   width: 160px;
 }
 
-.book .book-body .page-wrapper .page-inner section.quiz .action-solution {
+.book .book-body .page-wrapper .page-inner .quiz .action-solution,
+.book .book-body .page-wrapper .page-inner .exercise .action-solution {
   background-color: rgb(195, 195, 195);
   border-bottom-color: rgb(56, 56, 56);
   border-bottom-left-radius: 3px;

@@ -1,7 +1,8 @@
 **WDI Fundamentals Unit 3**
 
 Evaluate the following expressions:
-First, try drawing expression trees for these expressions, and evaluate them by hand using the approach described earlier (left-child first, then right-child).
+First, try drawing expression trees for these expressions, and evaluate them by
+hand using the approach described earlier (left-child first, then right-child).
 
 ---
 9 - 1 + 2 - 4
@@ -49,4 +50,5 @@ First, try drawing expression trees for these expressions, and evaluate them by 
 > ![:image](../assets/chapter3/qa4.png)
 
 ---
+
 Feeling good? [Let's do some more practice.](04_exercise.md)

@@ -20,7 +20,8 @@ What is a repository?
 
 > Not quite.
 >
-> A repository is a place where data is stored and tracked –a git repository is a directory which contains the '.git/' folder.
+> A repository is a place where data is stored and tracked –a git repository is
+> a directory which contains the '.git/' folder.
 
 What would the command `git init` do?
 - [ ] Create a variable called 'init'.
@@ -30,7 +31,7 @@ What would the command `git init` do?
 
 > Not quite.
 >
-> "git init" creates a repository in the working directory.
+> `git init` creates a repository in the working directory.
 
 What command would you use to move all your changes since your last commit to the staging area?
 - [ ] git commit -m "removed a GIF"
@@ -40,7 +41,7 @@ What command would you use to move all your changes since your last commit to th
 
 > Not quite.
 >
-> "git add ." moves all your changes since your last commit to the staging area.
+> `git add .` moves all your changes since your last commit to the staging area.
 
 What command would you use to show a list of all the commits that have been made to a repo?
 - [ ] git timeline
@@ -50,7 +51,7 @@ What command would you use to show a list of all the commits that have been made
 
 > Not quite.
 >
-> "git log" would display the commit history of a repo.
+> `git log` would display the commit history of a repo.
 
 ---
 

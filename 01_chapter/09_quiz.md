@@ -13,9 +13,11 @@ What does Adrian's home directory contain? ![:image](../assets/chapter1/quiz3.gi
 
 > Not quite.
 >
-> Adrian lists the contents of his home directory on the third line (remember, the ~ symbol is shorthand for the home directory), and the computer returns two folders (college and images_backup).
+> Adrian lists the contents of his home directory on the third line (remember,
+> the `~` symbol is shorthand for the home directory), and the computer returns
+> two folders (college and images_backup).
 
-What changes did Adrian make to the "/college" directory?*
+What changes did Adrian make to the "/college" directory?
 
 - [ ] moved the images_backup directory into the college directory
 - [ ] deleted a directory and moved a file out of the college directory
@@ -24,9 +26,10 @@ What changes did Adrian make to the "/college" directory?*
 
 > Not quite.
 >
-> Adrian deleted grocery-list-2005.txt and moved graduation-picture.jpg into the images-backup directory.
+> Adrian deleted grocery-list-2005.txt and moved graduation-picture.jpg into the
+> images-backup directory.
 
-What command would Adrian use to rename 'untitled_essay.doc' to 'draft1.doc'?*
+What command would Adrian use to rename 'untitled_essay.doc' to 'draft1.doc'?
 
 - [ ] `cp draft1.doc untitled_essay.doc`
 - [x] `mv draft1.doc untitled_essay.doc`
@@ -35,7 +38,8 @@ What command would Adrian use to rename 'untitled_essay.doc' to 'draft1.doc'?*
 
 > Not quite.
 >
-> Adrian would need to use the mv command using the new file name as the second argument.
+> Adrian would need to use the mv command using the new file name as the second
+> argument.
 
 ---
 

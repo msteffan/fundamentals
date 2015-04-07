@@ -10,7 +10,9 @@ What is Github?
 
 > Not quite.
 >
-> Github is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+> Github is a web-based Git repository hosting service, which offers all of the
+> distributed revision control and source code management (SCM) functionality of
+> Git as well as adding its own features.
 
 How do you update your remote repository with changes to your local repository?
 - [ ] git pull
@@ -20,7 +22,8 @@ How do you update your remote repository with changes to your local repository?
 
 > Not quite.
 >
-> To update your remote repository, you need to "git push" from your local repo to the remote repo
+> To update your remote repository, you need to `git push` from your local repo
+> to the remote repo
 
 You are browsing through Github and you see this incredible project.
 You think, "I want a copy of ga-students' repo." What should you do now? ![:image](../assets/chapter2/quiz2.png)
@@ -31,10 +34,11 @@ You think, "I want a copy of ga-students' repo." What should you do now? ![:imag
 
 > Not quite.
 >
-> Best practice is to fork that Github user's repository, to make a copy owned by your own Github account.
-> That way you can make updates and push those changes to your remote repo. You can easily sync your fork with their original repo if they make changes too.
+> Best practice is to fork that Github user's repository, to make a copy owned
+> by your own Github account.
+> That way you can make updates and push those changes to your remote repo. You
+> can easily sync your fork with their original repo if they make changes too.
 
 ---
-
 
 [Here's another exercise for you](07_exercise.md) - give it a shot.
