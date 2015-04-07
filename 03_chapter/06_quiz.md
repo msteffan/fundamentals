@@ -50,7 +50,8 @@ var answer = 8;
 
 {% exercise %}
 Create a variable x equal to the sum of a and b divided by c and finally
-multiplied by d. HINT: don't forget to declare the new variable "x"
+multiplied by d.<br>
+<small>HINT: don't forget to declare the new variable "x"</small>
 {% initial %}
 
 {% validation %}

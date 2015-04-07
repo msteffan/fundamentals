@@ -1,14 +1,18 @@
  **WDI Fundamentals Unit 5**
 
----
-What value will be returned from the function below when x is equal to 25?
-```function myFunction(x) {
+Read the following code and then answer the questions below.
+
+```js
+function myFunction(x) {
   if (x > 30) {
     return x - 30;
   } else if (x < 10) {
     return x;
   }
 }```
+
+---
+What value will be returned from the function above when x is equal to 25?
 
 - [ ] 25
 - [x] 24
@@ -18,15 +22,23 @@ What value will be returned from the function below when x is equal to 25?
 > Not quite.
 > If x is equal to 25, then the function would execute the final return
 > statement, x – 1.  And since x equals 25, that statement would evaluate to 24.
+---
 
-What value will be returned from the function below when x is equal to 10?
-```function myFunction(x) {
+Read the following code and then answer the questions below.
+
+```js
+function myFunction(x) {
   if (x > 30) {
     return x - 30;
   } else if (x < 10) {
     return x;
   }
-}```
+}
+```
+
+---
+What value will be returned from the function above when x is equal to 10?
+
 
 - [ ] 25
 - [ ] 24
@@ -40,26 +52,33 @@ What value will be returned from the function below when x is equal to 10?
 How would we call this function, either in our program or the console, passing
 5 as an argument?
 
-- [ ] var myFunction() = 5;
-- [ ] myFunction(5);
-- [ ] myFunction(x) { return 5; }
-- [ ] myFunction[5];
+- [ ] `var myFunction() = 5;`
+- [ ] `myFunction(5);`
+- [ ] `myFunction(x) { return 5; }`
+- [ ] `myFunction[5];`
 
 > Not quite.
 > Javascript functions are executed or "called" by appending () to the function
 > name. To call this function with 5 as an argument, we would write:
 > `myFunction(5)`
 
-This function compares two numbers, x and y.
-How would we call this function to compare 10 and 20?
-```function anotherFunction(x, y) {
-  return (x < y ) ? x : y;
-}```
+---
 
-- [ ] anotherFunction(x, y)
-- [x] anotherFunction(10, 20)
-- [ ] anotherFunction[10, 20]
-- [ ] anotherFunction[x, y]
+Read the following code and then answer the questions below.
+
+```js
+function anotherFunction(x, y) {
+  return (x < y ) ? x : y;
+}
+```
+---
+
+How would we call the above function to compare 10 and 20?
+
+- [ ] `anotherFunction(x, y)`
+- [x] `anotherFunction(10, 20)`
+- [ ] `anotherFunction[10, 20]`
+- [ ] `anotherFunction[x, y]`
 
 > Not quite.
 >

@@ -2,9 +2,10 @@
 
 ---
 
-Adrian decided to do some "spring cleaning" during this session in command line.
+Adrian decided to do some "spring cleaning" during this session in command line. Answer the following questions based on this image.
+![:image](../assets/chapter1/quiz3.gif)
 
-What does Adrian's home directory contain? ![:image](../assets/chapter1/quiz3.gif)
+What does Adrian's home directory contain?
 
 - [ ] four directories (Documents, Pictures, Desktop, Applications)
 - [x] two directories (college and images_backup)

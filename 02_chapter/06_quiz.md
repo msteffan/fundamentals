@@ -15,10 +15,10 @@ What is Github?
 > Git as well as adding its own features.
 
 How do you update your remote repository with changes to your local repository?
-- [ ] git pull
-- [ ] git commit -m "update to remote repository"
-- [x] git push
-- [ ] git update
+- [ ] `git pull`
+- [ ] `git commit -m "update to remote repository"`
+- [x] `git push`
+- [ ] `git update`
 
 > Not quite.
 >

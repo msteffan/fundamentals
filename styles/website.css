@@ -41,6 +41,7 @@
 
 .book .book-body .page-wrapper .page-inner .quiz .action-submit,
 .book .book-body .page-wrapper .page-inner .exercise .action-submit {
+  margin: 10px;
   background-color: rgb(250, 69, 66);
   border-bottom-color: rgb(255, 255, 255);
   border-bottom-left-radius: 3px;
@@ -67,14 +68,6 @@
   font-style: normal;
   font-variant: normal;
   font-weight: 800;
-  height: 55px;
-  line-height: normal;
-  margin-bottom: 3px;
-  margin-left: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
   text-align: center;
   text-decoration: none solid rgb(255, 255, 255);
   text-decoration-color: rgb(255, 255, 255);
@@ -89,6 +82,7 @@
 
 .book .book-body .page-wrapper .page-inner .quiz .action-solution,
 .book .book-body .page-wrapper .page-inner .exercise .action-solution {
+  margin: 10px;
   background-color: rgb(195, 195, 195);
   border-bottom-color: rgb(56, 56, 56);
   border-bottom-left-radius: 3px;
@@ -117,14 +111,6 @@
   font-style: normal;
   font-variant: normal;
   font-weight: 800;
-  height: 55px;
-  line-height: normal;
-  margin-bottom: 3px;
-  margin-left: 16px;
-  padding-bottom: 16px;
-  padding-left: 32px;
-  padding-right: 32px;
-  padding-top: 16px;
   text-align: center;
   text-decoration: none solid rgb(56, 56, 56);
   text-decoration-color: rgb(56, 56, 56);

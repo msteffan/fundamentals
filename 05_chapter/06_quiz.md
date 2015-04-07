@@ -13,12 +13,20 @@ You can use a function in any place where you would use a ________.
 > Just like JavaScript Variables, Functions must be declared and can be used in
 > expressions.
 
-What does the following code print to the console?
-```function square(x) { return (x * x ) }
+---
+
+Read the following code and then answer the questions below.
+
+```js
+function square(x) { return (x * x ) }
 function cube(x) {
   return (x * square(x));
 }
-console.log(cube(2));```
+console.log(cube(2));
+```
+
+---
+What does the above code print to the console?
 
 - [ ] 2
 - [ ] 6
@@ -29,14 +37,22 @@ console.log(cube(2));```
 > The `square` function is called within the `cube` function, so the code would
 > evaluate to `2 * 2 * 2` which evaluates to `8`.
 
-What would this code evaluate to?
-```function totalUp(a, b, c) {
+---
+
+Read the following code and then answer the questions below.
+
+```js
+function totalUp(a, b, c) {
   var tot = a + b + c;
   if (tot > 0 ) {
     return tot;
   }
 }
-totalUp(2, 4, 6, 8);```
+totalUp(2, 4, 6, 8);
+```
+---
+
+What would the above code evaluate to?
 
 - [x] 12
 - [ ] 20
@@ -50,26 +66,46 @@ totalUp(2, 4, 6, 8);```
 > when it was invoked. When functions are called with extra arguments, JavaScript
 > simply ignores the extra arguments.
 
-BONUS: How might you write a function that gives us the biggest value from a
+---
+
+{% exercise %}
+How might you write a function called `maxNumber`
+that gives us the biggest value from a
 set of four numbers?
-
-- [x] bonus
-
-> There are many ways to solve this problem.
-> Below is just one way to write this function in JavaScript:
-> ```
-> getLargest(a, b, c, d) {
->   if (a > b && a > c && a > d) {
->     return a;
->   } else if (b > a && b > c && b > d) {
->     return b;
->   } else if (c > a && c > b && c > d) {
->     return c;
->   } else {
->     return d;
->   }
-> }
-> ```
+{% initial %}
+function maxNumber(a, b, c, d) {
+  // Your code
+}
+{% solution %}
+// One solution
+function maxNumber(a, b, c, d) {
+  if (a > b && a > c && a > d) {
+    return a;
+  } else if (b > a && b > c && b > d) {
+    return b;
+  } else if (c > a && c > b && c > d) {
+    return c;
+  } else {
+    return d;
+  }
+}
+{% validation %}
+assert(maxNumber(4, 5, 6, 7) == findMax(4, 5, 6, 7));
+{% context %}
+var maxNumber;
+function findMax(args) {
+  if ( !Array.isArray(args) ) {
+    args = Array.prototype.slice.call(arguments);
+  }
+  var max = null;
+  for (var i = 0, len = args.length; i < len; i++) {
+    if ( args[i] >= max ) {
+      max = args[i]
+    }
+  }
+  return max;
+}
+{% endexercise %}
 
 ---
 

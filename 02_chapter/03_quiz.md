@@ -34,20 +34,20 @@ What would the command `git init` do?
 > `git init` creates a repository in the working directory.
 
 What command would you use to move all your changes since your last commit to the staging area?
-- [ ] git commit -m "removed a GIF"
-- [ ] git push .
-- [ ] git mv .
-- [x] git add .
+- [ ] `git commit -m "removed a GIF"`
+- [ ] `git push .`
+- [ ] `git mv .`
+- [x] `git add .`
 
 > Not quite.
 >
 > `git add .` moves all your changes since your last commit to the staging area.
 
 What command would you use to show a list of all the commits that have been made to a repo?
-- [ ] git timeline
-- [ ] git diff
-- [x] git log
-- [ ] git blame
+- [ ] `git timeline`
+- [ ] `git diff`
+- [x] `git log`
+- [ ] `git blame`
 
 > Not quite.
 >

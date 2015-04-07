@@ -1,8 +1,14 @@
 **WDI Fundamentals Unit 6**
 
+Read the following code and then answer the questions below.
+
+```js
+var monkees = [ 'Peter Tork', 'Micky Dolenz', 'Davy Jones', 'Michael Nesmith'];
+```
+
 ---
-What would monkees.length evaluate to?
-`var monkees = [ 'Peter Tork', 'Micky Dolenz', 'Davy Jones', 'Michael Nesmith']`
+
+What would `monkees.length` evaluate to?
 
 - [x] 4
 - [ ] 3
@@ -12,11 +18,19 @@ What would monkees.length evaluate to?
 > There are four string elements within the monkees array, so monkees.length
 > would equal 4
 
-What does this for loop do when executed?
-```var rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var rainbowColors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 for (var i = 0; i < rainbowColors.length; i++) {
   console.log(rainbowColors[i]);
-}```
+}
+```
+---
+
+What does the above for loop do when executed?
 
 - [x] It prints each item in the array "rainbowColors" to the console
 - [ ] It reverses the order of the elements in the array "rainbowColors"
@@ -25,12 +39,19 @@ for (var i = 0; i < rainbowColors.length; i++) {
 
 > Not quite.
 > The for loop iterates through each element in the rainbowColors array, printing each element in the console.
+---
 
-What does myFunction do?
-```var num = [2, 13, 17];
+Read the following code and then answer the questions below.
+
+```js
+var num = [2, 13, 17];
 function myFunction(num) {
   return num.map(function timesTwo(x) { return x * 2 });
-}```
+}
+```
+---
+
+What does myFunction do?
 
 - [ ] Reverses the array
 - [x] Returns a new array with numbers twice as large as the original

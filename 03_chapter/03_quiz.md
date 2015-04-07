@@ -1,6 +1,7 @@
 **WDI Fundamentals Unit 3**
 
-Evaluate the following expressions:
+Evaluate the following expressions.
+
 First, try drawing expression trees for these expressions, and evaluate them by
 hand using the approach described earlier (left-child first, then right-child).
 

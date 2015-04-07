@@ -2,33 +2,50 @@
 
 ---
 
-In JavaScript, how would we access the second element in the array called "myArray"?
+In JavaScript, how would we access the second element in an array called "myArray"?
 
-- [ ] myArray[2]
-- [ ] myArray(2)
-- [x] myArray[1]
-- [ ] myArray(1)
+- [ ] `myArray[2]`
+- [ ] `myArray(2)`
+- [x] `myArray[1]`
+- [ ] `myArray(1)`
 
 > Not quite.
 > To access the second element in an array, you would need to use the command:
 > myArray[1]
 > Remember that the first element in an array has an index of 0.
 
-After the following code has executed, what does the fruits array contain?
-```var fruits = ['apple', 'orange', 'banana'];
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var fruits = ['apple', 'orange', 'banana'];
 fruits.pop();
 fruits.push('grape');
-fruits.push('banana');```
+fruits.push('banana');
+```
 
-- [ ] ['apple', 'orange', 'banana']
-- [ ] ['orange', 'banana', 'grape', 'banana']
-- [x] ['apple', 'orange', 'grape', 'banana']
-- [ ] ['banana', 'grape', 'apple', 'orange']
+---
+After the above code has executed, what does the fruits array contain?
+
+- [ ] `['apple', 'orange', 'banana']`
+- [ ] `['orange', 'banana', 'grape', 'banana']`
+- [x] `['apple', 'orange', 'grape', 'banana']`
+- [ ] `['banana', 'grape', 'apple', 'orange']`
 
 > Not quite.
 > This code would remove "banana", add "grape" and then add "banana" back to the last position of the array.
 
-What would 'ages[2];' evaluate to? ```var ages = [26, 28, 30, 28, 17];```
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var ages = [26, 28, 30, 28, 17];
+```
+---
+What would 'ages[2];' evaluate to?
+
 - [ ] 26
 - [ ] 28
 - [x] 30

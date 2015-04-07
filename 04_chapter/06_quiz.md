@@ -27,8 +27,12 @@ The second expression in a for loop usually:
 > ```
 > That second condition gets evaluated each time we're about to execute the block.
 
-Given this while loop:
-```var x = 1;
+---
+
+Read the following code and then answer the questions below.
+
+```js
+var x = 1;
 console.log('Entering the loop');
 while (x < 20) {
   if (x == 5) {
@@ -36,9 +40,12 @@ while (x < 20) {
   }
   x = x + 1;
   console.log('Exiting the loop');
-}```
-What is the first line that this loop would produce?
-Hint: If you ran this code in the console, the first line in the result would be...
+}
+```
+
+---
+
+What is the first line that the above loop would produce?<br><small>Hint: If you ran this code in the console, the first line in the result would be...</small>
 
 - [x] Entering the loop
 - [ ] 5
@@ -48,8 +55,7 @@ Hint: If you ran this code in the console, the first line in the result would be
 >
 > The first thing printed to the console would be 'Entering the loop'
 
-How many lines would be produced by the loop?
-HINT: How many times would the console run through the loop before finishing?
+How many lines would be produced by the loop?<br><small>HINT: How many times would the console run through the loop before finishing?</small>
 - [ ] 0
 - [ ] 1
 - [ ] 2
@@ -67,8 +73,7 @@ HINT: How many times would the console run through the loop before finishing?
 > 5
 > ```
 
-What is the last line that this code would produce?
-Hint: If you ran this code in the console, the last line that would appear is...
+What is the last line that this code would produce?<br><small>Hint: If you ran this code in the console, the last line that would appear is...</small>
 
 - [ ] Entering the loop
 - [x] Exiting the loop
