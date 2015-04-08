@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="4.3" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="4.3" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1284,10 +1284,12 @@
 <h2 id="conditionals">Conditionals</h2>
 <h3 id="ternary-operator">Ternary Operator</h3>
 <ul>
-<li>The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.
-  e.g. <code>(x &amp;gt; 10) ? &amp;#39;Greater than 10.&amp;#39; : &amp;#39;Less than 10.&amp;#39;;</code></li>
-<li>It can also be used inside larger expressions.
-  e.g. <code>&amp;#39;Today is &amp;#39; + ((temp &amp;gt; 70)? &amp;#39;&amp;#39; : &amp;#39;not&amp;#39;) + &amp;#39; hot.&amp;#39;;</code></li>
+<li>The ternary operator takes in a condition; depending on whether that condition is is truthy or falsey, the operator will evaluate to one of two specified values.<pre><code class="lang-javascript">  (x &gt; <span class="hljs-number">10</span>) ? <span class="hljs-string">&apos;Greater than 10.&apos;</span> : <span class="hljs-string">&apos;Less than 10.&apos;</span>;
+</code></pre>
+</li>
+<li>It can also be used inside larger expressions.<pre><code class="lang-javascript">  <span class="hljs-string">&apos;Today is &apos;</span> + ((temp &gt; <span class="hljs-number">70</span>) ? <span class="hljs-string">&apos;&apos;</span> : <span class="hljs-string">&apos;not&apos;</span>) + <span class="hljs-string">&apos; hot.&apos;</span>;
+</code></pre>
+</li>
 </ul>
 <h3 id="-if-else-statement-syntax"><code>if...else</code> statement syntax</h3>
 <pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (condition1) {

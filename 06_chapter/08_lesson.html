@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="6.3" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="6.3" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1302,20 +1302,20 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 </thead>
 <tbody>
 <tr>
-<td><code>&amp;#39;Matt&amp;#39;</code></td>
-<td><code>&amp;#39;tuna sandwich&amp;#39;</code></td>
+<td>Matt</td>
+<td>tuna sandwich</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Floyd&amp;#39;</code></td>
-<td><code>&amp;#39;salad&amp;#39;</code></td>
+<td>Floyd</td>
+<td>salad</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Shannon&amp;#39;</code></td>
-<td><code>&amp;#39;soup&amp;#39;</code></td>
+<td>Shannon</td>
+<td>soup</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Josh&amp;#39;</code></td>
-<td><code>&amp;#39;pasta&amp;#39;</code></td>
+<td>Josh</td>
+<td>pasta</td>
 </tr>
 </tbody>
 </table>
@@ -1329,20 +1329,20 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
 </thead>
 <tbody>
 <tr>
-<td><code>&amp;#39;Matt&amp;#39;</code></td>
-<td><code>&amp;#39;tuna sandwich&amp;#39;</code></td>
+<td>Matt</td>
+<td>tuna sandwich</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Floyd&amp;#39;</code></td>
-<td><code>null</code></td>
+<td>Floyd</td>
+<td>null</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Shannon&amp;#39;</code></td>
-<td><code>&amp;#39;soup&amp;#39;</code></td>
+<td>Shannon</td>
+<td>soup</td>
 </tr>
 <tr>
-<td><code>&amp;#39;Josh&amp;#39;</code></td>
-<td><code>&amp;#39;pasta&amp;#39;</code></td>
+<td>Josh</td>
+<td>pasta</td>
 </tr>
 </tbody>
 </table>
@@ -1357,11 +1357,14 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
                 <span class="hljs-string">&apos;Shannon&apos;</span> : <span class="hljs-string">&apos;soup&apos;</span> };
 </code></pre>
 <p>Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (<code>[...]</code>). In this case, if we wanted to access the value stored under &apos;Matt&apos;, we could type</p>
-<p><code>lunches[&amp;#39;Matt&amp;#39;]</code></p>
+<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Matt&apos;</span>]
+</code></pre>
 <p>If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.</p>
-<p><code>lunches[&amp;#39;Matt&amp;#39;] = &amp;#39;turkey sandwich&amp;#39;</code></p>
+<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Matt&apos;</span>] = <span class="hljs-string">&apos;turkey sandwich&apos;</span>
+</code></pre>
 <p>Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.</p>
-<p><code>lunches[&amp;#39;Elena&amp;#39;] = &amp;#39;meatloaf&amp;#39;</code></p>
+<pre><code class="lang-js">lunches[<span class="hljs-string">&apos;Elena&apos;</span>] = <span class="hljs-string">&apos;meatloaf&apos;</span>
+</code></pre>
 <p>Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here&apos;s an example of all of the above:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> candidateData = {
   <span class="hljs-string">&apos;name&apos;</span> : <span class="hljs-string">&quot;John Doe&quot;</span>,
@@ -1376,7 +1379,7 @@ friends; <span class="hljs-comment">// [&apos;Rachel&apos;, &apos;Phoebe&apos;, 
   }
 </code></pre>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData[&amp;#39;yearsExperience&amp;#39;][&amp;#39;javascript&amp;#39;]</code>.</p>
+<p> Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData[&apos;yearsExperience&apos;][&apos;javascript&apos;]</code>.</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Consider the following associative array.</p>

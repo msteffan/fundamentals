@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="6.1" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="6.1" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1281,13 +1281,13 @@
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
 <h1 id="collections-arrays">Collections - Arrays</h1>
 <h2 id="what-is-an-array">What is an Array?</h2>
-<p>An array is an ordered list of items, also known as <strong>elements</strong>, separated by commas and situated between brackets <code>[]</code>. Arrays can contain different types of elements, like <code>[&amp;quot;red&amp;quot;, 42, &amp;quot;gorilla&amp;quot;, false]</code>, but we generally use arrays to deal with elements of the same type.</p>
+<p>An array is an ordered list of items, also known as <strong>elements</strong>, separated by commas and situated between brackets <code>[]</code>. Arrays can contain different types of elements, like <code>[&quot;red&quot;, 42, &quot;gorilla&quot;, false]</code>, but we generally use arrays to deal with elements of the same type.</p>
 <h3 id="finding-elements-in-an-array">Finding Elements in an Array</h3>
 <p>The order of elements in an array matters. Let&apos;s take a look at the following example:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> myFriends = [<span class="hljs-string">&apos;ellen&apos;</span>, <span class="hljs-string">&apos;mary&apos;</span>, <span class="hljs-string">&apos;doug&apos;</span>, <span class="hljs-string">&apos;pat&apos;</span>];
 </code></pre>
-<p>If we wanted to find the element <code>&amp;#39;mary&amp;#39;</code>, we would need to remember that she is the second element in the array.</p>
-<p>The position of <code>&amp;#39;mary&amp;#39;</code> in the array is known as its <em>index value</em> (or just <em>index</em>).</p>
+<p>If we wanted to find the element &apos;mary&apos;, we would need to remember that she is the second element in the array.</p>
+<p>The position of &apos;mary&apos; in the array is known as its <em>index value</em> (or just <em>index</em>).</p>
 <p>As you can see, there are four strings contained within this array.</p>
 <ul>
 <li>The first element (index of 0) in the array is &apos;ellen&apos;.</li>
@@ -1296,15 +1296,16 @@
 <li>The final element (index of 3) is &apos;pat&apos;.</li>
 </ul>
 <blockquote>
-<p><strong>Note that the index for the first position in an array is 0</strong>. So even though <code>&amp;#39;mary&amp;#39;</code> is the second element in the array, we would need to call her out as the element with an index of 1.</p>
+<p><strong>Note that the index for the first position in an array is 0</strong>. So even though &apos;mary&apos; is the second element in the array, we would need to call her out as the element with an index of 1.</p>
 </blockquote>
-<p>Now that we know her index value, to find <code>&amp;#39;mary&amp;#39;</code> we would simply write:</p>
+<p>Now that we know her index value, to find &apos;mary&apos; we would simply write:</p>
 <p><code>myFriends[1]</code></p>
 <p>We could save what we found in a variable like so:</p>
-<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> bestFriend = myFriends[<span class="hljs-number">1</span>];
+<pre><code class="lang-js"><span class="hljs-keyword">var</span> bestFriend = myFriends[<span class="hljs-number">1</span>];
 </code></pre>
 <p>Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.</p>
-<p><code>myFriends[3] = &amp;#39;steve&amp;#39;</code></p>
+<pre><code class="lang-js">myFriends[<span class="hljs-number">3</span>] = <span class="hljs-string">&apos;steve&apos;</span>;
+</code></pre>
 <p>Just like with a variable, this expression will evaluate to the value on the right.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?</p>
@@ -1326,12 +1327,12 @@ myNumbers[<span class="hljs-number">1</span>] * <span class="hljs-number">2</spa
                      [<span class="hljs-string">&apos;d&apos;</span>, <span class="hljs-string">&apos;e&apos;</span>, <span class="hljs-string">&apos;f&apos;</span>],
                      [<span class="hljs-string">&apos;g&apos;</span>, <span class="hljs-string">&apos;h&apos;</span>, <span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
-<p>Each element of <code>arrayOfArrays</code> <em>is itself an array</em>. Calling <code>arrayOfArrays[1]</code> will give us back the second array, <code>[&amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;f&amp;#39;]</code>.</p>
+<p>Each element of <code>arrayOfArrays</code> <em>is itself an array</em>. Calling <code>arrayOfArrays[1]</code> will give us back the second array, <code>[&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]</code>.</p>
 <p>Of course, what we&apos;re probably most interested in are the inner elements (strings, in this case). We could probably do the following:</p>
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> x = arrayOfArrays[<span class="hljs-number">1</span>]; <span class="hljs-comment">// Evaluates to [&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]</span>
 x[<span class="hljs-number">0</span>]; <span class="hljs-comment">// Evaluates to &apos;d&apos;</span>
 </code></pre>
-<p>But the variable <code>x</code> there is unnecessary - it&apos;s just standing in for <code>[&amp;#39;d&amp;#39;, &amp;#39;e&amp;#39;, &amp;#39;f&amp;#39;]</code>. We can access that element directly from <code>arrayOfArrays</code> using the following syntax:</p>
+<p>But the variable <code>x</code> there is unnecessary - it&apos;s just standing in for <code>[&apos;d&apos;, &apos;e&apos;, &apos;f&apos;]</code>. We can access that element directly from <code>arrayOfArrays</code> using the following syntax:</p>
 <pre><code class="lang-javascript">arrayOfArrays[<span class="hljs-number">1</span>][<span class="hljs-number">0</span>]; <span class="hljs-comment">// Evaluates to &apos;d&apos;</span>
 </code></pre>
 <p>If you imagine an array of arrays as a grid of values (like in the example above), you can think of that first index value as indicating your row and that second index value as indicating your column - essentially, a set of coordinates.</p>

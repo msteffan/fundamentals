@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="6.4" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="6.4" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1283,24 +1283,28 @@
 <h2 id="collections-arrays">Collections - Arrays</h2>
 <h3 id="what-is-an-array">What is an Array?</h3>
 <ul>
-<li>An array is an ordered list of values; these values can be strings, booleans, numbers... even other arrays.</li>
-<li>The values within an array, called <strong>elements</strong>, are accessed by their position (via a value called an <strong>index</strong>) within the array.</li>
-<li>An array can be defined by enclosing a list of values within square braces, like so : <code>var myArray = [&amp;#39;a&amp;#39;,&amp;#39;b&amp;#39;,&amp;#39;c&amp;#39;,&amp;#39;d&amp;#39;]</code></li>
-<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the end of the array. e.g. <code>myArray[2]</code></li>
-<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a variable. e.g. <code>myArray[1] = &amp;#39;f&amp;#39;</code></li>
+<li>An array is an ordered list of values; these values can be strings, booleans,
+  numbers... even other arrays.</li>
+<li>The values within an array, called <strong>elements</strong>, are accessed by their
+  position (via a value called an <strong>index</strong>) within the array.</li>
+<li>An array can be defined by enclosing a list of values within square braces,
+  like so : <code>var myArray = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;]</code></li>
+<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the
+  end of the array. e.g. <code>myArray[2]</code></li>
+<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a
+  variable. e.g. <code>myArray[1] = &apos;f&apos;</code></li>
 </ul>
 <h3 id="adding-complexity-nested-arrays">Adding Complexity - Nested Arrays</h3>
 <ul>
 <li>As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called <strong>nesting</strong>.</li>
 <li><p>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&apos;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> myNestedArray = [[<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>],
-                             [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
-                             [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
+                         [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
+                         [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
 <p>  you could access the element &apos;f&apos; by writing <code>myNestedArray[1][2]</code>.</p>
 </li>
-<li>Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change.
-  e.g. <code>myNestedArray[0][3] = &amp;#39;z&amp;#39;;</code></li>
+<li>Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change. e.g. <code>myNestedArray[0][3] = &apos;z&apos;;</code></li>
 </ul>
 <h3 id="additional-array-features">Additional Array Features</h3>
 <ul>
@@ -1332,9 +1336,9 @@
 <li>An associative array generates an enduring relationship between a reference (called a <strong>key</strong>) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.<h3 id="associative-arrays-in-javascript">Associative Arrays in JavaScript</h3>
 </li>
 <li>An associative array can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
-<li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the associative array. e.g. <code>myassociativeArray[&amp;#39;myKey&amp;#39;]</code></li>
-<li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray[&amp;#39;myKey&amp;#39;] = &amp;#39;aValue&amp;#39;</code></li>
-<li>Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray[&amp;#39;someNewKey&amp;#39;] = &amp;#39;someNewValue&amp;#39;</code></li>
+<li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the associative array. e.g. <code>myassociativeArray[&apos;myKey&apos;]</code></li>
+<li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray[&apos;myKey&apos;] = &apos;aValue&apos;</code></li>
+<li>Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray[&apos;someNewKey&apos;] = &apos;someNewValue&apos;</code></li>
 <li>Nesting for associative arrays works <em>exactly</em> like it does for ordinary arrays.</li>
 </ul>
 <p><a href="12_assessment.html">Project Time!</a></p>

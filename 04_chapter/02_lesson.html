@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="4.1" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="4.1" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1288,15 +1288,15 @@
 <p>Here&apos;s an example of a ternary operator with some actual values plugged in.</p>
 <p><code>true ? 1 : 2</code></p>
 <p>Since <code>true</code> is (obviously) truthy, this means that the <em>entire expression</em> will evaluate to the specified value - in this case, 1.</p>
-<p>Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x &amp;gt; 5) ? 10 : 20) * 10</code> will evaluate to 100 if <code>x</code> <em>is</em> greater than 5, or 200 if <code>x</code> <em>is not</em> greater than 5.</p>
+<p>Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x &gt; 5) ? 10 : 20) <em> 10</em></code> will evaluate to 100 if <code>x</code> is<em> greater than 5, or 200 if <code>x</code> </em>is not* greater than 5.</p>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Suppose that we have two variables, <code>x</code> and <code>y</code>.
 To start,<code>x</code> is equal to 10, while <code>y</code> is equal to 20. What values would the following expressions evaluate to? Check your answers in repl.it.</p>
 <ul>
-<li><code>(x%2 === 0) ? &amp;#39;even&amp;#39; : &amp;#39;odd&amp;#39;</code></li>
-<li><code>(x &amp;gt; y) ? 1 : 0</code></li>
+<li><code>(x % 2 === 0) ? &apos;even&apos; : &apos;odd&apos;</code></li>
+<li><code>(x &gt; y) ? 1 : 0</code></li>
 <li><code>(3) ? 100 : -100</code></li>
-<li><code>(&amp;#39;&amp;#39;) ? &amp;#39;hello&amp;#39; : &amp;#39;goodbye&amp;#39;</code></li>
+<li><code>(&apos;&apos;) ? &apos;hello&apos; : &apos;goodbye&apos;</code></li>
 </ul>
 <h2 id="-if-else-statements"><code>if..else</code> Statements</h2>
 <p>What if, rather than controlling how an expression evaluates, we wanted to run one line of code or another?</p>

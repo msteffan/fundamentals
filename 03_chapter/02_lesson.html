@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="3.1" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="3.1" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1280,53 +1280,70 @@
                     
                         <p><strong>WDI Fundamentals Unit 3</strong></p>
 <h1 id="data-operators-and-expressions">Data, Operators, and Expressions</h1>
-<p>You&apos;ve probably picked up a scientific calculator at some point in the past and started playing around with it. You punch in a big number (for example, 9876435), then <code>x</code>, and then another big number (say, 373848221), hit the <code>=</code> button, and the calculator spits back a result (in this case, 3692287654572135).</p>
+<p>You&apos;ve probably picked up a scientific calculator at some point in the past and
+started playing around with it. You punch in a big number (for example, 9876435),
+then <code>x</code>, and then another big number (say, 373848221), hit the <code>=</code> button, and
+the calculator spits back a result (in this case, 3692287654572135).</p>
 <p><img src="../assets/chapter3/calculator.png" alt="Calculator"></p>
-<p>That thing that we type into the calculator is called an <strong>expression</strong>: a collection of values (<em>12345</em>) and operations (like <strong>+</strong> or <strong>x</strong>).</p>
+<p>That thing that we type into the calculator is called an <strong>expression</strong>: a
+collection of values (<em>12345</em>) and operations (like <strong>+</strong> or <strong>x</strong>).</p>
 <p>The process of reducing this expression down to a single value is called <strong>evaluation</strong>.</p>
-<p>The repl.it console is similar in many ways to this calculator. It accepts an expression (in JavaScript) from the user and attempts to evaluate that expression, yielding a single value.</p>
-<p>Before we tackle fully-fledged JavaScript expressions, let&apos;s first look at their two components: data and operators.</p>
+<p>The repl.it console is similar in many ways to this calculator. It accepts an
+expression (in JavaScript) from the user and attempts to evaluate that expression,
+yielding a single value.</p>
+<p>Before we tackle fully-fledged JavaScript expressions, let&apos;s first look at their
+two components: data and operators.</p>
 <p><br></p>
 <h2 id="data-a-k-a-values">Data (a.k.a. Values)</h2>
-<p>Calculators can only operate on numbers, but computers can perform calculations on many different kinds of data, including:</p>
+<p>Calculators can only operate on numbers, but computers can perform calculations
+on many different kinds of data, including:</p>
 <ul>
-<li><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&apos;re considered the same. <br>
-  <u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>,<code>99.99</code></li>
-<li><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&amp;#39;single-quote&amp;#39;</code> (also sometimes called &apos;string literals&apos;) and <code>&amp;quot;double-quote&amp;quot;</code>. Though there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read. <br> <u>Examples</u>: <code>&amp;#39;hello&amp;#39;</code>, <code>&amp;#39;goodbye&amp;#39;</code>, <code>&amp;#39;moc.liamg@gmail.com&amp;#39;</code></li>
-<li><strong>Booleans</strong>: This one&apos;s probably new for you. Boolean-type data only has two possible values, <code>true</code> and <code>false</code>.</li>
+<li><strong>Numbers</strong>: Pretty self-explanatory. Some languages draw a distinction between Integers (whole numbers) and Floating Point numbers (decimals), but in JavaScript they&apos;re considered the same.<br>
+  <u>Examples</u>: <code>20</code>, <code>-4.5</code>, <code>300</code>, <code>99.99</code></li>
+<li><strong>Strings</strong>: Strings are groups of characters (either letters, numbers, or special characters like punctuation, spaces, or parentheses). They come in two varieties, <code>&apos;single-quote&apos;</code> (also sometimes called &apos;string literals&apos;) and <code>&quot;double-quote&quot;</code>. Though there are some differences between the two, don&apos;t worry about them for now. Strings are typically used to store text for people to read.<br><u>Examples</u>: <code>&apos;hello&apos;</code>, <code>&apos;goodbye&apos;</code>, <code>&apos;moc.liamg@gmail.com&apos;</code></li>
+<li><strong>Booleans</strong>: This one&apos;s probably new for you. Boolean-type data only has two
+  possible values, <code>true</code> and <code>false</code>.</li>
 </ul>
-<p>If you forget what type of data you&apos;re dealing with, you can run the <code>typeof</code> command. Try typing the following lines into repl.it - what responses do you get?</p>
+<p>If you forget what type of data you&apos;re dealing with, you can run the <code>typeof</code>
+command. Try typing the following lines into repl.it - what responses do you get?</p>
 <ul>
-<li><code>typeof &amp;#39;hello&amp;#39;;</code></li>
+<li><code>typeof &apos;hello&apos;;</code></li>
 <li><code>typeof 24;</code></li>
 <li><code>typeof 3.45;</code></li>
 <li><code>typeof true;</code></li>
 </ul>
 <blockquote class="clearfix alert alert-success"><strong class="fa fa-4x fa-lightbulb-o"></strong>
-<p>  You may have noticed that each of those lines ended in a <code>;</code> - in JavaScript, a semicolon is used to denote the end of a line. Although your code may execute without them, there are cases where a missing semicolon can cause unexpected results. Just get in the habit of using them.</p>
+<p>  You may have noticed that each of those lines ended in a <code>;</code> - in
+JavaScript, a semicolon is used to denote the end of a line. Although your code
+may execute without them, there are cases where a missing semicolon can cause
+unexpected results. Just get in the habit of using them.</p>
 </blockquote>
 <h3 id="test-yourself">Test Yourself</h3>
-<p>Try to predict the types of each of the following bits of data. Check your answers with <code>typeof</code> in repl.it - were you correct?</p>
+<p>Try to predict the types of each of the following bits of data. Check your answers
+with <code>typeof</code> in repl.it - were you correct?</p>
 <ul>
 <li><code>24</code></li>
-<li><code>&amp;#39;99&amp;#39;</code></li>
-<li><code>&amp;#39;true&amp;#39;</code></li>
+<li><code>&apos;99&apos;</code></li>
+<li><code>&apos;true&apos;</code></li>
 <li><code>false</code></li>
 </ul>
 <h2 id="operators">Operators</h2>
-<p>Of course, simply having data sitting around isn&apos;t very useful. Operators take values as their inputs (also known as <strong>arguments</strong>) and produce new data as output. There are <em>many</em> different operators out there, but here are some of the common ones:</p>
+<p>Of course, simply having data sitting around isn&apos;t very useful. Operators take
+values as their inputs (also known as <strong>arguments</strong>) and produce new data as output.
+There are <em>many</em> different operators out there, but here are some of the common ones:</p>
 <ul>
-<li><strong>Arithmetic</strong> (<code>+</code>,<code>-</code>,<code>*</code>,<code>/</code>): These all work like you&apos;d expect. In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs, and causes that whole expression to evaluate to <code>4</code>.</li>
+<li><strong>Arithmetic</strong> (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>): These all work like you&apos;d expect. In the expression <code>2 + 2</code>, the <code>+</code> operator takes both <code>2</code>s as inputs, and causes that whole expression to evaluate to <code>4</code>.</li>
 </ul>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
-<p> When given String arguments, the <code>+</code> operator actually behaves differently - it &apos;concatenates&apos; two strings together to make one big string.
-<br><u>For example</u>: <code>&amp;#39;Hello&amp;#39; + &amp;#39; &amp;#39; + &amp;#39;Bob&amp;#39;</code> will evaluate to <code>&amp;#39;Hello Bob&amp;#39;</code>.</p>
+<p> When given String arguments, the <code>+</code> operator actually behaves
+differently - it &apos;concatenates&apos; two strings together to make one big string.
+<br><u>For example</u>: <code>&apos;Hello&apos; + &apos; &apos; + &apos;Bob&apos;</code> will evaluate to <code>&apos;Hello Bob&apos;</code>.</p>
 </blockquote>
 <ul>
 <li><strong>Modulus</strong> (<code>%</code>): Remember remainders? For example, <code>5</code> divided by <code>3</code> equals <code>1</code> with a remainder of <code>2</code>. The modulus operator takes two numbers as inputs and returns what&apos;s leftover from the division.
   <br><u>For example</u>: <code>15 % 4</code> will evaluate to <code>3</code>.</li>
-<li><strong>Inequality</strong> (<code>&amp;gt;</code>,<code>&amp;lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
-  <br><u>For example</u>: <code>5 &amp;gt; 1</code> will evaluate to <code>true</code>, while <code>10 &amp;lt; 5</code> will evaluate to <code>false</code>.</li>
+<li><strong>Inequality</strong> (<code>&gt;</code>, <code>&lt;</code>): These operators take two numbers as inputs, but unlike the previous operators, they give back <em>boolean</em> values.
+  <br><u>For example</u>: <code>5 &gt; 1</code> will evaluate to <code>true</code>, while <code>10 &lt; 5</code> will evaluate to <code>false</code>.</li>
 <li><strong>Equality</strong> (<code>===</code>,<code>==</code>) : These operators will accept any two types of data as input, and (just like the Inequality operators) will also evaluate to a boolean value. The first of these is called a &apos;strict equality&apos; - it will only evaluate <code>true</code> if both sides are completely identical in data type and value - while the second, the &apos;loose equality&apos;, has a little more wiggle room.
   <br><u>For example</u>:</li>
 </ul>
@@ -1343,21 +1360,21 @@
 <span class="hljs-comment">// =&gt; true</span>
 </code></pre>
 <ul>
-<li><strong>Logical Operators</strong> (<code>!</code>,<code>||</code>,<code>&amp;amp;&amp;amp;</code>): These operators both take and give back boolean values.<ul>
+<li><strong>Logical Operators</strong> (<code>!</code>, <code>||</code>, <code>&amp;&amp;</code>): These operators both take and give back boolean values.<ul>
 <li>NOT (<code>!</code>) will reverse the value of any boolean.
   <code>!true</code> // <code>false</code></li>
 <li>OR  (<code>||</code>) takes in two boolean arguments; if at least one is <code>true</code>, then it will evaluate to <code>true</code>, but if both are <code>false</code> it will evaluate as <code>false</code>.</li>
-<li>AND (<code>&amp;amp;&amp;amp;</code>) also takes in two boolean arguments; however, it will only evaluate as <code>true</code> if both of the arguments are <code>true</code>; otherwise, it will evaluate to <code>false</code>.</li>
+<li>AND (<code>&amp;&amp;</code>) also takes in two boolean arguments; however, it will only evaluate as <code>true</code> if both of the arguments are <code>true</code>; otherwise, it will evaluate to <code>false</code>.</li>
 </ul>
 </li>
 </ul>
 <h3 id="test-yourself">Test Yourself</h3>
 <p>Can you predict what will the results of these operations will be? Check your answers against the console in repl.it.</p>
 <ul>
-<li><code>true &amp;amp;&amp;amp; false;</code></li>
+<li><code>true &amp;&amp; false;</code></li>
 <li><code>45 % 6;</code></li>
 <li><code>8 === 8.0;</code></li>
-<li><code>&amp;#39;Hello&amp;#39; + &amp;#39; &amp;#39; + &amp;#39;World&amp;#39;;</code></li>
+<li><code>&apos;Hello&apos; + &apos; &apos; + &apos;World&apos;;</code></li>
 </ul>
 <h2 id="expressions">Expressions</h2>
 <p>So, what happens when we bring several of these operators and values together?</p>

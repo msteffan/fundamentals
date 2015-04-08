@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="4.2" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="4.2" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1328,35 +1328,35 @@
 <p>Confused? Here&apos;s the play-by-play.</p>
 <ul>
 <li><code>z</code> is set to 0 and <code>myString</code> is set to &quot;&quot;.</li>
-<li><code>z</code> is 0, therefore <code>z &amp;lt; 5</code> is true so the block gets executed.<ul>
-<li>(in the block) <code>&amp;quot;X&amp;quot;</code> gets added to the end of <code>myString</code>; it is now &quot;X&quot;</li>
+<li><code>z</code> is 0, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
+<li>(in the block) &quot;X&quot; gets added to the end of <code>myString</code>; it is now &quot;X&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 1. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 1, therefore <code>z &amp;lt; 5</code> is true so the block gets executed.<ul>
-<li>(in the block) <code>&amp;quot;X&amp;quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XX&quot;</li>
+<li><code>z</code> is 1, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
+<li>(in the block) &quot;X&quot; gets added to the end of <code>myString</code>; it is now &quot;XX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 2. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 2, therefore <code>z &amp;lt; 5</code> is true so the block gets executed.<ul>
-<li>(in the block) <code>&amp;quot;X&amp;quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXX&quot;</li>
+<li><code>z</code> is 2, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
+<li>(in the block) &quot;X&quot; gets added to the end of <code>myString</code>; it is now &quot;XXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 3. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 3, therefore <code>z &amp;lt; 5</code> is true so the block gets executed.<ul>
-<li>(in the block) <code>&amp;quot;X&amp;quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXXX&quot;</li>
+<li><code>z</code> is 3, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
+<li>(in the block) &quot;X&quot; gets added to the end of <code>myString</code>; it is now &quot;XXXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 4. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is 4, therefore <code>z &amp;lt; 5</code> is true so the block gets executed.<ul>
-<li>(in the block) <code>&amp;quot;X&amp;quot;</code> gets added to the end of <code>myString</code>; it is now &quot;XXXXX&quot;</li>
+<li><code>z</code> is 4, therefore <code>z &lt; 5</code> is true so the block gets executed.<ul>
+<li>(in the block) &quot;X&quot; gets added to the end of <code>myString</code>; it is now &quot;XXXXX&quot;</li>
 <li>(in the block) <code>z</code> is increased by 1; it is now 5. Now that the block is done, we go back to the condition.</li>
 </ul>
 </li>
-<li><code>z</code> is now 5, therefore <code>z &amp;lt; 5</code> is now <strong>false</strong> (since 5 is <strong>not</strong> less than 5) so the block does not get executed again.</li>
+<li><code>z</code> is now 5, therefore <code>z &lt; 5</code> is now <strong>false</strong> (since 5 is <strong>not</strong> less than 5) so the block does not get executed again.</li>
 <li>We&apos;re done!</li>
 </ul>
-<p>What&apos;s most interesting about this kind of setup is that if we changed that condition from <code>z &amp;lt; 5</code> to <code>z &amp;lt; 10</code>, or <code>z &amp;lt; 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the <code>while</code> loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.</p>
+<p>What&apos;s most interesting about this kind of setup is that if we changed that condition from <code>z &lt; 5</code> to <code>z &lt; 10</code>, or <code>z &lt; 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the <code>while</code> loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.</p>
 <p>This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a <code>for</code> loop.</p>
 <h2 id="the-for-loop">The <code>for</code> Loop</h2>
 <p>Let&apos;s make a few modifications to our while loop from earlier.</p>
@@ -1381,7 +1381,7 @@
 <ul>
 <li>How many times will &apos;HELLO&apos; be printed out in the console?</li>
 <li>What if (all else the same) we changed the starting value of <code>i</code> to 1 instead of 0? How many times would <code>HELLO</code> get printed to the console?</li>
-<li>What if (all else the same) we changed the condition from <code>i &amp;lt; x</code> to <code>i &amp;lt;= x</code>?</li>
+<li>What if (all else the same) we changed the condition from <code>i &lt; x</code> to <code>i &lt;= x</code>?</li>
 <li>What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
   Check your answers in repl.it.</li>
 </ul>

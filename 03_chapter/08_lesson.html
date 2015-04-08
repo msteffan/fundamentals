@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="3.3" data-basepath=".." data-revision="Tue Apr 07 2015 16:07:38 GMT-0400 (EDT)">
+    <div class="book" data-level="3.3" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1288,8 +1288,8 @@
 <li><strong><code>null</code></strong> is actually a value that you can assign to a variable as a representation of &quot;no value.&quot;</li>
 </ul>
 <h3 id="-falsey-truthy">&apos;falsey&apos; / &apos;truthy&apos;</h3>
-<p>We&apos;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&amp;#39;Happy birthday, &amp;#39; + &amp;#39;Tom&amp;#39;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
-<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;amp;&amp;amp;</code>); although they&apos;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &apos;falsey&apos; and &apos;truthy&apos;.</p>
+<p>We&apos;ve seen in the first few lessons that some operators can behave differently depending on the kind of values that they are operating on. For example, in the expression <code>1 + 2 + 3 + 4</code>, the <code>+</code> operator is performing addition; however, in the expression <code>&apos;Happy birthday, &apos; + &apos;Tom&apos;</code>, the <code>+</code> operator is working with strings, so it performs a concatenation instead.</p>
+<p>Another example of this is the logical operators NOT(<code>!</code>), OR (<code>||</code>), and AND (<code>&amp;&amp;</code>); although they&apos;re primarily used with boolean values, they can also accept inputs that are strings, numbers... pretty much anything. When this happens, the logical operators categorize their inputs as being either &apos;falsey&apos; and &apos;truthy&apos;.</p>
 <p>Here&apos;s a table to show you which kinds of values are considered truthy and falsey in JavaScript.</p>
 <table>
 <thead>
@@ -1317,7 +1317,7 @@
 </tr>
 </tbody>
 </table>
-<p>In JavaScript, the boolean operators <code>!</code>, <code>||</code>, and <code>&amp;amp;&amp;amp;</code> follow the rules below to determine how to behave.</p>
+<p>In JavaScript, the boolean operators <code>!</code>, <code>||</code>, and <code>&amp;&amp;</code> follow the rules below to determine how to behave.</p>
 <ul>
 <li>NOT: If the input is &quot;truthy&quot;, return <code>false</code>; if the input is &quot;falsey&quot;, return <code>true</code>.</li>
 <li>OR: Return the first &quot;truthy&quot; value; if both values are &quot;falsey&quot;, return the last &quot;falsey&quot; value.</li>
@@ -1328,9 +1328,9 @@
 <ul>
 <li><code>1 || true</code></li>
 <li><code>3 || null</code></li>
-<li><code>!(&amp;#39;&amp;#39;)</code></li>
-<li><code>false &amp;amp;&amp;amp; undefined</code></li>
-<li><code>true &amp;amp;&amp;amp; !0</code></li>
+<li><code>!(&apos;&apos;)</code></li>
+<li><code>false &amp;&amp; undefined</code></li>
+<li><code>true &amp;&amp; !0</code></li>
 <li><code>null || 3</code></li>
 </ul>
 <p>One of the most common use cases of this is when you&apos;re not sure if a variable has been assigned a value. Suppose that <code>x</code> represents some input that you&apos;ve gotten from a user. If the user hasn&apos;t given any input, <code>x</code> might be <code>null</code>.</p>
