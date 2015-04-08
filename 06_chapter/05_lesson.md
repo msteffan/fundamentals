@@ -15,11 +15,11 @@ var tempsInF = [100, 72, 88, 15, 25, 32];
 var tempsInC = [];
 ```
 
-The formula for converting between Fahrenheit and Celsius temperatures is **C = (5 / 9 * F)  - 32**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
+The formula for converting between Fahrenheit and Celsius temperatures is **C = (F - 32) * 5/9**, where `F` is the temperature in degrees Fahrenheit and `C` is the temperature in degrees Celsius. Because this is an operation that we'd like to do frequently, we might create a function for it like the one below.
 
 ```javascript
 function fahrToCelc(degrees) {
-  return degrees * 5 / 9  - 32;
+  return (degrees - 32) * (5 / 9);
 }
 ```
 
