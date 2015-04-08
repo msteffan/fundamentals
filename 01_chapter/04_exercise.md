@@ -14,4 +14,4 @@ Go ahead an open up "Terminal" in any of the following ways.
 
 ![img](../assets/Graphics/where_to_find_terminal_spotlight.gif)
 
-Great! Now everyone who can see over your shoulder will think you&rsquo;re a badass hacker.
+Great! Now everyone who can see over your shoulder will think you're a badass hacker.

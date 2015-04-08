@@ -6,24 +6,28 @@
 
 ## Collections - Arrays
 ### What is an Array?
-  * An array is an ordered list of values; these values can be strings, booleans, numbers... even other arrays.
-  * The values within an array, called **elements**, are accessed by their position (via a value called an **index**) within the array.
-  * An array can be defined by enclosing a list of values within square braces, like so : `var myArray = ['a','b','c','d']`
-  * To retrieve the value at some index `i` from an array, add `[`*i*`]` to the end of the array. e.g. `myArray[2]`
-  * To edit the value at some index `i`, simply act as if you were assigning a variable. e.g. `myArray[1] = 'f'`
+  * An array is an ordered list of values; these values can be strings, booleans,
+  numbers... even other arrays.
+  * The values within an array, called **elements**, are accessed by their
+  position (via a value called an **index**) within the array.
+  * An array can be defined by enclosing a list of values within square braces,
+  like so : <code>var myArray = ['a','b','c','d']</code>
+  * To retrieve the value at some index `i` from an array, add `[`*i*`]` to the
+  end of the array. e.g. `myArray[2]`
+  * To edit the value at some index `i`, simply act as if you were assigning a
+  variable. e.g. <code>myArray[1] = 'f'</code>
 
 ### Adding Complexity - Nested Arrays
   * As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called **nesting**.
   * To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element's index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,
 
-    ```javascript
-      var myNestedArray = [['a','b','c'],
-                             ['d','e','f'],
-                             ['g','h','i']];
-    ```
+  ```javascript
+    var myNestedArray = [['a','b','c'],
+                         ['d','e','f'],
+                         ['g','h','i']];
+  ```
   you could access the element 'f' by writing `myNestedArray[1][2]`.
-  * Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change.
-    e.g. `myNestedArray[0][3] = 'z';`
+  * Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change. e.g. <code>myNestedArray[0][3] = 'z';</code>
 
 ### Additional Array Features
   * In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.
@@ -55,9 +59,9 @@
   * An associative array generates an enduring relationship between a reference (called a **key**) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.
 ### Associative Arrays in JavaScript
   * An associative array can be defined by enclosing a list of key-value pairs in curly braces (`{...}`). Each key-value pair is written as `someKey : someValue`, and each pair is separated by commas.
-  * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the associative array. e.g. `myassociativeArray['myKey']`
-  * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. `myAssociativeArray['myKey'] = 'aValue'`
-  * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. `myAssociativeArray['someNewKey'] = 'someNewValue'`
+  * To retrieve the value that's tied to a particular key, add `[`*key*`]` to the end of the associative array. e.g. <code>myassociativeArray['myKey']</code>
+  * To edit the value that's tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray['myKey'] = 'aValue'</code>
+  * Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray['someNewKey'] = 'someNewValue'</code>
   * Nesting for associative arrays works *exactly* like it does for ordinary arrays.
 
 ---

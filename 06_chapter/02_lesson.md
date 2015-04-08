@@ -6,7 +6,7 @@
 ## What is an Array?
 
 
-An array is an ordered list of items, also known as **elements**, separated by commas and situated between brackets `[]`. Arrays can contain different types of elements, like `["red", 42, "gorilla", false]`, but we generally use arrays to deal with elements of the same type.
+An array is an ordered list of items, also known as **elements**, separated by commas and situated between brackets `[]`. Arrays can contain different types of elements, like <code>["red", 42, "gorilla", false]</code>, but we generally use arrays to deal with elements of the same type.
 
 ###Finding Elements in an Array
 
@@ -16,9 +16,9 @@ The order of elements in an array matters. Let's take a look at the following ex
 var myFriends = ['ellen', 'mary', 'doug', 'pat'];
 ```
 
-If we wanted to find the element `'mary'`, we would need to remember that she is the second element in the array.
+If we wanted to find the element 'mary', we would need to remember that she is the second element in the array.
 
-The position of `'mary'` in the array is known as its *index value* (or just *index*).
+The position of 'mary' in the array is known as its *index value* (or just *index*).
 
 As you can see, there are four strings contained within this array.
 - The first element (index of 0) in the array is 'ellen'.
@@ -26,24 +26,26 @@ As you can see, there are four strings contained within this array.
 - The third element (index of 2) is 'doug'.
 - The final element (index of 3) is 'pat'.
 
-> **Note that the index for the first position in an array is 0**. So even though `'mary'` is the second element in the array, we would need to call her out as the element with an index of 1.
+> **Note that the index for the first position in an array is 0**. So even though 'mary' is the second element in the array, we would need to call her out as the element with an index of 1.
 
 
 
 
-Now that we know her index value, to find `'mary'` we would simply write:
+Now that we know her index value, to find 'mary' we would simply write:
 
 `myFriends[1]`
 
 We could save what we found in a variable like so:
 
-```javascript
+```js
 var bestFriend = myFriends[1];
 ```
 
 Changing an element in an array is just as easy; just write an assignment operation, as if you were assigning a value to a variable.
 
-`myFriends[3] = 'steve'`
+```js
+myFriends[3] = 'steve';
+```
 
 Just like with a variable, this expression will evaluate to the value on the right.
 
@@ -79,7 +81,7 @@ var arrayOfArrays = [['a', 'b', 'c'],
                      ['g', 'h', 'i']];
 ```
 
-Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]` will give us back the second array, `['d', 'e', 'f']`.
+Each element of `arrayOfArrays` *is itself an array*. Calling `arrayOfArrays[1]` will give us back the second array, <code>['d', 'e', 'f']</code>.
 
 Of course, what we're probably most interested in are the inner elements (strings, in this case). We could probably do the following:
 
@@ -88,7 +90,7 @@ var x = arrayOfArrays[1]; // Evaluates to ['d', 'e', 'f']
 x[0]; // Evaluates to 'd'
   ```
 
-But the variable `x` there is unnecessary - it's just standing in for `['d', 'e', 'f']`. We can access that element directly from `arrayOfArrays` using the following syntax:
+But the variable `x` there is unnecessary - it's just standing in for <code>['d', 'e', 'f']</code>. We can access that element directly from `arrayOfArrays` using the following syntax:
 
 ```javascript
 arrayOfArrays[1][0]; // Evaluates to 'd'

@@ -39,7 +39,7 @@ To access the existing code for this project, you will need to fork and clone th
 6. Open up the terminal application on your computer, and navigate to the `fundamentals` directory within your home directory.
 	Once there, run the following Git command from command line:
 <br>
-`git clone <HTTPS clone URL>` (substituting the clone URL you copied above)
+`git clone https://your/clone/url` (substituting the clone URL you copied above)
 <br>
 	This will copy your forked repo from GitHub to your own computer, so that you can work on it.
 

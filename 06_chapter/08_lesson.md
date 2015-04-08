@@ -29,21 +29,21 @@ This system does a good job of keeping track of everyone's order, but its bigges
 
 Let's imagine that every person in this totally hypothetical office has a 'lunch' that they keep in the fridge.
 
-|  Label  |  Value  |
-|:-------:|:-------:|
-| `'Matt'` | `'tuna sandwich'` |
-| `'Floyd'` | `'salad'` |
-| `'Shannon'` | `'soup'` |
-| `'Josh'` | `'pasta'` |
+|  Label    |  Value          |
+|:-------:  |:-------:        |
+| Matt    | tuna sandwich |
+| Floyd   | salad         |
+| Shannon | soup          |
+| Josh    | pasta         |
 
 If Floyd eats his lunch, does it affect anyone else's food? Nope! The *association* between each label (read: reference) and the food (read: value) it refers to is preserved.
 
-|  Label  |  Value  |
-|:-------:|:-------:|
-| `'Matt'` | `'tuna sandwich'` |
-| `'Floyd'` | `null` |
-| `'Shannon'` | `'soup'` |
-| `'Josh'` | `'pasta'` |
+|  Label      |  Value  |
+|:-------:    |:-------:|
+| Matt      | tuna sandwich |
+| Floyd     | null            |
+| Shannon   | soup          |
+| Josh      | pasta         |
 
 This is the basic principle underlying an **associative array** (also known in some languages as a *hash*). An associative array *associates* each value with a reference called a **key** (in this case the person's name). An important note is that, because each key/value pair is independent of any of the others, the array doesn't keep a consistent 'order' to its elements.
 
@@ -64,15 +64,21 @@ var lunches = { 'Josh' : 'pasta',
 
 Elements in associative arrays are accessed and manipulated in exactly the same way as normal arrays are - using square braces (`[...]`). In this case, if we wanted to access the value stored under 'Matt', we could type
 
-  `lunches['Matt']`
+  ```js
+  lunches['Matt']
+  ```
 
 If we wanted to alter that value, we could perform an assignment, just like we might with a normal array.
 
-  `lunches['Matt'] = 'turkey sandwich'`
+  ```js
+  lunches['Matt'] = 'turkey sandwich'
+  ```
 
 Adding new key-value pairs looks just like assignment - you simply set your new key as the reference and assign your new value as the value.
 
-  `lunches['Elena'] = 'meatloaf'`
+  ```js
+  lunches['Elena'] = 'meatloaf'
+  ```
 
 Keys are strings and basically anything can be used as a value (including an array, or even another associative array). Here's an example of all of the above:
 
@@ -89,7 +95,7 @@ var candidateData = {
     }
   }
 ```
->**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write `candidateData['yearsExperience']['javascript']`.
+>**NOTE** Ordinary arrays and associative arrays handle nesting in the exact same way; if we wanted to retrive the number of years of JavaScript experience from the array above, we would write <code>candidateData['yearsExperience']['javascript']</code>.
 
 ### Test Yourself
 Consider the following associative array.

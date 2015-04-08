@@ -30,7 +30,7 @@ In TicTacToe, there are nine possible values (for every cell on the board):
 | g | h | i |
 ```
 
-Each of these values will start as `null`, until a user assigns them a new value, either `'o'` or `'x'`
+Each of these values will start as `null`, until a user assigns them a new value, either 'o' or 'x'
 
 To play around with this invisible TicTacToe board, we've provided some code:
 
@@ -82,7 +82,7 @@ function cellValue(key) {
 
 Now, let's write a function that determines the winner based on the values of a, b, c, d, e, f, g, h, and i.
 
-We'll call it `getWinner` and it will give us back either `'x'` (if X has won), `'o'` (if O has won), or `null` (if neither side has won).
+We'll call it `getWinner` and it will give us back either 'x' (if X has won), 'o' (if O has won), or `null` (if neither side has won).
 
 ```javascript
 function getWinner() {

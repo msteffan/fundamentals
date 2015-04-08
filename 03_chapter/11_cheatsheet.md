@@ -41,7 +41,7 @@ Here are some notes on what's been covered in this chapter; feel free to copy th
 
 Logical operators work on Boolean values to produce Boolean results.
 
-**AND operator `&&`**
+**AND operator <code>&&</code>**
 
 Condition 1 | Condition 2 | Result
 ----|----|----

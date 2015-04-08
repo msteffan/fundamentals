@@ -12,7 +12,7 @@ To collaborate with others (and also to backup our files just in case our comput
 
 GitHub is a company, famous for the platform they built to manage Git repositories in the cloud. On Github, developers can share their code, comment on it, and review code changes with each other. It's an implementation of the same Git software you installed on your computer, but it also comes with some additional features.
 
-In a lot of ways, Github is like Dropbox. 
+In a lot of ways, Github is like Dropbox.
 
 You have a folder in the cloud, your *remote repo*, which syncs with your computer. You can share this remote repo with others, grant them special permissions, and you can view different versions of your files.
 
@@ -47,7 +47,7 @@ There are a ton of unique Github features crammed on this page, but we'll only b
 
 There are a few different ways to work together on GitHub, and our class is going to use a specific order of operations to get things done.
 
-The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git. 
+The GA Instructional Team has put together some resources for you in a repository on GitHub; you'll need to retrieve these files and save a copy on your computer using Git.
 
 Eventually, when you've made changes that you'd like to share with our team, you can to submit those changes back to us via our GitHub repo.
 
@@ -77,7 +77,7 @@ To create a copy of Joyent's repo, you would need to **fork** it by clicking the
 
 > **CAUTION** Don't follow these steps just yet. Read this chapter and then you'll have a chance to try it out yourself in the [Unit 2 Homework](09_assessment.md).
 
-"Forking" adds a copy of someone else's GitHub repo to *your* Github account. 
+"Forking" adds a copy of someone else's GitHub repo to *your* Github account.
 
 The forked repo is not perfectly identical - but it includes all the same source files, issues, and commit history.
 
@@ -95,12 +95,10 @@ To make a local copy of a fork, you'll need to open up the Terminal and use a Gi
 You need to navigate to the place where you'd like to store the repo, and then type:
 
 ```
-git clone <clone URL>
+git clone https://url/to/clone
 ```
 
-> **CAUTION** Do not include the "<>" symbols in your Git command.  Just write the URL.
-
-You can find the `<clone URL>` on right side of the forked repo on Github:
+You can find the URL to clone on right side of the forked repo on Github:
 
 ![Node.js Clone](../assets/chapter2/node_clone.png)
 
@@ -115,16 +113,16 @@ We covered this in the previous section. As you complete the exercises in the re
 
 Once you've committed the changes you've made to the code, your local repo will be different from your remote repo; to update your remote repo on GitHub, you have to **push** those changes, using the Git command `git push origin master`.
 
-Don't worry about the `origin` and `master` part just yet. 
+Don't worry about the `origin` and `master` part just yet.
 
 If you're curious, here's a brief overview:
 * `origin` is a shortcut for the URL of your default remote repo (in this case, the repo on Github). You can have many remotes, if you want. We're not going to work with more than one in Fundamentals.
-* `master` refers to the **branch** on your remote repo where you're currently adding your changes. Again, for now, we're just going to be doing our work on the `master` branch. 
+* `master` refers to the **branch** on your remote repo where you're currently adding your changes. Again, for now, we're just going to be doing our work on the `master` branch.
 
 
 ### 6. Submitting a Pull Request
 
-Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**. 
+Once your changes are pushed to your remote repository on Github, you can notify the original repo owner of your changes by submitting a **pull request**.
 
 A pull request is effectively saying "Hello maintainer of project X, I made some changes here in my forked copy and I think they're pretty good. You should add them to your repository."  Pull requests are a GitHub feature, so you'll need to head back to the browser to make this happen.
 

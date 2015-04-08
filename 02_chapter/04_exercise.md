@@ -18,7 +18,7 @@ This exercise will give you some practice using Git.
 
 6. Use the `add` command to add the new file to the staging area.  Run `git status` again - how has the output changed?
 
-7. Now that you're satisfied with the changes that you've staged, commit them using `git commit -m "..."`. Give the commit an appropriate message - remember, it should be short but descriptive.
+7. Now that you're satisfied with the changes that you've staged, commit them using <code>git commit -m "..."</code>. Give the commit an appropriate message - remember, it should be short but descriptive.
 
 8. Create a directory called "src" and add a couple of files to it.
 

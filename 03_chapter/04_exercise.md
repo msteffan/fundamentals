@@ -14,7 +14,7 @@ This thing is called a *comment* - it tells the computer to completely ignore ev
 
 1. Replace /* Your Expression */ with an expression that evaluates to the integer `30`. You can use any expression you like, but it must contain at least one (and ideally two or more) operations. You can test your answers by clicking the play button at the top of the page - it will spit out the evaluated result of your expression into the console.
 
-** Note ** It might also be a good idea to make sure the *type* of this result is correct - after all `30` and `'30'` are not the same. You can check this by entering `typeof whatever_your_expression_is` into the console.
+** Note ** It might also be a good idea to make sure the *type* of this result is correct - after all `30` and <code>'30'</code> are not the same. You can check this by entering `typeof whatever_your_expression_is` into the console.
 
 2. Now replace your first expression with a second expression - this one should evaluate to 'Hello World'.
 

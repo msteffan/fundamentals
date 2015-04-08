@@ -71,25 +71,25 @@ A: Each time this loop runs, the value of `z` increases by 1; since its initial 
 
 Confused? Here's the play-by-play.
 * `z` is set to 0 and `myString` is set to "".
-* `z` is 0, therefore `z < 5` is true so the block gets executed.
-  * (in the block) `"X"` gets added to the end of `myString`; it is now "X"
+* `z` is 0, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "X"
   * (in the block) `z` is increased by 1; it is now 1. Now that the block is done, we go back to the condition.
-* `z` is 1, therefore `z < 5` is true so the block gets executed.
-  * (in the block) `"X"` gets added to the end of `myString`; it is now "XX"
+* `z` is 1, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XX"
   * (in the block) `z` is increased by 1; it is now 2. Now that the block is done, we go back to the condition.
-* `z` is 2, therefore `z < 5` is true so the block gets executed.
-  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXX"
+* `z` is 2, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXX"
   * (in the block) `z` is increased by 1; it is now 3. Now that the block is done, we go back to the condition.
-* `z` is 3, therefore `z < 5` is true so the block gets executed.
-  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXXX"
+* `z` is 3, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXXX"
   * (in the block) `z` is increased by 1; it is now 4. Now that the block is done, we go back to the condition.
-* `z` is 4, therefore `z < 5` is true so the block gets executed.
-  * (in the block) `"X"` gets added to the end of `myString`; it is now "XXXXX"
+* `z` is 4, therefore <code>z < 5</code> is true so the block gets executed.
+  * (in the block) "X" gets added to the end of `myString`; it is now "XXXXX"
   * (in the block) `z` is increased by 1; it is now 5. Now that the block is done, we go back to the condition.
-* `z` is now 5, therefore `z < 5` is now **false** (since 5 is **not** less than 5) so the block does not get executed again.
+* `z` is now 5, therefore <code>z < 5</code> is now **false** (since 5 is **not** less than 5) so the block does not get executed again.
 * We're done!
 
-What's most interesting about this kind of setup is that if we changed that condition from `z < 5` to `z < 10`, or `z < 100`, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
+What's most interesting about this kind of setup is that if we changed that condition from <code>z < 5</code> to <code>z < 10</code>, or <code>z < 100</code>, the loop would change to run exactly 10 or exactly 100 times, respectively. In effect, we have changed the `while` loop so that it always runs for a fixed, precisely controllable number of times - it will never get stuck in an infinite loop.
 
 This kind of setup is so useful, and gets used so frequently, that most languages include a special kind of loop used for just this kind of behavior, called a `for` loop.
 
@@ -123,8 +123,8 @@ for (var i = 0; i < x; i += 1) {
 
 * How many times will 'HELLO' be printed out in the console?
 * What if (all else the same) we changed the starting value of `i` to 1 instead of 0? How many times would `HELLO` get printed to the console?
-* What if (all else the same) we changed the condition from `i < x` to `i <= x`?
-* What if (all else the same) we changed the final condition from `i += 1` to `i += 2`?
+* What if (all else the same) we changed the condition from <code>i < x</code> to <code>i <= x</code>?
+* What if (all else the same) we changed the final condition from <code>i += 1</code> to <code>i += 2</code>?
 Check your answers in repl.it.
 
 ---

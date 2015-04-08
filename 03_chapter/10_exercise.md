@@ -17,7 +17,7 @@ This time, we're going to practice writing some expressions that utilize truthy 
 
 2. Next, replace that expression with one that evaluates to `null` if `x` is `null`, but otherwise evaluates to 50 (irrespective of `x`'s value).
 
-3. Finally, write an expression that evaluates to `true` if `x` is an empty string (`''`) but otherwise evaluates to `false`.
+3. Finally, write an expression that evaluates to `true` if `x` is an empty string (<code>''</code>) but otherwise evaluates to `false`.
 
 Were you able to get all of your expressions to work? If so, nice job!
 

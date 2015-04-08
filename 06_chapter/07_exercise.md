@@ -12,13 +12,13 @@ Let's go back to the 'checkerboard' code we wrote for the last exercise. This ti
 
 * `setUpRed()`
 
-    This function will set up the red pieces on our checkerboard by setting the value of each cell that should hold a red piece to `'R'`. For the purposes of this exercise, assume that the red pieces should be laid out at the 'top' of the board, just like in the picture below.
+    This function will set up the red pieces on our checkerboard by setting the value of each cell that should hold a red piece to 'R'. For the purposes of this exercise, assume that the red pieces should be laid out at the 'top' of the board, just like in the picture below.
 
     ![Picture of Checkerboard](http://www.maniacworld.com/Checkers/checkers.jpg)
 
 * `setUpBlack()`
 
-    This function should work similarly to `setUpRed`, placing black pieces (`'B'`) on the board at the positions indicated in the picture.
+    This function should work similarly to `setUpRed`, placing black pieces ('B') on the board at the positions indicated in the picture.
 
 Feel free to use either loops or iterators to write these functions - just make sure that they act *exactly* like the descriptions.
 

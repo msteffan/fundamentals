@@ -113,20 +113,12 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 
 | Long-Hand Syntax | Short-Hand Syntax |
 |------------------|-------------------|
-| `x = x + 1` | `x += 1` |
-| `x = x - 5` | `x -= 5` |
-| `x = x * 2` | `x *= 2` |
-| `x = x / 10` | `x /= 10` |
-| `x = x % 10` | `x %= 10` |
-| `x = x + 1`  | `x = x++` |
-
-Although JavaScript does *not* offer them, some languages (Ruby, for instance)
-allow you to even do this with logical operators, like OR (`||`) and AND (`&&`).
-
-| Long-Hand Syntax (Ruby) | Short-Hand Syntax (Ruby) |
-|------------------       |-------------------       |
-| `x = x && true`         | `x &&= true`             |
-| `x = x || false`        | `x ||= false`            |
+| `x = x + 1`      | `x += 1` |
+| `x = x - 5`      | `x -= 5` |
+| `x = x * 2`      | `x *= 2` |
+| `x = x / 10`     | `x /= 10` |
+| `x = x % 10`     | `x %= 10` |
+| `x = x + 1`      | `x = x++` |
 
 ---
 Ready for another quiz? [Here we go!](06_quiz.md)
