@@ -23,13 +23,13 @@ Consider the relationship between a variable `x` and the function `f`. The funct
 
 If we were shown the output (`f(x)`) for each value of `x`:
 
-| x | f(x) |
-|:-:|:-:|
-| -1 | -2 |
-| 0 | 0 |
-| 1 | 2 |
-| 2 | 4 |
-| 3 | 6 |
+| x  | f(x) |
+|:-: |:-:   |
+| -1 | -2   |
+| 0  | 0    |
+| 1  | 2    |
+| 2  | 4    |
+| 3  | 6    |
 
 We could figure out that the relationship between `x` and `f(x)` is that the output is equal to double the input.  In algebra, this relationship is written as `f(x) = 2 * x`. Nothing unfamiliar going on here, right?
 

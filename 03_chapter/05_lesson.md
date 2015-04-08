@@ -120,12 +120,13 @@ Needing to operate 'in place' (in other words, storing the result back inside th
 | `x = x % 10` | `x %= 10` |
 | `x = x + 1`  | `x = x++` |
 
-Although JavaScript does *not* offer them, some languages (Ruby, for instance) allow you to even do this with logical operators, like OR (`||`) and AND (`&&`).
+Although JavaScript does *not* offer them, some languages (Ruby, for instance)
+allow you to even do this with logical operators, like OR (`||`) and AND (`&&`).
 
 | Long-Hand Syntax (Ruby) | Short-Hand Syntax (Ruby) |
-|------------------|-------------------|
-| `x = x && true` | `x &&= true` |
-| `x = x `&#124;&#124;` false` | `x `&#124;&#124;`= false` |
+|------------------       |-------------------       |
+| `x = x && true`         | `x &&= true`             |
+| `x = x || false`        | `x ||= false`            |
 
 ---
 Ready for another quiz? [Here we go!](06_quiz.md)

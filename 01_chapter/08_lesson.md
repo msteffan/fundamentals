@@ -15,7 +15,7 @@ $ cd ~
 > **HINT** `~` (tilde) is a shortcut to refer to your home folder.
 
 The above command, regardless of where we currently are, will take us to our
-home folder. Great! Now that we&#39;re here, let&#39;s create a file.
+home folder. Great! Now that we're here, let's create a file.
 
 ```
 $ touch joke.txt

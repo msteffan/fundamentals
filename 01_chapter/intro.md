@@ -26,18 +26,24 @@ There are commands to open an application, create new files, copy files from one
 
 We'll access the command line using the Terminal (capital-T) application, the most common application on MacOSX and Linux machines.
 
-> **DANGER** Fundamentals will not explore the command line that comes with Windows, because most developers don&rsquo;t use it. If you&rsquo;re a Windows user, we recommended installing a command line program like <a href="http://cygwin.com/" target="_blank" >Cygwin</a> or <a href="http://msysgit.github.io/" target="_blank">MSysGit</a> in order to follow along with the syntax we use here.
+> **DANGER** Fundamentals will not explore the command line that comes with Windows,
+> because most developers don't use it. If you're a Windows user, we recommended
+> installing a command line program like [Cygwin](http://cygwin.com/) or [MSysGit](http://msysgit.github.io/) in order to follow along with the syntax we use here.
 
 ##Get Started Using Terminal
 
 When you open Terminal, you should see a window like this:
 
-<img src="../assets/Graphics/terminal_blank.gif" alt="Blank Console">
+![:Blank Console](../assets/Graphics/terminal_blank.gif)
 
-This window is where you&rsquo;ll tell the computer what to do, and where the computer will display its reply.
+This window is where you'll tell the computer what to do, and where the computer will display its reply.
 
-The **prompt** is the &lsquo;$&rsquo; that automatically shows up on the end of the first line. It&rsquo;s the command line equivalent of &lsquo;stand-by&rsquo; and indicates Terminal is ready to accept your **command**. We&rsquo;ll learn a few commands later in this lesson.
+The **prompt** is the `$` that automatically shows up on the end of the first
+line. It's the command line equivalent of "stand-by" and indicates Terminal is
+ready to accept your **command**. We'll learn a few commands later in this lesson.
 
-The **cursor** follows the prompt and the text you type will appear here. Just like in every other setting where you've ever seen a cursor.
+The **cursor** follows the prompt and the text you type will appear here. Just
+like in every other setting where you've ever seen a cursor.
 
-The **username** of the person logged in precedes the prompt, and as you can see above, this user is named *samspade*.
+The **username** of the person logged in precedes the prompt, and as you can see
+above, this user is named *samspade*.
