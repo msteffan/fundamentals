@@ -6,8 +6,8 @@
 Answer the following questions based on this image: ![:image](../assets/chapter1/quiz1.gif)
 
 `~` is the:
-- [x] Name of the computer
-- [ ] Working directory
+- [ ] Name of the computer
+- [x] Working directory
 - [ ] Username
 - [ ] Parent directory
 
@@ -28,10 +28,10 @@ Answer the following questions based on this image: ![:image](../assets/chapter1
 > line of your command line.
 
 `$` indicates that:
-- [ ] That the computer is unresponsive
-- [ ] That the user is ready to go to lunch
+- [ ] The computer is unresponsive
+- [ ] The user is ready to go to lunch
 - [ ] It's the equivalent of the Spinning Beach Ball of Death
-- [x] That the computer is awaiting user input
+- [x] The computer is awaiting user input
 
 > Not quite.
 >
