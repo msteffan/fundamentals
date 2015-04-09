@@ -16,36 +16,91 @@ GitBook can be installed from NPM using:
 $ npm install gitbook-cli -g
 ```
 
-Create the directories and files for a book from its SUMMARY.md file (if existing) using
-
-```
-$ gitbook init
-```
-
-You can serve a repository as a book using:
-
-```
-$ gitbook serve
-```
-
-Or simply build the static website using:
-
-```
-$ gitbook build
-```
-
-Install necessary plugins for development
+Install Gitbook plugins
 
 ```
 $ gitbook install
 ```
 
+Run a local copy at http://localhost:4000 with:
+
+```
+$ gitbook serve
+```
+
+> If any plugins error, you can install directly from github. For example if quizzes won't still, try the following:
+
+```
+npm install git+ssh://git@github.com:GitbookIO/plugin-quizzes.git
+```
+
+The project is similar to a Jykell blog. Chapters are written in markdown files and compiled down to HTML inside `_book`
+
+To build the static website use:
+
+```
+$ gitbook build
+```
+
+> Warning! Inline code blocks ie single back ticks are not properly escaping HTML entities.
+> To work around this use `<code>`
+
+```
+<code>"This works"</code>
+`"This doesn't"`
+```
+
 # Making Changes
 
 This project is currently hosted on GitHub and GitLab.
-To make changes to the content, fork the GitLab repo and file a pull request.
+To make changes to the content, fork the GitLab repo and file a pull/merge request.
 
-Quizzes are hosted through TypeForm. To make changes to quizzes contact JD?
+~~Quizzes are hosted through TypeForm. To make changes to quizzes contact JD?~~
+
+Quizzes and Exercises are written with Gitbook's Quizzes and Exercises Plugins
+
+### Quiz Format
+
+Quizzes are designated with three dashes before and after the quiz.
+
+Use Github flavored checkboxes for possible answers.
+
+Mark the correct answer with an 'x'
+
+Use '>' for solution text.
+
+```
+---
+
+This is a question
+- [ ] These appear
+- [ ] As check boxes
+- [x] This will be the correct answer
+
+> This is the solution text
+
+---
+```
+
+### Exercise Format
+
+Exercises use special nunchuck tags:
+
+```
+{% exercise %}
+Question
+{% initial %}
+// Code appears in repl.
+var studentCode;
+{% solution %}
+// this code will appear in the repl if a student cliks on 'solution'
+{% validation %}
+assert(studentCode == answer, "Wrong Answer Message");
+{% context %}
+var answer;
+var codeAvailableInContext;
+{% endexercise %}
+```
 
 # Deployment
 

@@ -58,7 +58,7 @@ How would we call this function, either in our program or the console, passing
 - [ ] `myFunction[5];`
 
 > Not quite.
-> Javascript functions are executed or "called" by appending () to the function
+> JavaScript functions are executed or "called" by appending () to the function
 > name. To call this function with 5 as an argument, we would write:
 > `myFunction(5)`
 
