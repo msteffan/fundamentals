@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="4.4" data-basepath=".." data-revision="Wed Apr 08 2015 13:57:55 GMT-0400 (EDT)">
+    <div class="book" data-level="4.4" data-basepath=".." data-revision="Thu Apr 09 2015 13:36:22 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1288,22 +1288,18 @@
     <span class="hljs-comment">// Assume that the only possible input values we can get are &apos;rock&apos;, &apos;paper&apos;, and &apos;scissors&apos;.</span>
 }
 </code></pre>
-<p>Use control flow to determine which value gets <code>return</code>ed.</p>
-<blockquote>
-<p>HINT: the possible outcomes are either &apos;player&apos; (if the player wins), &apos;computer&apos; (if the computer wins), or &apos;tie&apos; (if it&apos;s a draw).</p>
-</blockquote>
+<p>Use control flow to determine which value gets <code>return</code>ed.
+HINT: the possible outcomes are either &apos;player&apos; (if the player wins), &apos;computer&apos; (if the computer wins), or &apos;tie&apos; (if it&apos;s a draw).</p>
 <p>If you&apos;re still feeling stuck, take a look back at <a href="../03_chapter/intro.html">Chapter 3</a>. What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?</p>
 <blockquote class="clearfix alert alert-info"><strong class="fa fa-4x fa-edit"></strong>
 <p> Remember, when you&apos;re programming, you need to figure out the solution before you ever start writing code. Here&apos;s a good general procedure you can follow:</p>
+<p><br></p>
 <ol>
-<li><strong>Understand the problem.</strong> In particular, try to determine (a) what you will be given, and (b) what you hope to get out. If you can&apos;t explain the problem in those kinds of terms, you won&apos;t be able to move further.</li>
-<li><strong>Come up with test cases (and eventually, tests).</strong> Once you&apos;ve figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not your code is working. Once you&apos;ve learned a little more about writing code, you&apos;ll actually use these test cases to write tester code, which can be used to automatically confirm whether or not your project&apos;s code is working.<blockquote>
-<p>Actually, this project has some tests built into it already, using a testing tool called Jasmine; to see the tests up close, just take a peek inside (but don&apos;t change!) the file <code>RockPaperScissorsSpec.js</code>, which sits inside the <code>spec</code> directory. These tests specify exactly how the code we write should behave - that&apos;s why they&apos;re called &apos;specs&apos;!</p>
-</blockquote>
-</li>
-<li><strong>Solve the problem in English.</strong> Or any human language, really. The point is, it&apos;s a good idea to pause and avoid <em>touching</em> your keyboard until you can start to explain, clearly and precisely, both what it is you&apos;re trying to do and how you&apos;re trying to do it. You can try sketching out the concept or outlining your procedure on paper, if it helps.</li>
-<li><strong>Write code, even if it&apos;s not the prettiest.</strong> Don&apos;t worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.</li>
-<li><strong>&apos;Refactor&apos; your code.</strong> Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don&apos;t break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.</li>
+<li><em>Understand the problem.</em>  In particular, try to determine (a) what you will be given, and (b) what you hope to get out. If you can&apos;t explain the problem in those kinds of terms, you won&apos;t be able to move further.</li>
+<li><em>Come up with test cases (and eventually, tests).</em> Once you&apos;ve figured out how your code is supposed to behave generally, pick out a couple of specific cases that you can use to confirm whether or not your code is working. Once you&apos;ve learned a little more about writing code, you&apos;ll actually use these test cases to write tester code, which can be used to automatically confirm whether or not your project&apos;s code is working.  Actually, this project has some tests built into it already, using a testing tool called Jasmine; to see the tests up close, just take a peek inside (but don&apos;t change!) the file <code>RockPaperScissorsSpec.js</code>, which sits inside the <code>spec</code> directory. These tests specify exactly how the code we write should behave - that&apos;s why they&apos;re called &apos;specs&apos;!</li>
+<li><em>Solve the problem in English.</em> Or any human language, really. The point is, it&apos;s a good idea to pause and avoid <em>touching</em> your keyboard until you can start to explain, clearly and precisely, both what it is you&apos;re trying to do and how you&apos;re trying to do it. You can try sketching out the concept or outlining your procedure on paper, if it helps.</li>
+<li><em>Write code, even if it&apos;s not the prettiest.</em> Don&apos;t worry at this stage if your code is elegant, readable, or robust. Just make it work enough to satisfy all of your test cases.</li>
+<li><em>Refactor your code.</em> Now that everything works, take come time to make your code clean/efficient/robust/whatever in addition to functional. Just make sure that whatever changes you make don&apos;t break your code - you can keep an eye on this by testing your code and making sure that it still gives you the correct results.</li>
 </ol>
 </blockquote>
 <p>Once you&apos;ve finished (and have tested your code), commit the changes you&apos;ve made to the project&apos;s repository.</p>

@@ -19,7 +19,7 @@ function getWinner(playerMove, computerMove) {
 ```
 
 Use control flow to determine which value gets `return`ed.
-> HINT: the possible outcomes are either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
+HINT: the possible outcomes are either 'player' (if the player wins), 'computer' (if the computer wins), or 'tie' (if it's a draw).
 
 If you're still feeling stuck, take a look back at [Chapter 3](../03_chapter/intro.md). What expression could we write to tell us if the player (or computer) has won? What expression could tell us if there was a tie?
 
