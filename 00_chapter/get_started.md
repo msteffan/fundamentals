@@ -4,16 +4,11 @@
 
 ## Join the WDI Community on Slack!
 
-We design our immersive courses to help you embrace and excel in the challenge
-of lifelong learning. This means that when you get stuck, the instructors,
-developers-in-residence, and TAs you work with will often help you drive your
-own process of discovery, rather than just giving you the right answer.
+We design our immersive courses to help you embrace the challenge of lifelong learning. This means that when you get stuck, the instructors you work with will often help you to drive your own process of discovery, rather than just give you the right answer. You'll also learn to rely on your classmates for support and structure.
 
-You're probably completing the pre-course work at home or in a coffee shop, and
-so you won't have the same level of guidance you'll get once you join us on campus.
-For now, we encourage you to connect with your instructor and classmates via Slack,
-a real time messaging application. To sign on to Slack, first check your email
-for an invitation from your producer.
+You're probably completing the pre-course work at home or in a coffee shop, and so you won't have the same level of guidance you'll get once you join us on campus. For now, we encourage you to connect with your classmates via Slack, a real time messaging application you'll be using in class.
+
+To sign on to Slack, first check your email for an invitation from your producer.
 
 Be sure to add a photo and "WDI Student - CITY" to your profile.
 
