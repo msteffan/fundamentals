@@ -4,36 +4,17 @@
 
 ## Your Turn
 
-Here's the [starter code](http://repl.it/aE0) for your next exercise:
+Here's the [starter code](http://repl.it/9nH) for your next exercise:
 
 ```javascript
-var max;
-
-/* WRITE YOUR CODE HERE */
-
-
-// Your code should leverage your solution to the prior exercise.
-// In case you got stuck with that one, here's one possible solution you might have used.
-/*
-var x; // The value being tested.
 var result;
-if (x % 3 === 0 && x % 5 === 0) {
-  result = 'fizzbuzz';
-} else if (x % 3 === 0) {
-  result = 'fizz';
-} else if (x % 5 === 0) {
-  result = 'buzz';
-} else {
-  result = x;
-}
-*/
+var max;
+/* YOUR CODE HERE */
 ```
 
-Last time, we wrote code that took an input `x` and set a new `result` value according to a specific set of rules.
+Last time, we wrote code that took an input `x` and set a new `result` value according to a specific set of rules; this time, your challenge is to loop through every number from 1 to `max`, applying those exact same rules to that number and, finally, printing the result out to the console using the command `console.log(result);`.
 
-This time, your challenge is to loop through every number from 1 to `max`, applying the same rules to each number and, finally, printing the result to the console using the command `console.log(result);`.
-
-For example, if you ran the finished code with `max` equal to 15, the following should be displayed in the console:
+For reference, if `max` is 20, the following should get displayed in the console:
 
 ```javascript
 1
@@ -51,6 +32,21 @@ fizz
 13
 14
 fizzbuzz
+16
+17
+fizz
+19
+buzz
+```
+
+and testing any number less than 20 should give you a subset of that result - in other words, if `max` is 5, we get the following:
+
+```
+1
+2
+fizz
+4
+buzz
 ```
 
 ---

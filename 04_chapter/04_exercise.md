@@ -12,7 +12,8 @@ var result;
 /* YOUR CODE HERE */
 ```
 
-This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns the following values to `result`:
+This exercise may be familiar to some of you - your job is to write some code that, depending on the value of `x`, assigns one of several values to `result`:
+
 * If `x` is evenly divisible by 3 (for example, 3, 6, or 9), set `result` to "fizz".
 * If `x` is evenly divisible by 5 (for example, 5 or 10), set `result` to "buzz".
 * If `x` is evenly divisible by both 3 and 5 (for example, 0 or 15), set `result` to "fizzbuzz".
