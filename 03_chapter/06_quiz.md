@@ -2,11 +2,11 @@
 
 
 {% exercise %}
-Declare a variable called `firstName` and assign it to the value "John"
+Declare a variable called `firstName` and assign the value "John" to it.
 {% initial %}
 
 {% solution %}
-var name = 'John';
+var firstName = 'John';
 {% validation %}
 assert(firstName == 'John');
 {% context %}
