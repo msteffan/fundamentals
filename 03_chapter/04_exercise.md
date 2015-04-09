@@ -21,6 +21,5 @@ You can use any expression you like, but it must contain at least one (and ideal
 
 3. Finally, replace the previous expression with an expression that evaluates to the boolean `true`. Try using two or three operations for this one!
 
-
 ---
 [On to the next lesson.](05_lesson.md)
