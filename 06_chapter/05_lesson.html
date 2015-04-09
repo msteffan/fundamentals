@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="6.2" data-basepath=".." data-revision="Wed Apr 08 2015 10:57:37 GMT-0400 (EDT)">
+    <div class="book" data-level="6.2" data-basepath=".." data-revision="Thu Apr 09 2015 13:40:40 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -1286,9 +1286,9 @@
 <pre><code class="lang-javascript"><span class="hljs-keyword">var</span> tempsInF = [<span class="hljs-number">100</span>, <span class="hljs-number">72</span>, <span class="hljs-number">88</span>, <span class="hljs-number">15</span>, <span class="hljs-number">25</span>, <span class="hljs-number">32</span>];
 <span class="hljs-keyword">var</span> tempsInC = [];
 </code></pre>
-<p>The formula for converting between Fahrenheit and Celsius temperatures is <strong>C = (5 / 9 * F)  - 32</strong>, where <code>F</code> is the temperature in degrees Fahrenheit and <code>C</code> is the temperature in degrees Celsius. Because this is an operation that we&apos;d like to do frequently, we might create a function for it like the one below.</p>
+<p>The formula for converting between Fahrenheit and Celsius temperatures is <strong>C = (F - 32) * 5/9</strong>, where <code>F</code> is the temperature in degrees Fahrenheit and <code>C</code> is the temperature in degrees Celsius. Because this is an operation that we&apos;d like to do frequently, we might create a function for it like the one below.</p>
 <pre><code class="lang-javascript"><span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">fahrToCelc</span><span class="hljs-params">(degrees)</span> </span>{
-  <span class="hljs-keyword">return</span> degrees * <span class="hljs-number">5</span> / <span class="hljs-number">9</span>  - <span class="hljs-number">32</span>;
+  <span class="hljs-keyword">return</span> (degrees - <span class="hljs-number">32</span>) * (<span class="hljs-number">5</span> / <span class="hljs-number">9</span>);
 }
 </code></pre>
 <p>So how do we go about operating on the elements in <code>tempsInF</code>? Well, we could just start at the beginning and work our way through, one value at a time.</p>
