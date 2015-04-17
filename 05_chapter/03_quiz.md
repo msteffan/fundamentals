@@ -1,5 +1,8 @@
  **WDI Fundamentals Unit 5**
 
+---
+
+
 Read the following code and then answer the questions below.
 
 ```js
@@ -11,7 +14,7 @@ function myFunction(x) {
   }
 }```
 
----
+
 What value will be returned from the function above when x is equal to 25?
 
 - [ ] 25
@@ -22,23 +25,8 @@ What value will be returned from the function above when x is equal to 25?
 > Not quite.
 > If x is equal to 25, then the function would execute the final return
 > statement, x – 1.  And since x equals 25, that statement would evaluate to 24.
----
 
-Read the following code and then answer the questions below.
-
-```js
-function myFunction(x) {
-  if (x > 30) {
-    return x - 30;
-  } else if (x < 10) {
-    return x;
-  }
-}
-```
-
----
 What value will be returned from the function above when x is equal to 10?
-
 
 - [ ] 25
 - [ ] 24
@@ -53,7 +41,7 @@ How would we call this function, either in our program or the console, passing
 5 as an argument?
 
 - [ ] `var myFunction() = 5;`
-- [ ] `myFunction(5);`
+- [x] `myFunction(5);`
 - [ ] `myFunction(x) { return 5; }`
 - [ ] `myFunction[5];`
 
@@ -71,7 +59,7 @@ function anotherFunction(x, y) {
   return (x < y ) ? x : y;
 }
 ```
----
+
 
 How would we call the above function to compare 10 and 20?
 
