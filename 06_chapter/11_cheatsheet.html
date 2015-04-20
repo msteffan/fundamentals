@@ -50,7 +50,7 @@
     
 
         
-    <div class="book" data-level="6.4" data-basepath=".." data-revision="Thu Apr 09 2015 13:40:40 GMT-0400 (EDT)">
+    <div class="book" data-level="6.4" data-basepath=".." data-revision="Sun Apr 19 2015 21:35:30 GMT-0700 (PDT)">
     
 
 <div class="book-summary">
@@ -1299,8 +1299,8 @@
 <li>As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called <strong>nesting</strong>.</li>
 <li><p>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&apos;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,</p>
 <pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> myNestedArray = [[<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>],
-                         [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
-                         [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
+                       [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
+                       [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
 </code></pre>
 <p>  you could access the element &apos;f&apos; by writing <code>myNestedArray[1][2]</code>.</p>
 </li>
@@ -1318,8 +1318,8 @@
 <h3 id="iterating-with-loops">Iterating with Loops</h3>
 <ul>
 <li><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function <code>someFunction</code> for every element in array <code>myArray</code>, from left to right.<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i += <span class="hljs-number">1</span>) {
-        someFunction(myArray[i]);
-      }
+      someFunction(myArray[i]);
+    }
 </code></pre>
 </li>
 <li>To change the way that you iterate through the array, just change the settings of your <code>for</code> loop.</li>
