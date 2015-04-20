@@ -32,10 +32,10 @@ What changes did Adrian make to the "/college" directory?
 
 What command would Adrian use to rename 'untitled_essay.doc' to 'draft1.doc'?
 
-- [ ] `cp draft1.doc untitled_essay.doc`
-- [x] `mv draft1.doc untitled_essay.doc`
-- [ ] `cp untitled_essay.doc draft1.doc`
-- [ ] `mv untitled_essay.doc draft1.doc`
+- [ ] `cp draft1.doc untitled_essay1.doc`
+- [ ] `mv draft1.doc untitled_essay1.doc`
+- [ ] `cp untitled_essay1.doc draft1.doc`
+- [x] `mv untitled_essay1.doc draft1.doc`
 
 > Not quite.
 >
