@@ -20,7 +20,7 @@ Here's an example of a ternary operator with some actual values plugged in.
 
 Since `true` is (obviously) truthy, this means that the *entire expression* will evaluate to the specified value - in this case, 1.
 
-Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x > 5) ? 10 : 20) * 10</code> will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
+Naturally, an expression with a ternary operator can also be incorporated into larger expressions. For example, <code>((x > 5) ? 10 : 20) &#42; 10</code> will evaluate to 100 if `x` *is* greater than 5, or 200 if `x` *is not* greater than 5.
 
 ### Test Yourself
 Suppose that we have two variables, `x` and `y`.
