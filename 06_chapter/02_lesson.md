@@ -54,7 +54,7 @@ Just like with a variable, this expression will evaluate to the value on the rig
 Assuming that each of the following expressions is evaluated in order, what value will be printed out as a result of the console.log statement?
 
 ```javascript
-var var myNumbers = [4, 65, 0, 29];
+var myNumbers = [4, 65, 0, 29];
 myNumbers[0];
 myNumbers[1] = 10;
 myNumbers[2] = 5;
