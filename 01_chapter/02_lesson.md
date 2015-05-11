@@ -21,7 +21,7 @@ The way your computer organizes and stores files is called a **file system**. Le
 
 ![Subdirectory and Parent Directory](../assets/chapter1/subdirectories.png)
 
-* The topmost directory of any file is called the **root directory** – nothing contains it.
+* The topmost directory of the filesystem is called the **root directory** – nothing contains it. All files and directories are contained by it, and so they all share the same root.
 
 ![Root Directory](../assets/chapter1/root_directory.png)
 
