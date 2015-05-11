@@ -24,11 +24,11 @@ Back in the day, the command line was the only way to interact with your compute
 We can perform actions using the command line by **entering commands**. There is a command to perform virtually any action you can imagine on your computer!
 There are commands to open an application, create new files, copy files from one place to another, and a lot more.
 
-We'll access the command line using the Terminal (capital-T) application, the most common application on MacOSX and Linux machines.
+We'll access the command line using a terminal application, which can be found on all computers. Terminal applications are commonly known as shells, and we will learn how to use the default shell provided on Mac OS X and Ubuntu Linux: **Bash**.
 
-> **DANGER** Fundamentals will not explore the command line that comes with Windows,
-> because most developers don't use it. If you're a Windows user, we recommended
-> installing a command line program like [Cygwin](http://cygwin.com/) or [MSysGit](http://msysgit.github.io/) in order to follow along with the syntax we use here.
+> **NOTE** There are many different types of shells, and some are more similar to Bash than others. Fundamentals will not explore the shells that come with Windows computers, for example, because they use a very different set of commands.
+
+> If you're a Windows user, you must install an environment that will allow you to use Bash in order to continue. We recommend either installing and using Mac OS X or Ubuntu Linux. You may also install a program like Cygwin on Windows in order to follow along with the syntax we use here, but we won't be able to actively support you if you encounter any major challenges. Once you join us for WDI, you will need to use a Mac or Linux environment. Reach out to your local producer if you have any questions.
 
 ##Get Started Using Terminal
 
