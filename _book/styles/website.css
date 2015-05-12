@@ -1,0 +1,124 @@
+.book .book-body .page-wrapper .page-inner section.quiz,
+.book .book-body .page-wrapper .page-inner .exercise {
+  border: none;
+}
+
+.book .book-body .page-wrapper .page-inner .quiz .header {
+  background: none;
+  color: black;
+}
+
+.book .book-body .page-wrapper .page-inner .exercise .header {
+  background: rgb(246, 246, 246);
+  color: black;
+}
+
+.book .book-body .page-wrapper .page-inner .quiz .message {}
+
+.book .book-body .page-wrapper .page-inner .quiz .question-header {
+  background-color: rgb(246, 246, 246);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-left-color: rgb(34, 34, 34);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: solid;
+  border-right-width: 1px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-style: solid;
+  border-top-width: 1px;
+  color: rgb(34, 34, 34);
+  cursor: auto;
+  display: block;
+  font-size: 16px;
+  padding: 32px;
+  position: relative;
+  text-align: left;
+  text-decoration: none solid rgb(34, 34, 34);
+}
+
+.book .book-body .page-wrapper .page-inner .quiz .action-submit,
+.book .book-body .page-wrapper .page-inner .exercise .action-submit {
+  margin: 10px;
+  background-color: rgb(250, 69, 66);
+  border-bottom-color: rgb(255, 255, 255);
+  border-bottom-left-radius: 3px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-left-color: rgb(255, 255, 255);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(255, 255, 255);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(255, 255, 255);
+  border-top-left-radius: 3px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-shadow: rgb(190, 2, 1) 0px 3px 0px 0px;
+  color: rgb(255, 255, 255);
+  cursor: auto;
+  display: block;
+  float: right;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none solid rgb(255, 255, 255);
+  text-decoration-color: rgb(255, 255, 255);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  width: 160px;
+}
+
+.book .book-body .page-wrapper .page-inner .quiz .action-solution,
+.book .book-body .page-wrapper .page-inner .exercise .action-solution {
+  margin: 10px;
+  background-color: rgb(195, 195, 195);
+  border-bottom-color: rgb(56, 56, 56);
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-style: none;
+  border-bottom-width: 0px;
+  border-left-color: rgb(56, 56, 56);
+  border-left-style: none;
+  border-left-width: 0px;
+  border-right-color: rgb(56, 56, 56);
+  border-right-style: none;
+  border-right-width: 0px;
+  border-top-color: rgb(56, 56, 56);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top-style: none;
+  border-top-width: 0px;
+  box-shadow: rgb(129, 129, 129) 0px 3px 0px 0px;
+  color: rgb(56, 56, 56);
+  cursor: auto;
+  display: block;
+  float: right;
+  font-family: Circular, Helvetica, sans-serif;
+  font-size: 18px;
+  font-stretch: normal;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 800;
+  text-align: center;
+  text-decoration: none solid rgb(56, 56, 56);
+  text-decoration-color: rgb(56, 56, 56);
+  text-decoration-line: none;
+  text-decoration-style: solid;
+  transition-delay: 0s;
+  transition-duration: 0.15s;
+  transition-property: all;
+  transition-timing-function: ease-in-out;
+  width: 208px;
+}
