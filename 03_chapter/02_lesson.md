@@ -144,4 +144,5 @@ Following this rule, our expression of `1 + 1 + 1 + 1` could also be written `((
 While we've covered what seems like a lot of math in this section, don't worry – you're not going to be doing calculus in this course. It's important that we review these concepts because there will be many times that you'll solve a problem by using one of these basic principles of math. When it comes down to it, computers operate on a pretty simple and straightforward logic.
 
 ---
-Think you're solid on the basics of expressions? [Take this quiz, and see how you do.](03_quiz.md)
+
+Think you've got it? [Let's do an exercise to cement what we've learned.](04_exercise.md)

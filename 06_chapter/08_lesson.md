@@ -116,4 +116,5 @@ What code could we write to perform the following tasks?
 >**NOTE** What we've called an associative array above are actually just JavaScript *objects*. You'll learn all about objects throughout WDI, and use them for far more complex use cases than tracking everyone's lunches.
 
 ---
-[Ready for one last quiz?](09_quiz.md)
+
+[One last exercise - this time on associative arrays.](10_exercise.md)

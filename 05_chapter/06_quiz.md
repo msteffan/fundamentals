@@ -109,5 +109,4 @@ function findMax(args) {
 
 ---
 
-
-Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md)
+[Let's review everything we've covered in this unit.](08_cheatsheet.md)

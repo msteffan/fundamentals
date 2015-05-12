@@ -31,4 +31,5 @@ To test your work, run each of the following two operations in the repli.it cons
 Each of these operations should return an array full of boolean values. If both arrays' values are all `true`, then congratulations - you're done!
 
 ---
-[Let's review what's been covered in this unit.](11_cheatsheet.md)
+
+Feeling confident? [Test your understanding of iteration with this next quiz.](09_quiz.md)

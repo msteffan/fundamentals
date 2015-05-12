@@ -24,4 +24,5 @@ Test your expression for several different values of `x`, including `null` - doe
 Were you able to get all of your expressions to work? If so, nice job!
 
 ---
-[Now let's take a look at our cheatsheet and look back over everything we've learned so far.](11_cheatsheet.md)
+
+Ready for another quiz? [Here we go!](09_quiz.md)

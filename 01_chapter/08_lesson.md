@@ -152,3 +152,7 @@ $ rm -r copy_of_jokes
 
 Note that the `mv` command does not need a `-r` option to move folders.
 
+---
+
+[Here's another exercise for you](10_exercise.md) - give it a shot.
+

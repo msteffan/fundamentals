@@ -55,4 +55,4 @@ function someFunc(x) {
 
 
 ---
-[Let's apply what we've learned about Functions to our 'Rock, Paper, Scissors' project.](12_assessment.md)
+[Let's apply what we've learned about Functions to our 'Rock, Paper, Scissors' project.](09_assessment.md)

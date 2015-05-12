@@ -177,4 +177,5 @@ Confirm your answer by entering each of the above lines of code on the repl.it c
 > **NOTE** If you're interested in looking at more of the different functions that arrays can use on themselves, you might want to take a look at (and bookmark) [this page](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array) from the Mozilla Developer Network's JavaScript documentation. Try playing around with some of them on your own in repl.it!
 
 ---
-[Test your knowledge of arrays in this next quiz!](03_quiz.md)
+
+[Let's get some practice with creating and editing arrays.](04_exercise.md)

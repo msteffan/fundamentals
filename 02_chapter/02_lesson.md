@@ -104,5 +104,6 @@ Each of these entries represents a commit for this project, and gives a lot of o
 
 ---
 
-Think you're solid on the basics of Git? [Take this quiz, and see how you do.](03_quiz.md)
+[Here are some more exercises to help you practice.](04_exercise.md)
+
 

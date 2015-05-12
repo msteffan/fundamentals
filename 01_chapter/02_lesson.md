@@ -46,3 +46,7 @@ Your computer understands two kinds of addresses or paths, absolute and relative
 * On the other hand, if you were standing on a street corner in Anchorage, Alaska you wouldn't need the full address. You could just jump in a taxi and say "Please head back two blocks, cut over to 3rd, and then turn right on Main Street." **In this case, you're defining where you're going based on your current location, so you're using a relative path.**
 
 >**Caution** It's important to know where you're working from so that you know whether to communicate with your computer using absolute or relative paths.
+
+---
+
+Feeling good? [Let's do some more practice.](04_exercise.md)

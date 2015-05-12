@@ -140,4 +140,5 @@ If you ever get stuck working with Git or GitHub, don't worry, you are NOT the f
 And trust us... you *will* get to the point where cloning and pushing are like breathing and sleeping.
 
 ---
-Ready for another quiz? [Let's go.](06_quiz.md)
+
+[Here's another exercise for you](07_exercise.md) - give it a shot.

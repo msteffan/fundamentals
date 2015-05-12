@@ -129,4 +129,5 @@ If you're interested, you can read the full documentation on `.map()` and `.forE
 * [.forEach()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 
 ---
-Feeling confident? [Test your understanding of iteration with this next quiz.](06_quiz.md)
+
+Nice job! [Here's an exercise that should help you practice iteration.](07_exercise.md) 

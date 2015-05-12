@@ -199,4 +199,6 @@ var twitterAccount = {
 var totalTweets;
 {% endexercise %}
 
-[One last exercise - this time on associative arrays.](10_exercise.md)
+---
+
+[Let's review what's been covered in this unit.](11_cheatsheet.md)

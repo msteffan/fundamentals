@@ -40,4 +40,5 @@ Test your code for several different input values. What do you get if `num` is 1
 If you're satisfied that your code is working as expected, go ahead and move on to the next lesson.
 
 ---
-[Let's review everything we've covered in this unit.](08_cheatsheet.md)
+
+Feeling confident? [Test your understanding of functions with this next quiz.](06_quiz.md)

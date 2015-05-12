@@ -128,4 +128,5 @@ for (var i = 0; i < x; i += 1) {
 Check your answers in repl.it.
 
 ---
-Ready for another quiz? [Here we go!](06_quiz.md)
+
+Feeling good about loops? [Let's do another exercise.](07_exercise.md)

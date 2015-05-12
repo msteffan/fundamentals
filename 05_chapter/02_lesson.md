@@ -134,4 +134,5 @@ function categorize(x) {
 ```
 
 ---
-[Here comes another quiz - do your best!](03_quiz.md)
+
+[Here's another exercise for you](04_exercise.md) - give it a shot.

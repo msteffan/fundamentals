@@ -264,4 +264,5 @@ Have fun!
 
 
 ---
-[Here comes another quiz - do your best!](06_quiz.md)
+
+Nice job! [Here's an exercise that should help you practice writing functions.](07_exercise.md) 

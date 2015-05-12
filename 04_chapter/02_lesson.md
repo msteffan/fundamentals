@@ -227,4 +227,6 @@ What value will `y` be assigned when `x` is ...
 * 0?
 * "Hello"?
 
-[Here's a short quiz on everything we've covered so far](03_quiz.md) - do your best!
+---
+
+[Let's do another exercise.](04_exercise.md)

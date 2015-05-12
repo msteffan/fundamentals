@@ -50,4 +50,5 @@ buzz
 ```
 
 ---
-Got it working? Nice job! [Let's review what we've covered this chapter.](08_cheatsheet.md)
+
+Feeling confident? [Test your understanding of this lesson with this quiz.](06_quiz.md)
