@@ -4,7 +4,6 @@
   "language": "en",
   "description": null,
   "plugins": [
-    "quizzes@1.0.0",
     "exercises@2.0.0-alpha.3",
     "richquotes",
     "nestedmd",
