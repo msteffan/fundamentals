@@ -36,4 +36,4 @@ Once your code is working, you can commit your changes and move on to the next c
 
 [Next up: Chapter 6](../06_chapter/intro.md)
 
-> If any of you are interested in an additional challenge, try writing another function called `playTo(x)` that allows us to play Rock Paper Scissors until either the player or the computer has won `x` times. Feel free to steal liberally from `playToFive()`.
+> If you are interested in an additional challenge, try writing another function called `playTo(x)` that allows us to play Rock Paper Scissors until either the player or the computer has won `x` times. Feel free to steal liberally from `playToFive()`.

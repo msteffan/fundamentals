@@ -43,10 +43,8 @@ To access the existing code for this project, you will need to fork and clone th
 <br>
 	This will copy your forked repo from GitHub to your own computer, so that you can work on it.
 
-7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-rps`. This repository contains three folders and a couple of other files.  The ONLY file you should edit is `rockpaperscissors.js` - it can be found at `wdi-fundamentals-rps/app/js/rockpaperscissors.js`.
+7. If you have followed these directions correctly, you should now have a repository in your `fundamentals` folder called `wdi-fundamentals-rps`. This repository contains three folders and a couple of other files.  The ONLY file we're expecting you to edit for this project is `rockpaperscissors.js` - it can be found at `wdi-fundamentals-rps/app/js/rockpaperscissors.js`. 
 
 ---
 
 That's it for now! We'll be coming back to this project at the end of every chapter, but for now, it's time to [move on to Chapter 3](../03_chapter/intro.md).
-
-

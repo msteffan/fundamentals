@@ -2,7 +2,7 @@
 
 ---
 
-##Command Line CheatSheet
+##Command Line Cheat Sheet
 
 ####Command Line
 * A text-based interface.
@@ -51,12 +51,11 @@ Command | Description
 
 
 Your Terminal comes with a manual, and to access more (*a lot more*) information about any command, type <code>man</code> followed by the command name and press <kbd>Enter</kbd>:
-	
-![manual](../assets/chapter1/terminal_man.gif) 
+
+![manual](../assets/chapter1/terminal_man.gif)
 
 You can scroll through a manual entry with the arrow keys or space bar. To quit this view and return to your prompt, just type <code>q</code>.
 
 ---
 
 Feeling confident? [Let's take what we've learned and apply it to a project.](11_assessment.md)
-
