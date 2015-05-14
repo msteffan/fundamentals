@@ -12,11 +12,11 @@ Now it's time to submit the project.
 
 ## Submit your work!
 
-The final step to submitting your assignment will be to submit a link to your repository. Since your repository is public, we'll be able to review the code that you've written and anyone will be able to add comments to it.
+The final step to your project assignment is to submit a link to your repository. Since your repository is public, we'll be able to review the code that you've written and anyone will be able to add comments to it.
 
 Let's get started!
 
-1. `push` your code up to your remote repo on GitHub.com, using the command `git push origin master`. You'll need to make sure you've committed all your changes before pushing. 
+1. `push` your code up to your remote repo on GitHub.com, using the command `git push origin master`. You'll need to make sure you've committed all your changes before pushing.
 
   > *At this point, if you visit your GitHub repository on the web, you should see the code that you've written.*
 
