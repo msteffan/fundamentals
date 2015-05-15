@@ -16,7 +16,7 @@ The final step to your project assignment is to submit a link to your repository
 
 Let's get started!
 
-1. `push` your code up to your remote repo on GitHub.com, using the command `git push origin master`. You'll need to make sure you've committed all your changes before pushing.
+1. `push` your code up to your remote repo on GitHub.com, using the command `git push origin student`. You'll need to make sure you've committed all your changes before pushing.
 
   > *At this point, if you visit your GitHub repository on the web, you should see the code that you've written.*
 
