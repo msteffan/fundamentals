@@ -5,7 +5,7 @@
         
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=11; IE=10; IE=9; IE=8; IE=7; IE=EDGE" />
-        <title>Cheat Sheet | WDI Fundamentals</title>
+        <title>Exercise | WDI Fundamentals</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.0.0">
@@ -20,10 +20,10 @@
         
     
     
-    <link rel="next" href="../06_chapter/12_assessment.html" />
+    <link rel="next" href="../06_chapter/09_quiz.html" />
     
     
-    <link rel="prev" href="../06_chapter/09_quiz.html" />
+    <link rel="prev" href="../06_chapter/08_lesson.html" />
     
 
         
@@ -46,7 +46,7 @@
     
 
         
-    <div class="book" data-level="6.5" data-basepath=".." data-revision="Thu Jun 18 2015 14:48:32 GMT-0400 (EDT)">
+    <div class="book" data-level="6.3.1" data-basepath=".." data-revision="Thu Jun 18 2015 14:48:32 GMT-0400 (EDT)">
     
 
 <div class="book-summary">
@@ -963,7 +963,7 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="6.3.1" data-path="06_chapter/10_exercise.html">
+        <li class="chapter active" data-level="6.3.1" data-path="06_chapter/10_exercise.html">
             
                 
                     <a href="../06_chapter/10_exercise.html">
@@ -998,7 +998,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="6.5" data-path="06_chapter/11_cheatsheet.html">
+        <li class="chapter " data-level="6.5" data-path="06_chapter/11_cheatsheet.html">
             
                 
                     <a href="../06_chapter/11_cheatsheet.html">
@@ -1140,69 +1140,26 @@
                     <section class="normal" id="section-">
                     
                         <p><strong>WDI Fundamentals Unit 6</strong></p>
-<h1 id="collections-cheatsheet">Collections Cheatsheet</h1>
-<h2 id="collections-arrays">Collections - Arrays</h2>
-<h3 id="what-is-an-array">What is an Array?</h3>
-<ul>
-<li>An array is an ordered list of values; these values can be strings, booleans,
-  numbers... even other arrays.</li>
-<li>The values within an array, called <strong>elements</strong>, are accessed by their
-  position (via a value called an <strong>index</strong>) within the array.</li>
-<li>An array can be defined by enclosing a list of values within square braces,
-  like so : <code>var myArray = [&apos;a&apos;,&apos;b&apos;,&apos;c&apos;,&apos;d&apos;]</code></li>
-<li>To retrieve the value at some index <code>i</code> from an array, add <code>[</code><em>i</em><code>]</code> to the
-  end of the array. e.g. <code>myArray[2]</code></li>
-<li>To edit the value at some index <code>i</code>, simply act as if you were assigning a
-  variable. e.g. <code>myArray[1] = &apos;f&apos;</code></li>
-</ul>
-<h3 id="adding-complexity-nested-arrays">Adding Complexity - Nested Arrays</h3>
-<ul>
-<li>As mentioned above, arrays can contain other arrays as elements. This process of putting arrays inside other arrays (or just generally, putting things inside other things) is called <strong>nesting</strong>.</li>
-<li><p>To retrieve a value from a nested array, use one set of square braces for every level of nesting. The first set should hold the element&apos;s index in the outermost array, the second set should hold the index in the next-outermost, etc. If you were working with the following nested array,</p>
-<pre><code class="lang-javascript">  <span class="hljs-keyword">var</span> myNestedArray = [[<span class="hljs-string">&apos;a&apos;</span>,<span class="hljs-string">&apos;b&apos;</span>,<span class="hljs-string">&apos;c&apos;</span>],
-                       [<span class="hljs-string">&apos;d&apos;</span>,<span class="hljs-string">&apos;e&apos;</span>,<span class="hljs-string">&apos;f&apos;</span>],
-                       [<span class="hljs-string">&apos;g&apos;</span>,<span class="hljs-string">&apos;h&apos;</span>,<span class="hljs-string">&apos;i&apos;</span>]];
+<h2 id="-your-turn-assets-exercise-png-your-turn"><img src="../assets/exercise.png" alt="Your Turn"> Your Turn</h2>
+<p>In this exercise, we&apos;ll return to our checkers game one last time. This time, however, we won&apos;t be writing a function; instead, your mission, should you choose to accept it, is to create a nested array called <code>pieces</code> to store the locations of every piece on the board.</p>
+<p><code>pieces</code> should be an associative array, with two keys : &apos;red&apos; and &apos;black&apos;. Each of these keys should correspond to a normal array listing out all of the different pieces for that color. Each piece should be represented as a two-element array in the pattern of <code>[row,col]</code>; for example, the list of red pieces would include <code>[0,0]</code>, <code>[0,2]</code>, <code>[0,4]</code>, etc.</p>
+<p>Here&apos;s that diagram again, in case you forgot how to set up the baord.</p>
+<p><img src="http://www.maniacworld.com/Checkers/checkers.jpg" alt="Picture of Checkerboard"></p>
+<p>To test your work, run each of the following two operations in the repli.it console</p>
+<pre><code class="lang-javascript">pieces[<span class="hljs-string">&apos;red&apos;</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
+      <span class="hljs-keyword">var</span> row = piece[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">var</span> col = piece[<span class="hljs-number">1</span>];
+      <span class="hljs-keyword">return</span> checkerboard[row][col] === <span class="hljs-string">&apos;R&apos;</span>;
+    });
+
+  pieces[<span class="hljs-string">&apos;black&apos;</span>].map(<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(piece)</span></span>{
+      <span class="hljs-keyword">var</span> row = piece[<span class="hljs-number">0</span>];
+      <span class="hljs-keyword">var</span> col = piece[<span class="hljs-number">1</span>];
+      <span class="hljs-keyword">return</span> checkerboard[row][col] === <span class="hljs-string">&apos;B&apos;</span>;
+    });
 </code></pre>
-<p>  you could access the element &apos;f&apos; by writing <code>myNestedArray[1][2]</code>.</p>
-</li>
-<li>Editing a value in a nested array is exactly like editing a value in a non-nested array; the only difference is how you reference the value that you want to change. e.g. <code>myNestedArray[0][3] = &apos;z&apos;;</code></li>
-</ul>
-<h3 id="additional-array-features">Additional Array Features</h3>
-<ul>
-<li>In addition to storing a set of values, arrays also have a number of in-built properties and functions that they can use.</li>
-<li><code>.length</code> gives you the length of the array you call it on.</li>
-<li><code>.push()</code> adds a new element to the end of an array, and returns that element.</li>
-<li><code>.pop()</code> removes the last element in an array, and returns that element.</li>
-<li><code>.indexOf()</code> searches within your array for the first element that matches its parameter, and returns the index of that match; if no match is found, it returns -1.</li>
-</ul>
-<h2 id="iterating-over-arrays">Iterating Over Arrays</h2>
-<h3 id="iterating-with-loops">Iterating with Loops</h3>
-<ul>
-<li><code>for</code> loops are an easy way to iterate through an array. The following will execute an arbitrary function <code>someFunction</code> for every element in array <code>myArray</code>, from left to right.<pre><code class="lang-javascript">  <span class="hljs-keyword">for</span> (<span class="hljs-keyword">var</span> i = <span class="hljs-number">0</span>; i &lt; myArray.length; i += <span class="hljs-number">1</span>) {
-      someFunction(myArray[i]);
-    }
-</code></pre>
-</li>
-<li>To change the way that you iterate through the array, just change the settings of your <code>for</code> loop.</li>
-</ul>
-<h3 id="iterator-functions">Iterator Functions</h3>
-<ul>
-<li><code>.map()</code> creates a new array with the results of calling a provided function on every element in this array.</li>
-<li><code>.forEach()</code> executes some function once for each element in the array it&apos;s called on.</li>
-</ul>
-<h2 id="collections-associative-arrays">Collections - Associative Arrays</h2>
-<h3 id="drawbacks-of-ordinary-arrays">Drawbacks of Ordinary Arrays</h3>
-<ul>
-<li>A typical array works by referenceing elements solely based on their position, e.g. &quot;the first element, the second element ...&quot; etc. But if the elements are ever rearranged, all of the references to specific elements need to be update.</li>
-<li>An associative array generates an enduring relationship between a reference (called a <strong>key</strong>) and the value that it refers to. Each key-value pairing is totally independent of every other pairing.<h3 id="associative-arrays-in-javascript">Associative Arrays in JavaScript</h3>
-</li>
-<li>An associative array can be defined by enclosing a list of key-value pairs in curly braces (<code>{...}</code>). Each key-value pair is written as <code>someKey : someValue</code>, and each pair is separated by commas.</li>
-<li>To retrieve the value that&apos;s tied to a particular key, add <code>[</code><em>key</em><code>]</code> to the end of the associative array. e.g. <code>myassociativeArray[&apos;myKey&apos;]</code></li>
-<li>To edit the value that&apos;s tied to a particular key, assign a value just like you would for an ordinary array. e.g. <code>myAssociativeArray[&apos;myKey&apos;] = &apos;aValue&apos;</code></li>
-<li>Adding a new key-value pair to an associative array is easy - it looks just like an assignment operation. e.g. <code>myAssociativeArray[&apos;someNewKey&apos;] = &apos;someNewValue&apos;</code></li>
-<li>Nesting for associative arrays works <em>exactly</em> like it does for ordinary arrays.</li>
-</ul>
-<p><a href="12_assessment.html">Project Time!</a></p>
+<p>Each of these operations should return an array full of boolean values. If both arrays&apos; values are all <code>true</code>, then congratulations - you&apos;re done!</p>
+<p>Feeling confident? <a href="09_quiz.html">Test your understanding of iteration with this next quiz.</a></p>
 
                     
                     </section>
@@ -1213,10 +1170,10 @@
         </div>
 
         
-        <a href="../06_chapter/09_quiz.html" class="navigation navigation-prev " aria-label="Previous page: Quiz"><i class="fa fa-angle-left"></i></a>
+        <a href="../06_chapter/08_lesson.html" class="navigation navigation-prev " aria-label="Previous page: Associative Arrays"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../06_chapter/12_assessment.html" class="navigation navigation-next " aria-label="Next page: Unit 6 Homework"><i class="fa fa-angle-right"></i></a>
+        <a href="../06_chapter/09_quiz.html" class="navigation navigation-next " aria-label="Next page: Quiz"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
