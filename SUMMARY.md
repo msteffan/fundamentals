@@ -52,7 +52,7 @@
 	* [Iterating over Arrays](06_chapter/05_lesson.md)
       * [Exercise](06_chapter/07_exercise.md)
 	* [Associative Arrays](06_chapter/08_lesson.md)
-		  * [Exercise](06_chapter/10_exercise.md)  
+	  * [Exercise](06_chapter/10_exercise.md)  
 	* [Quiz](06_chapter/09_quiz.md) 
 	* [Cheat Sheet](06_chapter/11_cheatsheet.md)
 	* [Unit 6 Homework](06_chapter/12_assessment.md)
