@@ -66,7 +66,7 @@ The `-m` option allows you to include a message, describing the changes you made
 
 ###The Git Staging Area
 
-One of the unique feautres of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
+One of the unique features of Git is its "Staging Area".  Git allows you to add changes to your project to the local repo in two steps:
 
 ```
 $ git add .
@@ -105,5 +105,3 @@ Each of these entries represents a commit for this project, and gives a lot of o
 ---
 
 [Here are some more exercises to help you practice.](04_exercise.md)
-
-
