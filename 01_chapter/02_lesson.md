@@ -5,7 +5,7 @@
 ##How Your Computer is Organized
 
 
-Before you tell the computer what to do, it's important to understand what exactly you will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns. This is called a Graphical User Interface.
+Before you tell the computer what to do, it's important to understand what exactly you will be manipulating. You're probably used to seeing a graphical representation of files and folders as icons in a list or in columns.
 
 ![Folders in the GUI](../assets/chapter1/FileSystem.gif)
 
