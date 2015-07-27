@@ -49,13 +49,13 @@ Whoa! It looks like our computer understood that one! It replied with a message:
 ```
 What did we just do?
 
-The command `pwd` stands for "Print Working Directory".
+The command `pwd` stands for "Print Working Directory."
 This command is used when we want the command line to tell us what folder (or directory) of our computer we are currently in.
 
-Just like the Finder on a mac, your command line interface places you in a particular folder
-of your computer. `pwd` tells you where you currently are. Usually, when you open the Terminal application, you start off in your "home folder", which is the one that shares the name of your username on your computer.
+Just like the Finder on a Mac, your command line interface places you in a particular folder
+of your computer. `pwd` tells you where you currently are. Usually, when you open the Terminal application, you start off in your "home folder," which is the one that shares the name of your username on your computer.
 
-If we were using Finder, we'd be able to see what things (files and folders) are present in this folder. In a CLI however, if we want to see what files and folders exist at the current location, we need to ask for it with another command.
+If we were using Finder, we'd be able to see what things (files and folders) are present in this folder. In a CLI, however, if we want to see what files and folders exist at the current location, we need to ask for it with another command.
 
 Let's find out what files are in the folder that we're in.
 
@@ -71,7 +71,7 @@ Downloads          Library          Movies
 Music              Pictures         Public
 ```
 
-The `ls` command, which loosely stands for "list", lists the contents of a folder.
+The `ls` command, which loosely stands for "list," lists the contents of a folder.
 
 It looks like there are some folders in here. Let's find out what's inside our `Documents` folder. In order to do so, let's first navigate to the Documents folder.
 
@@ -81,10 +81,10 @@ $ cd Documents
 
 We have now navigated to the Documents folder.
 
-The `cd` command, which stands for "change directory", is used to navigate to a particular folder on your computer.
+The `cd` command, which stands for "change directory," is used to navigate to a particular folder on your computer.
 
 This is equivalent to double-clicking the Documents folder in Finder to "go
-inside it". We can check that we're in the right place by using `pwd`.
+inside it." We can check that we're in the right place by using `pwd`.
 
 ```
 $ pwd
@@ -101,7 +101,7 @@ world_domination_checklist.txt
 ```
 
 It looks like the `Documents` folder contains a JPG file of a funny cat, a folder
-full of "office stuff", and a text file that supposedly contains a checklist for
+full of "office stuff," and a text file that supposedly contains a checklist for
 world domination. Your `Documents` folder probably contains something different.
 
 Now that we've investigated our `Documents` folder, let's go back up to our home folder. Since the home folder contains the `Documents` folder, we can say that the home folder is the "parent directory" of the `Documents` folder.
@@ -111,4 +111,4 @@ $ cd ..
 ```
 
 > `..` (two periods, or "dot-dot") is how we say to our command line "parent
-> directory".
+> directory."
