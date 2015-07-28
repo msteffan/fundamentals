@@ -6,7 +6,7 @@
 
 We now know how to find our way around this mysterious world called the command
 line. Let's perform some lasting actions, like creating some files and folders.
-Before we start, let's make sure that we are in our home folder like so:
+Before we start, let's make sure that we are in our home folder, like so:
 
 ```
 $ cd ~
@@ -41,7 +41,7 @@ There's our joke!
 A man walks into a bar. The other one ducks.
 ```
 
-We should probably make a folder called `funny_things` to put this joke in.
+We should probably make a folder called `funny_things` to store this joke.
 
 ```
 $ mkdir funny_things
@@ -58,11 +58,11 @@ Before we start the next section, let's navigate to our home folder.
 $ cd ~
 ```
 
-We made a folder for our joke called `funny_things` (you can check that it is
+We made a folder for our joke, called `funny_things` (you can check that it is
 there by running the `ls` command). How do we move our `joke.txt` file into this
 folder? If we were using Finder, we might use our mouse to drag and drop
 `joke.txt` into `funny_things`. Can we achieve the same action with our command
-line? You guessed it, yes we can.
+line? You guessed it: yes, we can.
 
 ```
 $ mv joke.txt funny_things/
@@ -75,8 +75,8 @@ folder.
 > destination.
 
 This is the first time we've used a command that needed two pieces of
-information from us, or two arguments. The first argument is "what to move", and
-the second argument is "where to move it to".
+information from us, or two arguments. The first argument is "what to move," and
+the second argument is "where to move it."
 
 Let's navigate to our `funny_things` folder and check its contents to
 make sure that this worked.
@@ -95,7 +95,7 @@ $ cp joke.txt joke2.txt
 > The `cp` command is used to copy the specified files or folders to the
 > specified location.
 
-After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. Notice how in this case, the second argument was a filename, and not a folder
+After running this command, we have created a copy of `joke.txt` called `joke2.txt` in the same folder. Notice how, in this case, the second argument was a filename, not a folder
 name. It turns out that the `mv` and `cp` commands are quite smart. When moving or copying
 a file, if the second argument is a **folder**, the specified file is moved or
 copied to that folder. If the second argument is a **filename**, the file in the first argument
@@ -128,7 +128,7 @@ $ mkdir jokes
 $ mv joke.txt jokes/joke.txt
 ```
 
-If you are trying to copy or remove folders, and not files, we need to add "an
+If you are trying to copy or remove folders, not files, we need to add "an
 option" to our command. Options are extra settings that we want to apply to our
 commands. Options to commands are always of the format `--word` or `-letter`.
 For example, let's try to copy our jokes folder.
@@ -137,12 +137,10 @@ For example, let's try to copy our jokes folder.
 $ cp -r jokes copy_of_jokes
 ```
 
-> The `-r` option stands for "recursive", and must be applied to the `cp`
+> The `-r` option stands for "recursive," and must be applied to the `cp`
 > command when copying folders.
 
-This is because not only do we want to copy the folder, we also want to
-recursively copy the contents of that folder, and the contents of any folders
-inside as well.
+The action is recursive because we want to copy not only the folder, but the contents of that folder—and the contents of any folders inside—as well.
 
 The same principle applies when removing a folder with files. The `rm -r` command will remove all of a folder's content as well as the folder itself.
 
