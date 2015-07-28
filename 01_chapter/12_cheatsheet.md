@@ -5,11 +5,11 @@
 ##Command Line Cheat Sheet
 
 ####Command Line
-* A text-based interface.
+* A text-based interface
 * *Synonyms*: command-line interface (CLI), console
 
 ####Terminal
-* An OSX application that provides text-based access to the operating system;
+* An OS X application that provides text-based access to the operating system
 * Any device or application used for data entry and display in a computer system
 * *Synonyms*: client, computer terminal, terminal emulator
 
@@ -24,20 +24,20 @@
 ####Path
 * A sequence of symbols and names that identifies a file or directory. The path always starts from your working directory or from the root directory, and each subdirectory is followed by a forward slash.
 * An *absolute* or full path begins with the root directory and specifies every directory above the terminating file or directory name.
-* A *relative* path does not include the root or parent directory names, and refers to a file or directory directly below the current working directory.
+* A *relative* path does not include the root or parent directory names, and instead refers to a file or directory directly below the current working directory.
 * *Synonyms*: pathname
 
 ####Command
-* The action we want the computer to take; always a single word.
+* The action we want the computer to take; always a single word
 * *Synonyms*: utility
 
 ####Option
-* Follows the "command" in a command line, to modify the behavior of the command in some way.
+* Follows the "command" in a command line, in order to modify the behavior of the command in some way
 * *Synonyms*: flag
 
 ####Argument
 * Follows the "command" and "options" (if any) in a command line, and is used to explain what we want the command to act on.
-* The number of arguments used generally depends on the command: some don't need arguments, some require exactly one argument, some require lots of arguments, and some are flexible in the number they can take.
+* The number of arguments used generally depends on the command: Some don't need arguments, some require exactly one argument, some require lots of arguments, and some are flexible in the number they can take.
 
 Command | Description
 ---|---
